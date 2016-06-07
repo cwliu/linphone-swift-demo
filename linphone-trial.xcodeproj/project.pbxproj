@@ -54,10 +54,15 @@
 		A99663CA1D070126003B5EEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663C91D070126003B5EEE /* CoreData.framework */; };
 		A99663CC1D070132003B5EEE /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663CB1D070132003B5EEE /* CoreFoundation.framework */; };
 		A99663CE1D070140003B5EEE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663CD1D070140003B5EEE /* AudioToolbox.framework */; };
-		A99663D01D0702BE003B5EEE /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663CF1D0702BE003B5EEE /* libsqlite3.dylib */; };
-		A99663D21D0702F8003B5EEE /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663D11D0702F8003B5EEE /* libz.1.dylib */; };
-		A99663D41D070319003B5EEE /* libresolv.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663D31D070319003B5EEE /* libresolv.9.dylib */; };
-		A99663D81D070397003B5EEE /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663D71D070397003B5EEE /* libxml2.2.dylib */; };
+		A99663DA1D07045D003B5EEE /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663D91D07045D003B5EEE /* libc++abi.tbd */; };
+		A99663DC1D07048C003B5EEE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663DB1D07048C003B5EEE /* AVFoundation.framework */; };
+		A99663DE1D0704BC003B5EEE /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663DD1D0704BC003B5EEE /* libstdc++.tbd */; };
+		A99663E11D0704C7003B5EEE /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663DF1D0704C7003B5EEE /* libstdc++.6.0.9.tbd */; };
+		A99663E21D0704C7003B5EEE /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E01D0704C7003B5EEE /* libstdc++.6.tbd */; };
+		A99663E41D0704E2003B5EEE /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E31D0704E2003B5EEE /* libxml2.tbd */; };
+		A99663E61D0704F8003B5EEE /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E51D0704F8003B5EEE /* libresolv.tbd */; };
+		A99663E81D070500003B5EEE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E71D070500003B5EEE /* libsqlite3.tbd */; };
+		A99663EA1D070507003B5EEE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E91D070507003B5EEE /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,10 +116,15 @@
 		A99663C91D070126003B5EEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A99663CB1D070132003B5EEE /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		A99663CD1D070140003B5EEE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A99663CF1D0702BE003B5EEE /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
-		A99663D11D0702F8003B5EEE /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
-		A99663D31D070319003B5EEE /* libresolv.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.9.dylib; path = ../../../../../usr/lib/libresolv.9.dylib; sourceTree = "<group>"; };
-		A99663D71D070397003B5EEE /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
+		A99663D91D07045D003B5EEE /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		A99663DB1D07048C003B5EEE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A99663DD1D0704BC003B5EEE /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		A99663DF1D0704C7003B5EEE /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		A99663E01D0704C7003B5EEE /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		A99663E31D0704E2003B5EEE /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		A99663E51D0704F8003B5EEE /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		A99663E71D070500003B5EEE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A99663E91D070507003B5EEE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +132,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99663D81D070397003B5EEE /* libxml2.2.dylib in Frameworks */,
-				A99663D41D070319003B5EEE /* libresolv.9.dylib in Frameworks */,
-				A99663D21D0702F8003B5EEE /* libz.1.dylib in Frameworks */,
-				A99663D01D0702BE003B5EEE /* libsqlite3.dylib in Frameworks */,
+				A99663EA1D070507003B5EEE /* libz.tbd in Frameworks */,
+				A99663E81D070500003B5EEE /* libsqlite3.tbd in Frameworks */,
+				A99663E61D0704F8003B5EEE /* libresolv.tbd in Frameworks */,
+				A99663E41D0704E2003B5EEE /* libxml2.tbd in Frameworks */,
+				A99663E11D0704C7003B5EEE /* libstdc++.6.0.9.tbd in Frameworks */,
+				A99663E21D0704C7003B5EEE /* libstdc++.6.tbd in Frameworks */,
+				A99663DE1D0704BC003B5EEE /* libstdc++.tbd in Frameworks */,
+				A99663DC1D07048C003B5EEE /* AVFoundation.framework in Frameworks */,
+				A99663DA1D07045D003B5EEE /* libc++abi.tbd in Frameworks */,
 				A99663CE1D070140003B5EEE /* AudioToolbox.framework in Frameworks */,
 				A99663CC1D070132003B5EEE /* CoreFoundation.framework in Frameworks */,
 				A99663CA1D070126003B5EEE /* CoreData.framework in Frameworks */,
@@ -176,46 +191,7 @@
 		A99663581D06F877003B5EEE = {
 			isa = PBXGroup;
 			children = (
-				A99663D71D070397003B5EEE /* libxml2.2.dylib */,
-				A99663D31D070319003B5EEE /* libresolv.9.dylib */,
-				A99663D11D0702F8003B5EEE /* libz.1.dylib */,
-				A99663CF1D0702BE003B5EEE /* libsqlite3.dylib */,
-				A99663CD1D070140003B5EEE /* AudioToolbox.framework */,
-				A99663CB1D070132003B5EEE /* CoreFoundation.framework */,
-				A99663C91D070126003B5EEE /* CoreData.framework */,
-				A99663C71D07011C003B5EEE /* CoreAudio.framework */,
-				A996637B1D070097003B5EEE /* libantlr3c.a */,
-				A996637C1D070097003B5EEE /* libavcodec.a */,
-				A996637D1D070097003B5EEE /* libavutil.a */,
-				A996637E1D070097003B5EEE /* libbcg729.a */,
-				A996637F1D070097003B5EEE /* libbctoolbox.a */,
-				A99663801D070097003B5EEE /* libbellesip.a */,
-				A99663811D070097003B5EEE /* libbzrtp.a */,
-				A99663821D070097003B5EEE /* libcorec.a */,
-				A99663831D070097003B5EEE /* libcunit.a */,
-				A99663841D070097003B5EEE /* libebml2.a */,
-				A99663851D070097003B5EEE /* libgsm.a */,
-				A99663861D070097003B5EEE /* liblinphone.a */,
-				A99663871D070097003B5EEE /* liblinphonetester.a */,
-				A99663881D070097003B5EEE /* libmatroska2.a */,
-				A99663891D070097003B5EEE /* libmediastreamer_base.a */,
-				A996638A1D070097003B5EEE /* libmediastreamer_voip.a */,
-				A996638B1D070097003B5EEE /* libopencore-amrnb.a */,
-				A996638C1D070097003B5EEE /* libopencore-amrwb.a */,
-				A996638D1D070097003B5EEE /* libopenh264.a */,
-				A996638E1D070097003B5EEE /* libopus.a */,
-				A996638F1D070097003B5EEE /* libortp.a */,
-				A99663901D070097003B5EEE /* libpolarssl.a */,
-				A99663911D070097003B5EEE /* libspeex.a */,
-				A99663921D070097003B5EEE /* libspeexdsp.a */,
-				A99663931D070097003B5EEE /* libsrtp.a */,
-				A99663941D070097003B5EEE /* libswresample.a */,
-				A99663951D070097003B5EEE /* libswscale.a */,
-				A99663961D070097003B5EEE /* libtunnel.a */,
-				A99663971D070097003B5EEE /* libvo-amrwbenc.a */,
-				A99663981D070097003B5EEE /* libvpx.a */,
-				A99663991D070097003B5EEE /* libx264.a */,
-				A996639A1D070097003B5EEE /* mediastreamer */,
+				A99663EB1D07054E003B5EEE /* lib */,
 				A99663631D06F877003B5EEE /* linphone-trial */,
 				A99663621D06F877003B5EEE /* Products */,
 				A99663761D06F942003B5EEE /* linphone-trial-Bridging-Header.h */,
@@ -264,6 +240,58 @@
 				A99663A11D070097003B5EEE /* libmsx264.a */,
 			);
 			path = plugins;
+			sourceTree = "<group>";
+		};
+		A99663EB1D07054E003B5EEE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A99663E91D070507003B5EEE /* libz.tbd */,
+				A99663E71D070500003B5EEE /* libsqlite3.tbd */,
+				A99663E51D0704F8003B5EEE /* libresolv.tbd */,
+				A99663E31D0704E2003B5EEE /* libxml2.tbd */,
+				A99663DF1D0704C7003B5EEE /* libstdc++.6.0.9.tbd */,
+				A99663E01D0704C7003B5EEE /* libstdc++.6.tbd */,
+				A99663DD1D0704BC003B5EEE /* libstdc++.tbd */,
+				A99663DB1D07048C003B5EEE /* AVFoundation.framework */,
+				A99663D91D07045D003B5EEE /* libc++abi.tbd */,
+				A99663CD1D070140003B5EEE /* AudioToolbox.framework */,
+				A99663CB1D070132003B5EEE /* CoreFoundation.framework */,
+				A99663C91D070126003B5EEE /* CoreData.framework */,
+				A99663C71D07011C003B5EEE /* CoreAudio.framework */,
+				A996637B1D070097003B5EEE /* libantlr3c.a */,
+				A996637C1D070097003B5EEE /* libavcodec.a */,
+				A996637D1D070097003B5EEE /* libavutil.a */,
+				A996637E1D070097003B5EEE /* libbcg729.a */,
+				A996637F1D070097003B5EEE /* libbctoolbox.a */,
+				A99663801D070097003B5EEE /* libbellesip.a */,
+				A99663811D070097003B5EEE /* libbzrtp.a */,
+				A99663821D070097003B5EEE /* libcorec.a */,
+				A99663831D070097003B5EEE /* libcunit.a */,
+				A99663841D070097003B5EEE /* libebml2.a */,
+				A99663851D070097003B5EEE /* libgsm.a */,
+				A99663861D070097003B5EEE /* liblinphone.a */,
+				A99663871D070097003B5EEE /* liblinphonetester.a */,
+				A99663881D070097003B5EEE /* libmatroska2.a */,
+				A99663891D070097003B5EEE /* libmediastreamer_base.a */,
+				A996638A1D070097003B5EEE /* libmediastreamer_voip.a */,
+				A996638B1D070097003B5EEE /* libopencore-amrnb.a */,
+				A996638C1D070097003B5EEE /* libopencore-amrwb.a */,
+				A996638D1D070097003B5EEE /* libopenh264.a */,
+				A996638E1D070097003B5EEE /* libopus.a */,
+				A996638F1D070097003B5EEE /* libortp.a */,
+				A99663901D070097003B5EEE /* libpolarssl.a */,
+				A99663911D070097003B5EEE /* libspeex.a */,
+				A99663921D070097003B5EEE /* libspeexdsp.a */,
+				A99663931D070097003B5EEE /* libsrtp.a */,
+				A99663941D070097003B5EEE /* libswresample.a */,
+				A99663951D070097003B5EEE /* libswscale.a */,
+				A99663961D070097003B5EEE /* libtunnel.a */,
+				A99663971D070097003B5EEE /* libvo-amrwbenc.a */,
+				A99663981D070097003B5EEE /* libvpx.a */,
+				A99663991D070097003B5EEE /* libx264.a */,
+				A996639A1D070097003B5EEE /* mediastreamer */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

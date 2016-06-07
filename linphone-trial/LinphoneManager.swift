@@ -34,12 +34,8 @@ class LinphoneManager {
         let configFilename = documentFile(".linphonerc")
         let factoryConfigFilename = bundleFile("linphonerc-factory")
         
-        
-        
         let configFilenamePtr: UnsafePointer<Int8> = configFilename.cStringUsingEncoding(NSUTF8StringEncoding)
         let factoryConfigFilenamePtr: UnsafePointer<Int8> = factoryConfigFilename.cStringUsingEncoding(NSUTF8StringEncoding)
-        
-        
         
         self.configDb = lp_config_new_with_factory(factoryConfigFilenamePtr, configFilenamePtr)
         
@@ -63,9 +59,9 @@ class LinphoneManager {
         
         var v: LinphoneManager = self
         
-        let theLinphoneCore : COpaquePointer = withUnsafePointers(&lct, &v, { (ptr: UnsafePointer<LinphoneCoreVTable>, selfPtr: UnsafePointer<LinphoneManager>) -> COpaquePointer in
+        let _ : COpaquePointer = withUnsafePointers(&lct, &v, { (ptr: UnsafePointer<LinphoneCoreVTable>, selfPtr: UnsafePointer<LinphoneManager>) -> COpaquePointer in
             
-            var voidPtr: UnsafeMutablePointer<Void> = unsafeBitCast(selfPtr, UnsafeMutablePointer<Void>.self)
+            let voidPtr: UnsafeMutablePointer<Void> = unsafeBitCast(selfPtr, UnsafeMutablePointer<Void>.self)
             return linphone_core_new_with_config (ptr, self.configDb!, voidPtr /* user_data */)
         })
         
