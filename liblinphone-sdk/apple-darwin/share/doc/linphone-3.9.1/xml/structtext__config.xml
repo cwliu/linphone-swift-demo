@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structtext__config" kind="struct" language="C++" prot="public">
+    <compoundname>text_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtext__config_1a3b422842ebdc8f773e19b3316765a6ad" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t text_config::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="820" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="820" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="819" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="819" bodyend="821"/>
+    <listofallmembers>
+      <member refid="structtext__config_1a3b422842ebdc8f773e19b3316765a6ad" prot="public" virt="non-virtual"><scope>text_config</scope><name>enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

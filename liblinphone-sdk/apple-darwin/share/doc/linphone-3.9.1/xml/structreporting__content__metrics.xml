@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structreporting__content__metrics" kind="struct" language="C++" prot="public">
+    <compoundname>reporting_content_metrics</compoundname>
+    <includes local="no">quality_reporting.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structreporting__content__metrics_1a755fb30127608e66994ed66888b6da6f" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t reporting_content_metrics::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="51" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1ae110bd909ed10070bfa5d1373f7e7bba" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t reporting_content_metrics::stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="52" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1abd92ef6e62404cc18764be94c86d7d93" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@1</type>
+        <definition>struct reporting_content_metrics::@1  reporting_content_metrics::timestamps</definition>
+        <argsstring></argsstring>
+        <name>timestamps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a466c6f47261b095ba5398930da68b3a4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::payload_type</definition>
+        <argsstring></argsstring>
+        <name>payload_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="57" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1ab7d2435801413acb7bda594831448f64" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* reporting_content_metrics::payload_desc</definition>
+        <argsstring></argsstring>
+        <name>payload_desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="58" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a84c2c08aace89a4bcbe695fd8ebe2f39" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::sample_rate</definition>
+        <argsstring></argsstring>
+        <name>sample_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="59" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a9d5eae10974043572bb489ea48f9a2e5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::frame_duration</definition>
+        <argsstring></argsstring>
+        <name>frame_duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="60" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1ab2b0a583d2470587a62acf657680dead" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* reporting_content_metrics::fmtp</definition>
+        <argsstring></argsstring>
+        <name>fmtp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="61" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1aa533d575a0fc9efba5b26c3040153ced" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::packet_loss_concealment</definition>
+        <argsstring></argsstring>
+        <name>packet_loss_concealment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="62" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a9e7bea2626cbfb40d26833283a295695" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@2</type>
+        <definition>struct reporting_content_metrics::@2  reporting_content_metrics::session_description</definition>
+        <argsstring></argsstring>
+        <name>session_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a95c127d125e452c9c49eeba9d8ef0c33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::adaptive</definition>
+        <argsstring></argsstring>
+        <name>adaptive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="67" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a2b32133e54098c5ff0fd8c489187b811" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::nominal</definition>
+        <argsstring></argsstring>
+        <name>nominal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="68" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a39931fc3e4ad00982bbe9caffc45cfef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="69" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a48b79042052ad135b81b7fd2563ad135" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::abs_max</definition>
+        <argsstring></argsstring>
+        <name>abs_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="70" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a3d058703a628c3c7e09c855e75dbec4a" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@3</type>
+        <definition>struct reporting_content_metrics::@3  reporting_content_metrics::jitter_buffer</definition>
+        <argsstring></argsstring>
+        <name>jitter_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1afd046af530c7141c5fe5e96d1b31fe4b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float reporting_content_metrics::network_packet_loss_rate</definition>
+        <argsstring></argsstring>
+        <name>network_packet_loss_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="75" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a02beb5f09b6d50131f79311ec2a9a907" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float reporting_content_metrics::jitter_buffer_discard_rate</definition>
+        <argsstring></argsstring>
+        <name>jitter_buffer_discard_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="76" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1acaaa2f0022b488200f1b78a863cd6a50" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@4</type>
+        <definition>struct reporting_content_metrics::@4  reporting_content_metrics::packet_loss</definition>
+        <argsstring></argsstring>
+        <name>packet_loss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a658952254faf103f5bfb2e044f70d41a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::round_trip_delay</definition>
+        <argsstring></argsstring>
+        <name>round_trip_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="81" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1ae540c1e339cf5884adfe3d0d5dbefca9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::end_system_delay</definition>
+        <argsstring></argsstring>
+        <name>end_system_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="82" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1aab93800ff7feacc524d77bd4240aa55c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::symm_one_way_delay</definition>
+        <argsstring></argsstring>
+        <name>symm_one_way_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="83" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a5f1d8375d9b402b7114641bfde2c865f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::interarrival_jitter</definition>
+        <argsstring></argsstring>
+        <name>interarrival_jitter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="84" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a26821a705e17c202d9bb97e89863af79" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::mean_abs_jitter</definition>
+        <argsstring></argsstring>
+        <name>mean_abs_jitter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a8a79a9eff19604fa5867d249b8e57f7c" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@5</type>
+        <definition>struct reporting_content_metrics::@5  reporting_content_metrics::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a0a7872e03643bd71277a144a5a0cf02b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="90" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a1359f37d0f35373559335278e722db38" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int reporting_content_metrics::noise_level</definition>
+        <argsstring></argsstring>
+        <name>noise_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="91" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1ae080e781130fbf39b67eded05029bfd2" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@6</type>
+        <definition>struct reporting_content_metrics::@6  reporting_content_metrics::signal</definition>
+        <argsstring></argsstring>
+        <name>signal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a6cefe6892d2e710c9814d1806755eacf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float reporting_content_metrics::moslq</definition>
+        <argsstring></argsstring>
+        <name>moslq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="96" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a5e49e9bb1a1b67f43ff2b9050089d0f7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float reporting_content_metrics::moscq</definition>
+        <argsstring></argsstring>
+        <name>moscq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="97" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a381f33d7876b31727080e29f97030188" prot="public" static="no" mutable="no">
+        <type>struct reporting_content_metrics::@7</type>
+        <definition>struct reporting_content_metrics::@7  reporting_content_metrics::quality_estimates</definition>
+        <argsstring></argsstring>
+        <name>quality_estimates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1ad8dbc155a15701e08962dfce686881ac" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* reporting_content_metrics::user_agent</definition>
+        <argsstring></argsstring>
+        <name>user_agent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="101" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1a2dd9d90ad58d4dfbf61fb78930e7633b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reporting_content_metrics::rtcp_xr_count</definition>
+        <argsstring></argsstring>
+        <name>rtcp_xr_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="104" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structreporting__content__metrics_1addcdd66b34d01a04a4693dfe1bf2fdc7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t reporting_content_metrics::rtcp_sr_count</definition>
+        <argsstring></argsstring>
+        <name>rtcp_sr_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="105" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Linphone quality report sub object storing media metrics information as required by RFC6035. </para>    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" line="48" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/quality_reporting.h" bodystart="48" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structreporting__content__metrics_1a48b79042052ad135b81b7fd2563ad135" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>abs_max</name></member>
+      <member refid="structreporting__content__metrics_1a95c127d125e452c9c49eeba9d8ef0c33" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>adaptive</name></member>
+      <member refid="structreporting__content__metrics_1a8a79a9eff19604fa5867d249b8e57f7c" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>delay</name></member>
+      <member refid="structreporting__content__metrics_1ae540c1e339cf5884adfe3d0d5dbefca9" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>end_system_delay</name></member>
+      <member refid="structreporting__content__metrics_1ab2b0a583d2470587a62acf657680dead" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>fmtp</name></member>
+      <member refid="structreporting__content__metrics_1a9d5eae10974043572bb489ea48f9a2e5" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>frame_duration</name></member>
+      <member refid="structreporting__content__metrics_1a5f1d8375d9b402b7114641bfde2c865f" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>interarrival_jitter</name></member>
+      <member refid="structreporting__content__metrics_1a3d058703a628c3c7e09c855e75dbec4a" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>jitter_buffer</name></member>
+      <member refid="structreporting__content__metrics_1a02beb5f09b6d50131f79311ec2a9a907" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>jitter_buffer_discard_rate</name></member>
+      <member refid="structreporting__content__metrics_1a0a7872e03643bd71277a144a5a0cf02b" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>level</name></member>
+      <member refid="structreporting__content__metrics_1a39931fc3e4ad00982bbe9caffc45cfef" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>max</name></member>
+      <member refid="structreporting__content__metrics_1a26821a705e17c202d9bb97e89863af79" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>mean_abs_jitter</name></member>
+      <member refid="structreporting__content__metrics_1a5e49e9bb1a1b67f43ff2b9050089d0f7" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>moscq</name></member>
+      <member refid="structreporting__content__metrics_1a6cefe6892d2e710c9814d1806755eacf" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>moslq</name></member>
+      <member refid="structreporting__content__metrics_1afd046af530c7141c5fe5e96d1b31fe4b" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>network_packet_loss_rate</name></member>
+      <member refid="structreporting__content__metrics_1a1359f37d0f35373559335278e722db38" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>noise_level</name></member>
+      <member refid="structreporting__content__metrics_1a2b32133e54098c5ff0fd8c489187b811" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>nominal</name></member>
+      <member refid="structreporting__content__metrics_1acaaa2f0022b488200f1b78a863cd6a50" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>packet_loss</name></member>
+      <member refid="structreporting__content__metrics_1aa533d575a0fc9efba5b26c3040153ced" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>packet_loss_concealment</name></member>
+      <member refid="structreporting__content__metrics_1ab7d2435801413acb7bda594831448f64" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>payload_desc</name></member>
+      <member refid="structreporting__content__metrics_1a466c6f47261b095ba5398930da68b3a4" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>payload_type</name></member>
+      <member refid="structreporting__content__metrics_1a381f33d7876b31727080e29f97030188" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>quality_estimates</name></member>
+      <member refid="structreporting__content__metrics_1a658952254faf103f5bfb2e044f70d41a" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>round_trip_delay</name></member>
+      <member refid="structreporting__content__metrics_1addcdd66b34d01a04a4693dfe1bf2fdc7" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>rtcp_sr_count</name></member>
+      <member refid="structreporting__content__metrics_1a2dd9d90ad58d4dfbf61fb78930e7633b" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>rtcp_xr_count</name></member>
+      <member refid="structreporting__content__metrics_1a84c2c08aace89a4bcbe695fd8ebe2f39" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>sample_rate</name></member>
+      <member refid="structreporting__content__metrics_1a9e7bea2626cbfb40d26833283a295695" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>session_description</name></member>
+      <member refid="structreporting__content__metrics_1ae080e781130fbf39b67eded05029bfd2" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>signal</name></member>
+      <member refid="structreporting__content__metrics_1a755fb30127608e66994ed66888b6da6f" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>start</name></member>
+      <member refid="structreporting__content__metrics_1ae110bd909ed10070bfa5d1373f7e7bba" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>stop</name></member>
+      <member refid="structreporting__content__metrics_1aab93800ff7feacc524d77bd4240aa55c" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>symm_one_way_delay</name></member>
+      <member refid="structreporting__content__metrics_1abd92ef6e62404cc18764be94c86d7d93" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>timestamps</name></member>
+      <member refid="structreporting__content__metrics_1ad8dbc155a15701e08962dfce686881ac" prot="public" virt="non-virtual"><scope>reporting_content_metrics</scope><name>user_agent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneToneDescription" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneToneDescription</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneToneDescription_1a4912daa34aa67db3aa3664dfd75bbf04" prot="public" static="no" mutable="no">
+        <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason _LinphoneToneDescription::reason</definition>
+        <argsstring></argsstring>
+        <name>reason</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="844" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneToneDescription_1a40820a84ceb2ba0466678cd2f75e9e5b" prot="public" static="no" mutable="no">
+        <type>LinphoneToneID</type>
+        <definition>LinphoneToneID _LinphoneToneDescription::toneid</definition>
+        <argsstring></argsstring>
+        <name>toneid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="845" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneToneDescription_1ae208494741a2f0274300aa0d29953f10" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneToneDescription::audiofile</definition>
+        <argsstring></argsstring>
+        <name>audiofile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="846" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="843" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="843" bodyend="847"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneToneDescription_1ae208494741a2f0274300aa0d29953f10" prot="public" virt="non-virtual"><scope>_LinphoneToneDescription</scope><name>audiofile</name></member>
+      <member refid="struct__LinphoneToneDescription_1a4912daa34aa67db3aa3664dfd75bbf04" prot="public" virt="non-virtual"><scope>_LinphoneToneDescription</scope><name>reason</name></member>
+      <member refid="struct__LinphoneToneDescription_1a40820a84ceb2ba0466678cd2f75e9e5b" prot="public" virt="non-virtual"><scope>_LinphoneToneDescription</scope><name>toneid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

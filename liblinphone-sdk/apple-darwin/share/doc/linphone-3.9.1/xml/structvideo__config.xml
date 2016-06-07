@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structvideo__config" kind="struct" language="C++" prot="public">
+    <compoundname>video_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvideo__config_1a37db3b2c75bc417835c5b6a95ae20a72" prot="public" static="no" mutable="no">
+        <type>struct _MSWebCam *</type>
+        <definition>struct _MSWebCam* video_config::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="807" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1a3d9dba195d01a1a4941fcdfa0345551b" prot="public" static="no" mutable="no">
+        <type>const char **</type>
+        <definition>const char** video_config::cams</definition>
+        <argsstring></argsstring>
+        <name>cams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="808" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="808" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1a9bbbf4fa47a64d152b9498ec7e44f59f" prot="public" static="no" mutable="no">
+        <type>MSVideoSize</type>
+        <definition>MSVideoSize video_config::vsize</definition>
+        <argsstring></argsstring>
+        <name>vsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="809" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="809" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1acb6017a279006b4b5fb3c2c7ffc3d806" prot="public" static="no" mutable="no">
+        <type>MSVideoSize</type>
+        <definition>MSVideoSize video_config::preview_vsize</definition>
+        <argsstring></argsstring>
+        <name>preview_vsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="810" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1ace8e2cf2f8f2f6b04fc3c99527d41d9e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float video_config::fps</definition>
+        <argsstring></argsstring>
+        <name>fps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="811" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="811" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1a48cb80031f356192d6e9387e3a23489a" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t video_config::capture</definition>
+        <argsstring></argsstring>
+        <name>capture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="812" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1a00144d871accc2c5cdcea7cd027e4505" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t video_config::show_local</definition>
+        <argsstring></argsstring>
+        <name>show_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="813" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="813" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1a4dbc2af3db59b11bf0a46d3bc3d29165" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t video_config::display</definition>
+        <argsstring></argsstring>
+        <name>display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="814" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="814" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1a765fb1c3cc66701710b99bde727639fa" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t video_config::selfview</definition>
+        <argsstring></argsstring>
+        <name>selfview</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="815" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="815" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvideo__config_1aa264994d4eb8568129c56eae6e7ec12f" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t video_config::reuse_preview_source</definition>
+        <argsstring></argsstring>
+        <name>reuse_preview_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="816" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="816" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="806" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="806" bodyend="817"/>
+    <listofallmembers>
+      <member refid="structvideo__config_1a3d9dba195d01a1a4941fcdfa0345551b" prot="public" virt="non-virtual"><scope>video_config</scope><name>cams</name></member>
+      <member refid="structvideo__config_1a48cb80031f356192d6e9387e3a23489a" prot="public" virt="non-virtual"><scope>video_config</scope><name>capture</name></member>
+      <member refid="structvideo__config_1a37db3b2c75bc417835c5b6a95ae20a72" prot="public" virt="non-virtual"><scope>video_config</scope><name>device</name></member>
+      <member refid="structvideo__config_1a4dbc2af3db59b11bf0a46d3bc3d29165" prot="public" virt="non-virtual"><scope>video_config</scope><name>display</name></member>
+      <member refid="structvideo__config_1ace8e2cf2f8f2f6b04fc3c99527d41d9e" prot="public" virt="non-virtual"><scope>video_config</scope><name>fps</name></member>
+      <member refid="structvideo__config_1acb6017a279006b4b5fb3c2c7ffc3d806" prot="public" virt="non-virtual"><scope>video_config</scope><name>preview_vsize</name></member>
+      <member refid="structvideo__config_1aa264994d4eb8568129c56eae6e7ec12f" prot="public" virt="non-virtual"><scope>video_config</scope><name>reuse_preview_source</name></member>
+      <member refid="structvideo__config_1a765fb1c3cc66701710b99bde727639fa" prot="public" virt="non-virtual"><scope>video_config</scope><name>selfview</name></member>
+      <member refid="structvideo__config_1a00144d871accc2c5cdcea7cd027e4505" prot="public" virt="non-virtual"><scope>video_config</scope><name>show_local</name></member>
+      <member refid="structvideo__config_1a9bbbf4fa47a64d152b9498ec7e44f59f" prot="public" virt="non-virtual"><scope>video_config</scope><name>vsize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

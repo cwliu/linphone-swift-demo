@@ -1,0 +1,1199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__event__api" kind="group">
+    <compoundname>event_api</compoundname>
+    <title>Managing generic subscriptions and publishes</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__event__api_1ga952ed6766d10e5c40eb1c08027fd299e" prot="public" static="no">
+        <name>_LinphoneSubscriptionDir</name>
+        <enumvalue id="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf55a603336d43c3ea4cc3499bdb2c0c2" prot="public">
+          <name>LinphoneSubscriptionIncoming</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Incoming subscription. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299ea3767788ba0d1a42fb28aa8b251b15f86" prot="public">
+          <name>LinphoneSubscriptionOutgoing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Outgoing subscription. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" prot="public">
+          <name>LinphoneSubscriptionInvalidDir</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Invalid subscription direction. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum for subscription direction (incoming or outgoing). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__event__api_1ga3f3f0721b654f5d9bf69451894c15fd2" prot="public" static="no">
+        <name>_LinphoneSubscriptionState</name>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" prot="public">
+          <name>LinphoneSubscriptionNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initial state, should not be used. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a7848cfa1b2acff3093e11b841c004a3f" prot="public">
+          <name>LinphoneSubscriptionOutgoingProgress</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>An outgoing subcription was sent </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a9da46101b075b3e234bb241110a56199" prot="public">
+          <name>LinphoneSubscriptionIncomingReceived</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>An incoming subcription is received </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a49a83030925840824cbc1e4d8eb1dec2" prot="public">
+          <name>LinphoneSubscriptionPending</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subscription is pending, waiting for user approval </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2ab42d78d54f2780123a1f81b016e8c169" prot="public">
+          <name>LinphoneSubscriptionActive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subscription is accepted. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" prot="public">
+          <name>LinphoneSubscriptionTerminated</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subscription is terminated normally </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a97811c7073b37718c9b1580b2c81ce97" prot="public">
+          <name>LinphoneSubscriptionError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subscription encountered an error, indicated by <ref refid="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" kindref="member">linphone_event_get_reason()</ref> </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aa622d123717bba7b1dbec6db45ca424f" prot="public">
+          <name>LinphoneSubscriptionExpiring</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Subscription is about to expire, only sent if [sip]-&gt;refresh_generic_subscribe property is set to 0. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum for subscription states. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="53" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="53" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__event__api_1gaaffffb466f4d5c5141f5a938760e3ce4" prot="public" static="no">
+        <name>_LinphonePublishState</name>
+        <enumvalue id="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" prot="public">
+          <name>LinphonePublishNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Initial state, do not use </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4aaeda3e5c8b3d3f0342be1d2491be2764" prot="public">
+          <name>LinphonePublishProgress</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>An outgoing publish was created and submitted </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a72b7fc821667e302e0ede8e2f2c31b9c" prot="public">
+          <name>LinphonePublishOk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Publish is accepted. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a51837d4ba711c17524d1585c5caca98c" prot="public">
+          <name>LinphonePublishError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Publish encoutered an error, <ref refid="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" kindref="member">linphone_event_get_reason()</ref> gives reason code </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a15222226cc9695458b595d785db16bf2" prot="public">
+          <name>LinphonePublishExpiring</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Publish is about to expire, only sent if [sip]-&gt;refresh_generic_publish property is set to 0. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a4c2b990cd066348e068d15cdc65a8a55" prot="public">
+          <name>LinphonePublishCleared</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Event has been un published </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum for publish states. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="77" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="77" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneEvent" kindref="compound">_LinphoneEvent</ref></type>
+        <definition>typedef struct _LinphoneEvent LinphoneEvent</definition>
+        <argsstring></argsstring>
+        <name>LinphoneEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Object representing an event state, which is subcribed or published. <simplesect kind="see"><para><ref refid="group__event__api_1ga3d1ea36f58ec30b475e424d2bff93fb6" kindref="member">linphone_core_publish()</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="414" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" prot="public" static="no">
+        <type>enum <ref refid="group__event__api_1ga952ed6766d10e5c40eb1c08027fd299e" kindref="member">_LinphoneSubscriptionDir</ref></type>
+        <definition>typedef enum _LinphoneSubscriptionDir LinphoneSubscriptionDir</definition>
+        <argsstring></argsstring>
+        <name>LinphoneSubscriptionDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef alias for _LinphoneSubscriptionDir </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="414" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__event__api_1gae08ee010813d69b0bc487c704b174933" prot="public" static="no">
+        <type>enum <ref refid="group__event__api_1ga3f3f0721b654f5d9bf69451894c15fd2" kindref="member">_LinphoneSubscriptionState</ref></type>
+        <definition>typedef enum _LinphoneSubscriptionState LinphoneSubscriptionState</definition>
+        <argsstring></argsstring>
+        <name>LinphoneSubscriptionState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef for subscription state enum. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="414" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__event__api_1gafb440ee528090b514289e74320923ea2" prot="public" static="no">
+        <type>enum <ref refid="group__event__api_1gaaffffb466f4d5c5141f5a938760e3ce4" kindref="member">_LinphonePublishState</ref></type>
+        <definition>typedef enum _LinphonePublishState LinphonePublishState</definition>
+        <argsstring></argsstring>
+        <name>LinphonePublishState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef for publish state enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="72" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__event__api_1ga235248749148a0d3dad0860e368d5f9c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneCoreNotifyReceivedCb) (LinphoneCore *lc, LinphoneEvent *lev, const char *notified_event, const LinphoneContent *body)</definition>
+        <argsstring>)(LinphoneCore *lc, LinphoneEvent *lev, const char *notified_event, const LinphoneContent *body)</argsstring>
+        <name>LinphoneCoreNotifyReceivedCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback prototype for notifying the application about notification received from the network. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="96" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__event__api_1gabd3d0a9c87e82eccc83dfe4853ddfd8d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneCoreSubscriptionStateChangedCb) (LinphoneCore *lc, LinphoneEvent *lev, LinphoneSubscriptionState state)</definition>
+        <argsstring>)(LinphoneCore *lc, LinphoneEvent *lev, LinphoneSubscriptionState state)</argsstring>
+        <name>LinphoneCoreSubscriptionStateChangedCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback prototype for notifying the application about changes of subscription states, including arrival of new subscriptions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="101" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__event__api_1ga7b8ddb54a77c516e05ce2ad5abc442be" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneCorePublishStateChangedCb) (LinphoneCore *lc, LinphoneEvent *lev, LinphonePublishState state)</definition>
+        <argsstring>)(LinphoneCore *lc, LinphoneEvent *lev, LinphonePublishState state)</argsstring>
+        <name>LinphoneCorePublishStateChangedCb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback prototype for notifying the application about changes of publish states. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="106" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__event__api_1ga5b2fc0e151efd28ef9df77c54dd88188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_subscription_state_to_string</definition>
+        <argsstring>(LinphoneSubscriptionState state)</argsstring>
+        <name>linphone_subscription_state_to_string</name>
+        <param>
+          <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="72" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="45" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gad8cb0edbba6a5d4304d220c05896f9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_publish_state_to_string</definition>
+        <argsstring>(LinphonePublishState state)</argsstring>
+        <name>linphone_publish_state_to_string</name>
+        <param>
+          <type><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="91" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_subscribe</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires, const LinphoneContent *body)</argsstring>
+        <name>linphone_core_subscribe</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an outgoing subscription, specifying the destination resource, the event name, and an optional content body. If accepted, the subscription runs for a finite period, but is automatically renewed if not terminated before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination resource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the whished duration of the subscription </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body, may be NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a LinphoneEvent holding the context of the created subcription. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="118" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_create_subscribe</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires)</argsstring>
+        <name>linphone_core_create_subscribe</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an outgoing subscription, specifying the destination resource, the event name, and an optional content body. If accepted, the subscription runs for a finite period, but is automatically renewed if not terminated before. Unlike <ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe()</ref> the subscription isn&apos;t sent immediately. It will be send when calling <ref refid="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" kindref="member">linphone_event_send_subscribe()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination resource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the whished duration of the subscription </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a LinphoneEvent holding the context of the created subcription. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="130" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_send_subscribe</definition>
+        <argsstring>(LinphoneEvent *ev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_send_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a subscription previously created by <ref refid="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" kindref="member">linphone_core_create_subscribe()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional content to attach with the subscription. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="138" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="171" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga563888e9ea3235a61757760085d30cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_update_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_update_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update (refresh) an outgoing subscription, changing the body. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body to include in the subscription update, may be NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="145" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga99ae54dbbb24d3405acde9e89e3d4848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_refresh_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_refresh_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Refresh an outgoing subscription keeping the same body. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneEvent object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="152" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga9461aa2a060e43c46b02ba778182573e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_accept_subscription</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_accept_subscription</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accept an incoming subcription. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="158" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="217" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac1ef6d484e5ad5e8598f32d19b8ef800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_deny_subscription</definition>
+        <argsstring>(LinphoneEvent *lev, LinphoneReason reason)</argsstring>
+        <name>linphone_event_deny_subscription</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deny an incoming subscription with given reason. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="162" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="230" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga8ca62fc6f89032a6079591dad1ba64b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_notify</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_notify</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a notification. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> corresponding to an incoming subscription previously received and accepted. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body containing the actual notification data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="169" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="241" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga3d1ea36f58ec30b475e424d2bff93fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_publish</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires, const LinphoneContent *body)</argsstring>
+        <name>linphone_core_publish</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Publish an event state. This first create a LinphoneEvent with <ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish()</ref> and calls <ref refid="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" kindref="member">linphone_event_send_publish()</ref> to actually send it. After expiry, the publication is refreshed unless it is terminated before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resource uri for the event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lifetime of event being published, -1 if no associated duration, in which case it will not be refreshed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the actual published data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the LinphoneEvent holding the context of the publish. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="183" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="284" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_create_publish</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires)</argsstring>
+        <name>linphone_core_create_publish</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a publish context for an event state. After being created, the publish must be sent using <ref refid="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" kindref="member">linphone_event_send_publish()</ref>. After expiry, the publication is refreshed unless it is terminated before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resource uri for the event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lifetime of event being published, -1 if no associated duration, in which case it will not be refreshed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the LinphoneEvent holding the context of the publish. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="195" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="255" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_send_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_send_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a publish created by <ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new data to be published </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="202" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="296" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7a3911c6603c1a7662f1b9ad29c6fae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_update_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_update_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update (refresh) a publish. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new data to be published </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="209" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaa39179c4d2627fbd9c0df723184c69c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_refresh_publish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_refresh_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Refresh an outgoing publish keeping the same body. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneEvent object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="216" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaab5de6f8d2f8651d485524d41ab857cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_pause_publish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_pause_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prevent an event from refreshing its publish. This is useful to let registrations to expire naturally (or) when the application wants to keep control on when refreshes are sent. The refreshing operations can be resumed with <ref refid="group__proxies_1ga94411d7a66d26b421358fc4ab73a844d" kindref="member">linphone_proxy_config_refresh_register()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="225" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="307" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_event_get_reason</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_reason</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return reason code (in case of error state reached). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="230" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga76be1dba05ea6ddce71d38f621ddcfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>const LinphoneErrorInfo* linphone_event_get_error_info</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_error_info</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get full details about an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="235" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gabc1e22da12a3a4ca0a76da3dbff38516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+        <definition>LinphoneSubscriptionState linphone_event_get_subscription_state</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_subscription_state</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get subscription state. If the event object was not created by a subscription mechanism, <ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="240" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="374" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaf3d059c3da69dd0f12ff65f0ecdaaf9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref></type>
+        <definition>LinphonePublishState linphone_event_get_publish_state</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_publish_state</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get publish state. If the event object was not created by a publish mechanism, <ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" kindref="member">LinphonePublishNone</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="245" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga51e9694c8b2121a3d71d11632c7e1155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+        <definition>LinphoneSubscriptionDir linphone_event_get_subscription_dir</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_subscription_dir</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get subscription direction. If the object wasn&apos;t created by a subscription mechanism, <ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" kindref="member">LinphoneSubscriptionInvalidDir</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="251" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="370" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga9e22cf3e08ba7801189ef20e58f9afad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_set_user_data</definition>
+        <argsstring>(LinphoneEvent *ev, void *up)</argsstring>
+        <name>linphone_event_set_user_data</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a user (application) pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="256" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="314" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac4b132995fed3dc6ba4e13c1ade928d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_event_get_user_data</definition>
+        <argsstring>(const LinphoneEvent *ev)</argsstring>
+        <name>linphone_event_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve user pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="261" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="318" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga1a2b7563784e003df5a64e3355b44297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_add_custom_header</definition>
+        <argsstring>(LinphoneEvent *ev, const char *name, const char *value)</argsstring>
+        <name>linphone_event_add_custom_header</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a custom header to an outgoing susbscription or publish. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header&apos;s name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;s value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="269" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="322" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga0f8793f2c6970ec61591270204eaa079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_event_get_custom_header</definition>
+        <argsstring>(LinphoneEvent *ev, const char *name)</argsstring>
+        <name>linphone_event_get_custom_header</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtain the value of a given header for an incoming subscription. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header&apos;s name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the header&apos;s value or NULL if such header doesn&apos;t exist. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="277" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaef98f2e70b0a62e46bb1e836b61a8491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_terminate</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_terminate</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate an incoming or outgoing subscription that was previously acccepted, or a previous publication. The LinphoneEvent shall not be used anymore after this operation, unless the application explicitely took a reference on the object with <ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="284" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="332" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_event_ref</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_ref</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase reference count of LinphoneEvent. By default LinphoneEvents created by the core are owned by the core only. An application that wishes to retain a reference to it must call <ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref>. When this reference is no longer needed, <ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref()</ref> must be called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="294" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_unref</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_unref</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrease reference count. <simplesect kind="see"><para><ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="300" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7224702b342fef301e15b12aee0aaffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_event_get_name</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_name</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of the event as specified in the event package RFC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="305" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="378" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae0d6c66d272f7bfe8f0b3902b6509395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_event_get_from</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_from</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the &quot;from&quot; address of the subscription. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="310" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="382" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac45355bd19fd7205deb4f1fcc722410c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_event_get_resource</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_resource</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the resource address of the subscription or publish. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="315" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="390" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gab2bebd450e088b98b817abeb389e7621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_event_get_core</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_core</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns back pointer to the LinphoneCore that created this LinphoneEvent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="320" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="398" bodyend="400"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__event__api_1ga94ad8c0d8c0f707156eeb3ebe0c63e69" prot="public" static="no">
+        <name>LinphoneSubscriptionOutoingInit</name>
+        <initializer>LinphoneSubscriptionOutgoingInit</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="64" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__event__api_1ga9b1143d48efe5d35c60fae0347f39926" prot="public" static="no">
+        <name>LinphoneSubscriptionOutgoingInit</name>
+        <initializer><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a7848cfa1b2acff3093e11b841c004a3f" kindref="member">LinphoneSubscriptionOutgoingProgress</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" line="66" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The LinphoneEvent api allows application to control subscriptions, receive notifications and make publish to peers, in a generic manner. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LCSipTransports" kind="struct" language="C++" prot="public">
+    <compoundname>_LCSipTransports</compoundname>
+    <includes local="no">linphonecore.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LCSipTransports_1a07ac7c1bcadb37cd529891388c89a7fb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LCSipTransports::udp_port</definition>
+        <argsstring></argsstring>
+        <name>udp_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>udp port to listening on, negative value if not set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="88" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LCSipTransports_1aed73e2a8a17c55f8511fb6d3eaa65d7b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LCSipTransports::tcp_port</definition>
+        <argsstring></argsstring>
+        <name>tcp_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tcp port to listening on, negative value if not set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="92" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LCSipTransports_1a8078250b0016c66864319153c21705ff" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LCSipTransports::dtls_port</definition>
+        <argsstring></argsstring>
+        <name>dtls_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>dtls port to listening on, negative value if not set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="96" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LCSipTransports_1ae23a827fac01111c0e8a3ece822ede93" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LCSipTransports::tls_port</definition>
+        <argsstring></argsstring>
+        <name>tls_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>tls port to listening on, negative value if not set </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="100" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Linphone core SIP transport ports. Use with <ref refid="group__network__parameters_1gab5d3dc270fff43b8b782b6435214fecb" kindref="member">linphone_core_set_sip_transports</ref> </para>    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="84" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="84" bodyend="101"/>
+    <listofallmembers>
+      <member refid="struct__LCSipTransports_1a8078250b0016c66864319153c21705ff" prot="public" virt="non-virtual"><scope>_LCSipTransports</scope><name>dtls_port</name></member>
+      <member refid="struct__LCSipTransports_1aed73e2a8a17c55f8511fb6d3eaa65d7b" prot="public" virt="non-virtual"><scope>_LCSipTransports</scope><name>tcp_port</name></member>
+      <member refid="struct__LCSipTransports_1ae23a827fac01111c0e8a3ece822ede93" prot="public" virt="non-virtual"><scope>_LCSipTransports</scope><name>tls_port</name></member>
+      <member refid="struct__LCSipTransports_1a07ac7c1bcadb37cd529891388c89a7fb" prot="public" virt="non-virtual"><scope>_LCSipTransports</scope><name>udp_port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

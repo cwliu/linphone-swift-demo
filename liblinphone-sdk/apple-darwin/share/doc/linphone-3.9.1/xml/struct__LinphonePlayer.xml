@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphonePlayer" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphonePlayer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphonePlayer_1aeb0c1d4ced0da8975081fec28d4daa12" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _LinphonePlayer::open) (struct _LinphonePlayer *player, const char *filename)</definition>
+        <argsstring>)(struct _LinphonePlayer *player, const char *filename)</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1245" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1ae45b425e99bba0f6842bac6d926cc9c0" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _LinphonePlayer::start) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1246" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1ab86c57b5acfeff66f43c76213766cf66" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _LinphonePlayer::pause) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1247" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1a56f2a1ece7e96a0b998f96cb1a6326b7" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _LinphonePlayer::seek) (struct _LinphonePlayer *player, int time_ms)</definition>
+        <argsstring>)(struct _LinphonePlayer *player, int time_ms)</argsstring>
+        <name>seek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1248" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1a8d41c1ae9231a60224e5987fbfcd3af4" prot="public" static="no" mutable="no">
+        <type>MSPlayerState(*</type>
+        <definition>MSPlayerState(* _LinphonePlayer::get_state) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>get_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1249" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1ae7777a59694b14356f6c0d2b1eabd198" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _LinphonePlayer::get_duration) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>get_duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1250" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1ae746e3231388a9caea31d9ae5bb4ecee" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _LinphonePlayer::get_position) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>get_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1251" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1a4efbe634943ad8b295606f5896fbed95" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _LinphonePlayer::close) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1252" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1af9664e3b44655a0629672e817068bac7" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _LinphonePlayer::destroy) (struct _LinphonePlayer *player)</definition>
+        <argsstring>)(struct _LinphonePlayer *player)</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1253" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1a1b099688e596bf03b74b285695cf9793" prot="public" static="no" mutable="no">
+        <type><ref refid="group__call__control_1gaee49f2a22a14dd6799983ab98e65f14a" kindref="member">LinphonePlayerEofCallback</ref></type>
+        <definition>LinphonePlayerEofCallback _LinphonePlayer::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1254" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1a99646bad99e6a85413811294c4ee292a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphonePlayer::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1255" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePlayer_1a63f91ef17c9e8d93a9f3952db8900fa4" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphonePlayer::impl</definition>
+        <argsstring></argsstring>
+        <name>impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1256" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1256" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="834">
+        <label>_LinphonePlayer</label>
+        <link refid="struct__LinphonePlayer"/>
+        <childnode refid="834" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1244" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1244" bodyend="1257"/>
+    <listofallmembers>
+      <member refid="struct__LinphonePlayer_1a1b099688e596bf03b74b285695cf9793" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>cb</name></member>
+      <member refid="struct__LinphonePlayer_1a4efbe634943ad8b295606f5896fbed95" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>close</name></member>
+      <member refid="struct__LinphonePlayer_1af9664e3b44655a0629672e817068bac7" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>destroy</name></member>
+      <member refid="struct__LinphonePlayer_1ae7777a59694b14356f6c0d2b1eabd198" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>get_duration</name></member>
+      <member refid="struct__LinphonePlayer_1ae746e3231388a9caea31d9ae5bb4ecee" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>get_position</name></member>
+      <member refid="struct__LinphonePlayer_1a8d41c1ae9231a60224e5987fbfcd3af4" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>get_state</name></member>
+      <member refid="struct__LinphonePlayer_1a63f91ef17c9e8d93a9f3952db8900fa4" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>impl</name></member>
+      <member refid="struct__LinphonePlayer_1aeb0c1d4ced0da8975081fec28d4daa12" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>open</name></member>
+      <member refid="struct__LinphonePlayer_1ab86c57b5acfeff66f43c76213766cf66" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>pause</name></member>
+      <member refid="struct__LinphonePlayer_1a56f2a1ece7e96a0b998f96cb1a6326b7" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>seek</name></member>
+      <member refid="struct__LinphonePlayer_1ae45b425e99bba0f6842bac6d926cc9c0" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>start</name></member>
+      <member refid="struct__LinphonePlayer_1a99646bad99e6a85413811294c4ee292a" prot="public" virt="non-virtual"><scope>_LinphonePlayer</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

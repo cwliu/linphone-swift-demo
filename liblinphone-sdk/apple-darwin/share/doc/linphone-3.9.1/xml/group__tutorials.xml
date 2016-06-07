@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__tutorials" kind="group">
+    <compoundname>tutorials</compoundname>
+    <title>Tutorials:</title>
+    <innergroup refid="group__buddy__tutorials">Basic buddy status notification</innergroup>
+    <innergroup refid="group__chatroom__tuto">Chat room and messaging</innergroup>
+    <innergroup refid="group__basic__call__tutorials">Basic call</innergroup>
+    <innergroup refid="group__notify__tutorials">Generic subscribe/notify example</innergroup>
+    <innergroup refid="group__real__time__text">Real Time Text Receiver</innergroup>
+    <innergroup refid="group__real__time__text__sender">Real Time Text Sender</innergroup>
+    <innergroup refid="group__registration__tutorials">Basic registration</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct____processConfigCtx" kind="struct" language="C++" prot="public">
+    <compoundname>__processConfigCtx</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____processConfigCtx_1ab10f918cb8fc7e25e72595681483f3d3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int __processConfigCtx::ret</definition>
+        <argsstring></argsstring>
+        <name>ret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="196" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____processConfigCtx_1adad5a53f3b442547a18148af1546b099" prot="public" static="no" mutable="no">
+        <type>xmlNode *</type>
+        <definition>xmlNode* __processConfigCtx::node</definition>
+        <argsstring></argsstring>
+        <name>node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="197" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct____processConfigCtx_1ab76cac5dfd9004ef2af524c50343f49c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+        <definition>lpc2xml_context* __processConfigCtx::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="198" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_lpc2xml_context</label>
+        <link refid="struct__lpc2xml__context"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>lpc</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="1">
+        <label>__processConfigCtx</label>
+        <link refid="struct____processConfigCtx"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ctx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="195" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="195" bodyend="199"/>
+    <listofallmembers>
+      <member refid="struct____processConfigCtx_1ab76cac5dfd9004ef2af524c50343f49c" prot="public" virt="non-virtual"><scope>__processConfigCtx</scope><name>ctx</name></member>
+      <member refid="struct____processConfigCtx_1adad5a53f3b442547a18148af1546b099" prot="public" virt="non-virtual"><scope>__processConfigCtx</scope><name>node</name></member>
+      <member refid="struct____processConfigCtx_1ab10f918cb8fc7e25e72595681483f3d3" prot="public" virt="non-virtual"><scope>__processConfigCtx</scope><name>ret</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

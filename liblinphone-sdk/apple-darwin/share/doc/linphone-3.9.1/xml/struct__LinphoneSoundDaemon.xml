@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneSoundDaemon" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneSoundDaemon</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1ad6acc3b52ce8bb338933383c7d41bef4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneSoundDaemon::out_rate</definition>
+        <argsstring></argsstring>
+        <name>out_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="53" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1ab3ed779cd5ffd61c5b29c3579fb51ad3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneSoundDaemon::out_nchans</definition>
+        <argsstring></argsstring>
+        <name>out_nchans</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="54" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1aee2b9fb16f48d880af8bf26d32e1cb7a" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _LinphoneSoundDaemon::mixer</definition>
+        <argsstring></argsstring>
+        <name>mixer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="55" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1a422139573dc90aff7476d78c96484efa" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _LinphoneSoundDaemon::soundout</definition>
+        <argsstring></argsstring>
+        <name>soundout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="56" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1ae09bdd6d07ae2ab08acedf0f3a5c3cd9" prot="public" static="no" mutable="no">
+        <type>MSTicker *</type>
+        <definition>MSTicker* _LinphoneSoundDaemon::ticker</definition>
+        <argsstring></argsstring>
+        <name>ticker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="57" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1a2ba96e930b1c4d750b065548d87f10ac" prot="public" static="no" mutable="no">
+        <type>MSSndCard *</type>
+        <definition>MSSndCard* _LinphoneSoundDaemon::proxycard</definition>
+        <argsstring></argsstring>
+        <name>proxycard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="58" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSoundDaemon_1a89c5e24241d42180eb796bbb0d4ce29d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref></type>
+        <definition>LsdPlayer _LinphoneSoundDaemon::branches[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>branches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="59" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="942">
+        <label>_LinphoneSoundDaemon</label>
+        <link refid="struct__LinphoneSoundDaemon"/>
+        <childnode refid="943" relation="usage">
+          <edgelabel>branches</edgelabel>
+        </childnode>
+      </node>
+      <node id="943">
+        <label>_LsdPlayer</label>
+        <link refid="struct__LsdPlayer"/>
+        <childnode refid="943" relation="usage">
+          <edgelabel>eop_cb</edgelabel>
+        </childnode>
+        <childnode refid="942" relation="usage">
+          <edgelabel>lsd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="52" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="52" bodyend="60"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneSoundDaemon_1a89c5e24241d42180eb796bbb0d4ce29d" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>branches</name></member>
+      <member refid="struct__LinphoneSoundDaemon_1aee2b9fb16f48d880af8bf26d32e1cb7a" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>mixer</name></member>
+      <member refid="struct__LinphoneSoundDaemon_1ab3ed779cd5ffd61c5b29c3579fb51ad3" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>out_nchans</name></member>
+      <member refid="struct__LinphoneSoundDaemon_1ad6acc3b52ce8bb338933383c7d41bef4" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>out_rate</name></member>
+      <member refid="struct__LinphoneSoundDaemon_1a2ba96e930b1c4d750b065548d87f10ac" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>proxycard</name></member>
+      <member refid="struct__LinphoneSoundDaemon_1a422139573dc90aff7476d78c96484efa" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>soundout</name></member>
+      <member refid="struct__LinphoneSoundDaemon_1ae09bdd6d07ae2ab08acedf0f3a5c3cd9" prot="public" virt="non-virtual"><scope>_LinphoneSoundDaemon</scope><name>ticker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

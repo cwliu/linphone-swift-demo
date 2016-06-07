@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__SipSetup" kind="struct" language="C++" prot="public">
+    <compoundname>_SipSetup</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__SipSetup_1ac7acd4545ce08608ae9012d42fa193d3" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _SipSetup::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="99" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a47978b8af7d3832af5b3d35754decdc6" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _SipSetup::capabilities</definition>
+        <argsstring></argsstring>
+        <name>capabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="100" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a1867bdeab07a7e70b17b6f9d6782d711" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _SipSetup::initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="101" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a7ebe2d99be4b6399e1665e2e6c914011" prot="public" static="no" mutable="no">
+        <type>bool_t(*</type>
+        <definition>bool_t(* _SipSetup::init) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="102" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a542273a53910dea2c1474ba0a7fb8c4d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _SipSetup::exit) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>exit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="103" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a5fe989dc130b1b859e1031d9ddb85cb8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _SipSetup::init_instance) (SipSetupContext *ctx)</definition>
+        <argsstring>)(SipSetupContext *ctx)</argsstring>
+        <name>init_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="104" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a7d7b7eee1aa1ae71e4ee3f41cf22df38" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _SipSetup::uninit_instance) (SipSetupContext *ctx)</definition>
+        <argsstring>)(SipSetupContext *ctx)</argsstring>
+        <name>uninit_instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="105" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a54f45d9a8da4d38516a453864431817b" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::account_exists) (SipSetupContext *ctx, const char *uri)</definition>
+        <argsstring>)(SipSetupContext *ctx, const char *uri)</argsstring>
+        <name>account_exists</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="106" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1ab3bad98bc0fdf5d35ed7f6e4ae9a338a" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::create_account) (SipSetupContext *ctx, const char *uri, const char *passwd, const char *email, int suscribe)</definition>
+        <argsstring>)(SipSetupContext *ctx, const char *uri, const char *passwd, const char *email, int suscribe)</argsstring>
+        <name>create_account</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="107" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a7475b14ed8491220875f76d4b47ca6eb" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::login_account) (SipSetupContext *ctx, const char *uri, const char *passwd, const char *userid)</definition>
+        <argsstring>)(SipSetupContext *ctx, const char *uri, const char *passwd, const char *userid)</argsstring>
+        <name>login_account</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="108" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a636a50740c24eee54482f4831caa8425" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::get_proxy) (SipSetupContext *ctx, const char *domain, char *proxy, size_t sz)</definition>
+        <argsstring>)(SipSetupContext *ctx, const char *domain, char *proxy, size_t sz)</argsstring>
+        <name>get_proxy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="109" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a3ef33d2a3a9449f20cff33cb3e641ab4" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::get_stun_servers) (SipSetupContext *ctx, char *stun1, char *stun2, size_t size)</definition>
+        <argsstring>)(SipSetupContext *ctx, char *stun1, char *stun2, size_t size)</argsstring>
+        <name>get_stun_servers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="110" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a58b7f36cf7033b65f5a1530209524bfa" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::get_relay) (SipSetupContext *ctx, char *relay, size_t size)</definition>
+        <argsstring>)(SipSetupContext *ctx, char *relay, size_t size)</argsstring>
+        <name>get_relay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="111" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a94364a18fc25c6285c9e4e28e6ea54bd" prot="public" static="no" mutable="no">
+        <type>const char *(*</type>
+        <definition>const char*(* _SipSetup::get_notice) (SipSetupContext *ctx)</definition>
+        <argsstring>)(SipSetupContext *ctx)</argsstring>
+        <name>get_notice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="112" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a25848ad1f32d6b8d9c42c0f6b909d816" prot="public" static="no" mutable="no">
+        <type>const char **(*</type>
+        <definition>const char**(* _SipSetup::get_domains) (SipSetupContext *ctx)</definition>
+        <argsstring>)(SipSetupContext *ctx)</argsstring>
+        <name>get_domains</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="113" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a1ba2a01b45a74b8df2e58dda11f63326" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::logout_account) (SipSetupContext *ctx)</definition>
+        <argsstring>)(SipSetupContext *ctx)</argsstring>
+        <name>logout_account</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="114" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1a73f62790828263eb3fe1119063b49dc5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__BuddyLookupFuncs" kindref="compound">BuddyLookupFuncs</ref> *</type>
+        <definition>BuddyLookupFuncs* _SipSetup::buddy_lookup_funcs</definition>
+        <argsstring></argsstring>
+        <name>buddy_lookup_funcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="115" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetup_1ae673aaa952386d08f7066ca0f5000474" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _SipSetup::account_validated) (SipSetupContext *ctx, const char *uri)</definition>
+        <argsstring>)(SipSetupContext *ctx, const char *uri)</argsstring>
+        <name>account_validated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="116" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1035">
+        <label>_SipSetup</label>
+        <link refid="struct__SipSetup"/>
+        <childnode refid="1036" relation="usage">
+          <edgelabel>buddy_lookup_funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="1037" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="98" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="98" bodyend="117"/>
+    <listofallmembers>
+      <member refid="struct__SipSetup_1a54f45d9a8da4d38516a453864431817b" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>account_exists</name></member>
+      <member refid="struct__SipSetup_1ae673aaa952386d08f7066ca0f5000474" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>account_validated</name></member>
+      <member refid="struct__SipSetup_1a73f62790828263eb3fe1119063b49dc5" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>buddy_lookup_funcs</name></member>
+      <member refid="struct__SipSetup_1a47978b8af7d3832af5b3d35754decdc6" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>capabilities</name></member>
+      <member refid="struct__SipSetup_1ab3bad98bc0fdf5d35ed7f6e4ae9a338a" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>create_account</name></member>
+      <member refid="struct__SipSetup_1a542273a53910dea2c1474ba0a7fb8c4d" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>exit</name></member>
+      <member refid="struct__SipSetup_1a25848ad1f32d6b8d9c42c0f6b909d816" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>get_domains</name></member>
+      <member refid="struct__SipSetup_1a94364a18fc25c6285c9e4e28e6ea54bd" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>get_notice</name></member>
+      <member refid="struct__SipSetup_1a636a50740c24eee54482f4831caa8425" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>get_proxy</name></member>
+      <member refid="struct__SipSetup_1a58b7f36cf7033b65f5a1530209524bfa" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>get_relay</name></member>
+      <member refid="struct__SipSetup_1a3ef33d2a3a9449f20cff33cb3e641ab4" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>get_stun_servers</name></member>
+      <member refid="struct__SipSetup_1a7ebe2d99be4b6399e1665e2e6c914011" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>init</name></member>
+      <member refid="struct__SipSetup_1a5fe989dc130b1b859e1031d9ddb85cb8" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>init_instance</name></member>
+      <member refid="struct__SipSetup_1a1867bdeab07a7e70b17b6f9d6782d711" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>initialized</name></member>
+      <member refid="struct__SipSetup_1a7475b14ed8491220875f76d4b47ca6eb" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>login_account</name></member>
+      <member refid="struct__SipSetup_1a1ba2a01b45a74b8df2e58dda11f63326" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>logout_account</name></member>
+      <member refid="struct__SipSetup_1ac7acd4545ce08608ae9012d42fa193d3" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>name</name></member>
+      <member refid="struct__SipSetup_1a7d7b7eee1aa1ae71e4ee3f41cf22df38" prot="public" virt="non-virtual"><scope>_SipSetup</scope><name>uninit_instance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

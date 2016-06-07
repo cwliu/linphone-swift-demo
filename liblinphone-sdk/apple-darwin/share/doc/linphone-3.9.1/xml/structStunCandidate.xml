@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structStunCandidate" kind="struct" language="C++" prot="public">
+    <compoundname>StunCandidate</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structStunCandidate_1ae3ecb3ebc3e67000ef98f0b9956b6938" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char StunCandidate::addr[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="266" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structStunCandidate_1af8d12a805f47dfcadd13d4b39b544565" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StunCandidate::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="267" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="265" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="265" bodyend="268"/>
+    <listofallmembers>
+      <member refid="structStunCandidate_1ae3ecb3ebc3e67000ef98f0b9956b6938" prot="public" virt="non-virtual"><scope>StunCandidate</scope><name>addr</name></member>
+      <member refid="structStunCandidate_1af8d12a805f47dfcadd13d4b39b544565" prot="public" virt="non-virtual"><scope>StunCandidate</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

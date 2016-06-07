@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structsound__config" kind="struct" language="C++" prot="public">
+    <compoundname>sound_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsound__config_1a739a2ec50c538be81a6df371897b6528" prot="public" static="no" mutable="no">
+        <type>struct _MSSndCard *</type>
+        <definition>struct _MSSndCard* sound_config::ring_sndcard</definition>
+        <argsstring></argsstring>
+        <name>ring_sndcard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="777" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a5fc5bdbb8066b94de1a83fa5fd246e42" prot="public" static="no" mutable="no">
+        <type>struct _MSSndCard *</type>
+        <definition>struct _MSSndCard* sound_config::play_sndcard</definition>
+        <argsstring></argsstring>
+        <name>play_sndcard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="778" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a47c7584334915650797dab4548424272" prot="public" static="no" mutable="no">
+        <type>struct _MSSndCard *</type>
+        <definition>struct _MSSndCard* sound_config::capt_sndcard</definition>
+        <argsstring></argsstring>
+        <name>capt_sndcard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="779" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="779" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a2db375b37d42a1dbdaa01f4790450a70" prot="public" static="no" mutable="no">
+        <type>struct _MSSndCard *</type>
+        <definition>struct _MSSndCard* sound_config::lsd_card</definition>
+        <argsstring></argsstring>
+        <name>lsd_card</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="780" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a21483359fe4472c676f2ce256f8c2c44" prot="public" static="no" mutable="no">
+        <type>const char **</type>
+        <definition>const char** sound_config::cards</definition>
+        <argsstring></argsstring>
+        <name>cards</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="781" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="781" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a30097b7151258b87d4563c6cb158050d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sound_config::latency</definition>
+        <argsstring></argsstring>
+        <name>latency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="782" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="782" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a8cd62fad02185e66290d5d8138423e38" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sound_config::soft_play_lev</definition>
+        <argsstring></argsstring>
+        <name>soft_play_lev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="783" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="783" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a28c92878526f5ee708bbece1af7b75ea" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float sound_config::soft_mic_lev</definition>
+        <argsstring></argsstring>
+        <name>soft_mic_lev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="784" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="784" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1ad9ef5d30649a1e83276f7f42e480f18c" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sound_config::rec_lev</definition>
+        <argsstring></argsstring>
+        <name>rec_lev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="785" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a67a7ae0ee4ca7cf920d245e0cdbcf238" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sound_config::play_lev</definition>
+        <argsstring></argsstring>
+        <name>play_lev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="786" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="786" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1ae00d6d8fb7d5a73d0280254ed281b3f4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sound_config::ring_lev</definition>
+        <argsstring></argsstring>
+        <name>ring_lev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="787" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="787" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1ae2b490a1d78f247c5955c1b144bedb32" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sound_config::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="788" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a0bea600c9fdd5c7387e352d9e5f57118" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sound_config::local_ring</definition>
+        <argsstring></argsstring>
+        <name>local_ring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="789" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="789" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a29388373f3ed282635337839878eb7ed" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sound_config::remote_ring</definition>
+        <argsstring></argsstring>
+        <name>remote_ring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="790" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="790" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a94f424ff5d32b27f412f404910b5a327" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sound_config::ringback_tone</definition>
+        <argsstring></argsstring>
+        <name>ringback_tone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="791" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="791" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a198848be8ff15bdafedc447a37bda6b9" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sound_config::ec</definition>
+        <argsstring></argsstring>
+        <name>ec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="792" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a4c3148a8a503f17f54018849c4a94655" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sound_config::ea</definition>
+        <argsstring></argsstring>
+        <name>ea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="793" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsound__config_1a7afd3d33eeb97afa92687aa1a83e034c" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sound_config::agc</definition>
+        <argsstring></argsstring>
+        <name>agc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="794" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="794" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="776" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="775" bodyend="795"/>
+    <listofallmembers>
+      <member refid="structsound__config_1a7afd3d33eeb97afa92687aa1a83e034c" prot="public" virt="non-virtual"><scope>sound_config</scope><name>agc</name></member>
+      <member refid="structsound__config_1a47c7584334915650797dab4548424272" prot="public" virt="non-virtual"><scope>sound_config</scope><name>capt_sndcard</name></member>
+      <member refid="structsound__config_1a21483359fe4472c676f2ce256f8c2c44" prot="public" virt="non-virtual"><scope>sound_config</scope><name>cards</name></member>
+      <member refid="structsound__config_1a4c3148a8a503f17f54018849c4a94655" prot="public" virt="non-virtual"><scope>sound_config</scope><name>ea</name></member>
+      <member refid="structsound__config_1a198848be8ff15bdafedc447a37bda6b9" prot="public" virt="non-virtual"><scope>sound_config</scope><name>ec</name></member>
+      <member refid="structsound__config_1a30097b7151258b87d4563c6cb158050d" prot="public" virt="non-virtual"><scope>sound_config</scope><name>latency</name></member>
+      <member refid="structsound__config_1a0bea600c9fdd5c7387e352d9e5f57118" prot="public" virt="non-virtual"><scope>sound_config</scope><name>local_ring</name></member>
+      <member refid="structsound__config_1a2db375b37d42a1dbdaa01f4790450a70" prot="public" virt="non-virtual"><scope>sound_config</scope><name>lsd_card</name></member>
+      <member refid="structsound__config_1a67a7ae0ee4ca7cf920d245e0cdbcf238" prot="public" virt="non-virtual"><scope>sound_config</scope><name>play_lev</name></member>
+      <member refid="structsound__config_1a5fc5bdbb8066b94de1a83fa5fd246e42" prot="public" virt="non-virtual"><scope>sound_config</scope><name>play_sndcard</name></member>
+      <member refid="structsound__config_1ad9ef5d30649a1e83276f7f42e480f18c" prot="public" virt="non-virtual"><scope>sound_config</scope><name>rec_lev</name></member>
+      <member refid="structsound__config_1a29388373f3ed282635337839878eb7ed" prot="public" virt="non-virtual"><scope>sound_config</scope><name>remote_ring</name></member>
+      <member refid="structsound__config_1ae00d6d8fb7d5a73d0280254ed281b3f4" prot="public" virt="non-virtual"><scope>sound_config</scope><name>ring_lev</name></member>
+      <member refid="structsound__config_1a739a2ec50c538be81a6df371897b6528" prot="public" virt="non-virtual"><scope>sound_config</scope><name>ring_sndcard</name></member>
+      <member refid="structsound__config_1a94f424ff5d32b27f412f404910b5a327" prot="public" virt="non-virtual"><scope>sound_config</scope><name>ringback_tone</name></member>
+      <member refid="structsound__config_1a28c92878526f5ee708bbece1af7b75ea" prot="public" virt="non-virtual"><scope>sound_config</scope><name>soft_mic_lev</name></member>
+      <member refid="structsound__config_1a8cd62fad02185e66290d5d8138423e38" prot="public" virt="non-virtual"><scope>sound_config</scope><name>soft_play_lev</name></member>
+      <member refid="structsound__config_1ae2b490a1d78f247c5955c1b144bedb32" prot="public" virt="non-virtual"><scope>sound_config</scope><name>source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

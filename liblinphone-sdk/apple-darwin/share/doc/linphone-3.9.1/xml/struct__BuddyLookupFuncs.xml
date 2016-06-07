@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__BuddyLookupFuncs" kind="struct" language="C++" prot="public">
+    <compoundname>_BuddyLookupFuncs</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__BuddyLookupFuncs_1a93d6c9c04a13545f2c563647bcec6e73" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *(*</type>
+        <definition>BuddyLookupRequest*(* _BuddyLookupFuncs::request_create) (SipSetupContext *ctx)</definition>
+        <argsstring>)(SipSetupContext *ctx)</argsstring>
+        <name>request_create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="92" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyLookupFuncs_1a054d7ee9dff3ff04086daf1a1c11ef48" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _BuddyLookupFuncs::request_submit) (SipSetupContext *ctx, BuddyLookupRequest *req)</definition>
+        <argsstring>)(SipSetupContext *ctx, BuddyLookupRequest *req)</argsstring>
+        <name>request_submit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="93" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyLookupFuncs_1ad164f3981dc588309a0e9197d028c12a" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _BuddyLookupFuncs::request_free) (SipSetupContext *ctx, BuddyLookupRequest *req)</definition>
+        <argsstring>)(SipSetupContext *ctx, BuddyLookupRequest *req)</argsstring>
+        <name>request_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="94" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="14">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="91" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="91" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct__BuddyLookupFuncs_1a93d6c9c04a13545f2c563647bcec6e73" prot="public" virt="non-virtual"><scope>_BuddyLookupFuncs</scope><name>request_create</name></member>
+      <member refid="struct__BuddyLookupFuncs_1ad164f3981dc588309a0e9197d028c12a" prot="public" virt="non-virtual"><scope>_BuddyLookupFuncs</scope><name>request_free</name></member>
+      <member refid="struct__BuddyLookupFuncs_1a054d7ee9dff3ff04086daf1a1c11ef48" prot="public" virt="non-virtual"><scope>_BuddyLookupFuncs</scope><name>request_submit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

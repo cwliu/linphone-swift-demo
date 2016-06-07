@@ -1,0 +1,776 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__EcCalibrator" kind="struct" language="C++" prot="public">
+    <compoundname>_EcCalibrator</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__EcCalibrator_1add5c3918fb0c9473597a89e497c482c8" prot="public" static="no" mutable="no">
+        <type>MSFactory *</type>
+        <definition>MSFactory* _EcCalibrator::factory</definition>
+        <argsstring></argsstring>
+        <name>factory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1026" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1026" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a980efd8a28c6027d8c1d65b07a05bcaa" prot="public" static="no" mutable="no">
+        <type>ms_thread_t</type>
+        <definition>ms_thread_t _EcCalibrator::thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1027" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1027" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a8b0d66cc4f2af14a3d55d855a527073b" prot="public" static="no" mutable="no">
+        <type>MSSndCard *</type>
+        <definition>MSSndCard* _EcCalibrator::play_card</definition>
+        <argsstring></argsstring>
+        <name>play_card</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1028" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a77055b80b9b113ca9cbc1e8246b95a67" prot="public" static="no" mutable="no">
+        <type>MSSndCard *</type>
+        <definition>MSSndCard * _EcCalibrator::capt_card</definition>
+        <argsstring></argsstring>
+        <name>capt_card</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1028" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1028" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a929d016a431b82662673b7a6424be0e8" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _EcCalibrator::sndread</definition>
+        <argsstring></argsstring>
+        <name>sndread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1029" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1029" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a0c49dfdbd24c1f5fe40ab06695c523e4" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter * _EcCalibrator::det</definition>
+        <argsstring></argsstring>
+        <name>det</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1029" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1029" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1ac449c33ffff95ba83622774e7bcab34c" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter * _EcCalibrator::rec</definition>
+        <argsstring></argsstring>
+        <name>rec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1029" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1029" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1acb2b6bbe3bbaaa7a6eb655fdaab40bd8" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _EcCalibrator::play</definition>
+        <argsstring></argsstring>
+        <name>play</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1030" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a2053d2930916b4d00328742395da743b" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter * _EcCalibrator::gen</definition>
+        <argsstring></argsstring>
+        <name>gen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1030" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1aab49046030b18327e5ecd7c0d042ca48" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter * _EcCalibrator::sndwrite</definition>
+        <argsstring></argsstring>
+        <name>sndwrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1030" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1030" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a4cce10df775f3acbb9af3881d6f77f41" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _EcCalibrator::read_resampler</definition>
+        <argsstring></argsstring>
+        <name>read_resampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1031" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a537ec7ad55ea798e44497b2c64e1d63a" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter * _EcCalibrator::write_resampler</definition>
+        <argsstring></argsstring>
+        <name>write_resampler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1031" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a5f0ce835ae915ac7189d071570769a3a" prot="public" static="no" mutable="no">
+        <type>MSTicker *</type>
+        <definition>MSTicker* _EcCalibrator::ticker</definition>
+        <argsstring></argsstring>
+        <name>ticker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1032" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a1e2cd9922fae7c9aab147f63ab6e2d9b" prot="public" static="no" mutable="no">
+        <type>LinphoneEcCalibrationCallback</type>
+        <definition>LinphoneEcCalibrationCallback _EcCalibrator::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1033" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a32b765bf0fabd54c5c0bf11689e543ef" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _EcCalibrator::cb_data</definition>
+        <argsstring></argsstring>
+        <name>cb_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1034" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a09df3f10344bc033d46839a556c9ef13" prot="public" static="no" mutable="no">
+        <type>LinphoneEcCalibrationAudioInit</type>
+        <definition>LinphoneEcCalibrationAudioInit _EcCalibrator::audio_init_cb</definition>
+        <argsstring></argsstring>
+        <name>audio_init_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1035" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a5ab0c4ed92df2e9e363b631b19e36c2c" prot="public" static="no" mutable="no">
+        <type>LinphoneEcCalibrationAudioUninit</type>
+        <definition>LinphoneEcCalibrationAudioUninit _EcCalibrator::audio_uninit_cb</definition>
+        <argsstring></argsstring>
+        <name>audio_uninit_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1036" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a2bfad971ec5d77c0861264b49a3cd594" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t _EcCalibrator::acc</definition>
+        <argsstring></argsstring>
+        <name>acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1037" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1aa32aea5b28106e160d86cc27c85402d7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _EcCalibrator::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1038" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1038" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1ac858b88c0014f49b0ecde5fe2ee0291c" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _EcCalibrator::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1039" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1039" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a951f0f880223f002c4f45db7cc5724a9" prot="public" static="no" mutable="no">
+        <type>LinphoneEcCalibratorStatus</type>
+        <definition>LinphoneEcCalibratorStatus _EcCalibrator::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1040" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1040" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a5443b6f06234af4f873e0155df19232e" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _EcCalibrator::freq1</definition>
+        <argsstring></argsstring>
+        <name>freq1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1041" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1aea749b0bf70a61cd53267e5fe9d21c31" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _EcCalibrator::freq2</definition>
+        <argsstring></argsstring>
+        <name>freq2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1041" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1aa61f81ad9eddbe132b9cb15469d5bac1" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _EcCalibrator::freq3</definition>
+        <argsstring></argsstring>
+        <name>freq3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1041" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1041" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__EcCalibrator_1a97b3766d65d52bdcb512c99318d4176b" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _EcCalibrator::play_cool_tones</definition>
+        <argsstring></argsstring>
+        <name>play_cool_tones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1042" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1042" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="69">
+        <label>_LinphoneCoreVTable</label>
+        <link refid="struct__LinphoneCoreVTable"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>configuring_status</edgelabel>
+          <edgelabel>publish_state_changed</edgelabel>
+          <edgelabel>refer_received</edgelabel>
+          <edgelabel>registration_state_changed</edgelabel>
+          <edgelabel>transfer_state_changed</edgelabel>
+          <edgelabel>log_collection_upload_state_changed</edgelabel>
+          <edgelabel>subscription_state_changed</edgelabel>
+          <edgelabel>new_subscription_requested</edgelabel>
+          <edgelabel>dtmf_received</edgelabel>
+          <edgelabel>call_state_changed</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>net_config</label>
+        <link refid="structnet__config"/>
+      </node>
+      <node id="76">
+        <label>_LinphoneEvent</label>
+        <link refid="struct__LinphoneEvent"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>_LinphoneXmlRpcSession</label>
+        <link refid="struct__LinphoneXmlRpcSession"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+      </node>
+      <node id="68">
+        <label>_LinphoneCore</label>
+        <link refid="struct__LinphoneCore"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>current_vtable</edgelabel>
+        </childnode>
+        <childnode refid="70" relation="usage">
+          <edgelabel>net_conf</edgelabel>
+        </childnode>
+        <childnode refid="71" relation="usage">
+          <edgelabel>log_collection_upload_information</edgelabel>
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="73" relation="usage">
+          <edgelabel>autoreplier_conf</edgelabel>
+        </childnode>
+        <childnode refid="74" relation="usage">
+          <edgelabel>text_conf</edgelabel>
+        </childnode>
+        <childnode refid="75" relation="usage">
+          <edgelabel>friendlist</edgelabel>
+        </childnode>
+        <childnode refid="77" relation="usage">
+          <edgelabel>sound_conf</edgelabel>
+        </childnode>
+        <childnode refid="78" relation="usage">
+          <edgelabel>ringtoneplayer</edgelabel>
+        </childnode>
+        <childnode refid="79" relation="usage">
+          <edgelabel>video_conf</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>rtp_conf</edgelabel>
+        </childnode>
+        <childnode refid="67" relation="usage">
+          <edgelabel>ecc</edgelabel>
+        </childnode>
+        <childnode refid="81" relation="usage">
+          <edgelabel>presence_model</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>default_proxy</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>sip_conf</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>wait_cb</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>current_call</edgelabel>
+        </childnode>
+        <childnode refid="106" relation="usage">
+          <edgelabel>ui_conf</edgelabel>
+        </childnode>
+        <childnode refid="107" relation="usage">
+          <edgelabel>video_policy</edgelabel>
+        </childnode>
+        <childnode refid="108" relation="usage">
+          <edgelabel>preview_finished_cb</edgelabel>
+        </childnode>
+        <childnode refid="109" relation="usage">
+          <edgelabel>hooks</edgelabel>
+        </childnode>
+        <childnode refid="110" relation="usage">
+          <edgelabel>rtptf</edgelabel>
+        </childnode>
+        <childnode refid="111" relation="usage">
+          <edgelabel>codecs_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="111">
+        <label>codecs_config</label>
+        <link refid="structcodecs__config"/>
+      </node>
+      <node id="89">
+        <label>_LCSipTransports</label>
+        <link refid="struct__LCSipTransports"/>
+      </node>
+      <node id="85">
+        <label>_SipSetup</label>
+        <link refid="struct__SipSetup"/>
+        <childnode refid="86" relation="usage">
+          <edgelabel>buddy_lookup_funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="96">
+        <label>_LinphoneBuffer</label>
+        <link refid="struct__LinphoneBuffer"/>
+      </node>
+      <node id="91">
+        <label>_LinphoneCallStats</label>
+        <link refid="struct__LinphoneCallStats"/>
+      </node>
+      <node id="109">
+        <label>_LinphoneTaskList</label>
+        <link refid="struct__LinphoneTaskList"/>
+      </node>
+      <node id="108">
+        <label>_LCCallbackObj</label>
+        <link refid="struct__LCCallbackObj"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="86">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="87" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="78">
+        <label>_LinphoneRingtonePlayer</label>
+        <link refid="struct__LinphoneRingtonePlayer"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>end_of_ringtone</edgelabel>
+        </childnode>
+      </node>
+      <node id="67">
+        <label>_EcCalibrator</label>
+        <link refid="struct__EcCalibrator"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="81">
+        <label>_LinphonePresenceModel</label>
+        <link refid="struct__LinphonePresenceModel"/>
+      </node>
+      <node id="101">
+        <label>reporting_content_metrics</label>
+        <link refid="structreporting__content__metrics"/>
+      </node>
+      <node id="77">
+        <label>sound_config</label>
+        <link refid="structsound__config"/>
+      </node>
+      <node id="110">
+        <label>_LinphoneRtpTransportFactories</label>
+        <link refid="struct__LinphoneRtpTransportFactories"/>
+      </node>
+      <node id="105">
+        <label>_CallCallbackObj</label>
+        <link refid="struct__CallCallbackObj"/>
+        <childnode refid="90" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="73">
+        <label>autoreplier_config</label>
+        <link refid="structautoreplier__config"/>
+      </node>
+      <node id="72">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="83">
+        <label>_SipSetupContext</label>
+        <link refid="struct__SipSetupContext"/>
+        <childnode refid="84" relation="usage">
+          <edgelabel>xmlrpc_session</edgelabel>
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>funcs</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>_LinphoneCallLog</label>
+        <link refid="struct__LinphoneCallLog"/>
+        <childnode refid="99" relation="usage">
+          <edgelabel>reporting</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="87">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+      <node id="80">
+        <label>rtp_config</label>
+        <link refid="structrtp__config"/>
+      </node>
+      <node id="82">
+        <label>_LinphoneProxyConfig</label>
+        <link refid="struct__LinphoneProxyConfig"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="83" relation="usage">
+          <edgelabel>ssctx</edgelabel>
+        </childnode>
+        <childnode refid="76" relation="usage">
+          <edgelabel>long_term_event</edgelabel>
+        </childnode>
+      </node>
+      <node id="93">
+        <label>_LinphoneChatRoom</label>
+        <link refid="struct__LinphoneChatRoom"/>
+        <childnode refid="94" relation="usage">
+          <edgelabel>pending_message</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="75">
+        <label>_LinphoneFriendList</label>
+        <link refid="struct__LinphoneFriendList"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="76" relation="usage">
+          <edgelabel>event</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>_LinphoneContent</label>
+        <link refid="struct__LinphoneContent"/>
+      </node>
+      <node id="90">
+        <label>_LinphoneCall</label>
+        <link refid="struct__LinphoneCall"/>
+        <childnode refid="91" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+        <childnode refid="92" relation="usage">
+          <edgelabel>params</edgelabel>
+          <edgelabel>remote_params</edgelabel>
+          <edgelabel>current_params</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="97" relation="usage">
+          <edgelabel>media_ports</edgelabel>
+        </childnode>
+        <childnode refid="98" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>tc</edgelabel>
+          <edgelabel>ac</edgelabel>
+          <edgelabel>vc</edgelabel>
+        </childnode>
+        <childnode refid="82" relation="usage">
+          <edgelabel>dest_proxy</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>transfer_target</edgelabel>
+          <edgelabel>referer</edgelabel>
+        </childnode>
+        <childnode refid="68" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="105" relation="usage">
+          <edgelabel>nextVideoFrameDecoded</edgelabel>
+        </childnode>
+      </node>
+      <node id="95">
+        <label>_LinphoneChatMessageCbs</label>
+        <link refid="struct__LinphoneChatMessageCbs"/>
+        <childnode refid="94" relation="usage">
+          <edgelabel>file_transfer_progress_indication</edgelabel>
+          <edgelabel>msg_state_changed</edgelabel>
+          <edgelabel>file_transfer_recv</edgelabel>
+        </childnode>
+        <childnode refid="96" relation="usage">
+          <edgelabel>file_transfer_send</edgelabel>
+        </childnode>
+      </node>
+      <node id="107">
+        <label>_LinphoneVideoPolicy</label>
+        <link refid="struct__LinphoneVideoPolicy"/>
+      </node>
+      <node id="74">
+        <label>text_config</label>
+        <link refid="structtext__config"/>
+      </node>
+      <node id="102">
+        <label>reporting_addr</label>
+        <link refid="structreporting__addr"/>
+      </node>
+      <node id="106">
+        <label>ui_config</label>
+        <link refid="structui__config"/>
+      </node>
+      <node id="92">
+        <label>_LinphoneCallParams</label>
+        <link refid="struct__LinphoneCallParams"/>
+        <childnode refid="90" relation="usage">
+          <edgelabel>referer</edgelabel>
+        </childnode>
+      </node>
+      <node id="94">
+        <label>_LinphoneChatMessage</label>
+        <link refid="struct__LinphoneChatMessage"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>file_transfer_information</edgelabel>
+        </childnode>
+        <childnode refid="93" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="95" relation="usage">
+          <edgelabel>callbacks</edgelabel>
+        </childnode>
+        <childnode refid="94" relation="usage">
+          <edgelabel>message_state_changed_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="99">
+        <label>_LinphoneQualityReporting</label>
+        <link refid="struct__LinphoneQualityReporting"/>
+        <childnode refid="90" relation="usage">
+          <edgelabel>on_report_sent</edgelabel>
+        </childnode>
+        <childnode refid="100" relation="usage">
+          <edgelabel>reports</edgelabel>
+        </childnode>
+      </node>
+      <node id="97">
+        <label>_PortConfig</label>
+        <link refid="struct__PortConfig"/>
+      </node>
+      <node id="103">
+        <label>StunCandidate</label>
+        <link refid="structStunCandidate"/>
+      </node>
+      <node id="104">
+        <label>_LinphonePlayer</label>
+        <link refid="struct__LinphonePlayer"/>
+        <childnode refid="104" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="79">
+        <label>video_config</label>
+        <link refid="structvideo__config"/>
+      </node>
+      <node id="88">
+        <label>sip_config</label>
+        <link refid="structsip__config"/>
+        <childnode refid="89" relation="usage">
+          <edgelabel>transports</edgelabel>
+        </childnode>
+      </node>
+      <node id="100">
+        <label>reporting_session_report</label>
+        <link refid="structreporting__session__report"/>
+        <childnode refid="101" relation="usage">
+          <edgelabel>local_metrics</edgelabel>
+          <edgelabel>remote_metrics</edgelabel>
+        </childnode>
+        <childnode refid="102" relation="usage">
+          <edgelabel>remote_addr</edgelabel>
+          <edgelabel>local_addr</edgelabel>
+        </childnode>
+        <childnode refid="90" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1025" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1025" bodyend="1043"/>
+    <listofallmembers>
+      <member refid="struct__EcCalibrator_1a2bfad971ec5d77c0861264b49a3cd594" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>acc</name></member>
+      <member refid="struct__EcCalibrator_1a09df3f10344bc033d46839a556c9ef13" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>audio_init_cb</name></member>
+      <member refid="struct__EcCalibrator_1a5ab0c4ed92df2e9e363b631b19e36c2c" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>audio_uninit_cb</name></member>
+      <member refid="struct__EcCalibrator_1a77055b80b9b113ca9cbc1e8246b95a67" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>capt_card</name></member>
+      <member refid="struct__EcCalibrator_1a1e2cd9922fae7c9aab147f63ab6e2d9b" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>cb</name></member>
+      <member refid="struct__EcCalibrator_1a32b765bf0fabd54c5c0bf11689e543ef" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>cb_data</name></member>
+      <member refid="struct__EcCalibrator_1aa32aea5b28106e160d86cc27c85402d7" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>delay</name></member>
+      <member refid="struct__EcCalibrator_1a0c49dfdbd24c1f5fe40ab06695c523e4" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>det</name></member>
+      <member refid="struct__EcCalibrator_1add5c3918fb0c9473597a89e497c482c8" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>factory</name></member>
+      <member refid="struct__EcCalibrator_1a5443b6f06234af4f873e0155df19232e" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>freq1</name></member>
+      <member refid="struct__EcCalibrator_1aea749b0bf70a61cd53267e5fe9d21c31" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>freq2</name></member>
+      <member refid="struct__EcCalibrator_1aa61f81ad9eddbe132b9cb15469d5bac1" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>freq3</name></member>
+      <member refid="struct__EcCalibrator_1a2053d2930916b4d00328742395da743b" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>gen</name></member>
+      <member refid="struct__EcCalibrator_1acb2b6bbe3bbaaa7a6eb655fdaab40bd8" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>play</name></member>
+      <member refid="struct__EcCalibrator_1a8b0d66cc4f2af14a3d55d855a527073b" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>play_card</name></member>
+      <member refid="struct__EcCalibrator_1a97b3766d65d52bdcb512c99318d4176b" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>play_cool_tones</name></member>
+      <member refid="struct__EcCalibrator_1ac858b88c0014f49b0ecde5fe2ee0291c" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>rate</name></member>
+      <member refid="struct__EcCalibrator_1a4cce10df775f3acbb9af3881d6f77f41" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>read_resampler</name></member>
+      <member refid="struct__EcCalibrator_1ac449c33ffff95ba83622774e7bcab34c" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>rec</name></member>
+      <member refid="struct__EcCalibrator_1a929d016a431b82662673b7a6424be0e8" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>sndread</name></member>
+      <member refid="struct__EcCalibrator_1aab49046030b18327e5ecd7c0d042ca48" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>sndwrite</name></member>
+      <member refid="struct__EcCalibrator_1a951f0f880223f002c4f45db7cc5724a9" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>status</name></member>
+      <member refid="struct__EcCalibrator_1a980efd8a28c6027d8c1d65b07a05bcaa" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>thread</name></member>
+      <member refid="struct__EcCalibrator_1a5f0ce835ae915ac7189d071570769a3a" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>ticker</name></member>
+      <member refid="struct__EcCalibrator_1a537ec7ad55ea798e44497b2c64e1d63a" prot="public" virt="non-virtual"><scope>_EcCalibrator</scope><name>write_resampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

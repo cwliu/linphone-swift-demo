@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__BuddyAddress" kind="struct" language="C++" prot="public">
+    <compoundname>_BuddyAddress</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__BuddyAddress_1a55dc37b684f7ed7d458643796a4fa4ed" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyAddress::street[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>street</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="65" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyAddress_1a775911ad6baa96e303d473e892c1c329" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyAddress::zip[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>zip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="66" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyAddress_1a11313e2dde60eff28cacd58c2d627a6a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyAddress::town[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>town</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="67" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyAddress_1acc66da050a7fdeac3cb68f51527a690f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyAddress::country[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>country</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="68" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="64" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="64" bodyend="69"/>
+    <listofallmembers>
+      <member refid="struct__BuddyAddress_1acc66da050a7fdeac3cb68f51527a690f" prot="public" virt="non-virtual"><scope>_BuddyAddress</scope><name>country</name></member>
+      <member refid="struct__BuddyAddress_1a55dc37b684f7ed7d458643796a4fa4ed" prot="public" virt="non-virtual"><scope>_BuddyAddress</scope><name>street</name></member>
+      <member refid="struct__BuddyAddress_1a11313e2dde60eff28cacd58c2d627a6a" prot="public" virt="non-virtual"><scope>_BuddyAddress</scope><name>town</name></member>
+      <member refid="struct__BuddyAddress_1a775911ad6baa96e303d473e892c1c329" prot="public" virt="non-virtual"><scope>_BuddyAddress</scope><name>zip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneContent" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneContent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneContent_1aa8c6a8eb11f8a8718e09af28bff52835" prot="public" static="no" mutable="no">
+        <type>belle_sip_object_t</type>
+        <definition>belle_sip_object_t _LinphoneContent::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1133" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1ab81f2ccd3b640890993320f2a07c17c1" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneContent::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1134" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1a0987d7903a5c071a5ce7d29709cab2d1" prot="public" static="no" mutable="no">
+        <type>SalBodyHandler *</type>
+        <definition>SalBodyHandler* _LinphoneContent::body_handler</definition>
+        <argsstring></argsstring>
+        <name>body_handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1135" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1a1ea01894619a2f193dbe2be127b40cf5" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneContent::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>used by RCS File transfer messages to store the original filename of the file to be downloaded from server </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1136" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1af594aa2de44acd5472c98d438ff4ada9" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneContent::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>used by RCS File transfer messages to store the key to encrypt file if needed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1137" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1a2507243ac663af3030c79eaea97fc40d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _LinphoneContent::keyLength</definition>
+        <argsstring></argsstring>
+        <name>keyLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Length of key in bytes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1138" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1a453b2df3719579955491664914e7d812" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneContent::cryptoContext</definition>
+        <argsstring></argsstring>
+        <name>cryptoContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>crypto context used to encrypt file for RCS file transfer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1139" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContent_1a5492e193f37117ae1e1e6b44bb50913f" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneContent::owned_fields</definition>
+        <argsstring></argsstring>
+        <name>owned_fields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1140" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1132" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1132" bodyend="1141"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneContent_1aa8c6a8eb11f8a8718e09af28bff52835" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>base</name></member>
+      <member refid="struct__LinphoneContent_1a0987d7903a5c071a5ce7d29709cab2d1" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>body_handler</name></member>
+      <member refid="struct__LinphoneContent_1a453b2df3719579955491664914e7d812" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>cryptoContext</name></member>
+      <member refid="struct__LinphoneContent_1af594aa2de44acd5472c98d438ff4ada9" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>key</name></member>
+      <member refid="struct__LinphoneContent_1a2507243ac663af3030c79eaea97fc40d" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>keyLength</name></member>
+      <member refid="struct__LinphoneContent_1a1ea01894619a2f193dbe2be127b40cf5" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>name</name></member>
+      <member refid="struct__LinphoneContent_1a5492e193f37117ae1e1e6b44bb50913f" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>owned_fields</name></member>
+      <member refid="struct__LinphoneContent_1ab81f2ccd3b640890993320f2a07c17c1" prot="public" virt="non-virtual"><scope>_LinphoneContent</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,695 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__call__misc" kind="group">
+    <compoundname>call_misc</compoundname>
+    <title>Obtaining information about a running call: sound volumes, quality indicators</title>
+    <innerclass refid="struct__LinphoneCallStats" prot="public">_LinphoneCallStats</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneCallStats" kindref="compound">_LinphoneCallStats</ref></type>
+        <definition>typedef struct _LinphoneCallStats LinphoneCallStats</definition>
+        <argsstring></argsstring>
+        <name>LinphoneCallStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneCallStats objects carries various statistic informations regarding quality of audio or video streams.</para><para>To receive these informations periodically and as soon as they are computed, the application is invited to place a <ref refid="group__initializing_1gabc5c7eae4bcacd77589056d71dd8e5f3" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref> callback in the LinphoneCoreVTable structure it passes for instanciating the LinphoneCore object (see <ref refid="group__initializing_1gac93ed982ae84a5a282a703c8433ca42f" kindref="member">linphone_core_new()</ref> ).</para><para>At any time, the application can access last computed statistics using <ref refid="group__call__misc_1gaa1203b7ecb6b85a05af700152c1fdf14" kindref="member">linphone_call_get_audio_stats()</ref> or <ref refid="group__call__misc_1gae4f745821a59615910c73cf47300c234" kindref="member">linphone_call_get_video_stats()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="526" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__call__misc_1ga7a0ca45e0ff2bf7eaca09e795bba3486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_play_volume</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_play_volume</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the measured sound volume played locally (received from remote). It is expressed in dbm0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3802" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3802" bodyend="3811"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gac4f217936eea56196afc126974a92451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_record_volume</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_record_volume</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the measured sound volume recorded locally (sent to remote). It is expressed in dbm0. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3817" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3817" bodyend="3826"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga7331e4c738ec41d0eecde98fcd4491c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_speaker_volume_gain</definition>
+        <argsstring>(const LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_speaker_volume_gain</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get speaker volume gain. If the sound backend supports it, the returned gain is equal to the gain set with the system mixer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Percenatge of the max supported volume gain. Valid values are in [ 0.0 : 1.0 ]. In case of failure, a negative value is returned </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3828" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3828" bodyend="3834"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaa89248d3121edc343324d298297db354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_set_speaker_volume_gain</definition>
+        <argsstring>(LinphoneCall *call, float volume)</argsstring>
+        <name>linphone_call_set_speaker_volume_gain</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set speaker volume gain. If the sound backend supports it, the new gain will synchronized with the system mixer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percentage of the max supported gain. Valid values are in [ 0.0 : 1.0 ]. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3836" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3836" bodyend="3839"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga3256a32cca5d521ccf85204eef665f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_microphone_volume_gain</definition>
+        <argsstring>(const LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_microphone_volume_gain</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get microphone volume gain. If the sound backend supports it, the returned gain is equal to the gain set with the system mixer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Percenatge of the max supported volume gain. Valid values are in [ 0.0 : 1.0 ]. In case of failure, a negative value is returned </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3841" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3841" bodyend="3847"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga7a0fa668915898492c82558c7f8c176f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_set_microphone_volume_gain</definition>
+        <argsstring>(LinphoneCall *call, float volume)</argsstring>
+        <name>linphone_call_set_microphone_volume_gain</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set microphone volume gain. If the sound backend supports it, the new gain will synchronized with the system mixer.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percentage of the max supported gain. Valid values are in [ 0.0 : 1.0 ]. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3849" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3849" bodyend="3852"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga62c7d3d08531b0cc634b797e273a0a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_current_quality</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_current_quality</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtain real-time quality rating of the call</para><para>Based on local RTP statistics and RTCP feedback, a quality rating is computed and updated during all the duration of the call. This function returns its value at the time of the function call. It is expected that the rating is updated at least every 5 seconds or so. The rating is a floating point number comprised between 0 and 5.</para><para>4-5 = good quality <linebreak/>
+ 3-4 = average quality <linebreak/>
+ 2-3 = poor quality <linebreak/>
+ 1-2 = very poor quality <linebreak/>
+ 0-1 = can&apos;t be worse, mostly unusable <linebreak/>
+</para><para><simplesect kind="return"><para>The function returns -1 if no quality measurement is available, for example if no active audio stream exist. Otherwise it returns the quality rating. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3871" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3871" bodyend="3886"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae3aaa85596484c871b57cdefafd7fd9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_average_quality</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_average_quality</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns call quality averaged over all the duration of the call.</para><para>See <ref refid="group__call__misc_1ga62c7d3d08531b0cc634b797e273a0a73" kindref="member">linphone_call_get_current_quality()</ref> for more details about quality measurement. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3893" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3893" bodyend="3898"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga43c82908bcc83bdc6d2db4aa8c844092" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void update_local_stats</definition>
+        <argsstring>(LinphoneCallStats *stats, MediaStream *stream)</argsstring>
+        <name>update_local_stats</name>
+        <param>
+          <type><ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type>MediaStream *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3900" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3900" bodyend="3907"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaa1203b7ecb6b85a05af700152c1fdf14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>const LinphoneCallStats* linphone_call_get_audio_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_audio_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access last known statistics for audio stream, for a given call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3912" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3912" bodyend="3918"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae4f745821a59615910c73cf47300c234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>const LinphoneCallStats* linphone_call_get_video_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_video_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access last known statistics for video stream, for a given call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3923" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3923" bodyend="3929"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga7f8b76f0b4f65fd63842e43cba1aaf60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>const LinphoneCallStats* linphone_call_get_text_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_text_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Access last known statistics for video stream, for a given call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3934" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3934" bodyend="3940"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga8dc760cd9137d527faa7f073be5e4a83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>static bool_t ice_in_progress</definition>
+        <argsstring>(LinphoneCallStats *stats)</argsstring>
+        <name>ice_in_progress</name>
+        <param>
+          <type><ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3942" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3942" bodyend="3944"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gac64a301e64dcf00e5487dbb1739d5aaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_call_media_in_progress</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_media_in_progress</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether an operation is in progress at the media side. It can be a bad idea to initiate signaling operations (adding video, pausing the call, removing video, changing video parameters) while the media is busy in establishing the connection (typically ICE connectivity checks). It can result in failures generating loss of time in future operations in the call. Applications are invited to check this function after each call state change to decide whether certain operations are permitted or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if media is busy in establishing the connection, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3955" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3955" bodyend="3961"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga4f67c9815b880887550873c592174b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_sender_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_sender_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the local loss rate since last report <simplesect kind="return"><para>The sender loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3967" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3967" bodyend="3982"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga09496e326d7e82e4b15dbc427d384aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_receiver_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_receiver_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the remote reported loss rate since last report <simplesect kind="return"><para>The receiver loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="3988" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="3988" bodyend="4003"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga15c9b2c5e5e5d13656c67f60acbf3389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_sender_interarrival_jitter</definition>
+        <argsstring>(const LinphoneCallStats *stats, LinphoneCall *call)</argsstring>
+        <name>linphone_call_stats_get_sender_interarrival_jitter</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the local interarrival jitter <simplesect kind="return"><para>The interarrival jitter at last emitted sender report </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4009" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4009" bodyend="4035"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga886b7917491da4828cfa5ca75c1828eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_receiver_interarrival_jitter</definition>
+        <argsstring>(const LinphoneCallStats *stats, LinphoneCall *call)</argsstring>
+        <name>linphone_call_stats_get_receiver_interarrival_jitter</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the remote reported interarrival jitter <simplesect kind="return"><para>The interarrival jitter at last received receiver report </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4041" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4041" bodyend="4067"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gac2963c9c900811198a1a999ac64794a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>rtp_stats_t</type>
+        <definition>rtp_stats_t linphone_call_stats_get_rtp_stats</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_rtp_stats</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4069" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4069" bodyend="4078"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae40d01c01f5124d3a123e83769f4eb7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t linphone_call_stats_get_late_packets_cumulative_number</definition>
+        <argsstring>(const LinphoneCallStats *stats, LinphoneCall *call)</argsstring>
+        <name>linphone_call_stats_get_late_packets_cumulative_number</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the cumulative number of late packets <simplesect kind="return"><para>The cumulative number of late packets </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4084" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4084" bodyend="4086"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae8435a45f96caefc4284575ead6ec636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_download_bandwidth</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_download_bandwidth</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the bandwidth measurement of the received stream, expressed in kbit/s, including IP/UDP/RTP headers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bandwidth measurement of the received stream in kbit/s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4093" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4093" bodyend="4095"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga75d75cf70afffebed65b9bca234120db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_upload_bandwidth</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_upload_bandwidth</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the bandwidth measurement of the sent stream, expressed in kbit/s, including IP/UDP/RTP headers. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bandwidth measurement of the sent stream in kbit/s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4102" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4102" bodyend="4104"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab00ca0a997c7f740948d474062fc663c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaf4faffc512588eda7db03fab8b03adfb" kindref="member">LinphoneIceState</ref></type>
+        <definition>LinphoneIceState linphone_call_stats_get_ice_state</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_ice_state</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of ICE processing. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of ICE processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4111" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4111" bodyend="4113"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab475f621ff3a8a2e2d6faee0ca608f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_call_stats_get_upnp_state</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_upnp_state</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the state of uPnP processing. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of uPnP processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4120" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4120" bodyend="4122"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaa92c7b4c3443ff4ae29f7b57f57cfd35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_start_recording</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_start_recording</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start call recording. The output file where audio is recorded must be previously specified with <ref refid="group__call__control_1ga10fff1a05dc9c63249ba59dc7240d803" kindref="member">linphone_call_params_set_record_file()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4128" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4128" bodyend="4137"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga2ef01b6aa5dc8ee76a77e5ef399a7907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_stop_recording</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_stop_recording</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stop call recording. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="4142" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="4142" bodyend="4147"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga5508a704b36c3f598bc736172d4abd8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_ice_state_to_string</definition>
+        <argsstring>(LinphoneIceState state)</argsstring>
+        <name>linphone_ice_state_to_string</name>
+        <param>
+          <type><ref refid="group__initializing_1gaf4faffc512588eda7db03fab8b03adfb" kindref="member">LinphoneIceState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="526" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="688" bodyend="704"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__call__misc_1ga3aaf768a67bef73e3798ff1352a03523" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_AUDIO</name>
+        <initializer>((int)LinphoneStreamTypeAudio)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="503" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga7e84e05e3fa3bac2517ce5921558b4db" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_VIDEO</name>
+        <initializer>((int)LinphoneStreamTypeVideo)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="504" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1gafff083100e9c3c915325df68a5d4eafb" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_TEXT</name>
+        <initializer>((int)LinphoneStreamTypeText)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="505" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga7bb50ca7cd1f49ebea13eec5136ef00e" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_RECEIVED_RTCP_UPDATE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>received_rtcp field of LinphoneCallStats object has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="550" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga4418b7518b1479e9329b6de4129ed8c9" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_SENT_RTCP_UPDATE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sent_rtcp field of LinphoneCallStats object has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="551" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga0cb8916aede3c1a00a6e9aa176bf4093" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_PERIODICAL_UPDATE</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Every seconds LinphoneCallStats object has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="552" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="552" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga537911929e31ed4ca388ff40a37f97de" prot="public" static="no">
+        <name>LINPHONE_VOLUME_DB_LOWEST</name>
+        <initializer>(-120)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Lowest volume measurement that can be returned by <ref refid="group__call__misc_1ga7a0ca45e0ff2bf7eaca09e795bba3486" kindref="member">linphone_call_get_play_volume()</ref> or <ref refid="group__call__misc_1gac4f217936eea56196afc126974a92451" kindref="member">linphone_call_get_record_volume()</ref>, corresponding to pure silence. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="1000" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="1000" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>When a call is running, it is possible to retrieve in real time current measured volumes and quality indicator. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

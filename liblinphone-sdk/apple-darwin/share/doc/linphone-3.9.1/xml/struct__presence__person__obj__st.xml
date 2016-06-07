@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__presence__person__obj__st" kind="struct" language="C++" prot="public">
+    <compoundname>_presence_person_obj_st</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__presence__person__obj__st_1a99ff8cd245b6cadf1e488e6dd9fb5ee2" prot="public" static="no" mutable="no">
+        <type>xmlTextWriterPtr</type>
+        <definition>xmlTextWriterPtr _presence_person_obj_st::writer</definition>
+        <argsstring></argsstring>
+        <name>writer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="1585" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="1585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__presence__person__obj__st_1a8c6e1a260ea2f7b067918f6f7a093c51" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* _presence_person_obj_st::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="1586" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="1586" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="1584" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="1584" bodyend="1587"/>
+    <listofallmembers>
+      <member refid="struct__presence__person__obj__st_1a8c6e1a260ea2f7b067918f6f7a093c51" prot="public" virt="non-virtual"><scope>_presence_person_obj_st</scope><name>err</name></member>
+      <member refid="struct__presence__person__obj__st_1a99ff8cd245b6cadf1e488e6dd9fb5ee2" prot="public" virt="non-virtual"><scope>_presence_person_obj_st</scope><name>writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

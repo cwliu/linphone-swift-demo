@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structlp__config__from__dict" kind="struct" language="C++" prot="public">
+    <compoundname>lp_config_from_dict</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlp__config__from__dict_1a06055616ddf9a9e55c78e77ed86b8040" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lp_config_from_dict::section</definition>
+        <argsstring></argsstring>
+        <name>section</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="139" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlp__config__from__dict_1a20906636719c335a3e5b1c44460be341" prot="public" static="no" mutable="no">
+        <type><ref refid="group__misc_1ga047b6550aab7dd244268e695fab98fd6" kindref="member">LpConfig</ref> *</type>
+        <definition>LpConfig* lp_config_from_dict::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="140" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1258">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="1257">
+        <label>lp_config_from_dict</label>
+        <link refid="structlp__config__from__dict"/>
+        <childnode refid="1258" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="138" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="138" bodyend="141"/>
+    <listofallmembers>
+      <member refid="structlp__config__from__dict_1a20906636719c335a3e5b1c44460be341" prot="public" virt="non-virtual"><scope>lp_config_from_dict</scope><name>config</name></member>
+      <member refid="structlp__config__from__dict_1a06055616ddf9a9e55c78e77ed86b8040" prot="public" virt="non-virtual"><scope>lp_config_from_dict</scope><name>section</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

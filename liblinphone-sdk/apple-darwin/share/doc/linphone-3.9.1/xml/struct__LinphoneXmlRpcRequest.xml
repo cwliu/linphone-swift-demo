@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneXmlRpcRequest" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneXmlRpcRequest</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1ad09e56eb8710dfa64da09ed345b035f0" prot="public" static="no" mutable="no">
+        <type>belle_sip_object_t</type>
+        <definition>belle_sip_object_t _LinphoneXmlRpcRequest::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1176" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1ae66ccd8933987ac4a9f0dfa0938aa473" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneXmlRpcRequest::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1177" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1a699044087f025813a92ec4c2bb9af7a1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+        <definition>LinphoneXmlRpcRequestCbs* _LinphoneXmlRpcRequest::callbacks</definition>
+        <argsstring></argsstring>
+        <name>callbacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1178" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1a0d6b06bbc974b539ae5ea00a61dbba00" prot="public" static="no" mutable="no">
+        <type>belle_sip_list_t *</type>
+        <definition>belle_sip_list_t* _LinphoneXmlRpcRequest::arg_list</definition>
+        <argsstring></argsstring>
+        <name>arg_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1179" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1a6dcc0eb8ec8c82b2b9ac2fd346d3fad8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneXmlRpcRequest::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The string representation of the XML-RPC request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1180" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1a63127a8c9fb7745302547fbc69ee9f73" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneXmlRpcRequest::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1181" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1a73c3d364a439ea353eb7c42effb18a9e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__misc_1ga206d079816de950cfc54433f0db54e68" kindref="member">LinphoneXmlRpcStatus</ref></type>
+        <definition>LinphoneXmlRpcStatus _LinphoneXmlRpcRequest::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1182" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneXmlRpcRequest_1a57510943743f901d32dde09eba1919dd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__LinphoneXmlRpcArg" kindref="compound">LinphoneXmlRpcArg</ref></type>
+        <definition>LinphoneXmlRpcArg _LinphoneXmlRpcRequest::response</definition>
+        <argsstring></argsstring>
+        <name>response</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1183" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="956">
+        <label>_LinphoneXmlRpcRequestCbs</label>
+        <link refid="struct__LinphoneXmlRpcRequestCbs"/>
+        <childnode refid="955" relation="usage">
+          <edgelabel>response</edgelabel>
+        </childnode>
+      </node>
+      <node id="955">
+        <label>_LinphoneXmlRpcRequest</label>
+        <link refid="struct__LinphoneXmlRpcRequest"/>
+        <childnode refid="956" relation="usage">
+          <edgelabel>callbacks</edgelabel>
+        </childnode>
+        <childnode refid="957" relation="usage">
+          <edgelabel>response</edgelabel>
+        </childnode>
+      </node>
+      <node id="957">
+        <label>_LinphoneXmlRpcArg</label>
+        <link refid="struct__LinphoneXmlRpcArg"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1175" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1175" bodyend="1184"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneXmlRpcRequest_1a0d6b06bbc974b539ae5ea00a61dbba00" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>arg_list</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1ad09e56eb8710dfa64da09ed345b035f0" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>base</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1a699044087f025813a92ec4c2bb9af7a1" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>callbacks</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1a6dcc0eb8ec8c82b2b9ac2fd346d3fad8" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>content</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1a63127a8c9fb7745302547fbc69ee9f73" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>method</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1a57510943743f901d32dde09eba1919dd" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>response</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1a73c3d364a439ea353eb7c42effb18a9e" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>status</name></member>
+      <member refid="struct__LinphoneXmlRpcRequest_1ae66ccd8933987ac4a9f0dfa0938aa473" prot="public" virt="non-virtual"><scope>_LinphoneXmlRpcRequest</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

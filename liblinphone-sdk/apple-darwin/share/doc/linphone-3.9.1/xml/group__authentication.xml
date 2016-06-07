@@ -1,0 +1,971 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__authentication" kind="group">
+    <compoundname>authentication</compoundname>
+    <title>Managing authentication: userid and passwords</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__authentication_1ga0f8289c1aab407992864a68869107f4f" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref></type>
+        <definition>typedef struct _LinphoneAuthInfo LinphoneAuthInfo</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAuthInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="1040" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="1071" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__authentication_1ga034dd18662e329c0dcd6a56d2b3d24fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo * linphone_auth_info_new</definition>
+        <argsstring>(const char *username, const char *userid, const char *passwd, const char *ha1, const char *realm, const char *domain)</argsstring>
+        <name>linphone_auth_info_new</name>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object with supplied information. The object can be created empty, that is with all arguments set to NULL. Username, userid, password, realm and domain can be set later using specific methods. At the end, username and passwd (or ha1) are required. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username that needs to be authenticated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The userid used for authenticating (use NULL if you don&apos;t know what it is) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password in clear text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1-encrypted password if password is not given in clear text. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authentication domain (which can be larger than the sip domain. Unfortunately many SIP servers don&apos;t use this parameter. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SIP domain for which this authentication information is valid, if it has to be restricted for a single SIP domain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object. <ref refid="group__authentication_1ga814df254ea5005e5bb04d4247688e09f" kindref="member">linphone_auth_info_destroy()</ref> must be used to destroy it when no longer needed. The LinphoneCore makes a copy of LinphoneAuthInfo passed through <ref refid="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" kindref="member">linphone_core_add_auth_info()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="34" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="34" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaeedce0c332b351b66ca95f8da89e0630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo * linphone_auth_info_clone</definition>
+        <argsstring>(const LinphoneAuthInfo *ai)</argsstring>
+        <name>linphone_auth_info_clone</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>ai</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gab77fb77e534a859fbd0810667d8cb53f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * linphone_auth_info_get_username</definition>
+        <argsstring>(const LinphoneAuthInfo *i)</argsstring>
+        <name>linphone_auth_info_get_username</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the username.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The username. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="56" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga1f34c3ee680b8572a7a87e9170af0828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * linphone_auth_info_get_passwd</definition>
+        <argsstring>(const LinphoneAuthInfo *i)</argsstring>
+        <name>linphone_auth_info_get_passwd</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the password.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The password. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="60" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaacfe8800e52d3f7cbcb139db6b594bc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * linphone_auth_info_get_userid</definition>
+        <argsstring>(const LinphoneAuthInfo *i)</argsstring>
+        <name>linphone_auth_info_get_userid</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the userid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The userid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="64" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga2d4ae9fb902edc97c4392349dae4e305" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * linphone_auth_info_get_realm</definition>
+        <argsstring>(const LinphoneAuthInfo *i)</argsstring>
+        <name>linphone_auth_info_get_realm</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the realm.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The realm. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="68" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga4442014128350925aee14f5cae215557" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * linphone_auth_info_get_domain</definition>
+        <argsstring>(const LinphoneAuthInfo *i)</argsstring>
+        <name>linphone_auth_info_get_domain</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the domain.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The domain. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="72" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gac49a261a59edc0e63c245aff471d6f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * linphone_auth_info_get_ha1</definition>
+        <argsstring>(const LinphoneAuthInfo *i)</argsstring>
+        <name>linphone_auth_info_get_ha1</name>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the ha1.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ha1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="76" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga004d3d5228cb74697df157e4ae93f6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_passwd</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *passwd)</argsstring>
+        <name>linphone_auth_info_set_passwd</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the password. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="80" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga36c0b48f8ce1b1b3e632f00d301ea4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_username</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *username)</argsstring>
+        <name>linphone_auth_info_set_username</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the username. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="88" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaceda2fc2a33f5e5ea05d16bc0ecd2167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_userid</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *userid)</argsstring>
+        <name>linphone_auth_info_set_userid</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the userid. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The userid. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="96" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="96" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga9b59442c828894f86a106d40bab2563e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_realm</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *realm)</argsstring>
+        <name>linphone_auth_info_set_realm</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the realm. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realm. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="104" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="104" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga039bc35669147f691a9453455bcc2b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_domain</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *domain)</argsstring>
+        <name>linphone_auth_info_set_domain</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the domain for which this authentication is valid. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain. This should not be necessary because realm is supposed to be unique and sufficient. However, many SIP servers don&apos;t set realm correctly, then domain has to be used to distinguish between several SIP account bearing the same username. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="112" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga6c71e015d27bff6bfb6ef96d328eb4c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_ha1</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *ha1)</argsstring>
+        <name>linphone_auth_info_set_ha1</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ha1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="120" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga814df254ea5005e5bb04d4247688e09f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_destroy</definition>
+        <argsstring>(LinphoneAuthInfo *obj)</argsstring>
+        <name>linphone_auth_info_destroy</name>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys a LinphoneAuthInfo object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="131" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="131" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaee8c4f64de2c874b1e08cf17848a8060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_write_config</definition>
+        <argsstring>(LpConfig *config, LinphoneAuthInfo *obj, int pos)</argsstring>
+        <name>linphone_auth_info_write_config</name>
+        <param>
+          <type><ref refid="group__misc_1ga047b6550aab7dd244268e695fab98fd6" kindref="member">LpConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="141" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="141" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gafa84d114df0b0dfb867f96eaec96d96f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo * linphone_auth_info_new_from_config_file</definition>
+        <argsstring>(LpConfig *config, int pos)</argsstring>
+        <name>linphone_auth_info_new_from_config_file</name>
+        <param>
+          <type><ref refid="group__misc_1ga047b6550aab7dd244268e695fab98fd6" kindref="member">LpConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="186" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="186" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga28f63fae4ff15887128f96f92ee98ab1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* remove_quotes</definition>
+        <argsstring>(char *input)</argsstring>
+        <name>remove_quotes</name>
+        <param>
+          <type>char *</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="207" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="207" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaa5ec4662f576e263330f6d85de17de6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>static bool_t realm_match</definition>
+        <argsstring>(const char *realm1, const char *realm2)</argsstring>
+        <name>realm_match</name>
+        <param>
+          <type>const char *</type>
+          <declname>realm1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="215" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="215" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga581e80b0f98d74e4fee51fc941ed9af6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>static const LinphoneAuthInfo* find_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, const char *username, const char *realm, const char *domain, bool_t ignore_realm)</argsstring>
+        <name>find_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>ignore_realm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="233" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="233" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga4f630b9eab706726c81dcc26c6181682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>const LinphoneAuthInfo* _linphone_core_find_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, const char *realm, const char *username, const char *domain, bool_t ignore_realm)</argsstring>
+        <name>_linphone_core_find_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>ignore_realm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="264" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="264" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga400d096f0ee54a73031da73c00ba96d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>const LinphoneAuthInfo* linphone_core_find_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, const char *realm, const char *username, const char *domain)</argsstring>
+        <name>linphone_core_find_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>sip_domain</declname>
+          <defname>domain</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find authentication info matching realm, username, domain criteria. First of all, (realm,username) pair are searched. If multiple results (which should not happen because realm are supposed to be unique), then domain is added to the search. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneCore </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the authentication &apos;realm&apos; (optional) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the SIP username to be authenticated (mandatory) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the SIP domain name (optional) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="282" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="282" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga1bd8dd0ffdd28bf6a29aeeaac26d1473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_write_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneAuthInfo *ai)</argsstring>
+        <name>linphone_core_write_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>ai</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="287" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="287" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga3150de7be2dec31693715527aaeeb94e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void write_auth_infos</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>write_auth_infos</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="300" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="300" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga99844f16e901fb18fb039fdaaad386d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo * linphone_core_create_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, const char *username, const char *userid, const char *passwd, const char *ha1, const char *realm, const char *domain)</argsstring>
+        <name>linphone_core_create_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an authentication information with default values from Linphone core. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the username part of the authentication credentials </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the username to use to calculate the authentication digest (optional) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the password of the authentication credentials (optional, either passwd or ha1 must be set) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing a ha1 hash of the password (optional, either passwd or ha1 must be set) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String used to discriminate different SIP authentication domains (optional) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing the SIP domain for which this authentication information is valid, if it has to be restricted for a single SIP domain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> with default values set </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="313" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="313" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_add_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_core_add_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds authentication information to the LinphoneCore.</para><para>This information will be used during all SIP transactions that require authentication. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="322" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="322" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gabf1213372f4ff87b4e2bbfcc241f0901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_abort_authentication</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_core_abort_authentication</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is used to abort a user authentication request initiated by LinphoneCore from the auth_info_requested callback of LinphoneCoreVTable. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="387" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="387" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gafb8037a3bbee6f04458c354d8c1ca83e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_remove_auth_info</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_core_remove_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__LinphoneAuthInfo" kindref="compound">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Removes an authentication information object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="393" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="393" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga3dbc544171ef06a1901b5031fde91e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const MSList *</type>
+        <definition>const MSList* linphone_core_get_auth_info_list</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_auth_info_list</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns an unmodifiable list of currently entered LinphoneAuthInfo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of LinphoneAuthInfo objects. <mslist>LinphoneAuthInfo</mslist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="408" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="408" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga62979ce470f66cf8545e1e999875e903" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_clear_all_auth_info</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_clear_all_auth_info</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear all authentication information. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" line="415" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/authentication.c" bodystart="415" bodyend="425"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Object holding authentication information.</para><para><simplesect kind="note"><para>The object&apos;s fields should not be accessed directly. Prefer using the accessor methods.</para></simplesect>
+In most case, authentication information consists of a username and password. Sometimes, a userid is required by proxy, and realm can be useful to discriminate different SIP domains.</para><para>Once created and filled, a LinphoneAuthInfo must be added to the LinphoneCore in order to become known and used automatically when needed. Use <ref refid="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" kindref="member">linphone_core_add_auth_info()</ref> for that purpose.</para><para>The LinphoneCore object can take the initiative to request authentication information when needed to the application through the auth_info_requested callback of the LinphoneCoreVTable structure.</para><para>The application can respond to this information request later using <ref refid="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" kindref="member">linphone_core_add_auth_info()</ref>. This will unblock all pending authentication transactions and retry them with authentication headers.</para><para>Instantiates a new auth info with values from source. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object to be cloned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created <ref refid="struct__LinphoneAuthInfo" kindref="compound">_LinphoneAuthInfo</ref> object. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

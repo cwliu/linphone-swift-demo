@@ -1,0 +1,970 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="sipsetup_8h" kind="file" language="C++">
+    <compoundname>sipsetup.h</compoundname>
+    <includes local="yes">mediastreamer2/mscommon.h</includes>
+    <includedby refid="private_8h" local="yes">private.h</includedby>
+    <includedby refid="fonis_8c" local="yes">fonis.c</includedby>
+    <includedby refid="linphonecall_8c" local="yes">linphonecall.c</includedby>
+    <includedby refid="linphonecore_8c" local="yes">linphonecore.c</includedby>
+    <includedby refid="proxy_8c" local="yes">proxy.c</includedby>
+    <incdepgraph>
+      <node id="294">
+        <label>sipsetup.h</label>
+        <link refid="sipsetup.h"/>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>mediastreamer2/mscommon.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__SipSetupContext" prot="public">_SipSetupContext</innerclass>
+    <innerclass refid="struct__BuddyAddress" prot="public">_BuddyAddress</innerclass>
+    <innerclass refid="struct__BuddyInfo" prot="public">_BuddyInfo</innerclass>
+    <innerclass refid="struct__BuddyLookupRequest" prot="public">_BuddyLookupRequest</innerclass>
+    <innerclass refid="struct__BuddyLookupFuncs" prot="public">_BuddyLookupFuncs</innerclass>
+    <innerclass refid="struct__SipSetup" prot="public">_SipSetup</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sipsetup_8h_1a61480526be6b486af961ce996470afa8" prot="public" static="no">
+        <name>SIP_SETUP_CAP_PROXY_PROVIDER</name>
+        <initializer>(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="48" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sipsetup_8h_1a1ee9f35bda640498cafa7daeead05e42" prot="public" static="no">
+        <name>SIP_SETUP_CAP_STUN_PROVIDER</name>
+        <initializer>(1&lt;&lt;1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="49" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sipsetup_8h_1a6d20f3ad1dba8c3ddc734d82f96a16f3" prot="public" static="no">
+        <name>SIP_SETUP_CAP_RELAY_PROVIDER</name>
+        <initializer>(1&lt;&lt;2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="50" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sipsetup_8h_1a7182c24001657b1096bdf3d96a2e80f9" prot="public" static="no">
+        <name>SIP_SETUP_CAP_BUDDY_LOOKUP</name>
+        <initializer>(1&lt;&lt;3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="51" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sipsetup_8h_1a54cefcd922b0b4023a1c6a84c4dc4e55" prot="public" static="no">
+        <name>SIP_SETUP_CAP_ACCOUNT_MANAGER</name>
+        <initializer>(1&lt;&lt;4)  /*can create accounts*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="52" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="sipsetup_8h_1a1b7e82eb86fbc0a95615ff2c4808cc21" prot="public" static="no">
+        <name>SIP_SETUP_CAP_LOGIN</name>
+        <initializer>(1&lt;&lt;5)  /*can login to any account for a given proxy */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="53" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708" prot="public" static="no">
+        <name>_BuddyLookupStatus</name>
+        <enumvalue id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708a488e2397faf470e0473341d761ec8abb" prot="public">
+          <name>BuddyLookupNone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708a719ff04f30fde81c4fe78978bc417f33" prot="public">
+          <name>BuddyLookupConnecting</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708a0752a6ebbaa180a914c11c10a6128c7e" prot="public">
+          <name>BuddyLookupConnected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708a51d05e50b202b24f547d1ee6922d3f93" prot="public">
+          <name>BuddyLookupReceivingResponse</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708a02d2e9bebee0b9ab295c4183f5ef1fed" prot="public">
+          <name>BuddyLookupDone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="sipsetup_8h_1ad1fa04c48ffbd1e992e94997467c8708aa1a9ce6dbaf7e3ef005e37df1fe08fee" prot="public">
+          <name>BuddyLookupFailure</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="55" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="55" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="sipsetup_8h_1a152114f8e6188b399664a61640c7de71" prot="public" static="no">
+        <type>struct <ref refid="struct__SipSetupContext" kindref="compound">_SipSetupContext</ref></type>
+        <definition>typedef struct _SipSetupContext SipSetupContext</definition>
+        <argsstring></argsstring>
+        <name>SipSetupContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="227" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sipsetup_8h_1a450f32270551c730c06e52244757f1bd" prot="public" static="no">
+        <type>enum _BuddyLookupStatus</type>
+        <definition>typedef enum _BuddyLookupStatus BuddyLookupStatus</definition>
+        <argsstring></argsstring>
+        <name>BuddyLookupStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sipsetup_8h_1a599dbf1de257e55f4e3dd03b9d0084eb" prot="public" static="no">
+        <type>struct <ref refid="struct__BuddyAddress" kindref="compound">_BuddyAddress</ref></type>
+        <definition>typedef struct _BuddyAddress  BuddyAddress</definition>
+        <argsstring></argsstring>
+        <name>BuddyAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sipsetup_8h_1a8728882e1c94ed7b9116612d32fff8d7" prot="public" static="no">
+        <type>struct <ref refid="struct__BuddyInfo" kindref="compound">_BuddyInfo</ref></type>
+        <definition>typedef struct _BuddyInfo BuddyInfo</definition>
+        <argsstring></argsstring>
+        <name>BuddyInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sipsetup_8h_1a8c660e25ddf7a8435240775de6baf8a2" prot="public" static="no">
+        <type>struct <ref refid="struct__BuddyLookupRequest" kindref="compound">_BuddyLookupRequest</ref></type>
+        <definition>typedef struct _BuddyLookupRequest BuddyLookupRequest</definition>
+        <argsstring></argsstring>
+        <name>BuddyLookupRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sipsetup_8h_1aafb3a326cdb39168a69c4cedd0ea4e8a" prot="public" static="no">
+        <type>struct <ref refid="struct__BuddyLookupFuncs" kindref="compound">_BuddyLookupFuncs</ref></type>
+        <definition>typedef struct _BuddyLookupFuncs BuddyLookupFuncs</definition>
+        <argsstring></argsstring>
+        <name>BuddyLookupFuncs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sipsetup_8h_1a8eae44e0c078c7621a692720daac291f" prot="public" static="no">
+        <type>struct <ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref></type>
+        <definition>typedef struct _SipSetup SipSetup</definition>
+        <argsstring></argsstring>
+        <name>SipSetup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="227" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sipsetup_8h_1a2a8b0c3128553acd6e8ba83c9d6433bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__BuddyInfo" kindref="compound">BuddyInfo</ref> *</type>
+        <definition>BuddyInfo* buddy_info_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>buddy_info_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="127" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a5004429d4d0e8d29d43cc968660dae51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void buddy_info_free</definition>
+        <argsstring>(BuddyInfo *info)</argsstring>
+        <name>buddy_info_free</name>
+        <param>
+          <type><ref refid="struct__BuddyInfo" kindref="compound">BuddyInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="128" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="227" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1ab7f6b7fa4095ae25472b3fa8c1638864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void buddy_lookup_request_set_key</definition>
+        <argsstring>(BuddyLookupRequest *req, const char *key)</argsstring>
+        <name>buddy_lookup_request_set_key</name>
+        <param>
+          <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="130" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a0de0d3908c77bf3b513f9b0f853869ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void buddy_lookup_request_set_max_results</definition>
+        <argsstring>(BuddyLookupRequest *req, int ncount)</argsstring>
+        <name>buddy_lookup_request_set_max_results</name>
+        <param>
+          <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ncount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="131" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a517fd6d21555f8dc0dc08fb245050862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sip_setup_register</definition>
+        <argsstring>(SipSetup *ss)</argsstring>
+        <name>sip_setup_register</name>
+        <param>
+          <type><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref> *</type>
+          <declname>ss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="134" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1aaa74dc15305cd79237277e10f68c70fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sip_setup_register_all</definition>
+        <argsstring>(MSFactory *factory)</argsstring>
+        <name>sip_setup_register_all</name>
+        <param>
+          <type>MSFactory *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="135" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="38" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1af461c82622178e53b020f3d053ab776a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref> *</type>
+        <definition>SipSetup* sip_setup_lookup</definition>
+        <argsstring>(const char *type_name)</argsstring>
+        <name>sip_setup_lookup</name>
+        <param>
+          <type>const char *</type>
+          <declname>type_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="136" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="52" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a21e3d146d82353dba123ff83f34cb453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sip_setup_unregister_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>sip_setup_unregister_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="137" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="71" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a09ab1ce1d4df3c55033fd094626ac6d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int sip_setup_get_capabilities</definition>
+        <argsstring>(SipSetup *s)</argsstring>
+        <name>sip_setup_get_capabilities</name>
+        <param>
+          <type><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="138" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1aadf8d187177b777427a6c49239c4702b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+        <definition>SipSetupContext* sip_setup_context_new</definition>
+        <argsstring>(SipSetup *s, struct _LinphoneProxyConfig *cfg)</argsstring>
+        <name>sip_setup_context_new</name>
+        <param>
+          <type><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="struct__LinphoneProxyConfig" kindref="compound">_LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="140" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="108" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a8d29d3d06c935ecc47667fe170fca02d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_account_exists</definition>
+        <argsstring>(SipSetupContext *ctx, const char *uri)</argsstring>
+        <name>sip_setup_context_account_exists</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="141" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="133" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a9bb7d78636f438873e93916e55270562" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_account_validated</definition>
+        <argsstring>(SipSetupContext *ctx, const char *uri)</argsstring>
+        <name>sip_setup_context_account_validated</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="142" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a16e678d386377b4f4fd7c0b5d5ba282f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_create_account</definition>
+        <argsstring>(SipSetupContext *ctx, const char *uri, const char *passwd, const char *email, int suscribe)</argsstring>
+        <name>sip_setup_context_create_account</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>suscribe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="143" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a11a05494f46108c11512af73c4aff975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_get_capabilities</definition>
+        <argsstring>(SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_get_capabilities</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="144" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a9fd57d2583b9fb351002c336df101996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_login_account</definition>
+        <argsstring>(SipSetupContext *ctx, const char *uri, const char *passwd, const char *userid)</argsstring>
+        <name>sip_setup_context_login_account</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="145" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="145" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a4d0254be9bc7ae624434dc5eb743dbb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_get_proxy</definition>
+        <argsstring>(SipSetupContext *ctx, const char *domain, char *proxy, size_t sz)</argsstring>
+        <name>sip_setup_context_get_proxy</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>proxy</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>sz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="146" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a283381e5b98b4e3fa55c8d130d4b0004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_get_stun_servers</definition>
+        <argsstring>(SipSetupContext *ctx, char *stun1, char *stun2, size_t size)</argsstring>
+        <name>sip_setup_context_get_stun_servers</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>stun1</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>stun2</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="147" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a68f4681fd9ef3a96fdd1849d228ea7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_get_relay</definition>
+        <argsstring>(SipSetupContext *ctx, char *relay, size_t size)</argsstring>
+        <name>sip_setup_context_get_relay</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>relay</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="148" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="171" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a5e8f6bf90e052e6e107b198cce66532b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *</type>
+        <definition>BuddyLookupRequest* sip_setup_context_create_buddy_lookup_request</definition>
+        <argsstring>(SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_create_buddy_lookup_request</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="150" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1ad2c18d0eebe56163614225719b8f5325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_buddy_lookup_submit</definition>
+        <argsstring>(SipSetupContext *ctx, BuddyLookupRequest *req)</argsstring>
+        <name>sip_setup_context_buddy_lookup_submit</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="151" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a5a723db32ba5a09747d1d87e4d735e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_buddy_lookup_free</definition>
+        <argsstring>(SipSetupContext *ctx, BuddyLookupRequest *req)</argsstring>
+        <name>sip_setup_context_buddy_lookup_free</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="152" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="189" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a51864e4d04ee17cc2dbfc398fd96cbfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* sip_setup_context_get_notice</definition>
+        <argsstring>(SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_get_notice</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="154" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="195" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a2ad0df2586fff7e4bcef8fb21b0d83eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char **</type>
+        <definition>const char** sip_setup_context_get_domains</definition>
+        <argsstring>(SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_get_domains</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="155" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="201" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a881859db17adcb4f5cadb19a3b1d3cc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sip_setup_context_free</definition>
+        <argsstring>(SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_free</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="157" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="215" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a58379626a961772c09772890e96f2b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sip_setup_context_logout</definition>
+        <argsstring>(SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_logout</name>
+        <param>
+          <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="159" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="208" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1a3acf78963fc2b24e5f41908b27e81f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="struct__LinphoneProxyConfig" kindref="compound">_LinphoneProxyConfig</ref> *</type>
+        <definition>struct _LinphoneProxyConfig* sip_setup_context_get_proxy_config</definition>
+        <argsstring>(const SipSetupContext *ctx)</argsstring>
+        <name>sip_setup_context_get_proxy_config</name>
+        <param>
+          <type>const <ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="162" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="sipsetup_8h_1ab9d6a082c9318645a5ffe86f411a46c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void buddy_lookup_request_free</definition>
+        <argsstring>(BuddyLookupRequest *req)</argsstring>
+        <name>buddy_lookup_request_free</name>
+        <param>
+          <type><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref> *</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="163" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.c" bodystart="95" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2000<sp/><sp/>Simon<sp/>MORLAT<sp/>(simon.morlat@linphone.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>sipsetup_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sipsetup_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mediastreamer2/mscommon.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PUBLIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PUBLIC<sp/>MS2_PUBLIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__BuddyInfo" kindref="compound">_BuddyInfo</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneXmlRpcSession" kindref="compound">_LinphoneXmlRpcSession</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct__SipSetupContext" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__SipSetupContext" kindref="compound">_SipSetupContext</ref>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref><sp/>*funcs;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneProxyConfig" kindref="compound">_LinphoneProxyConfig</ref><sp/>*cfg;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneXmlRpcSession" kindref="compound">_LinphoneXmlRpcSession</ref><sp/>*xmlrpc_session;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>domain[128];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>username[128];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__SipSetupContext" kindref="compound">_SipSetupContext</ref><sp/><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIP_SETUP_CAP_PROXY_PROVIDER<sp/><sp/><sp/><sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIP_SETUP_CAP_STUN_PROVIDER<sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIP_SETUP_CAP_RELAY_PROVIDER<sp/><sp/><sp/><sp/>(1&lt;&lt;2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIP_SETUP_CAP_BUDDY_LOOKUP<sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIP_SETUP_CAP_ACCOUNT_MANAGER<sp/><sp/><sp/>(1&lt;&lt;4)<sp/><sp/></highlight><highlight class="comment">/*can<sp/>create<sp/>accounts*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIP_SETUP_CAP_LOGIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1&lt;&lt;5)<sp/><sp/></highlight><highlight class="comment">/*can<sp/>login<sp/>to<sp/>any<sp/>account<sp/>for<sp/>a<sp/>given<sp/>proxy<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_BuddyLookupStatus{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupNone,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupConnecting,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupConnected,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupReceivingResponse,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupDone,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupFailure</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}BuddyLookupStatus;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="struct__BuddyAddress" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__BuddyAddress" kindref="compound">_BuddyAddress</ref>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>street[64];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>zip[64];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>town[64];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>country[64];</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/><ref refid="struct__BuddyAddress" kindref="compound">BuddyAddress</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="struct__BuddyInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__BuddyInfo" kindref="compound">_BuddyInfo</ref>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>firstname[64];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>lastname[64];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>displayname[64];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sip_uri[128];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>email[128];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__BuddyAddress" kindref="compound">BuddyAddress</ref><sp/>address;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>image_type[32];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*image_data;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>image_length;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<ref refid="struct__BuddyInfo" kindref="compound">BuddyInfo</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="struct__BuddyLookupRequest" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__BuddyLookupRequest" kindref="compound">_BuddyLookupRequest</ref><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_results;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BuddyLookupStatus<sp/>status;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSList<sp/>*results;<sp/></highlight><highlight class="comment">/*of<sp/>BuddyInfo<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}<ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="struct__BuddyLookupFuncs" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__BuddyLookupFuncs" kindref="compound">_BuddyLookupFuncs</ref>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*<sp/>(*request_create)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*request_submit)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*request_free)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<ref refid="struct__BuddyLookupFuncs" kindref="compound">BuddyLookupFuncs</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="struct__SipSetup" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capabilities;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>initialized;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool_t<sp/>(*init)(void);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*exit)(void);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*init_instance)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*uninit_instance)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*account_exists)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*create_account)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*email,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>suscribe);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*login_account)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userid);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*get_proxy)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*proxy,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*get_stun_servers)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stun1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stun2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*get_relay)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*relay,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>(*get_notice)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>(*get_domains)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*logout_account)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__BuddyLookupFuncs" kindref="compound">BuddyLookupFuncs</ref><sp/>*buddy_lookup_funcs;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*account_validated)(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref><sp/><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><ref refid="struct__BuddyInfo" kindref="compound">BuddyInfo</ref><sp/>*buddy_info_new(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>buddy_info_free(<ref refid="struct__BuddyInfo" kindref="compound">BuddyInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>buddy_lookup_request_set_key(<ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>buddy_lookup_request_set_max_results(<ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ncount);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sip_setup_register(<ref refid="struct__SipSetup" kindref="compound">SipSetup</ref><sp/>*ss);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sip_setup_register_all(MSFactory*<sp/>factory);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref><sp/>*sip_setup_lookup(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*type_name);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sip_setup_unregister_all(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_get_capabilities(<ref refid="struct__SipSetup" kindref="compound">SipSetup</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*<sp/>sip_setup_context_new(<ref refid="struct__SipSetup" kindref="compound">SipSetup</ref><sp/>*s,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneProxyConfig" kindref="compound">_LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_account_exists(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_account_validated(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_create_account(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*email,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>suscribe);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_get_capabilities(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_login_account(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*<sp/>ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userid);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_get_proxy(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*proxy,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sz);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_get_stun_servers(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stun1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stun2,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_get_relay(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*relay,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*sip_setup_context_create_buddy_lookup_request(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_buddy_lookup_submit(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx<sp/>,<sp/><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_buddy_lookup_free(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx<sp/>,<sp/><ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>sip_setup_context_get_notice(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>sip_setup_context_get_domains(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sip_setup_context_free(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sip_setup_context_logout(<ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">/*internal<sp/>methods<sp/>for<sp/>use<sp/>WITHIN<sp/>plugins:<sp/>do<sp/>not<sp/>use<sp/>elsewhere*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneProxyConfig" kindref="compound">_LinphoneProxyConfig</ref><sp/>*sip_setup_context_get_proxy_config(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>buddy_lookup_request_free(<ref refid="struct__BuddyLookupRequest" kindref="compound">BuddyLookupRequest</ref><sp/>*req);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h"/>
+  </compounddef>
+</doxygen>

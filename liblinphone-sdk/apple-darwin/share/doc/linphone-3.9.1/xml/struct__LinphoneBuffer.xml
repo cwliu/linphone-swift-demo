@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneBuffer" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneBuffer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneBuffer_1a010f03f370f9e0624ae2f60933d1a038" prot="public" static="no" mutable="no">
+        <type>belle_sip_object_t</type>
+        <definition>belle_sip_object_t _LinphoneBuffer::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1146" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneBuffer_1ab8cb94c98af2183c732a13a725f93167" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneBuffer::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1147" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneBuffer_1a58239e432ebdc086fb1e15b48096efeb" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* _LinphoneBuffer::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the buffer content </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1148" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneBuffer_1a7f6e2d3a22901de8c5c209791ec6ee03" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _LinphoneBuffer::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The size of the buffer content </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1149" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1145" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1145" bodyend="1150"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneBuffer_1a010f03f370f9e0624ae2f60933d1a038" prot="public" virt="non-virtual"><scope>_LinphoneBuffer</scope><name>base</name></member>
+      <member refid="struct__LinphoneBuffer_1a58239e432ebdc086fb1e15b48096efeb" prot="public" virt="non-virtual"><scope>_LinphoneBuffer</scope><name>content</name></member>
+      <member refid="struct__LinphoneBuffer_1a7f6e2d3a22901de8c5c209791ec6ee03" prot="public" virt="non-virtual"><scope>_LinphoneBuffer</scope><name>size</name></member>
+      <member refid="struct__LinphoneBuffer_1ab8cb94c98af2183c732a13a725f93167" prot="public" virt="non-virtual"><scope>_LinphoneBuffer</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

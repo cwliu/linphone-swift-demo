@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structnet__config" kind="struct" language="C++" prot="public">
+    <compoundname>net_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnet__config_1a63bf5f3f3b6ff6d73e4e088403d284e5" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* net_config::nat_address</definition>
+        <argsstring></argsstring>
+        <name>nat_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="762" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1a6cb68da1fa2b0af94458b42b793b25e1" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* net_config::nat_address_ip</definition>
+        <argsstring></argsstring>
+        <name>nat_address_ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="763" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1a45e19f75be991b9a5c40275d3c864741" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* net_config::stun_server</definition>
+        <argsstring></argsstring>
+        <name>stun_server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="764" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1a5fb91872b9f9b48a62035f4a491bbe1e" prot="public" static="no" mutable="no">
+        <type>struct addrinfo *</type>
+        <definition>struct addrinfo* net_config::stun_addrinfo</definition>
+        <argsstring></argsstring>
+        <name>stun_addrinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="765" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="765" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1a4639ad5d9509e993f72754599d00877b" prot="public" static="no" mutable="no">
+        <type>SalResolverContext *</type>
+        <definition>SalResolverContext* net_config::stun_res</definition>
+        <argsstring></argsstring>
+        <name>stun_res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="766" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="766" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1ac125ebd10b80c219c5d4ccc321481a73" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int net_config::download_bw</definition>
+        <argsstring></argsstring>
+        <name>download_bw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="767" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="767" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1af488fcdefdca9d014c26b3f12a0d04e3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int net_config::upload_bw</definition>
+        <argsstring></argsstring>
+        <name>upload_bw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="768" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="768" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1a24ff140e364eeffb2254f7f13da7b410" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int net_config::mtu</definition>
+        <argsstring></argsstring>
+        <name>mtu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="769" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1ac85f72350582e13ba88f12c1b5f5b9bd" prot="public" static="no" mutable="no">
+        <type>OrtpNetworkSimulatorParams</type>
+        <definition>OrtpNetworkSimulatorParams net_config::netsim_params</definition>
+        <argsstring></argsstring>
+        <name>netsim_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="770" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="770" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__config_1a889c2291a99cdef439f828d9f5636f39" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t net_config::nat_sdp_only</definition>
+        <argsstring></argsstring>
+        <name>nat_sdp_only</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="771" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="771" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="761" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="760" bodyend="772"/>
+    <listofallmembers>
+      <member refid="structnet__config_1ac125ebd10b80c219c5d4ccc321481a73" prot="public" virt="non-virtual"><scope>net_config</scope><name>download_bw</name></member>
+      <member refid="structnet__config_1a24ff140e364eeffb2254f7f13da7b410" prot="public" virt="non-virtual"><scope>net_config</scope><name>mtu</name></member>
+      <member refid="structnet__config_1a63bf5f3f3b6ff6d73e4e088403d284e5" prot="public" virt="non-virtual"><scope>net_config</scope><name>nat_address</name></member>
+      <member refid="structnet__config_1a6cb68da1fa2b0af94458b42b793b25e1" prot="public" virt="non-virtual"><scope>net_config</scope><name>nat_address_ip</name></member>
+      <member refid="structnet__config_1a889c2291a99cdef439f828d9f5636f39" prot="public" virt="non-virtual"><scope>net_config</scope><name>nat_sdp_only</name></member>
+      <member refid="structnet__config_1ac85f72350582e13ba88f12c1b5f5b9bd" prot="public" virt="non-virtual"><scope>net_config</scope><name>netsim_params</name></member>
+      <member refid="structnet__config_1a5fb91872b9f9b48a62035f4a491bbe1e" prot="public" virt="non-virtual"><scope>net_config</scope><name>stun_addrinfo</name></member>
+      <member refid="structnet__config_1a4639ad5d9509e993f72754599d00877b" prot="public" virt="non-virtual"><scope>net_config</scope><name>stun_res</name></member>
+      <member refid="structnet__config_1a45e19f75be991b9a5c40275d3c864741" prot="public" virt="non-virtual"><scope>net_config</scope><name>stun_server</name></member>
+      <member refid="structnet__config_1af488fcdefdca9d014c26b3f12a0d04e3" prot="public" virt="non-virtual"><scope>net_config</scope><name>upload_bw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

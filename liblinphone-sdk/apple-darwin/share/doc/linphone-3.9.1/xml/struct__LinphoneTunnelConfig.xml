@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneTunnelConfig" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneTunnelConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneTunnelConfig_1aec48e7a2e71f0f4b7e24e2e9c08b321c" prot="public" static="no" mutable="no">
+        <type>belle_sip_object_t</type>
+        <definition>belle_sip_object_t _LinphoneTunnelConfig::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="28" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneTunnelConfig_1a51f9499e140e7e466d52627c7026a329" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneTunnelConfig::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="29" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneTunnelConfig_1a825386552b2219f630b2d69a27dd0f24" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneTunnelConfig::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="30" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneTunnelConfig_1aa7f146ca896e432b3d58a5b0c5535c58" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneTunnelConfig::remote_udp_mirror_port</definition>
+        <argsstring></argsstring>
+        <name>remote_udp_mirror_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="31" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneTunnelConfig_1aeeb14d0a5ae2128e657bafa141abfea4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneTunnelConfig::delay</definition>
+        <argsstring></argsstring>
+        <name>delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="32" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneTunnelConfig_1a527499d9ffcf6d0e6ca9b291f65ae0b5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneTunnelConfig::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="33" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" line="27" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_config.c" bodystart="27" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneTunnelConfig_1aec48e7a2e71f0f4b7e24e2e9c08b321c" prot="public" virt="non-virtual"><scope>_LinphoneTunnelConfig</scope><name>base</name></member>
+      <member refid="struct__LinphoneTunnelConfig_1aeeb14d0a5ae2128e657bafa141abfea4" prot="public" virt="non-virtual"><scope>_LinphoneTunnelConfig</scope><name>delay</name></member>
+      <member refid="struct__LinphoneTunnelConfig_1a51f9499e140e7e466d52627c7026a329" prot="public" virt="non-virtual"><scope>_LinphoneTunnelConfig</scope><name>host</name></member>
+      <member refid="struct__LinphoneTunnelConfig_1a825386552b2219f630b2d69a27dd0f24" prot="public" virt="non-virtual"><scope>_LinphoneTunnelConfig</scope><name>port</name></member>
+      <member refid="struct__LinphoneTunnelConfig_1aa7f146ca896e432b3d58a5b0c5535c58" prot="public" virt="non-virtual"><scope>_LinphoneTunnelConfig</scope><name>remote_udp_mirror_port</name></member>
+      <member refid="struct__LinphoneTunnelConfig_1a527499d9ffcf6d0e6ca9b291f65ae0b5" prot="public" virt="non-virtual"><scope>_LinphoneTunnelConfig</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

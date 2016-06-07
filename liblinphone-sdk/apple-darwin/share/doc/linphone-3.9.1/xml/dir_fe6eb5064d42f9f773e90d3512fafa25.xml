@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_fe6eb5064d42f9f773e90d3512fafa25" kind="dir">
+    <compoundname>submodules</compoundname>
+    <innerdir refid="dir_efc99ad84d263e00294190b8296b0971">linphone</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LpItem" kind="struct" language="C++" prot="public">
+    <compoundname>_LpItem</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LpItem_1a16fb2b343420d69b6ec8cecbd4b1064c" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LpItem::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="62" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpItem_1ac2958f083de86415714902862436c61f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LpItem::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="63" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpItem_1a933a58b88c276c052d578bf080d350b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LpItem::is_comment</definition>
+        <argsstring></argsstring>
+        <name>is_comment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="64" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpItem_1ad4aaaccd6bf297320c936c779f178720" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LpItem::overwrite</definition>
+        <argsstring></argsstring>
+        <name>overwrite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="65" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="61" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="61" bodyend="66"/>
+    <listofallmembers>
+      <member refid="struct__LpItem_1a933a58b88c276c052d578bf080d350b5" prot="public" virt="non-virtual"><scope>_LpItem</scope><name>is_comment</name></member>
+      <member refid="struct__LpItem_1a16fb2b343420d69b6ec8cecbd4b1064c" prot="public" virt="non-virtual"><scope>_LpItem</scope><name>key</name></member>
+      <member refid="struct__LpItem_1ad4aaaccd6bf297320c936c779f178720" prot="public" virt="non-virtual"><scope>_LpItem</scope><name>overwrite</name></member>
+      <member refid="struct__LpItem_1ac2958f083de86415714902862436c61f" prot="public" virt="non-virtual"><scope>_LpItem</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

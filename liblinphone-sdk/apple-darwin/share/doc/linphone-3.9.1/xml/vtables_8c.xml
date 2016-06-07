@@ -1,0 +1,1470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="vtables_8c" kind="file" language="C++">
+    <compoundname>vtables.c</compoundname>
+    <includes refid="private_8h" local="yes">private.h</includes>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vtables_8c_1af867e32162054028ce1464ba3ca3c7f7" prot="public" static="no">
+        <name>NOTIFY_IF_EXIST</name>
+        <param><defname>function_name</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>MSList* iterator; \
+	<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref> *ref; \
+	bool_t has_cb = FALSE; \
+	for (iterator=lc-&gt;vtable_refs; iterator!=NULL; iterator=iterator-&gt;next)\
+		if ((ref=(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref>*)iterator-&gt;data)-&gt;valid &amp;&amp; (lc-&gt;current_vtable=ref-&gt;vtable)-&gt;function_name) {\
+			lc-&gt;current_vtable-&gt;function_name(__VA_ARGS__);\
+			has_cb = TRUE;\
+		}\
+	if (has_cb) ms_message(&quot;Linphone core [%p] notifying [%s]&quot;,lc,#function_name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="58" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vtables_8c_1a2360b306dd1ac31ded69e5550cdbfde4" prot="public" static="no">
+        <name>NOTIFY_IF_EXIST_INTERNAL</name>
+        <param><defname>function_name</defname></param>
+        <param><defname>internal_val</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>MSList* iterator; \
+	<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref> *ref; \
+	bool_t has_cb = FALSE; \
+	for (iterator=lc-&gt;vtable_refs; iterator!=NULL; iterator=iterator-&gt;next)\
+		if ((ref=(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref>*)iterator-&gt;data)-&gt;valid &amp;&amp; (lc-&gt;current_vtable=ref-&gt;vtable)-&gt;function_name &amp;&amp; (ref-&gt;internal == internal_val)) {\
+			lc-&gt;current_vtable-&gt;function_name(__VA_ARGS__);\
+			has_cb = TRUE;\
+		}\
+	if (has_cb) ms_message(&quot;Linphone core [%p] notifying [%s]&quot;,lc,#function_name)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="69" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__initializing_1ga236ae635c430755e56835e60e9953af6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+        <definition>LinphoneCoreVTable* linphone_core_v_table_new</definition>
+        <argsstring>()</argsstring>
+        <name>linphone_core_v_table_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Instantiate a vtable with all arguments set to NULL <simplesect kind="return"><para>newly allocated vtable </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="24" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga1dbf5ba6401eebd27fe776ed840f5adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_v_table_set_user_data</definition>
+        <argsstring>(LinphoneCoreVTable *table, void *data)</argsstring>
+        <name>linphone_core_v_table_set_user_data</name>
+        <param>
+          <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a user data pointer in the vtable. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vtable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user data to attach </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="28" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga5d692c96387ccea93bca61022e5e951a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_core_v_table_get_user_data</definition>
+        <argsstring>(LinphoneCoreVTable *table)</argsstring>
+        <name>linphone_core_v_table_get_user_data</name>
+        <param>
+          <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets a user data pointer in the vtable. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the vtable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the data attached to the vtable </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="32" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga6c6b69d6eaa13ea8366e7c6b9484883d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_v_table_destroy</definition>
+        <argsstring>(LinphoneCoreVTable *table)</argsstring>
+        <name>linphone_core_v_table_destroy</name>
+        <param>
+          <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>table</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy a vtable. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to be destroyed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="36" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga7b1e3936b04e2eaab2c9c6f311a5359a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+        <definition>LinphoneCoreVTable* linphone_core_get_current_vtable</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_current_vtable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Gets the current VTable. This is meant only to be called from a callback to be able to get the user_data associated with the vtable that called the callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the linphonecore </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the vtable that called the last callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a6e54342301fe88b44ec06b884747d62b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void cleanup_dead_vtable_refs</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>cleanup_dead_vtable_refs</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="44" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1aa1ce58c9dff78b41398f2c4746e1035c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_global_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneGlobalState gstate, const char *message)</argsstring>
+        <name>linphone_core_notify_global_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gae852b5b31d6d5e673de9d2c9b63aca7e" kindref="member">LinphoneGlobalState</ref></type>
+          <declname>gstate</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a71827ea4015c037767a25bdc75619caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_call_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *call, LinphoneCallState cstate, const char *message)</argsstring>
+        <name>linphone_core_notify_call_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1ga37dad1a4f935d9cc26ec1f9d2b23691a" kindref="member">LinphoneCallState</ref></type>
+          <declname>cstate</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a09e6912c9cd24c4c866f98d7a1ed051a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_call_encryption_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *call, bool_t on, const char *authentication_token)</argsstring>
+        <name>linphone_core_notify_call_encryption_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>on</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>authentication_token</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="90" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1aef32362c119eb9593867259d37dbb1f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_registration_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneProxyConfig *cfg, LinphoneRegistrationState cstate, const char *message)</argsstring>
+        <name>linphone_core_notify_registration_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type><ref refid="group__proxies_1ga698cb4228fac724b9e7c3cc5f499f7a8" kindref="member">LinphoneRegistrationState</ref></type>
+          <declname>cstate</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="95" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a8302782cf7943fd1d3b3e243716d35ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_show_interface</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_notify_show_interface</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="103" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1ad7dbe9b42caf9a667445bb4f545547c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_display_status</definition>
+        <argsstring>(LinphoneCore *lc, const char *message)</argsstring>
+        <name>linphone_core_notify_display_status</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="108" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a7fedfb19b5011c3f0ea12dbde9552f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_display_message</definition>
+        <argsstring>(LinphoneCore *lc, const char *message)</argsstring>
+        <name>linphone_core_notify_display_message</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="113" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1aa9267c8eb68e8ca21c6d0dc6eb142273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_display_warning</definition>
+        <argsstring>(LinphoneCore *lc, const char *message)</argsstring>
+        <name>linphone_core_notify_display_warning</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="118" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="118" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a87af98c4d4a99d7ede0e5f42bf49cd2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_display_url</definition>
+        <argsstring>(LinphoneCore *lc, const char *message, const char *url)</argsstring>
+        <name>linphone_core_notify_display_url</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="123" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a4b03eb66097a845b5578f32ae66d4869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_notify_presence_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneFriend *lf)</argsstring>
+        <name>linphone_core_notify_notify_presence_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+          <declname>lf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="130" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1abf4ad7fc214b44616a195e8ba9392b86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_new_subscription_requested</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneFriend *lf, const char *url)</argsstring>
+        <name>linphone_core_notify_new_subscription_requested</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+          <declname>lf</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="135" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a92dc3af6fcc8cd16ffe6ac91f23846ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_auth_info_requested</definition>
+        <argsstring>(LinphoneCore *lc, const char *realm, const char *username, const char *domain)</argsstring>
+        <name>linphone_core_notify_auth_info_requested</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="140" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a8c1e0ea58448a35e123ece60601a27b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_call_log_updated</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCallLog *newcl)</argsstring>
+        <name>linphone_core_notify_call_log_updated</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>newcl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="145" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a77e84d660d6749042a53c53df2e07267" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_text_message_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneChatRoom *room, const LinphoneAddress *from, const char *message)</argsstring>
+        <name>linphone_core_notify_text_message_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> *</type>
+          <declname>room</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="154" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a676366b20fcdbfabe2d9142e8577bd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_message_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneChatRoom *room, LinphoneChatMessage *message)</argsstring>
+        <name>linphone_core_notify_message_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> *</type>
+          <declname>room</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="162" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a7c8db2ce4a2ac5ed9e297d4afd87bb60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_file_transfer_recv</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneChatMessage *message, const LinphoneContent *content, const char *buff, size_t size)</argsstring>
+        <name>linphone_core_notify_file_transfer_recv</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="170" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1ae1fd32454152ee30edbbdd07b4a917d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_file_transfer_send</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneChatMessage *message, const LinphoneContent *content, char *buff, size_t *size)</argsstring>
+        <name>linphone_core_notify_file_transfer_send</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="175" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1ac8a049a234ac64fd53882acd241f4b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_file_transfer_progress_indication</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneChatMessage *message, const LinphoneContent *content, size_t offset, size_t total)</argsstring>
+        <name>linphone_core_notify_file_transfer_progress_indication</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="180" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1aa1e2e280aabfa0f88ccadbec25ad88ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_is_composing_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneChatRoom *room)</argsstring>
+        <name>linphone_core_notify_is_composing_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> *</type>
+          <declname>room</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="187" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1ae01474e92982f3b486b0c374f5589c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_dtmf_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *call, int dtmf)</argsstring>
+        <name>linphone_core_notify_dtmf_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dtmf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="192" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1aeae5eb4d5a2f3b3dd5cd59aecf23ff14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_dtmf_received_has_listener</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_dtmf_received_has_listener</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="197" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="197" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a274f5cf8575a410c15fa5065c519cf8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_refer_received</definition>
+        <argsstring>(LinphoneCore *lc, const char *refer_to)</argsstring>
+        <name>linphone_core_notify_refer_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>refer_to</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="207" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a92655560370c392b8c7122e1cc3296d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_buddy_info_updated</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneFriend *lf)</argsstring>
+        <name>linphone_core_notify_buddy_info_updated</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+          <declname>lf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="212" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a9f4ca91e2b31124af7b7bacd37412b03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_transfer_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *transfered, LinphoneCallState new_call_state)</argsstring>
+        <name>linphone_core_notify_transfer_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>transfered</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1ga37dad1a4f935d9cc26ec1f9d2b23691a" kindref="member">LinphoneCallState</ref></type>
+          <declname>new_call_state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="217" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a6c3b7e7a460028aa5a3448e0a7d1718d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_call_stats_updated</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *call, const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_core_notify_call_stats_updated</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="222" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1af6ec17cf7f21a141e4aef68e1b1b3b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_info_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *call, const LinphoneInfoMessage *msg)</argsstring>
+        <name>linphone_core_notify_info_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__LinphoneInfoMessage" kindref="compound">LinphoneInfoMessage</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="227" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a466e52f7a025b17f5ce8d4cb57dfc011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_configuring_status</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneConfiguringState status, const char *message)</argsstring>
+        <name>linphone_core_notify_configuring_status</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga6b495fb476419ea7dbd62b1b2fa89bdf" kindref="member">LinphoneConfiguringState</ref></type>
+          <declname>status</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="232" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1adaeb4697fbe88ea1156a65a491f15812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t reachable)</argsstring>
+        <name>linphone_core_notify_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>reachable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="237" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1accdf92562966b7bec7300e8710926b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_notify_received</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneEvent *lev, const char *notified_event, const LinphoneContent *body)</argsstring>
+        <name>linphone_core_notify_notify_received</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>notified_event</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="242" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1ae2ad87942e4f07b88f1fbce47e2d9b3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_subscription_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneEvent *lev, LinphoneSubscriptionState state)</argsstring>
+        <name>linphone_core_notify_subscription_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="247" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a34eb9711a86ea456535f4ba893f09049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_publish_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneEvent *lev, LinphonePublishState state)</argsstring>
+        <name>linphone_core_notify_publish_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="252" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a5d7ffc48c4160f2b8286b19c5b2e3fa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_log_collection_upload_state_changed</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCoreLogCollectionUploadState state, const char *info)</argsstring>
+        <name>linphone_core_notify_log_collection_upload_state_changed</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga4acd5437baf0cf862c1551c0d0e0d8a0" kindref="member">LinphoneCoreLogCollectionUploadState</ref></type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="257" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a39b71a89ab400dd10806b69db0d83850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_notify_log_collection_upload_progress_indication</definition>
+        <argsstring>(LinphoneCore *lc, size_t offset, size_t total)</argsstring>
+        <name>linphone_core_notify_log_collection_upload_progress_indication</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>total</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="262" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="262" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1a27b55f3ebca285fa903be4d85a188e02" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref> *</type>
+        <definition>static VTableReference* v_table_reference_new</definition>
+        <argsstring>(LinphoneCoreVTable *vtable, bool_t autorelease, bool_t internal)</argsstring>
+        <name>v_table_reference_new</name>
+        <param>
+          <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>vtable</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>autorelease</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>internal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="267" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="267" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1ac52e4f8a42fb715cf5abe035e98c410b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void v_table_reference_destroy</definition>
+        <argsstring>(VTableReference *ref)</argsstring>
+        <name>v_table_reference_destroy</name>
+        <param>
+          <type><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref> *</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="276" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="vtables_8c_1acf144c80e6d5e34dbe4dda868f05c25f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _linphone_core_add_listener</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCoreVTable *vtable, bool_t autorelease, bool_t internal)</argsstring>
+        <name>_linphone_core_add_listener</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>vtable</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>autorelease</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>internal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="281" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga1f5a7a5f05171173b3886691495d649a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_add_listener</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCoreVTable *vtable)</argsstring>
+        <name>linphone_core_add_listener</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>vtable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>add a listener to be notified of linphone core events. Once events are received, registered vtable are invoked in order. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vtable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a LinphoneCoreVTable structure holding your application callbacks. Object is owned by linphone core until linphone_core_remove_listener. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="286" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="286" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga5da58988d76f598a40033cf61a3c82e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_remove_listener</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneCoreVTable *vtable)</argsstring>
+        <name>linphone_core_remove_listener</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__initializing_1ga1ca71386f318e4044967ddf32ac7aacb" kindref="member">LinphoneCoreVTable</ref> *</type>
+          <declname>vtable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>remove a listener registred by linphone_core_add_listener. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vtable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a LinphoneCoreVTable structure holding your application callbacks </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" line="290" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c" bodystart="290" bodyend="298"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2000<sp/><sp/>Simon<sp/>MORLAT<sp/>(simon.morlat@linphone.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Copyright<sp/>(C)<sp/>2010<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;private.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*<ref refid="group__initializing_1ga236ae635c430755e56835e60e9953af6" kindref="member">linphone_core_v_table_new</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ms_new0(<ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref>,1);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga1dbf5ba6401eebd27fe776ed840f5adb" kindref="member">linphone_core_v_table_set_user_data</ref>(<ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*table,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>table-&gt;<ref refid="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" kindref="member">user_data</ref><sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="group__initializing_1ga5d692c96387ccea93bca61022e5e951a" kindref="member">linphone_core_v_table_get_user_data</ref>(<ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*table)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>table-&gt;<ref refid="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" kindref="member">user_data</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga6c6b69d6eaa13ea8366e7c6b9484883d" kindref="member">linphone_core_v_table_destroy</ref>(<ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref>*<sp/>table)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_free(table);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*<ref refid="group__initializing_1ga7b1e3936b04e2eaab2c9c6f311a5359a" kindref="member">linphone_core_get_current_vtable</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lc-&gt;current_vtable;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cleanup_dead_vtable_refs(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSList<sp/>*it,*next_it;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(it=lc-&gt;vtable_refs;<sp/>it!=NULL;<sp/>){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref><sp/>*ref=(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref>*)it-&gt;data;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>next_it=it-&gt;next;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(ref-&gt;valid==0){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ref-&gt;valid=0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lc-&gt;vtable_refs=ms_list_remove_link(lc-&gt;vtable_refs,<sp/>it);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_free(ref);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it=next_it;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOTIFY_IF_EXIST(function_name,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSList*<sp/>iterator;<sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VTableReference<sp/>*ref;<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool_t<sp/>has_cb<sp/>=<sp/>FALSE;<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(iterator=lc-&gt;vtable_refs;<sp/>iterator!=NULL;<sp/>iterator=iterator-&gt;next)\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((ref=(VTableReference*)iterator-&gt;data)-&gt;valid<sp/>&amp;&amp;<sp/>(lc-&gt;current_vtable=ref-&gt;vtable)-&gt;function_name)<sp/>{\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lc-&gt;current_vtable-&gt;function_name(__VA_ARGS__);\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>has_cb<sp/>=<sp/>TRUE;\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(has_cb)<sp/>ms_message(&quot;Linphone<sp/>core<sp/>[%p]<sp/>notifying<sp/>[%s]&quot;,lc,#function_name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOTIFY_IF_EXIST_INTERNAL(function_name,<sp/>internal_val,<sp/>...)<sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSList*<sp/>iterator;<sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VTableReference<sp/>*ref;<sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bool_t<sp/>has_cb<sp/>=<sp/>FALSE;<sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(iterator=lc-&gt;vtable_refs;<sp/>iterator!=NULL;<sp/>iterator=iterator-&gt;next)\</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((ref=(VTableReference*)iterator-&gt;data)-&gt;valid<sp/>&amp;&amp;<sp/>(lc-&gt;current_vtable=ref-&gt;vtable)-&gt;function_name<sp/>&amp;&amp;<sp/>(ref-&gt;internal<sp/>==<sp/>internal_val))<sp/>{\</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lc-&gt;current_vtable-&gt;function_name(__VA_ARGS__);\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>has_cb<sp/>=<sp/>TRUE;\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(has_cb)<sp/>ms_message(&quot;Linphone<sp/>core<sp/>[%p]<sp/>notifying<sp/>[%s]&quot;,lc,#function_name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_global_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="group__initializing_1gae852b5b31d6d5e673de9d2c9b63aca7e" kindref="member">LinphoneGlobalState</ref><sp/>gstate,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(global_state_changed,lc,gstate,message);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_call_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call,<sp/><ref refid="group__call__control_1ga37dad1a4f935d9cc26ec1f9d2b23691a" kindref="member">LinphoneCallState</ref><sp/>cstate,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(call_state_changed,<sp/>lc,call,cstate,message);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_call_encryption_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call,<sp/>bool_t<sp/>on,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*authentication_token)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(call_encryption_changed,<sp/>lc,call,on,authentication_token);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_registration_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneProxyConfig" kindref="compound">LinphoneProxyConfig</ref><sp/>*cfg,<sp/><ref refid="group__proxies_1ga698cb4228fac724b9e7c3cc5f499f7a8" kindref="member">LinphoneRegistrationState</ref><sp/>cstate,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(registration_state_changed,<sp/>lc,cfg,cstate,message);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang__<sp/>||<sp/>((__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>6)<sp/>||<sp/>__GNUC__<sp/>&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wdeprecated-declarations&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_show_interface(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(show,<sp/>lc);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_display_status(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(display_status,<sp/>lc,message);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_display_message(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(display_message,<sp/>lc,message);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_display_warning(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(display_warning,<sp/>lc,message);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_display_url(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*url){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(display_url,<sp/>lc,message,url);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang__<sp/>||<sp/>((__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>6)<sp/>||<sp/>__GNUC__<sp/>&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_notify_presence_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*<sp/>lf){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(notify_presence_received,<sp/>lc,lf);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_new_subscription_requested(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*lf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*url){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(new_subscription_requested,<sp/>lc,lf,url);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_auth_info_requested(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*realm,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(auth_info_requested,<sp/>lc,realm,username,domain);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_call_log_updated(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCallLog" kindref="compound">LinphoneCallLog</ref><sp/>*newcl){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(call_log_updated,<sp/>lc,newcl);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang__<sp/>||<sp/>((__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>6)<sp/>||<sp/>__GNUC__<sp/>&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wdeprecated-declarations&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_text_message_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneChatRoom" kindref="compound">LinphoneChatRoom</ref><sp/>*room,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*from,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message){</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(text_received,<sp/>lc,room,from,message);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang__<sp/>||<sp/>((__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>6)<sp/>||<sp/>__GNUC__<sp/>&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_message_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneChatRoom" kindref="compound">LinphoneChatRoom</ref><sp/>*room,<sp/><ref refid="struct__LinphoneChatMessage" kindref="compound">LinphoneChatMessage</ref><sp/>*message){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(message_received,<sp/>lc,room,message);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang__<sp/>||<sp/>((__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>6)<sp/>||<sp/>__GNUC__<sp/>&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>push</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>ignored<sp/>&quot;-Wdeprecated-declarations&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_file_transfer_recv(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneChatMessage" kindref="compound">LinphoneChatMessage</ref><sp/>*message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref>*<sp/>content,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(file_transfer_recv,<sp/>lc,message,content,buff,size);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_file_transfer_send(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneChatMessage" kindref="compound">LinphoneChatMessage</ref><sp/>*message,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref>*<sp/>content,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal">*<sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(file_transfer_send,<sp/>lc,message,content,buff,size);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_file_transfer_progress_indication(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneChatMessage" kindref="compound">LinphoneChatMessage</ref><sp/>*message,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref>*<sp/>content,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>total)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(file_transfer_progress_indication,<sp/>lc,message,content,offset,total);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang__<sp/>||<sp/>((__GNUC__<sp/>==<sp/>4<sp/>&amp;&amp;<sp/>__GNUC_MINOR__<sp/>&gt;=<sp/>6)<sp/>||<sp/>__GNUC__<sp/>&gt;<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>GCC<sp/>diagnostic<sp/>pop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_is_composing_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneChatRoom" kindref="compound">LinphoneChatRoom</ref><sp/>*room)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(is_composing_received,<sp/>lc,room);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_dtmf_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref>*<sp/>lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dtmf)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(dtmf_received,<sp/>lc,call,dtmf);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">bool_t<sp/>linphone_core_dtmf_received_has_listener(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref>*<sp/>lc)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSList*<sp/>iterator;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(iterator=lc-&gt;vtable_refs;<sp/>iterator!=NULL;<sp/>iterator=iterator-&gt;next){</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref><sp/>*ref=(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref>*)iterator-&gt;data;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(ref-&gt;valid<sp/>&amp;&amp;<sp/>ref-&gt;vtable-&gt;<ref refid="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" kindref="member">dtmf_received</ref>)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>TRUE;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_refer_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*refer_to)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(refer_received,<sp/>lc,refer_to);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_buddy_info_updated(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*lf)<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(buddy_info_updated,<sp/>lc,lf);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_transfer_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*transfered,<sp/><ref refid="group__call__control_1ga37dad1a4f935d9cc26ec1f9d2b23691a" kindref="member">LinphoneCallState</ref><sp/>new_call_state)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(transfer_state_changed,<sp/>lc,transfered,new_call_state);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_call_stats_updated(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCallStats" kindref="compound">LinphoneCallStats</ref><sp/>*stats)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(call_stats_updated,<sp/>lc,call,stats);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_info_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneInfoMessage" kindref="compound">LinphoneInfoMessage</ref><sp/>*msg)<sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(info_received,<sp/>lc,call,msg);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_configuring_status(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="group__initializing_1ga6b495fb476419ea7dbd62b1b2fa89bdf" kindref="member">LinphoneConfiguringState</ref><sp/>status,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*message)<sp/>{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(configuring_status,<sp/>lc,status,message);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_network_reachable(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>bool_t<sp/>reachable)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(network_reachable,<sp/>lc,reachable);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_notify_received(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*notified_event,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST_INTERNAL(notify_received,<sp/>linphone_event_is_internal(lev),<sp/>lc,<sp/>lev,<sp/>notified_event,<sp/>body);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_subscription_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref><sp/>state)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST_INTERNAL(subscription_state_changed,linphone_event_is_internal(lev),<sp/>lc,lev,state);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_publish_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref><sp/>state)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST_INTERNAL(publish_state_changed,<sp/>linphone_event_is_internal(lev),<sp/>lc,<sp/>lev,<sp/>state);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_log_collection_upload_state_changed(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="group__initializing_1ga4acd5437baf0cf862c1551c0d0e0d8a0" kindref="member">LinphoneCoreLogCollectionUploadState</ref><sp/>state,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*info)<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(log_collection_upload_state_changed,<sp/>lc,<sp/>state,<sp/>info);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_notify_log_collection_upload_progress_indication(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>total)<sp/>{</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NOTIFY_IF_EXIST(log_collection_upload_progress_indication,<sp/>lc,<sp/>offset,<sp/>total);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cleanup_dead_vtable_refs(lc);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref><sp/>*<sp/>v_table_reference_new(<ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*vtable,<sp/>bool_t<sp/>autorelease,<sp/>bool_t<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref><sp/>*ref=ms_new0(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref>,1);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ref-&gt;valid=1;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ref-&gt;autorelease=autorelease;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ref-&gt;internal<sp/>=<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ref-&gt;vtable=vtable;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ref;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>v_table_reference_destroy(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref><sp/>*ref){</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ref-&gt;autorelease)<sp/><ref refid="group__initializing_1ga6c6b69d6eaa13ea8366e7c6b9484883d" kindref="member">linphone_core_v_table_destroy</ref>(ref-&gt;vtable);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_free(ref);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_linphone_core_add_listener(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*vtable,<sp/>bool_t<sp/>autorelease,<sp/>bool_t<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_message(</highlight><highlight class="stringliteral">&quot;Vtable<sp/>[%p]<sp/>registered<sp/>on<sp/>core<sp/>[%p]&quot;</highlight><highlight class="normal">,lc,vtable);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lc-&gt;vtable_refs=ms_list_append(lc-&gt;vtable_refs,v_table_reference_new(vtable,<sp/>autorelease,<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga1f5a7a5f05171173b3886691495d649a" kindref="member">linphone_core_add_listener</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*vtable){</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_linphone_core_add_listener(lc,<sp/>vtable,<sp/>FALSE,<sp/>FALSE);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga5da58988d76f598a40033cf61a3c82e4" kindref="member">linphone_core_remove_listener</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCoreVTable" kindref="compound">LinphoneCoreVTable</ref><sp/>*vtable)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MSList<sp/>*it;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_message(</highlight><highlight class="stringliteral">&quot;Vtable<sp/>[%p]<sp/>unregistered<sp/>on<sp/>core<sp/>[%p]&quot;</highlight><highlight class="normal">,lc,vtable);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(it=lc-&gt;vtable_refs;<sp/>it!=NULL;<sp/>it=it-&gt;next){</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__VTableReference" kindref="compound">VTableReference</ref><sp/>*ref=(<ref refid="struct__VTableReference" kindref="compound">VTableReference</ref>*)it-&gt;data;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(ref-&gt;vtable==vtable)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ref-&gt;valid=0;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/vtables.c"/>
+  </compounddef>
+</doxygen>

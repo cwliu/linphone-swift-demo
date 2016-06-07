@@ -1,0 +1,964 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__network__parameters" kind="group">
+    <compoundname>network_parameters</compoundname>
+    <title>Controlling network parameters (ports, mtu...)</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__network__parameters_1gadad0a1c27596017d9d9b3c30ef47f5be" prot="public" static="no">
+        <name>_LinphoneFirewallPolicy</name>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5bea8ecc1e10491dd4a2bcb3d07e88086bae" prot="public">
+          <name>LinphonePolicyNoFirewall</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not use any mechanism to pass through firewalls </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5bea823554c78cb93f674464e332af988fe1" prot="public">
+          <name>LinphonePolicyUseNatAddress</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the specified public adress </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5bea38001ab78a3d1071e153e49c741b2d9d" prot="public">
+          <name>LinphonePolicyUseStun</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use a STUN server to get the public address </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5beaeadfb66b915acd91af98e4d5cd47b17b" prot="public">
+          <name>LinphonePolicyUseIce</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the ICE protocol </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__network__parameters_1ggadad0a1c27596017d9d9b3c30ef47f5beab254b7940dee8816026d50fb29ecaae8" prot="public">
+          <name>LinphonePolicyUseUpnp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the uPnP protocol </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Policy to use to pass through firewalls. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2154" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2154" bodyend="2160"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" prot="public" static="no">
+        <type>enum <ref refid="group__network__parameters_1gadad0a1c27596017d9d9b3c30ef47f5be" kindref="member">_LinphoneFirewallPolicy</ref></type>
+        <definition>typedef enum _LinphoneFirewallPolicy  LinphoneFirewallPolicy</definition>
+        <argsstring></argsstring>
+        <name>LinphoneFirewallPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Policy to use to pass through firewalls. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2160" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__network__parameters_1ga6edfbe884d0767c1ee82ce57da659c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_audio_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_audio_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the UDP port used for audio streaming. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2006" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2006" bodyend="2009"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga1c90a61621a177ef26319ffbee2e3b6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_audio_port_range</definition>
+        <argsstring>(const LinphoneCore *lc, int *min_port, int *max_port)</argsstring>
+        <name>linphone_core_get_audio_port_range</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_port</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the audio port range from which is randomly chosen the UDP port used for audio streaming. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2016" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2016" bodyend="2020"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga3ec39e1205197d41e9862008f24f521c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_video_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_video_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the UDP port used for video streaming. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2027" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2027" bodyend="2029"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga6d802f4c671e6a4c3b39798246c23aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_video_port_range</definition>
+        <argsstring>(const LinphoneCore *lc, int *min_port, int *max_port)</argsstring>
+        <name>linphone_core_get_video_port_range</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_port</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the video port range from which is randomly chosen the UDP port used for video streaming. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2036" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2036" bodyend="2040"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga673611646f2d2d45fcfa222f6e616b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_text_port</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_text_port</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the UDP port used for text streaming. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2047" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2047" bodyend="2049"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga4bec9283f4f7020fdc3525b19c4fb5ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_text_port_range</definition>
+        <argsstring>(const LinphoneCore *lc, int *min_port, int *max_port)</argsstring>
+        <name>linphone_core_get_text_port_range</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>min_port</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>max_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the video port range from which is randomly chosen the UDP port used for text streaming. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2056" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2056" bodyend="2059"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga886e1f383c93ef3c031622bf612cdcd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_audio_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_audio_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port used for audio streaming. A value if -1 will request the system to allocate the local port randomly. This is recommended in order to avoid firewall warnings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2124" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2124" bodyend="2127"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7c3341cec359dfffb671f68653fd151e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_video_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_video_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port used for video streaming. A value if -1 will request the system to allocate the local port randomly. This is recommended in order to avoid firewall warnings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2146" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2146" bodyend="2148"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac3c68ac27c4e07b0c3f5430d5b658e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_text_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_text_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port used for text streaming. A value if -1 will request the system to allocate the local port randomly. This is recommended in order to avoid firewall warnings. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2167" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2167" bodyend="2169"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga8d1bfaa5da13e6c1ef60f30498e8dddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_sip_port</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_sip_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the UDP port used by SIP.</para><para><xrefsect id="deprecated_1_deprecated000023"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__network__parameters_1gaf13b4063c40e63acd25a5cc52f486842" kindref="member">linphone_core_get_sip_transports()</ref> instead.</para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2240" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2240" bodyend="2244"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab5d3dc270fff43b8b782b6435214fecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_set_sip_transports</definition>
+        <argsstring>(LinphoneCore *lc, const LCSipTransports *tr_config)</argsstring>
+        <name>linphone_core_set_sip_transports</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__initializing_1gae3417c9be557f9263ffe4f03eec21df0" kindref="member">LCSipTransports</ref> *</type>
+          <declname>tr_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the ports to be used for each of transport (UDP or TCP)</para><para>A zero value port for a given transport means the transport is not used. A value of LC_SIP_TRANSPORT_RANDOM (-1) means the port is to be choosen randomly by the system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2350" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2350" bodyend="2382"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaf13b4063c40e63acd25a5cc52f486842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_sip_transports</definition>
+        <argsstring>(LinphoneCore *lc, LCSipTransports *tr)</argsstring>
+        <name>linphone_core_get_sip_transports</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gae3417c9be557f9263ffe4f03eec21df0" kindref="member">LCSipTransports</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the port configuration used for each transport (udp, tcp, tls). A zero value port for a given transport means the transport is not used. A value of LC_SIP_TRANSPORT_RANDOM (-1) means the port is to be chosen randomly by the system. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2390" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2390" bodyend="2393"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga94d3f602f02195ee750bdbac6c1ad49e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_get_sip_transports_used</definition>
+        <argsstring>(LinphoneCore *lc, LCSipTransports *tr)</argsstring>
+        <name>linphone_core_get_sip_transports_used</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gae3417c9be557f9263ffe4f03eec21df0" kindref="member">LCSipTransports</ref> *</type>
+          <declname>tr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieves the real port number assigned for each sip transport (udp, tcp, tls). A zero value means that the transport is not activated. If LC_SIP_TRANSPORT_RANDOM was passed to <ref refid="group__network__parameters_1gab5d3dc270fff43b8b782b6435214fecb" kindref="member">linphone_core_set_sip_transports()</ref>, the random port choosed by the system is returned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneCore </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a LCSipTransports structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2403" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2403" bodyend="2407"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac6891ac20bdf7f8556cd6a107c19db65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_sip_port</definition>
+        <argsstring>(LinphoneCore *lc, int port)</argsstring>
+        <name>linphone_core_set_sip_port</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the UDP port to be used by SIP.</para><para><xrefsect id="deprecated_1_deprecated000024"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__network__parameters_1gab5d3dc270fff43b8b782b6435214fecb" kindref="member">linphone_core_set_sip_transports()</ref> instead.</para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2414" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2414" bodyend="2420"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga91804b8cf92f310c0d4cc8a4259ba917" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_ipv6_enabled</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_ipv6_enabled</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns TRUE if IPv6 is enabled.</para><para>See <ref refid="group__network__parameters_1gab6f8e740064dad20c530770ea51982d4" kindref="member">linphone_core_enable_ipv6()</ref> for more details on how IPv6 is supported in liblinphone. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2428" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2428" bodyend="2430"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab6f8e740064dad20c530770ea51982d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_enable_ipv6</definition>
+        <argsstring>(LinphoneCore *lc, bool_t val)</argsstring>
+        <name>linphone_core_enable_ipv6</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Turns IPv6 support on or off.</para><para><simplesect kind="note"><para>IPv6 support is exclusive with IPv4 in liblinphone: when IPv6 is turned on, IPv4 calls won&apos;t be possible anymore. By default IPv6 support is off. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="2441" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="2441" bodyend="2454"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2fc776d1bee22da2d15a91f02925d913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_sip_dscp</definition>
+        <argsstring>(LinphoneCore *lc, int dscp)</argsstring>
+        <name>linphone_core_set_sip_dscp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dscp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the DSCP field for SIP signaling channel.</para><para><itemizedlist>
+<listitem><para>The DSCP defines the quality of service in IP packets. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="7146" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7146" bodyend="7152"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga88edb42a58b294758dabca74d5e9590b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_sip_dscp</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_sip_dscp</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DSCP field for SIP signaling channel.</para><para><itemizedlist>
+<listitem><para>The DSCP defines the quality of service in IP packets. </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="7161" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7161" bodyend="7163"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7a9935736b1002aaa4b0df9881ecb1c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_audio_dscp</definition>
+        <argsstring>(LinphoneCore *lc, int dscp)</argsstring>
+        <name>linphone_core_set_audio_dscp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dscp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the DSCP field for outgoing audio streams.</para><para>The DSCP defines the quality of service in IP packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="7172" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7172" bodyend="7175"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7daf9a795169bbff137eb7a5d28c2331" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_audio_dscp</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_audio_dscp</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DSCP field for outgoing audio streams.</para><para>The DSCP defines the quality of service in IP packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="7184" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7184" bodyend="7186"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaf15ecd18b9d65b071ab7dc200fc6669c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_video_dscp</definition>
+        <argsstring>(LinphoneCore *lc, int dscp)</argsstring>
+        <name>linphone_core_set_video_dscp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dscp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the DSCP field for outgoing video streams.</para><para>The DSCP defines the quality of service in IP packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="7195" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7195" bodyend="7199"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga5c54680dff98e57b779ac15153202011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_video_dscp</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_video_dscp</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the DSCP field for outgoing video streams.</para><para>The DSCP defines the quality of service in IP packets. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" line="7208" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7208" bodyend="7210"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga8cef9cabe4bb39b0ec92c92430c628d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_stun_server</definition>
+        <argsstring>(LinphoneCore *lc, const char *server)</argsstring>
+        <name>linphone_core_set_stun_server</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>server</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the STUN server address to use when the firewall policy is set to STUN. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">server</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The STUN server address to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3102" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="4961" bodyend="4980"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2def221f110da2a63bb0bdf957664829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_stun_server</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_stun_server</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the STUN server address being used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The STUN server address being used. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3110" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="4982" bodyend="4984"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga6a782ab44345b65137bdc0086a5d1f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_upnp_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_core_upnp_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the availability of uPnP.</para><para><simplesect kind="return"><para>true if uPnP is available otherwise return false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3118" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="4987" bodyend="4993"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae377ba325e3223ab486c9c985f9e9dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_core_get_upnp_state</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_upnp_state</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the internal state of uPnP.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an LinphoneUpnpState. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3127" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="4995" bodyend="5001"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga9ae3c4c5ab0133edf1a40474339db3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_upnp_external_ipaddress</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_upnp_external_ipaddress</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the external ip address of router. In some cases the uPnP can have an external ip address but not a usable uPnP (state different of Ok).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a null terminated string containing the external ip address. If the the external ip address is not available return null. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3139" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5003" bodyend="5009"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadadb01ea2af8410e85fe2dde04be30a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_nat_address</definition>
+        <argsstring>(LinphoneCore *lc, const char *addr)</argsstring>
+        <name>linphone_core_set_nat_address</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the public IP address of NAT when using the firewall policy is set to use NAT. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The public IP address of NAT to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3147" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5012" bodyend="5020"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2b9903c9e28728b1a2dd389a761ecdb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_core_get_nat_address</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_nat_address</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the public IP address of NAT being used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The public IP address of NAT being used. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3155" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5022" bodyend="5024"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga73cc66cfaf24bfb1f150208e2e54076b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_firewall_policy</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneFirewallPolicy pol)</argsstring>
+        <name>linphone_core_set_firewall_policy</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref></type>
+          <declname>pol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the policy to use to pass through firewalls. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref> to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3163" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5052" bodyend="5107"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga9de28ff0fd0f8ff65ef82eba9592276c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref></type>
+        <definition>LinphoneFirewallPolicy linphone_core_get_firewall_policy</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_firewall_policy</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the policy that is used to pass through firewalls. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group__network__parameters_1ga833aa818e8216f35ef12f86767806129" kindref="member">LinphoneFirewallPolicy</ref> that is being used. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3171" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5108" bodyend="5123"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t value)</argsstring>
+        <name>linphone_core_set_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the application to notify the linphone core library when network is reachable. Calling this method with true trigger linphone to initiate a registration process for all proxies. Calling this method disables the automatic network detection mode. It means you must call this method after each network state changes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3758" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6594" bodyend="6597"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadd2b16bfd430b156067312b90a54a2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_is_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_is_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>return network state either as positioned by the application or by linphone itself. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3763" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6609" bodyend="6611"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga751bab9045c1930c59822d54375befd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_sip_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t value)</argsstring>
+        <name>linphone_core_set_sip_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the application to notify the linphone core library when the SIP network is reachable. This is for advanced usage, when SIP and RTP layers are required to use different interfaces. Most applications just need <ref refid="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" kindref="member">linphone_core_set_network_reachable()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3771" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6604" bodyend="6607"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gaa6d8b1e2bcfc21815dc918eb2adaf723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_media_network_reachable</definition>
+        <argsstring>(LinphoneCore *lc, bool_t value)</argsstring>
+        <name>linphone_core_set_media_network_reachable</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by the application to notify the linphone core library when the media (RTP) network is reachable. This is for advanced usage, when SIP and RTP layers are required to use different interfaces. Most applications just need <ref refid="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" kindref="member">linphone_core_set_network_reachable()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3779" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6599" bodyend="6602"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga29ecb77c4dbd33b4827e39e9aed846ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_enable_keep_alive</definition>
+        <argsstring>(LinphoneCore *lc, bool_t enable)</argsstring>
+        <name>linphone_core_enable_keep_alive</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable signaling keep alive. small udp packet sent periodically to keep udp NAT association</para><para>Enables signaling keep alive </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3785" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6860" bodyend="6872"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac02dfe51519ae8a5550f0b1b4233c460" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_keep_alive_enabled</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_keep_alive_enabled</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Is signaling keep alive</para><para>Is signaling keep alive enabled </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3790" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6876" bodyend="6878"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga04abb1a18b2012221b5b20b08c9ebded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_enable_sdp_200_ack</definition>
+        <argsstring>(LinphoneCore *lc, bool_t enable)</argsstring>
+        <name>linphone_core_enable_sdp_200_ack</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Control when media offer is sent in SIP INVITE. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the linphone core </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if INVITE has to be sent whitout SDP. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="4153" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7230" bodyend="7232"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga986be672332d0ff3faba157519ff6177" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_sdp_200_ack_enabled</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_sdp_200_ack_enabled</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Media offer control param for SIP INVITE. <simplesect kind="return"><para>true if INVITE has to be sent whitout SDP. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="4159" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="7233" bodyend="7235"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

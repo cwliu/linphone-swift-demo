@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneContactSearch" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneContactSearch</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneContactSearch_1a8f3510951044825fb35d2150bf9d35ad" prot="public" static="no" mutable="no">
+        <type>belle_sip_object_t</type>
+        <definition>belle_sip_object_t _LinphoneContactSearch::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="26" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContactSearch_1afc496af80a40cb8c340b637f2d255ddf" prot="public" static="no" mutable="no">
+        <type>ContactSearchID</type>
+        <definition>ContactSearchID _LinphoneContactSearch::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="27" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContactSearch_1a4a1293004edcb61b248d02352fedfc87" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneContactSearch::predicate</definition>
+        <argsstring></argsstring>
+        <name>predicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="28" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContactSearch_1aa9f57a5d547d45fe7966a30ade306e14" prot="public" static="no" mutable="no">
+        <type>ContactSearchCallback</type>
+        <definition>ContactSearchCallback _LinphoneContactSearch::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="29" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneContactSearch_1ab1172b9b41045c01f7fe000186047dcf" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneContactSearch::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="30" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="594">
+        <label>_LinphoneContactSearch</label>
+        <link refid="struct__LinphoneContactSearch"/>
+        <childnode refid="594" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="25" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="25" bodyend="31"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneContactSearch_1a8f3510951044825fb35d2150bf9d35ad" prot="public" virt="non-virtual"><scope>_LinphoneContactSearch</scope><name>base</name></member>
+      <member refid="struct__LinphoneContactSearch_1aa9f57a5d547d45fe7966a30ade306e14" prot="public" virt="non-virtual"><scope>_LinphoneContactSearch</scope><name>cb</name></member>
+      <member refid="struct__LinphoneContactSearch_1ab1172b9b41045c01f7fe000186047dcf" prot="public" virt="non-virtual"><scope>_LinphoneContactSearch</scope><name>data</name></member>
+      <member refid="struct__LinphoneContactSearch_1afc496af80a40cb8c340b637f2d255ddf" prot="public" virt="non-virtual"><scope>_LinphoneContactSearch</scope><name>id</name></member>
+      <member refid="struct__LinphoneContactSearch_1a4a1293004edcb61b248d02352fedfc87" prot="public" virt="non-virtual"><scope>_LinphoneContactSearch</scope><name>predicate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

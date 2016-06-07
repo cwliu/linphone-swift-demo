@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__get__activity__st" kind="struct" language="C++" prot="public">
+    <compoundname>_get_activity_st</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__get__activity__st_1a0ec8991ebb52035c88ef25e049d47be3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _get_activity_st::requested_idx</definition>
+        <argsstring></argsstring>
+        <name>requested_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="361" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__get__activity__st_1a3b12693576feff4ba00473d20162c7ac" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _get_activity_st::current_idx</definition>
+        <argsstring></argsstring>
+        <name>current_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="362" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__get__activity__st_1a68aabcdf8de4df43eccd245838b4f70d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__buddy__list_1gadb1476058b69c4da5e94c7e0d55fd244" kindref="member">LinphonePresenceActivity</ref> *</type>
+        <definition>LinphonePresenceActivity* _get_activity_st::activity</definition>
+        <argsstring></argsstring>
+        <name>activity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="363" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="117">
+        <label>_LinphonePresenceActivity</label>
+        <link refid="struct__LinphonePresenceActivity"/>
+      </node>
+      <node id="116">
+        <label>_get_activity_st</label>
+        <link refid="struct__get__activity__st"/>
+        <childnode refid="117" relation="usage">
+          <edgelabel>activity</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="360" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="360" bodyend="364"/>
+    <listofallmembers>
+      <member refid="struct__get__activity__st_1a68aabcdf8de4df43eccd245838b4f70d" prot="public" virt="non-virtual"><scope>_get_activity_st</scope><name>activity</name></member>
+      <member refid="struct__get__activity__st_1a3b12693576feff4ba00473d20162c7ac" prot="public" virt="non-virtual"><scope>_get_activity_st</scope><name>current_idx</name></member>
+      <member refid="struct__get__activity__st_1a0ec8991ebb52035c88ef25e049d47be3" prot="public" virt="non-virtual"><scope>_get_activity_st</scope><name>requested_idx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

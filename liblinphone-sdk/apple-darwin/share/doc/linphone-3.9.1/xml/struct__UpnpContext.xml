@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__UpnpContext" kind="struct" language="C++" prot="public">
+    <compoundname>_UpnpContext</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__UpnpContext_1a9a9f244c64b815b79ba749f38e0f2bb7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* _UpnpContext::lc</definition>
+        <argsstring></argsstring>
+        <name>lc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="70" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1ade78c7975664126b80b2cbecfb396428" prot="public" static="no" mutable="no">
+        <type>upnp_igd_context *</type>
+        <definition>upnp_igd_context* _UpnpContext::upnp_igd_ctxt</definition>
+        <argsstring></argsstring>
+        <name>upnp_igd_ctxt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="71" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1a9f3544cd342adbe5f8be5642debb6c17" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__UpnpPortBinding" kindref="compound">UpnpPortBinding</ref> *</type>
+        <definition>UpnpPortBinding* _UpnpContext::sip_tcp</definition>
+        <argsstring></argsstring>
+        <name>sip_tcp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="72" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1abc069f8d034b7816407895fb6bdb51a8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__UpnpPortBinding" kindref="compound">UpnpPortBinding</ref> *</type>
+        <definition>UpnpPortBinding* _UpnpContext::sip_tls</definition>
+        <argsstring></argsstring>
+        <name>sip_tls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="73" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1af9f9b3435adb30ca56a06bcd4cdbdc5b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__UpnpPortBinding" kindref="compound">UpnpPortBinding</ref> *</type>
+        <definition>UpnpPortBinding* _UpnpContext::sip_udp</definition>
+        <argsstring></argsstring>
+        <name>sip_udp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="74" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1ad44853ad9c83e6346a194128ad908e96" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState _UpnpContext::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="75" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1a769a24c9959f6f180bcb16b80139262f" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _UpnpContext::removing_configs</definition>
+        <argsstring></argsstring>
+        <name>removing_configs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="76" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1ade7e56b4708535aeaecc25643a1122d9" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _UpnpContext::adding_configs</definition>
+        <argsstring></argsstring>
+        <name>adding_configs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="77" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1aefe1fa9dd22343fe9a23886e8f5ccc59" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _UpnpContext::pending_bindings</definition>
+        <argsstring></argsstring>
+        <name>pending_bindings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="78" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1afee3723fab8d42c73d424c8ae1803b7e" prot="public" static="no" mutable="no">
+        <type>ms_mutex_t</type>
+        <definition>ms_mutex_t _UpnpContext::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1a561a255c16d45843b14343e3f5c923bd" prot="public" static="no" mutable="no">
+        <type>ms_cond_t</type>
+        <definition>ms_cond_t _UpnpContext::empty_cond</definition>
+        <argsstring></argsstring>
+        <name>empty_cond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="81" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1a84ffb398fab19563605a914383c0d68f" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t _UpnpContext::last_ready_check</definition>
+        <argsstring></argsstring>
+        <name>last_ready_check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="83" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpContext_1aab56101b3134f86e84e0c76cee843134" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState _UpnpContext::last_ready_state</definition>
+        <argsstring></argsstring>
+        <name>last_ready_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="84" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1088">
+        <label>_LinphoneCoreVTable</label>
+        <link refid="struct__LinphoneCoreVTable"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>configuring_status</edgelabel>
+          <edgelabel>publish_state_changed</edgelabel>
+          <edgelabel>refer_received</edgelabel>
+          <edgelabel>registration_state_changed</edgelabel>
+          <edgelabel>transfer_state_changed</edgelabel>
+          <edgelabel>log_collection_upload_state_changed</edgelabel>
+          <edgelabel>subscription_state_changed</edgelabel>
+          <edgelabel>new_subscription_requested</edgelabel>
+          <edgelabel>dtmf_received</edgelabel>
+          <edgelabel>call_state_changed</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>net_config</label>
+        <link refid="structnet__config"/>
+      </node>
+      <node id="1095">
+        <label>_LinphoneEvent</label>
+        <link refid="struct__LinphoneEvent"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>_LinphoneXmlRpcSession</label>
+        <link refid="struct__LinphoneXmlRpcSession"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>_UpnpPortBinding</label>
+        <link refid="struct__UpnpPortBinding"/>
+      </node>
+      <node id="1087">
+        <label>_LinphoneCore</label>
+        <link refid="struct__LinphoneCore"/>
+        <childnode refid="1088" relation="usage">
+          <edgelabel>current_vtable</edgelabel>
+        </childnode>
+        <childnode refid="1089" relation="usage">
+          <edgelabel>net_conf</edgelabel>
+        </childnode>
+        <childnode refid="1090" relation="usage">
+          <edgelabel>log_collection_upload_information</edgelabel>
+        </childnode>
+        <childnode refid="1091" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="1092" relation="usage">
+          <edgelabel>autoreplier_conf</edgelabel>
+        </childnode>
+        <childnode refid="1093" relation="usage">
+          <edgelabel>text_conf</edgelabel>
+        </childnode>
+        <childnode refid="1094" relation="usage">
+          <edgelabel>friendlist</edgelabel>
+        </childnode>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>sound_conf</edgelabel>
+        </childnode>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>ringtoneplayer</edgelabel>
+        </childnode>
+        <childnode refid="1098" relation="usage">
+          <edgelabel>video_conf</edgelabel>
+        </childnode>
+        <childnode refid="1099" relation="usage">
+          <edgelabel>rtp_conf</edgelabel>
+        </childnode>
+        <childnode refid="1100" relation="usage">
+          <edgelabel>ecc</edgelabel>
+        </childnode>
+        <childnode refid="1101" relation="usage">
+          <edgelabel>presence_model</edgelabel>
+        </childnode>
+        <childnode refid="1102" relation="usage">
+          <edgelabel>default_proxy</edgelabel>
+        </childnode>
+        <childnode refid="1108" relation="usage">
+          <edgelabel>sip_conf</edgelabel>
+        </childnode>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>wait_cb</edgelabel>
+        </childnode>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>current_call</edgelabel>
+        </childnode>
+        <childnode refid="1126" relation="usage">
+          <edgelabel>ui_conf</edgelabel>
+        </childnode>
+        <childnode refid="1127" relation="usage">
+          <edgelabel>video_policy</edgelabel>
+        </childnode>
+        <childnode refid="1128" relation="usage">
+          <edgelabel>preview_finished_cb</edgelabel>
+        </childnode>
+        <childnode refid="1129" relation="usage">
+          <edgelabel>hooks</edgelabel>
+        </childnode>
+        <childnode refid="1130" relation="usage">
+          <edgelabel>rtptf</edgelabel>
+        </childnode>
+        <childnode refid="1131" relation="usage">
+          <edgelabel>codecs_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>codecs_config</label>
+        <link refid="structcodecs__config"/>
+      </node>
+      <node id="1109">
+        <label>_LCSipTransports</label>
+        <link refid="struct__LCSipTransports"/>
+      </node>
+      <node id="1105">
+        <label>_SipSetup</label>
+        <link refid="struct__SipSetup"/>
+        <childnode refid="1106" relation="usage">
+          <edgelabel>buddy_lookup_funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>_LinphoneBuffer</label>
+        <link refid="struct__LinphoneBuffer"/>
+      </node>
+      <node id="1111">
+        <label>_LinphoneCallStats</label>
+        <link refid="struct__LinphoneCallStats"/>
+      </node>
+      <node id="1085">
+        <label>_UpnpContext</label>
+        <link refid="struct__UpnpContext"/>
+        <childnode refid="1086" relation="usage">
+          <edgelabel>sip_tls</edgelabel>
+          <edgelabel>sip_tcp</edgelabel>
+          <edgelabel>sip_udp</edgelabel>
+        </childnode>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1129">
+        <label>_LinphoneTaskList</label>
+        <link refid="struct__LinphoneTaskList"/>
+      </node>
+      <node id="1128">
+        <label>_LCCallbackObj</label>
+        <link refid="struct__LCCallbackObj"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="1107" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>_LinphoneRingtonePlayer</label>
+        <link refid="struct__LinphoneRingtonePlayer"/>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>end_of_ringtone</edgelabel>
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>_EcCalibrator</label>
+        <link refid="struct__EcCalibrator"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>_LinphonePresenceModel</label>
+        <link refid="struct__LinphonePresenceModel"/>
+      </node>
+      <node id="1121">
+        <label>reporting_content_metrics</label>
+        <link refid="structreporting__content__metrics"/>
+      </node>
+      <node id="1096">
+        <label>sound_config</label>
+        <link refid="structsound__config"/>
+      </node>
+      <node id="1130">
+        <label>_LinphoneRtpTransportFactories</label>
+        <link refid="struct__LinphoneRtpTransportFactories"/>
+      </node>
+      <node id="1125">
+        <label>_CallCallbackObj</label>
+        <link refid="struct__CallCallbackObj"/>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>autoreplier_config</label>
+        <link refid="structautoreplier__config"/>
+      </node>
+      <node id="1091">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="1103">
+        <label>_SipSetupContext</label>
+        <link refid="struct__SipSetupContext"/>
+        <childnode refid="1104" relation="usage">
+          <edgelabel>xmlrpc_session</edgelabel>
+        </childnode>
+        <childnode refid="1105" relation="usage">
+          <edgelabel>funcs</edgelabel>
+        </childnode>
+        <childnode refid="1102" relation="usage">
+          <edgelabel>cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>_LinphoneCallLog</label>
+        <link refid="struct__LinphoneCallLog"/>
+        <childnode refid="1119" relation="usage">
+          <edgelabel>reporting</edgelabel>
+        </childnode>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+      <node id="1099">
+        <label>rtp_config</label>
+        <link refid="structrtp__config"/>
+      </node>
+      <node id="1102">
+        <label>_LinphoneProxyConfig</label>
+        <link refid="struct__LinphoneProxyConfig"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="1103" relation="usage">
+          <edgelabel>ssctx</edgelabel>
+        </childnode>
+        <childnode refid="1095" relation="usage">
+          <edgelabel>long_term_event</edgelabel>
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>_LinphoneChatRoom</label>
+        <link refid="struct__LinphoneChatRoom"/>
+        <childnode refid="1114" relation="usage">
+          <edgelabel>pending_message</edgelabel>
+        </childnode>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>_LinphoneFriendList</label>
+        <link refid="struct__LinphoneFriendList"/>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="1095" relation="usage">
+          <edgelabel>event</edgelabel>
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>_LinphoneContent</label>
+        <link refid="struct__LinphoneContent"/>
+      </node>
+      <node id="1110">
+        <label>_LinphoneCall</label>
+        <link refid="struct__LinphoneCall"/>
+        <childnode refid="1111" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+        <childnode refid="1112" relation="usage">
+          <edgelabel>params</edgelabel>
+          <edgelabel>remote_params</edgelabel>
+          <edgelabel>current_params</edgelabel>
+        </childnode>
+        <childnode refid="1113" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="1117" relation="usage">
+          <edgelabel>media_ports</edgelabel>
+        </childnode>
+        <childnode refid="1118" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="1123" relation="usage">
+          <edgelabel>tc</edgelabel>
+          <edgelabel>ac</edgelabel>
+          <edgelabel>vc</edgelabel>
+        </childnode>
+        <childnode refid="1102" relation="usage">
+          <edgelabel>dest_proxy</edgelabel>
+        </childnode>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>transfer_target</edgelabel>
+          <edgelabel>referer</edgelabel>
+        </childnode>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1124" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="1125" relation="usage">
+          <edgelabel>nextVideoFrameDecoded</edgelabel>
+        </childnode>
+      </node>
+      <node id="1115">
+        <label>_LinphoneChatMessageCbs</label>
+        <link refid="struct__LinphoneChatMessageCbs"/>
+        <childnode refid="1114" relation="usage">
+          <edgelabel>file_transfer_progress_indication</edgelabel>
+          <edgelabel>msg_state_changed</edgelabel>
+          <edgelabel>file_transfer_recv</edgelabel>
+        </childnode>
+        <childnode refid="1116" relation="usage">
+          <edgelabel>file_transfer_send</edgelabel>
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>_LinphoneVideoPolicy</label>
+        <link refid="struct__LinphoneVideoPolicy"/>
+      </node>
+      <node id="1093">
+        <label>text_config</label>
+        <link refid="structtext__config"/>
+      </node>
+      <node id="1122">
+        <label>reporting_addr</label>
+        <link refid="structreporting__addr"/>
+      </node>
+      <node id="1126">
+        <label>ui_config</label>
+        <link refid="structui__config"/>
+      </node>
+      <node id="1112">
+        <label>_LinphoneCallParams</label>
+        <link refid="struct__LinphoneCallParams"/>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>referer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>_LinphoneChatMessage</label>
+        <link refid="struct__LinphoneChatMessage"/>
+        <childnode refid="1090" relation="usage">
+          <edgelabel>file_transfer_information</edgelabel>
+        </childnode>
+        <childnode refid="1113" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="1115" relation="usage">
+          <edgelabel>callbacks</edgelabel>
+        </childnode>
+        <childnode refid="1114" relation="usage">
+          <edgelabel>message_state_changed_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1119">
+        <label>_LinphoneQualityReporting</label>
+        <link refid="struct__LinphoneQualityReporting"/>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>on_report_sent</edgelabel>
+        </childnode>
+        <childnode refid="1120" relation="usage">
+          <edgelabel>reports</edgelabel>
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>_PortConfig</label>
+        <link refid="struct__PortConfig"/>
+      </node>
+      <node id="1123">
+        <label>StunCandidate</label>
+        <link refid="structStunCandidate"/>
+      </node>
+      <node id="1124">
+        <label>_LinphonePlayer</label>
+        <link refid="struct__LinphonePlayer"/>
+        <childnode refid="1124" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>video_config</label>
+        <link refid="structvideo__config"/>
+      </node>
+      <node id="1108">
+        <label>sip_config</label>
+        <link refid="structsip__config"/>
+        <childnode refid="1109" relation="usage">
+          <edgelabel>transports</edgelabel>
+        </childnode>
+      </node>
+      <node id="1120">
+        <label>reporting_session_report</label>
+        <link refid="structreporting__session__report"/>
+        <childnode refid="1121" relation="usage">
+          <edgelabel>local_metrics</edgelabel>
+          <edgelabel>remote_metrics</edgelabel>
+        </childnode>
+        <childnode refid="1122" relation="usage">
+          <edgelabel>remote_addr</edgelabel>
+          <edgelabel>local_addr</edgelabel>
+        </childnode>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="69" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="69" bodyend="85"/>
+    <listofallmembers>
+      <member refid="struct__UpnpContext_1ade7e56b4708535aeaecc25643a1122d9" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>adding_configs</name></member>
+      <member refid="struct__UpnpContext_1a561a255c16d45843b14343e3f5c923bd" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>empty_cond</name></member>
+      <member refid="struct__UpnpContext_1a84ffb398fab19563605a914383c0d68f" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>last_ready_check</name></member>
+      <member refid="struct__UpnpContext_1aab56101b3134f86e84e0c76cee843134" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>last_ready_state</name></member>
+      <member refid="struct__UpnpContext_1a9a9f244c64b815b79ba749f38e0f2bb7" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>lc</name></member>
+      <member refid="struct__UpnpContext_1afee3723fab8d42c73d424c8ae1803b7e" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>mutex</name></member>
+      <member refid="struct__UpnpContext_1aefe1fa9dd22343fe9a23886e8f5ccc59" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>pending_bindings</name></member>
+      <member refid="struct__UpnpContext_1a769a24c9959f6f180bcb16b80139262f" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>removing_configs</name></member>
+      <member refid="struct__UpnpContext_1a9f3544cd342adbe5f8be5642debb6c17" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>sip_tcp</name></member>
+      <member refid="struct__UpnpContext_1abc069f8d034b7816407895fb6bdb51a8" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>sip_tls</name></member>
+      <member refid="struct__UpnpContext_1af9f9b3435adb30ca56a06bcd4cdbdc5b" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>sip_udp</name></member>
+      <member refid="struct__UpnpContext_1ad44853ad9c83e6346a194128ad908e96" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>state</name></member>
+      <member refid="struct__UpnpContext_1ade78c7975664126b80b2cbecfb396428" prot="public" virt="non-virtual"><scope>_UpnpContext</scope><name>upnp_igd_ctxt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

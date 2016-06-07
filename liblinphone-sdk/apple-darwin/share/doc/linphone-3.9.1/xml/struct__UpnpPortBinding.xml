@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__UpnpPortBinding" kind="struct" language="C++" prot="public">
+    <compoundname>_UpnpPortBinding</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a89e4e2c67cbaec74fcdb5a4ef90a4f05" prot="public" static="no" mutable="no">
+        <type>ms_mutex_t</type>
+        <definition>ms_mutex_t _UpnpPortBinding::mutex</definition>
+        <argsstring></argsstring>
+        <name>mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a416eeb8e8588be4cc909cca90faabc2d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState _UpnpPortBinding::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a8d2436138860d4e042ebc26aab2a03b1" prot="public" static="no" mutable="no">
+        <type>upnp_igd_ip_protocol</type>
+        <definition>upnp_igd_ip_protocol _UpnpPortBinding::protocol</definition>
+        <argsstring></argsstring>
+        <name>protocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a44736cb9e7f4d5537c2bad69b2b2bad0" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _UpnpPortBinding::device_id</definition>
+        <argsstring></argsstring>
+        <name>device_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1aca4f473284e3238db6cf7e88955a296f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _UpnpPortBinding::local_addr[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>local_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a9b710f880a474cf02980bdc052d7333d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _UpnpPortBinding::local_port</definition>
+        <argsstring></argsstring>
+        <name>local_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="46" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1ae6ee2243c735f93aefe1e434a8c2a5a4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _UpnpPortBinding::external_addr[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>external_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="47" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a45d4ce6139ffcd4adf9ef67a7f1507a1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _UpnpPortBinding::external_port</definition>
+        <argsstring></argsstring>
+        <name>external_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="48" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a145c708c9d2133757cbd70296b9f5c5a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _UpnpPortBinding::retry</definition>
+        <argsstring></argsstring>
+        <name>retry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="49" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a185813ee3b55c4b69ffcd105efef8fbd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _UpnpPortBinding::ref</definition>
+        <argsstring></argsstring>
+        <name>ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="50" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a7b08b59a8a1dd1e61cd9475b49a1c457" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _UpnpPortBinding::to_remove</definition>
+        <argsstring></argsstring>
+        <name>to_remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="51" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1af12bb654c0029f880ec879f0be37da77" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _UpnpPortBinding::to_add</definition>
+        <argsstring></argsstring>
+        <name>to_add</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="52" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__UpnpPortBinding_1a940765bcacd5be604d87245f378c9247" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t _UpnpPortBinding::last_update</definition>
+        <argsstring></argsstring>
+        <name>last_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="53" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="40" bodyend="54"/>
+    <listofallmembers>
+      <member refid="struct__UpnpPortBinding_1a44736cb9e7f4d5537c2bad69b2b2bad0" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>device_id</name></member>
+      <member refid="struct__UpnpPortBinding_1ae6ee2243c735f93aefe1e434a8c2a5a4" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>external_addr</name></member>
+      <member refid="struct__UpnpPortBinding_1a45d4ce6139ffcd4adf9ef67a7f1507a1" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>external_port</name></member>
+      <member refid="struct__UpnpPortBinding_1a940765bcacd5be604d87245f378c9247" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>last_update</name></member>
+      <member refid="struct__UpnpPortBinding_1aca4f473284e3238db6cf7e88955a296f" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>local_addr</name></member>
+      <member refid="struct__UpnpPortBinding_1a9b710f880a474cf02980bdc052d7333d" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>local_port</name></member>
+      <member refid="struct__UpnpPortBinding_1a89e4e2c67cbaec74fcdb5a4ef90a4f05" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>mutex</name></member>
+      <member refid="struct__UpnpPortBinding_1a8d2436138860d4e042ebc26aab2a03b1" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>protocol</name></member>
+      <member refid="struct__UpnpPortBinding_1a185813ee3b55c4b69ffcd105efef8fbd" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>ref</name></member>
+      <member refid="struct__UpnpPortBinding_1a145c708c9d2133757cbd70296b9f5c5a" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>retry</name></member>
+      <member refid="struct__UpnpPortBinding_1a416eeb8e8588be4cc909cca90faabc2d" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>state</name></member>
+      <member refid="struct__UpnpPortBinding_1af12bb654c0029f880ec879f0be37da77" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>to_add</name></member>
+      <member refid="struct__UpnpPortBinding_1a7b08b59a8a1dd1e61cd9475b49a1c457" prot="public" virt="non-virtual"><scope>_UpnpPortBinding</scope><name>to_remove</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

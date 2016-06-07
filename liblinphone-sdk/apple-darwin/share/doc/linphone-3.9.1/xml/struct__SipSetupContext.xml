@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__SipSetupContext" kind="struct" language="C++" prot="public">
+    <compoundname>_SipSetupContext</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__SipSetupContext_1a721b00363ecb4b89127b6c12ab0791c9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref> *</type>
+        <definition>struct _SipSetup* _SipSetupContext::funcs</definition>
+        <argsstring></argsstring>
+        <name>funcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="38" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1a93647cbb930df8f689e7390daf55b55f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__LinphoneProxyConfig" kindref="compound">_LinphoneProxyConfig</ref> *</type>
+        <definition>struct _LinphoneProxyConfig* _SipSetupContext::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1adb61d871291c1a355fe2db3ef9544e75" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__LinphoneXmlRpcSession" kindref="compound">_LinphoneXmlRpcSession</ref> *</type>
+        <definition>struct _LinphoneXmlRpcSession* _SipSetupContext::xmlrpc_session</definition>
+        <argsstring></argsstring>
+        <name>xmlrpc_session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1aa2643597298000f06316327f0a35d1a1" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _SipSetupContext::domain[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1a75008504bd8f29d9acf9dd1b92b13e4e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _SipSetupContext::username[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1abdfa79f267531f3f0d63f08e634f3ecc" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _SipSetupContext::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1042">
+        <label>_LinphoneCoreVTable</label>
+        <link refid="struct__LinphoneCoreVTable"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>configuring_status</edgelabel>
+          <edgelabel>publish_state_changed</edgelabel>
+          <edgelabel>refer_received</edgelabel>
+          <edgelabel>registration_state_changed</edgelabel>
+          <edgelabel>transfer_state_changed</edgelabel>
+          <edgelabel>log_collection_upload_state_changed</edgelabel>
+          <edgelabel>subscription_state_changed</edgelabel>
+          <edgelabel>new_subscription_requested</edgelabel>
+          <edgelabel>dtmf_received</edgelabel>
+          <edgelabel>call_state_changed</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>net_config</label>
+        <link refid="structnet__config"/>
+      </node>
+      <node id="1049">
+        <label>_LinphoneEvent</label>
+        <link refid="struct__LinphoneEvent"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1040">
+        <label>_LinphoneXmlRpcSession</label>
+        <link refid="struct__LinphoneXmlRpcSession"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>_LinphoneCore</label>
+        <link refid="struct__LinphoneCore"/>
+        <childnode refid="1042" relation="usage">
+          <edgelabel>current_vtable</edgelabel>
+        </childnode>
+        <childnode refid="1043" relation="usage">
+          <edgelabel>net_conf</edgelabel>
+        </childnode>
+        <childnode refid="1044" relation="usage">
+          <edgelabel>log_collection_upload_information</edgelabel>
+        </childnode>
+        <childnode refid="1045" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="1046" relation="usage">
+          <edgelabel>autoreplier_conf</edgelabel>
+        </childnode>
+        <childnode refid="1047" relation="usage">
+          <edgelabel>text_conf</edgelabel>
+        </childnode>
+        <childnode refid="1048" relation="usage">
+          <edgelabel>friendlist</edgelabel>
+        </childnode>
+        <childnode refid="1050" relation="usage">
+          <edgelabel>sound_conf</edgelabel>
+        </childnode>
+        <childnode refid="1051" relation="usage">
+          <edgelabel>ringtoneplayer</edgelabel>
+        </childnode>
+        <childnode refid="1052" relation="usage">
+          <edgelabel>video_conf</edgelabel>
+        </childnode>
+        <childnode refid="1053" relation="usage">
+          <edgelabel>rtp_conf</edgelabel>
+        </childnode>
+        <childnode refid="1054" relation="usage">
+          <edgelabel>ecc</edgelabel>
+        </childnode>
+        <childnode refid="1055" relation="usage">
+          <edgelabel>presence_model</edgelabel>
+        </childnode>
+        <childnode refid="1056" relation="usage">
+          <edgelabel>default_proxy</edgelabel>
+        </childnode>
+        <childnode refid="1057" relation="usage">
+          <edgelabel>sip_conf</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>wait_cb</edgelabel>
+        </childnode>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>current_call</edgelabel>
+        </childnode>
+        <childnode refid="1075" relation="usage">
+          <edgelabel>ui_conf</edgelabel>
+        </childnode>
+        <childnode refid="1076" relation="usage">
+          <edgelabel>video_policy</edgelabel>
+        </childnode>
+        <childnode refid="1077" relation="usage">
+          <edgelabel>preview_finished_cb</edgelabel>
+        </childnode>
+        <childnode refid="1078" relation="usage">
+          <edgelabel>hooks</edgelabel>
+        </childnode>
+        <childnode refid="1079" relation="usage">
+          <edgelabel>rtptf</edgelabel>
+        </childnode>
+        <childnode refid="1080" relation="usage">
+          <edgelabel>codecs_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>codecs_config</label>
+        <link refid="structcodecs__config"/>
+      </node>
+      <node id="1058">
+        <label>_LCSipTransports</label>
+        <link refid="struct__LCSipTransports"/>
+      </node>
+      <node id="1081">
+        <label>_SipSetup</label>
+        <link refid="struct__SipSetup"/>
+        <childnode refid="1082" relation="usage">
+          <edgelabel>buddy_lookup_funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="1065">
+        <label>_LinphoneBuffer</label>
+        <link refid="struct__LinphoneBuffer"/>
+      </node>
+      <node id="1060">
+        <label>_LinphoneCallStats</label>
+        <link refid="struct__LinphoneCallStats"/>
+      </node>
+      <node id="1078">
+        <label>_LinphoneTaskList</label>
+        <link refid="struct__LinphoneTaskList"/>
+      </node>
+      <node id="1077">
+        <label>_LCCallbackObj</label>
+        <link refid="struct__LCCallbackObj"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="1082">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="1083" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="1051">
+        <label>_LinphoneRingtonePlayer</label>
+        <link refid="struct__LinphoneRingtonePlayer"/>
+        <childnode refid="1051" relation="usage">
+          <edgelabel>end_of_ringtone</edgelabel>
+        </childnode>
+      </node>
+      <node id="1054">
+        <label>_EcCalibrator</label>
+        <link refid="struct__EcCalibrator"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>_LinphonePresenceModel</label>
+        <link refid="struct__LinphonePresenceModel"/>
+      </node>
+      <node id="1070">
+        <label>reporting_content_metrics</label>
+        <link refid="structreporting__content__metrics"/>
+      </node>
+      <node id="1050">
+        <label>sound_config</label>
+        <link refid="structsound__config"/>
+      </node>
+      <node id="1079">
+        <label>_LinphoneRtpTransportFactories</label>
+        <link refid="struct__LinphoneRtpTransportFactories"/>
+      </node>
+      <node id="1074">
+        <label>_CallCallbackObj</label>
+        <link refid="struct__CallCallbackObj"/>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>autoreplier_config</label>
+        <link refid="structautoreplier__config"/>
+      </node>
+      <node id="1045">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="1039">
+        <label>_SipSetupContext</label>
+        <link refid="struct__SipSetupContext"/>
+        <childnode refid="1040" relation="usage">
+          <edgelabel>xmlrpc_session</edgelabel>
+        </childnode>
+        <childnode refid="1081" relation="usage">
+          <edgelabel>funcs</edgelabel>
+        </childnode>
+        <childnode refid="1056" relation="usage">
+          <edgelabel>cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>_LinphoneCallLog</label>
+        <link refid="struct__LinphoneCallLog"/>
+        <childnode refid="1068" relation="usage">
+          <edgelabel>reporting</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1083">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+      <node id="1053">
+        <label>rtp_config</label>
+        <link refid="structrtp__config"/>
+      </node>
+      <node id="1056">
+        <label>_LinphoneProxyConfig</label>
+        <link refid="struct__LinphoneProxyConfig"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="1039" relation="usage">
+          <edgelabel>ssctx</edgelabel>
+        </childnode>
+        <childnode refid="1049" relation="usage">
+          <edgelabel>long_term_event</edgelabel>
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>_LinphoneChatRoom</label>
+        <link refid="struct__LinphoneChatRoom"/>
+        <childnode refid="1063" relation="usage">
+          <edgelabel>pending_message</edgelabel>
+        </childnode>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1048">
+        <label>_LinphoneFriendList</label>
+        <link refid="struct__LinphoneFriendList"/>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="1049" relation="usage">
+          <edgelabel>event</edgelabel>
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>_LinphoneContent</label>
+        <link refid="struct__LinphoneContent"/>
+      </node>
+      <node id="1059">
+        <label>_LinphoneCall</label>
+        <link refid="struct__LinphoneCall"/>
+        <childnode refid="1060" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+        <childnode refid="1061" relation="usage">
+          <edgelabel>params</edgelabel>
+          <edgelabel>remote_params</edgelabel>
+          <edgelabel>current_params</edgelabel>
+        </childnode>
+        <childnode refid="1062" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="1066" relation="usage">
+          <edgelabel>media_ports</edgelabel>
+        </childnode>
+        <childnode refid="1067" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="1072" relation="usage">
+          <edgelabel>tc</edgelabel>
+          <edgelabel>ac</edgelabel>
+          <edgelabel>vc</edgelabel>
+        </childnode>
+        <childnode refid="1056" relation="usage">
+          <edgelabel>dest_proxy</edgelabel>
+        </childnode>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>transfer_target</edgelabel>
+          <edgelabel>referer</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="1073" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="1074" relation="usage">
+          <edgelabel>nextVideoFrameDecoded</edgelabel>
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>_LinphoneChatMessageCbs</label>
+        <link refid="struct__LinphoneChatMessageCbs"/>
+        <childnode refid="1063" relation="usage">
+          <edgelabel>file_transfer_progress_indication</edgelabel>
+          <edgelabel>msg_state_changed</edgelabel>
+          <edgelabel>file_transfer_recv</edgelabel>
+        </childnode>
+        <childnode refid="1065" relation="usage">
+          <edgelabel>file_transfer_send</edgelabel>
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>_LinphoneVideoPolicy</label>
+        <link refid="struct__LinphoneVideoPolicy"/>
+      </node>
+      <node id="1047">
+        <label>text_config</label>
+        <link refid="structtext__config"/>
+      </node>
+      <node id="1071">
+        <label>reporting_addr</label>
+        <link refid="structreporting__addr"/>
+      </node>
+      <node id="1075">
+        <label>ui_config</label>
+        <link refid="structui__config"/>
+      </node>
+      <node id="1061">
+        <label>_LinphoneCallParams</label>
+        <link refid="struct__LinphoneCallParams"/>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>referer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1063">
+        <label>_LinphoneChatMessage</label>
+        <link refid="struct__LinphoneChatMessage"/>
+        <childnode refid="1044" relation="usage">
+          <edgelabel>file_transfer_information</edgelabel>
+        </childnode>
+        <childnode refid="1062" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="1064" relation="usage">
+          <edgelabel>callbacks</edgelabel>
+        </childnode>
+        <childnode refid="1063" relation="usage">
+          <edgelabel>message_state_changed_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>_LinphoneQualityReporting</label>
+        <link refid="struct__LinphoneQualityReporting"/>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>on_report_sent</edgelabel>
+        </childnode>
+        <childnode refid="1069" relation="usage">
+          <edgelabel>reports</edgelabel>
+        </childnode>
+      </node>
+      <node id="1066">
+        <label>_PortConfig</label>
+        <link refid="struct__PortConfig"/>
+      </node>
+      <node id="1072">
+        <label>StunCandidate</label>
+        <link refid="structStunCandidate"/>
+      </node>
+      <node id="1073">
+        <label>_LinphonePlayer</label>
+        <link refid="struct__LinphonePlayer"/>
+        <childnode refid="1073" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>video_config</label>
+        <link refid="structvideo__config"/>
+      </node>
+      <node id="1057">
+        <label>sip_config</label>
+        <link refid="structsip__config"/>
+        <childnode refid="1058" relation="usage">
+          <edgelabel>transports</edgelabel>
+        </childnode>
+      </node>
+      <node id="1069">
+        <label>reporting_session_report</label>
+        <link refid="structreporting__session__report"/>
+        <childnode refid="1070" relation="usage">
+          <edgelabel>local_metrics</edgelabel>
+          <edgelabel>remote_metrics</edgelabel>
+        </childnode>
+        <childnode refid="1071" relation="usage">
+          <edgelabel>remote_addr</edgelabel>
+          <edgelabel>local_addr</edgelabel>
+        </childnode>
+        <childnode refid="1059" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="37" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="37" bodyend="44"/>
+    <listofallmembers>
+      <member refid="struct__SipSetupContext_1a93647cbb930df8f689e7390daf55b55f" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>cfg</name></member>
+      <member refid="struct__SipSetupContext_1abdfa79f267531f3f0d63f08e634f3ecc" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>data</name></member>
+      <member refid="struct__SipSetupContext_1aa2643597298000f06316327f0a35d1a1" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>domain</name></member>
+      <member refid="struct__SipSetupContext_1a721b00363ecb4b89127b6c12ab0791c9" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>funcs</name></member>
+      <member refid="struct__SipSetupContext_1a75008504bd8f29d9acf9dd1b92b13e4e" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>username</name></member>
+      <member refid="struct__SipSetupContext_1adb61d871291c1a355fe2db3ef9544e75" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>xmlrpc_session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

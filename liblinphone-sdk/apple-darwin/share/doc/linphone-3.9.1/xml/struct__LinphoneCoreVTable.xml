@@ -1,0 +1,890 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneCoreVTable" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneCoreVTable</compoundname>
+    <includes local="no">linphonecore.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a706e1ad8826fb8b9e431f654358ecb1f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gacdae888e6db5edec10ec5175fa0d9f07" kindref="member">LinphoneCoreGlobalStateChangedCb</ref></type>
+        <definition>LinphoneCoreGlobalStateChangedCb _LinphoneCoreVTable::global_state_changed</definition>
+        <argsstring></argsstring>
+        <name>global_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies global state changes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2070" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2070" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a2483143cd4b2e2b8ede6f3c916740938" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga1525a9bb3fa0ece183922084e7ae04b1" kindref="member">LinphoneCoreRegistrationStateChangedCb</ref></type>
+        <definition>LinphoneCoreRegistrationStateChangedCb _LinphoneCoreVTable::registration_state_changed</definition>
+        <argsstring></argsstring>
+        <name>registration_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies registration state changes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2071" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2071" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a771c633cfce7bae2cc0160fbd377bf28" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga98e23d0310eef95f7f97ce4a43634836" kindref="member">LinphoneCoreCallStateChangedCb</ref></type>
+        <definition>LinphoneCoreCallStateChangedCb _LinphoneCoreVTable::call_state_changed</definition>
+        <argsstring></argsstring>
+        <name>call_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies call state changes </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2072" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aaeba9b7914a3274d4061097575b45717" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa10d2fdc44c8b9b6fca6e343cb5f0baa" kindref="member">LinphoneCoreNotifyPresenceReceivedCb</ref></type>
+        <definition>LinphoneCoreNotifyPresenceReceivedCb _LinphoneCoreVTable::notify_presence_received</definition>
+        <argsstring></argsstring>
+        <name>notify_presence_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify received presence events </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2073" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2073" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a94c1c96ebb851f6a686377347a3dc39a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga692cb67195f2339efb237a2a52f2fb4c" kindref="member">LinphoneCoreNewSubscriptionRequestedCb</ref></type>
+        <definition>LinphoneCoreNewSubscriptionRequestedCb _LinphoneCoreVTable::new_subscription_requested</definition>
+        <argsstring></argsstring>
+        <name>new_subscription_requested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify about pending presence subscription request </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2074" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2074" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aa22d6a37d7c780f53a60d8cb819b1fde" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gad3a716c0a60a3a9d9d422b8dbc0827a7" kindref="member">LinphoneCoreAuthInfoRequestedCb</ref></type>
+        <definition>LinphoneCoreAuthInfoRequestedCb _LinphoneCoreVTable::auth_info_requested</definition>
+        <argsstring></argsstring>
+        <name>auth_info_requested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ask the application some authentication information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2075" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae16c00a663001f7aecd5cfbe8fa91fd5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga8ba11d965ae8df481b625434f7464420" kindref="member">LinphoneCoreCallLogUpdatedCb</ref></type>
+        <definition>LinphoneCoreCallLogUpdatedCb _LinphoneCoreVTable::call_log_updated</definition>
+        <argsstring></argsstring>
+        <name>call_log_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies that call log list has been updated </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2076" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2076" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga1d94ab5abdff426b69e71991ed3d31d8" kindref="member">LinphoneCoreMessageReceivedCb</ref></type>
+        <definition>LinphoneCoreMessageReceivedCb _LinphoneCoreVTable::message_received</definition>
+        <argsstring></argsstring>
+        <name>message_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a message is received, can be text or external body </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2077" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2077" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1afb34622357b9a7138db200040878dba2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga8ec7c782868d3182c3178c55d661d26f" kindref="member">LinphoneCoreIsComposingReceivedCb</ref></type>
+        <definition>LinphoneCoreIsComposingReceivedCb _LinphoneCoreVTable::is_composing_received</definition>
+        <argsstring></argsstring>
+        <name>is_composing_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An is-composing notification has been received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2078" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2078" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga4dd32361591f58d8621cf0d483d70b06" kindref="member">LinphoneCoreDtmfReceivedCb</ref></type>
+        <definition>LinphoneCoreDtmfReceivedCb _LinphoneCoreVTable::dtmf_received</definition>
+        <argsstring></argsstring>
+        <name>dtmf_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A dtmf has been received received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2079" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2079" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a506c7d14f539829d96d80c7ce359017b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga7d68f4f3b89c59be674053c7f8658246" kindref="member">LinphoneCoreReferReceivedCb</ref></type>
+        <definition>LinphoneCoreReferReceivedCb _LinphoneCoreVTable::refer_received</definition>
+        <argsstring></argsstring>
+        <name>refer_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>An out of call refer was received </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2080" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2080" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a31e10f0b8297cf99f3c337352d54c4ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga8128e53bd0611b9f31ebe87a49842fe0" kindref="member">LinphoneCoreCallEncryptionChangedCb</ref></type>
+        <definition>LinphoneCoreCallEncryptionChangedCb _LinphoneCoreVTable::call_encryption_changed</definition>
+        <argsstring></argsstring>
+        <name>call_encryption_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies on change in the encryption of call streams </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2081" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2081" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a9e7176e49c4f45306962c0eea97e8060" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga61f352c17dc3740d6d942203a6925a8f" kindref="member">LinphoneCoreTransferStateChangedCb</ref></type>
+        <definition>LinphoneCoreTransferStateChangedCb _LinphoneCoreVTable::transfer_state_changed</definition>
+        <argsstring></argsstring>
+        <name>transfer_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies when a transfer is in progress </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2082" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2082" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a635ddd79f5752f7a27402152871a66cc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga51c6d4f2b55841e8a5f4f656f732573d" kindref="member">LinphoneCoreBuddyInfoUpdatedCb</ref></type>
+        <definition>LinphoneCoreBuddyInfoUpdatedCb _LinphoneCoreVTable::buddy_info_updated</definition>
+        <argsstring></argsstring>
+        <name>buddy_info_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a LinphoneFriend&apos;s BuddyInfo has changed </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2083" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2083" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a331cc2d86632554b85346f163a188b1c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gabc5c7eae4bcacd77589056d71dd8e5f3" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref></type>
+        <definition>LinphoneCoreCallStatsUpdatedCb _LinphoneCoreVTable::call_stats_updated</definition>
+        <argsstring></argsstring>
+        <name>call_stats_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies on refreshing of call&apos;s statistics. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2084" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2084" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aadaca6d67eee62be103d2add96aba0ba" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga56f9a553f62d2dca2a90342949a97bef" kindref="member">LinphoneCoreInfoReceivedCb</ref></type>
+        <definition>LinphoneCoreInfoReceivedCb _LinphoneCoreVTable::info_received</definition>
+        <argsstring></argsstring>
+        <name>info_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies an incoming informational message received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2085" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2085" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ad74e9de0bfb7eb63fd4aea705304940d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1gabd3d0a9c87e82eccc83dfe4853ddfd8d" kindref="member">LinphoneCoreSubscriptionStateChangedCb</ref></type>
+        <definition>LinphoneCoreSubscriptionStateChangedCb _LinphoneCoreVTable::subscription_state_changed</definition>
+        <argsstring></argsstring>
+        <name>subscription_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies subscription state change </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2086" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2086" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4e50dd528160791435706add7e9dc403" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga235248749148a0d3dad0860e368d5f9c" kindref="member">LinphoneCoreNotifyReceivedCb</ref></type>
+        <definition>LinphoneCoreNotifyReceivedCb _LinphoneCoreVTable::notify_received</definition>
+        <argsstring></argsstring>
+        <name>notify_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies a an event notification, see <ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe()</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2087" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2087" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a0c97e13eeffa865030b2c01a4a1925a7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga7b8ddb54a77c516e05ce2ad5abc442be" kindref="member">LinphoneCorePublishStateChangedCb</ref></type>
+        <definition>LinphoneCorePublishStateChangedCb _LinphoneCoreVTable::publish_state_changed</definition>
+        <argsstring></argsstring>
+        <name>publish_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2088" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2088" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4bd70f9d456eadfac49f95a4733e67c1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga865d54fed0d18658c04b0bf8c0ef3068" kindref="member">LinphoneCoreConfiguringStatusCb</ref></type>
+        <definition>LinphoneCoreConfiguringStatusCb _LinphoneCoreVTable::configuring_status</definition>
+        <argsstring></argsstring>
+        <name>configuring_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies publish state change (only from <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> api) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2089" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2089" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ad7b1bc4829050d679df3ffb019ec3a6a" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga06824b67ad8b8cc6289c872936d37eef" kindref="member">DisplayStatusCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayStatusCb _LinphoneCoreVTable::display_status</definition>
+        <argsstring></argsstring>
+        <name>display_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies configuring status changes <xrefsect id="deprecated_1_deprecated000056"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback that notifies various events with human readable text. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2090" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2090" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a25b5a48d42bcd608797068657d9ad000" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1gabca6f7f125879614f51e9d8e81e842d8" kindref="member">DisplayMessageCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayMessageCb _LinphoneCoreVTable::display_message</definition>
+        <argsstring></argsstring>
+        <name>display_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000057"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to display a message to the user </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2091" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2091" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1abb24881301a7887713642f94501149bb" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1gabca6f7f125879614f51e9d8e81e842d8" kindref="member">DisplayMessageCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayMessageCb _LinphoneCoreVTable::display_warning</definition>
+        <argsstring></argsstring>
+        <name>display_warning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000058"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to display a warning to the user </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2092" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2092" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a6907dbe56ec897a99ccd0d114ccab579" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1gacec618a4370fd9655046b8cfc1c3d862" kindref="member">DisplayUrlCb</ref></type>
+        <definition>MS2_DEPRECATED DisplayUrlCb _LinphoneCoreVTable::display_url</definition>
+        <argsstring></argsstring>
+        <name>display_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000059"><xreftitle>Deprecated</xreftitle><xrefdescription></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2093" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2093" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a3e0f5df79f1b96b3a417d4c171ac7f27" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga66dcb36a9b8dc5652a5c466d3e538094" kindref="member">ShowInterfaceCb</ref></type>
+        <definition>MS2_DEPRECATED ShowInterfaceCb _LinphoneCoreVTable::show</definition>
+        <argsstring></argsstring>
+        <name>show</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000060"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Notifies the application that it should show up </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2094" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2094" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a5b101f313df29f3ddedcfdba885b4757" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga5af9f41a4dd97c8352252bdbb0d4284b" kindref="member">LinphoneCoreTextMessageReceivedCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreTextMessageReceivedCb _LinphoneCoreVTable::text_received</definition>
+        <argsstring></argsstring>
+        <name>text_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000061"><xreftitle>Deprecated</xreftitle><xrefdescription><para>, use <ref refid="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" kindref="member">message_received</ref> instead <linebreak/>
+ A text message has been received </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2095" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2095" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aa0a2528da1c12b9ba6a7dae22cbe64e9" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga378db35c796a1302e02c8a1e648adab1" kindref="member">LinphoneCoreFileTransferRecvCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreFileTransferRecvCb _LinphoneCoreVTable::file_transfer_recv</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_recv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000062"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to store file received attached to a <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2096" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ab1feeaa1140c156442dae0e4653bf167" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1gaf3a1ea9eae909f6ceab371cf3c435e0c" kindref="member">LinphoneCoreFileTransferSendCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreFileTransferSendCb _LinphoneCoreVTable::file_transfer_send</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000063"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to collect file chunk to be sent for a <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2097" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2097" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a2b8d6909518b2ab8dadf9c3208ae179e" prot="public" static="no" mutable="no">
+        <type>MS2_DEPRECATED <ref refid="group__initializing_1ga3c3844707b8dc8f5cb98e8d3734e4d0d" kindref="member">LinphoneCoreFileTransferProgressIndicationCb</ref></type>
+        <definition>MS2_DEPRECATED LinphoneCoreFileTransferProgressIndicationCb _LinphoneCoreVTable::file_transfer_progress_indication</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_progress_indication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000064"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to indicate file transfer progress </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2098" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2098" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a0a74a3a47b6085c20bc18066d48170a0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga665f0589d1a3f30a64ab78a59e06bc04" kindref="member">LinphoneCoreNetworkReachableCb</ref></type>
+        <definition>LinphoneCoreNetworkReachableCb _LinphoneCoreVTable::network_reachable</definition>
+        <argsstring></argsstring>
+        <name>network_reachable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to report IP network status (I.E up/down ) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2099" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2099" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a5c4d34c2587402dea1ed08a8cc2f1662" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga743f118156501e3229c7a3eaadcfd887" kindref="member">LinphoneCoreLogCollectionUploadStateChangedCb</ref></type>
+        <definition>LinphoneCoreLogCollectionUploadStateChangedCb _LinphoneCoreVTable::log_collection_upload_state_changed</definition>
+        <argsstring></argsstring>
+        <name>log_collection_upload_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to upload collected logs </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2100" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a23e6dd80976b540b656f0f2789e069e3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gacf632b38e38d7e8a28f95cbd68753d58" kindref="member">LinphoneCoreLogCollectionUploadProgressIndicationCb</ref></type>
+        <definition>LinphoneCoreLogCollectionUploadProgressIndicationCb _LinphoneCoreVTable::log_collection_upload_progress_indication</definition>
+        <argsstring></argsstring>
+        <name>log_collection_upload_progress_indication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback to indicate log collection upload progress </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2101" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneCoreVTable::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>User data associated with the above callbacks </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2102" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure holds all callbacks that the application should implement. None is mandatory. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="644">
+        <label>_LinphoneCoreVTable</label>
+        <link refid="struct__LinphoneCoreVTable"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>configuring_status</edgelabel>
+          <edgelabel>publish_state_changed</edgelabel>
+          <edgelabel>refer_received</edgelabel>
+          <edgelabel>registration_state_changed</edgelabel>
+          <edgelabel>transfer_state_changed</edgelabel>
+          <edgelabel>log_collection_upload_state_changed</edgelabel>
+          <edgelabel>subscription_state_changed</edgelabel>
+          <edgelabel>new_subscription_requested</edgelabel>
+          <edgelabel>dtmf_received</edgelabel>
+          <edgelabel>call_state_changed</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="646">
+        <label>net_config</label>
+        <link refid="structnet__config"/>
+      </node>
+      <node id="652">
+        <label>_LinphoneEvent</label>
+        <link refid="struct__LinphoneEvent"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="661">
+        <label>_LinphoneXmlRpcSession</label>
+        <link refid="struct__LinphoneXmlRpcSession"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+      </node>
+      <node id="645">
+        <label>_LinphoneCore</label>
+        <link refid="struct__LinphoneCore"/>
+        <childnode refid="644" relation="usage">
+          <edgelabel>current_vtable</edgelabel>
+        </childnode>
+        <childnode refid="646" relation="usage">
+          <edgelabel>net_conf</edgelabel>
+        </childnode>
+        <childnode refid="647" relation="usage">
+          <edgelabel>log_collection_upload_information</edgelabel>
+        </childnode>
+        <childnode refid="648" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+        <childnode refid="649" relation="usage">
+          <edgelabel>autoreplier_conf</edgelabel>
+        </childnode>
+        <childnode refid="650" relation="usage">
+          <edgelabel>text_conf</edgelabel>
+        </childnode>
+        <childnode refid="651" relation="usage">
+          <edgelabel>friendlist</edgelabel>
+        </childnode>
+        <childnode refid="653" relation="usage">
+          <edgelabel>sound_conf</edgelabel>
+        </childnode>
+        <childnode refid="654" relation="usage">
+          <edgelabel>ringtoneplayer</edgelabel>
+        </childnode>
+        <childnode refid="655" relation="usage">
+          <edgelabel>video_conf</edgelabel>
+        </childnode>
+        <childnode refid="656" relation="usage">
+          <edgelabel>rtp_conf</edgelabel>
+        </childnode>
+        <childnode refid="657" relation="usage">
+          <edgelabel>ecc</edgelabel>
+        </childnode>
+        <childnode refid="658" relation="usage">
+          <edgelabel>presence_model</edgelabel>
+        </childnode>
+        <childnode refid="659" relation="usage">
+          <edgelabel>default_proxy</edgelabel>
+        </childnode>
+        <childnode refid="665" relation="usage">
+          <edgelabel>sip_conf</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>wait_cb</edgelabel>
+        </childnode>
+        <childnode refid="667" relation="usage">
+          <edgelabel>current_call</edgelabel>
+        </childnode>
+        <childnode refid="683" relation="usage">
+          <edgelabel>ui_conf</edgelabel>
+        </childnode>
+        <childnode refid="684" relation="usage">
+          <edgelabel>video_policy</edgelabel>
+        </childnode>
+        <childnode refid="685" relation="usage">
+          <edgelabel>preview_finished_cb</edgelabel>
+        </childnode>
+        <childnode refid="686" relation="usage">
+          <edgelabel>hooks</edgelabel>
+        </childnode>
+        <childnode refid="687" relation="usage">
+          <edgelabel>rtptf</edgelabel>
+        </childnode>
+        <childnode refid="688" relation="usage">
+          <edgelabel>codecs_conf</edgelabel>
+        </childnode>
+      </node>
+      <node id="688">
+        <label>codecs_config</label>
+        <link refid="structcodecs__config"/>
+      </node>
+      <node id="666">
+        <label>_LCSipTransports</label>
+        <link refid="struct__LCSipTransports"/>
+      </node>
+      <node id="662">
+        <label>_SipSetup</label>
+        <link refid="struct__SipSetup"/>
+        <childnode refid="663" relation="usage">
+          <edgelabel>buddy_lookup_funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="673">
+        <label>_LinphoneBuffer</label>
+        <link refid="struct__LinphoneBuffer"/>
+      </node>
+      <node id="668">
+        <label>_LinphoneCallStats</label>
+        <link refid="struct__LinphoneCallStats"/>
+      </node>
+      <node id="686">
+        <label>_LinphoneTaskList</label>
+        <link refid="struct__LinphoneTaskList"/>
+      </node>
+      <node id="685">
+        <label>_LCCallbackObj</label>
+        <link refid="struct__LCCallbackObj"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="663">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="664" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="654">
+        <label>_LinphoneRingtonePlayer</label>
+        <link refid="struct__LinphoneRingtonePlayer"/>
+        <childnode refid="654" relation="usage">
+          <edgelabel>end_of_ringtone</edgelabel>
+        </childnode>
+      </node>
+      <node id="657">
+        <label>_EcCalibrator</label>
+        <link refid="struct__EcCalibrator"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="658">
+        <label>_LinphonePresenceModel</label>
+        <link refid="struct__LinphonePresenceModel"/>
+      </node>
+      <node id="678">
+        <label>reporting_content_metrics</label>
+        <link refid="structreporting__content__metrics"/>
+      </node>
+      <node id="653">
+        <label>sound_config</label>
+        <link refid="structsound__config"/>
+      </node>
+      <node id="687">
+        <label>_LinphoneRtpTransportFactories</label>
+        <link refid="struct__LinphoneRtpTransportFactories"/>
+      </node>
+      <node id="682">
+        <label>_CallCallbackObj</label>
+        <link refid="struct__CallCallbackObj"/>
+        <childnode refid="667" relation="usage">
+          <edgelabel>_func</edgelabel>
+        </childnode>
+      </node>
+      <node id="649">
+        <label>autoreplier_config</label>
+        <link refid="structautoreplier__config"/>
+      </node>
+      <node id="648">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="660">
+        <label>_SipSetupContext</label>
+        <link refid="struct__SipSetupContext"/>
+        <childnode refid="661" relation="usage">
+          <edgelabel>xmlrpc_session</edgelabel>
+        </childnode>
+        <childnode refid="662" relation="usage">
+          <edgelabel>funcs</edgelabel>
+        </childnode>
+        <childnode refid="659" relation="usage">
+          <edgelabel>cfg</edgelabel>
+        </childnode>
+      </node>
+      <node id="675">
+        <label>_LinphoneCallLog</label>
+        <link refid="struct__LinphoneCallLog"/>
+        <childnode refid="676" relation="usage">
+          <edgelabel>reporting</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="664">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+      <node id="656">
+        <label>rtp_config</label>
+        <link refid="structrtp__config"/>
+      </node>
+      <node id="659">
+        <label>_LinphoneProxyConfig</label>
+        <link refid="struct__LinphoneProxyConfig"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="660" relation="usage">
+          <edgelabel>ssctx</edgelabel>
+        </childnode>
+        <childnode refid="652" relation="usage">
+          <edgelabel>long_term_event</edgelabel>
+        </childnode>
+      </node>
+      <node id="670">
+        <label>_LinphoneChatRoom</label>
+        <link refid="struct__LinphoneChatRoom"/>
+        <childnode refid="671" relation="usage">
+          <edgelabel>pending_message</edgelabel>
+        </childnode>
+        <childnode refid="667" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+      </node>
+      <node id="651">
+        <label>_LinphoneFriendList</label>
+        <link refid="struct__LinphoneFriendList"/>
+        <childnode refid="645" relation="usage">
+          <edgelabel>lc</edgelabel>
+        </childnode>
+        <childnode refid="652" relation="usage">
+          <edgelabel>event</edgelabel>
+        </childnode>
+      </node>
+      <node id="647">
+        <label>_LinphoneContent</label>
+        <link refid="struct__LinphoneContent"/>
+      </node>
+      <node id="667">
+        <label>_LinphoneCall</label>
+        <link refid="struct__LinphoneCall"/>
+        <childnode refid="668" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+        <childnode refid="669" relation="usage">
+          <edgelabel>params</edgelabel>
+          <edgelabel>remote_params</edgelabel>
+          <edgelabel>current_params</edgelabel>
+        </childnode>
+        <childnode refid="670" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="674" relation="usage">
+          <edgelabel>media_ports</edgelabel>
+        </childnode>
+        <childnode refid="675" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="680" relation="usage">
+          <edgelabel>tc</edgelabel>
+          <edgelabel>ac</edgelabel>
+          <edgelabel>vc</edgelabel>
+        </childnode>
+        <childnode refid="659" relation="usage">
+          <edgelabel>dest_proxy</edgelabel>
+        </childnode>
+        <childnode refid="667" relation="usage">
+          <edgelabel>transfer_target</edgelabel>
+          <edgelabel>referer</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>core</edgelabel>
+        </childnode>
+        <childnode refid="681" relation="usage">
+          <edgelabel>player</edgelabel>
+        </childnode>
+        <childnode refid="682" relation="usage">
+          <edgelabel>nextVideoFrameDecoded</edgelabel>
+        </childnode>
+      </node>
+      <node id="672">
+        <label>_LinphoneChatMessageCbs</label>
+        <link refid="struct__LinphoneChatMessageCbs"/>
+        <childnode refid="671" relation="usage">
+          <edgelabel>file_transfer_progress_indication</edgelabel>
+          <edgelabel>msg_state_changed</edgelabel>
+          <edgelabel>file_transfer_recv</edgelabel>
+        </childnode>
+        <childnode refid="673" relation="usage">
+          <edgelabel>file_transfer_send</edgelabel>
+        </childnode>
+      </node>
+      <node id="684">
+        <label>_LinphoneVideoPolicy</label>
+        <link refid="struct__LinphoneVideoPolicy"/>
+      </node>
+      <node id="650">
+        <label>text_config</label>
+        <link refid="structtext__config"/>
+      </node>
+      <node id="679">
+        <label>reporting_addr</label>
+        <link refid="structreporting__addr"/>
+      </node>
+      <node id="683">
+        <label>ui_config</label>
+        <link refid="structui__config"/>
+      </node>
+      <node id="669">
+        <label>_LinphoneCallParams</label>
+        <link refid="struct__LinphoneCallParams"/>
+        <childnode refid="667" relation="usage">
+          <edgelabel>referer</edgelabel>
+        </childnode>
+      </node>
+      <node id="671">
+        <label>_LinphoneChatMessage</label>
+        <link refid="struct__LinphoneChatMessage"/>
+        <childnode refid="647" relation="usage">
+          <edgelabel>file_transfer_information</edgelabel>
+        </childnode>
+        <childnode refid="670" relation="usage">
+          <edgelabel>chat_room</edgelabel>
+        </childnode>
+        <childnode refid="672" relation="usage">
+          <edgelabel>callbacks</edgelabel>
+        </childnode>
+        <childnode refid="671" relation="usage">
+          <edgelabel>message_state_changed_cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="676">
+        <label>_LinphoneQualityReporting</label>
+        <link refid="struct__LinphoneQualityReporting"/>
+        <childnode refid="667" relation="usage">
+          <edgelabel>on_report_sent</edgelabel>
+        </childnode>
+        <childnode refid="677" relation="usage">
+          <edgelabel>reports</edgelabel>
+        </childnode>
+      </node>
+      <node id="674">
+        <label>_PortConfig</label>
+        <link refid="struct__PortConfig"/>
+      </node>
+      <node id="680">
+        <label>StunCandidate</label>
+        <link refid="structStunCandidate"/>
+      </node>
+      <node id="681">
+        <label>_LinphonePlayer</label>
+        <link refid="struct__LinphonePlayer"/>
+        <childnode refid="681" relation="usage">
+          <edgelabel>cb</edgelabel>
+        </childnode>
+      </node>
+      <node id="655">
+        <label>video_config</label>
+        <link refid="structvideo__config"/>
+      </node>
+      <node id="665">
+        <label>sip_config</label>
+        <link refid="structsip__config"/>
+        <childnode refid="666" relation="usage">
+          <edgelabel>transports</edgelabel>
+        </childnode>
+      </node>
+      <node id="677">
+        <label>reporting_session_report</label>
+        <link refid="structreporting__session__report"/>
+        <childnode refid="678" relation="usage">
+          <edgelabel>local_metrics</edgelabel>
+          <edgelabel>remote_metrics</edgelabel>
+        </childnode>
+        <childnode refid="679" relation="usage">
+          <edgelabel>remote_addr</edgelabel>
+          <edgelabel>local_addr</edgelabel>
+        </childnode>
+        <childnode refid="667" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="2069" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="2069" bodyend="2103"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneCoreVTable_1aa22d6a37d7c780f53a60d8cb819b1fde" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>auth_info_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a635ddd79f5752f7a27402152871a66cc" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>buddy_info_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a31e10f0b8297cf99f3c337352d54c4ad" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_encryption_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae16c00a663001f7aecd5cfbe8fa91fd5" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_log_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a771c633cfce7bae2cc0160fbd377bf28" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a331cc2d86632554b85346f163a188b1c" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_stats_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4bd70f9d456eadfac49f95a4733e67c1" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>configuring_status</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a25b5a48d42bcd608797068657d9ad000" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_message</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ad7b1bc4829050d679df3ffb019ec3a6a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_status</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a6907dbe56ec897a99ccd0d114ccab579" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_url</name></member>
+      <member refid="struct__LinphoneCoreVTable_1abb24881301a7887713642f94501149bb" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_warning</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>dtmf_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a2b8d6909518b2ab8dadf9c3208ae179e" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_progress_indication</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aa0a2528da1c12b9ba6a7dae22cbe64e9" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_recv</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ab1feeaa1140c156442dae0e4653bf167" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_send</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a706e1ad8826fb8b9e431f654358ecb1f" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>global_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aadaca6d67eee62be103d2add96aba0ba" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>info_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1afb34622357b9a7138db200040878dba2" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>is_composing_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a23e6dd80976b540b656f0f2789e069e3" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>log_collection_upload_progress_indication</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a5c4d34c2587402dea1ed08a8cc2f1662" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>log_collection_upload_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>message_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a0a74a3a47b6085c20bc18066d48170a0" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>network_reachable</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a94c1c96ebb851f6a686377347a3dc39a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>new_subscription_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aaeba9b7914a3274d4061097575b45717" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_presence_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4e50dd528160791435706add7e9dc403" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a0c97e13eeffa865030b2c01a4a1925a7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>publish_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a506c7d14f539829d96d80c7ce359017b" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>refer_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a2483143cd4b2e2b8ede6f3c916740938" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>registration_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a3e0f5df79f1b96b3a417d4c171ac7f27" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>show</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ad74e9de0bfb7eb63fd4aea705304940d" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>subscription_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a5b101f313df29f3ddedcfdba885b4757" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>text_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a9e7176e49c4f45306962c0eea97e8060" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>transfer_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

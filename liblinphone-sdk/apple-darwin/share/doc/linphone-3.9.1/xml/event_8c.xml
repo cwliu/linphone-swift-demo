@@ -1,0 +1,1753 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="event_8c" kind="file" language="C++">
+    <compoundname>event.c</compoundname>
+    <includes refid="private_8h" local="yes">private.h</includes>
+    <includes refid="lpconfig_8h" local="yes">lpconfig.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="event_8c_1ab625e1d65afc7fa6881f6ba6a9e14150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_subscription_dir_to_string</definition>
+        <argsstring>(LinphoneSubscriptionDir dir)</argsstring>
+        <name>linphone_subscription_dir_to_string</name>
+        <param>
+          <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="23" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="23" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a355182ce8075a65cd2a8314b7ec6406e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+        <definition>LinphoneSubscriptionState linphone_subscription_state_from_sal</definition>
+        <argsstring>(SalSubscribeStatus ss)</argsstring>
+        <name>linphone_subscription_state_from_sal</name>
+        <param>
+          <type>SalSubscribeStatus</type>
+          <declname>ss</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="35" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="35" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga5b2fc0e151efd28ef9df77c54dd88188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_subscription_state_to_string</definition>
+        <argsstring>(LinphoneSubscriptionState state)</argsstring>
+        <name>linphone_subscription_state_to_string</name>
+        <param>
+          <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="45" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gad8cb0edbba6a5d4304d220c05896f9ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_publish_state_to_string</definition>
+        <argsstring>(LinphonePublishState state)</argsstring>
+        <name>linphone_publish_state_to_string</name>
+        <param>
+          <type><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="59" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a835e19b7134029d6809a63f21faaa5be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>static LinphoneEvent* linphone_event_new_base</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneSubscriptionDir dir, const char *name, SalOp *op)</argsstring>
+        <name>linphone_event_new_base</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>SalOp *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="71" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a895e17b7e0a5ac88755000eeca0879aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_event_new</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneSubscriptionDir dir, const char *name, int expires)</argsstring>
+        <name>linphone_event_new</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="81" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1ab7cdb2669b238d5a2b2cf4bb6b5ddb3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>static LinphoneEvent* linphone_event_new_with_op_base</definition>
+        <argsstring>(LinphoneCore *lc, SalOp *op, LinphoneSubscriptionDir dir, const char *name, bool_t is_out_of_dialog)</argsstring>
+        <name>linphone_event_new_with_op_base</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>SalOp *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>is_out_of_dialog</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="87" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="87" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a097c7bf7d74998d29a9498aaf614faed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_event_new_with_op</definition>
+        <argsstring>(LinphoneCore *lc, SalOp *op, LinphoneSubscriptionDir dir, const char *name)</argsstring>
+        <name>linphone_event_new_with_op</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>SalOp *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="93" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a809cb419e838e9aefbe3da1d556e86ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_event_new_with_out_of_dialog_op</definition>
+        <argsstring>(LinphoneCore *lc, SalOp *op, LinphoneSubscriptionDir dir, const char *name)</argsstring>
+        <name>linphone_event_new_with_out_of_dialog_op</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>SalOp *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Useful for out of dialog notify </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="97" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1ab04ed303faa635808e9108c8f3bab4e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_set_internal</definition>
+        <argsstring>(LinphoneEvent *lev, bool_t internal)</argsstring>
+        <name>linphone_event_set_internal</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>internal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="101" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a97e1a2fc2193c5caf0ea38be9dea593d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_event_is_internal</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_is_internal</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="105" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a8afacd9ccb0264bc012d164713d06e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_set_state</definition>
+        <argsstring>(LinphoneEvent *lev, LinphoneSubscriptionState state)</argsstring>
+        <name>linphone_event_set_state</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="109" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="109" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a80f94432c32afeea0ca1e9c4705afcbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_set_publish_state</definition>
+        <argsstring>(LinphoneEvent *lev, LinphonePublishState state)</argsstring>
+        <name>linphone_event_set_publish_state</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref></type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="120" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="120" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaf3d059c3da69dd0f12ff65f0ecdaaf9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref></type>
+        <definition>LinphonePublishState linphone_event_get_publish_state</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_publish_state</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get publish state. If the event object was not created by a publish mechanism, <ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" kindref="member">LinphonePublishNone</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="145" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga76be1dba05ea6ddce71d38f621ddcfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>const LinphoneErrorInfo* linphone_event_get_error_info</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_error_info</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get full details about an error occured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="149" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_event_get_reason</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_reason</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return reason code (in case of error state reached). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="153" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_create_subscribe</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires)</argsstring>
+        <name>linphone_core_create_subscribe</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an outgoing subscription, specifying the destination resource, the event name, and an optional content body. If accepted, the subscription runs for a finite period, but is automatically renewed if not terminated before. Unlike <ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe()</ref> the subscription isn&apos;t sent immediately. It will be send when calling <ref refid="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" kindref="member">linphone_event_send_subscribe()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination resource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the whished duration of the subscription </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a LinphoneEvent holding the context of the created subcription. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="157" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="157" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_subscribe</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires, const LinphoneContent *body)</argsstring>
+        <name>linphone_core_subscribe</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an outgoing subscription, specifying the destination resource, the event name, and an optional content body. If accepted, the subscription runs for a finite period, but is automatically renewed if not terminated before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the destination resource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the whished duration of the subscription </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body, may be NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a LinphoneEvent holding the context of the created subcription. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="164" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="164" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_send_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_send_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+          <defname>lev</defname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a subscription previously created by <ref refid="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" kindref="member">linphone_core_create_subscribe()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional content to attach with the subscription. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="171" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="171" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga563888e9ea3235a61757760085d30cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_update_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_update_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update (refresh) an outgoing subscription, changing the body. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body to include in the subscription update, may be NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="209" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="209" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga99ae54dbbb24d3405acde9e89e3d4848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_refresh_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_refresh_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Refresh an outgoing subscription keeping the same body. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneEvent object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="213" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga9461aa2a060e43c46b02ba778182573e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_accept_subscription</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_accept_subscription</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Accept an incoming subcription. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="217" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="217" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac1ef6d484e5ad5e8598f32d19b8ef800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_deny_subscription</definition>
+        <argsstring>(LinphoneEvent *lev, LinphoneReason reason)</argsstring>
+        <name>linphone_event_deny_subscription</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deny an incoming subscription with given reason. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="230" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="230" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga8ca62fc6f89032a6079591dad1ba64b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_notify</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_notify</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a notification. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> corresponding to an incoming subscription previously received and accepted. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body containing the actual notification data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="241" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="241" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_create_publish</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires)</argsstring>
+        <name>linphone_core_create_publish</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a publish context for an event state. After being created, the publish must be sent using <ref refid="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" kindref="member">linphone_event_send_publish()</ref>. After expiry, the publication is refreshed unless it is terminated before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resource uri for the event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lifetime of event being published, -1 if no associated duration, in which case it will not be refreshed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the LinphoneEvent holding the context of the publish. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="255" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="255" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1ac7e35b8b1dfeb933d4ceb07056d45f38" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int _linphone_event_send_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body, bool_t notify_err)</argsstring>
+        <name>_linphone_event_send_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>notify_err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="262" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="262" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga3d1ea36f58ec30b475e424d2bff93fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_core_publish</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *resource, const char *event, int expires, const LinphoneContent *body)</argsstring>
+        <name>linphone_core_publish</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>resource</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Publish an event state. This first create a LinphoneEvent with <ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish()</ref> and calls <ref refid="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" kindref="member">linphone_event_send_publish()</ref> to actually send it. After expiry, the publication is refreshed unless it is terminated before. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resource uri for the event </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the event name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the lifetime of event being published, -1 if no associated duration, in which case it will not be refreshed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the actual published data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the LinphoneEvent holding the context of the publish. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="284" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="284" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_send_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_send_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a publish created by <ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new data to be published </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="296" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="296" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7a3911c6603c1a7662f1b9ad29c6fae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_update_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_update_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update (refresh) a publish. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new data to be published </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="300" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaa39179c4d2627fbd9c0df723184c69c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_event_refresh_publish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_refresh_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Refresh an outgoing publish keeping the same body. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneEvent object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="304" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="304" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaab5de6f8d2f8651d485524d41ab857cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_pause_publish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_pause_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prevent an event from refreshing its publish. This is useful to let registrations to expire naturally (or) when the application wants to keep control on when refreshes are sent. The refreshing operations can be resumed with <ref refid="group__proxies_1ga94411d7a66d26b421358fc4ab73a844d" kindref="member">linphone_proxy_config_refresh_register()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="307" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="307" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a80c343fee042b5a30418d2f425fa6eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_unpublish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_unpublish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="310" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga9e22cf3e08ba7801189ef20e58f9afad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_set_user_data</definition>
+        <argsstring>(LinphoneEvent *ev, void *up)</argsstring>
+        <name>linphone_event_set_user_data</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a user (application) pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="314" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="314" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac4b132995fed3dc6ba4e13c1ade928d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_event_get_user_data</definition>
+        <argsstring>(const LinphoneEvent *ev)</argsstring>
+        <name>linphone_event_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve user pointer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="318" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="318" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga1a2b7563784e003df5a64e3355b44297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_add_custom_header</definition>
+        <argsstring>(LinphoneEvent *ev, const char *name, const char *value)</argsstring>
+        <name>linphone_event_add_custom_header</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a custom header to an outgoing susbscription or publish. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header&apos;s name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;s value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="322" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="322" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga0f8793f2c6970ec61591270204eaa079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_event_get_custom_header</definition>
+        <argsstring>(LinphoneEvent *ev, const char *name)</argsstring>
+        <name>linphone_event_get_custom_header</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Obtain the value of a given header for an incoming subscription. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header&apos;s name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the header&apos;s value or NULL if such header doesn&apos;t exist. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="326" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaef98f2e70b0a62e46bb1e836b61a8491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_terminate</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_terminate</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Terminate an incoming or outgoing subscription that was previously acccepted, or a previous publication. The LinphoneEvent shall not be used anymore after this operation, unless the application explicitely took a reference on the object with <ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="332" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="332" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_event_ref</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_ref</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Increase reference count of LinphoneEvent. By default LinphoneEvents created by the core are owned by the core only. An application that wishes to retain a reference to it must call <ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref>. When this reference is no longer needed, <ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref()</ref> must be called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="355" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1abd1732c5987a133554b2dcb5dbe60aa0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void linphone_event_destroy</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_destroy</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="360" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="360" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_unref</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_unref</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Decrease reference count. <simplesect kind="see"><para><ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="366" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga51e9694c8b2121a3d71d11632c7e1155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref></type>
+        <definition>LinphoneSubscriptionDir linphone_event_get_subscription_dir</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_subscription_dir</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get subscription direction. If the object wasn&apos;t created by a subscription mechanism, <ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" kindref="member">LinphoneSubscriptionInvalidDir</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="370" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="370" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gabc1e22da12a3a4ca0a76da3dbff38516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref></type>
+        <definition>LinphoneSubscriptionState linphone_event_get_subscription_state</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_subscription_state</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get subscription state. If the event object was not created by a subscription mechanism, <ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="374" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="374" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7224702b342fef301e15b12aee0aaffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_event_get_name</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_name</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of the event as specified in the event package RFC. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="378" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="378" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae0d6c66d272f7bfe8f0b3902b6509395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_event_get_from</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_from</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the &quot;from&quot; address of the subscription. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="382" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="382" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac45355bd19fd7205deb4f1fcc722410c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_event_get_resource</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_resource</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the resource address of the subscription or publish. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="390" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="390" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gab2bebd450e088b98b817abeb389e7621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_event_get_core</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_core</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns back pointer to the LinphoneCore that created this LinphoneEvent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="398" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="398" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a356f10b6c5060f5e11595dc7508acf1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>belle_sip_error_code</type>
+        <definition>static belle_sip_error_code _linphone_event_marshall</definition>
+        <argsstring>(belle_sip_object_t *obj, char *buff, size_t buff_size, size_t *offset)</argsstring>
+        <name>_linphone_event_marshall</name>
+        <param>
+          <type>belle_sip_object_t *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>buff_size</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="402" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" bodystart="402" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1ac45c73d6d9656c800ccbd22a9ab624c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BELLE_SIP_DECLARE_NO_IMPLEMENTED_INTERFACES</definition>
+        <argsstring>(LinphoneEvent)</argsstring>
+        <name>BELLE_SIP_DECLARE_NO_IMPLEMENTED_INTERFACES</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8c_1a51d33623e0f8a471de98c401c7f9ef64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BELLE_SIP_INSTANCIATE_VPTR</definition>
+        <argsstring>(LinphoneEvent, belle_sip_object_t,(belle_sip_object_destroy_t) linphone_event_destroy, NULL, _linphone_event_marshall, FALSE)</argsstring>
+        <name>BELLE_SIP_INSTANCIATE_VPTR</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref></type>
+        </param>
+        <param>
+          <type>belle_sip_object_t</type>
+        </param>
+        <param>
+          <type>(belle_sip_object_destroy_t)</type>
+          <declname>linphone_event_destroy</declname>
+        </param>
+        <param>
+          <type>NULL</type>
+        </param>
+        <param>
+          <type>_linphone_event_marshall</type>
+        </param>
+        <param>
+          <type>FALSE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c" line="414" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2000<sp/>-<sp/>2010<sp/>Simon<sp/>MORLAT<sp/>(simon.morlat@linphone.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;private.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lpconfig.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>linphone_subscription_dir_to_string(<ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/>dir){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(dir){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf55a603336d43c3ea4cc3499bdb2c0c2" kindref="member">LinphoneSubscriptionIncoming</ref>:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionIncoming&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299ea3767788ba0d1a42fb28aa8b251b15f86" kindref="member">LinphoneSubscriptionOutgoing</ref>:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionOutgoing&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" kindref="member">LinphoneSubscriptionInvalidDir</ref>:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionInvalidDir&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;INVALID&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref><sp/>linphone_subscription_state_from_sal(SalSubscribeStatus<sp/>ss){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(ss){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SalSubscribeNone:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SalSubscribePending:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a49a83030925840824cbc1e4d8eb1dec2" kindref="member">LinphoneSubscriptionPending</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SalSubscribeTerminated:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" kindref="member">LinphoneSubscriptionTerminated</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SalSubscribeActive:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2ab42d78d54f2780123a1f81b016e8c169" kindref="member">LinphoneSubscriptionActive</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*linphone_subscription_state_to_string(<ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref><sp/>state){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(state){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionNone&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a9da46101b075b3e234bb241110a56199" kindref="member">LinphoneSubscriptionIncomingReceived</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionIncomingReceived&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a7848cfa1b2acff3093e11b841c004a3f" kindref="member">LinphoneSubscriptionOutgoingProgress</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionOutgoingProgress&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a49a83030925840824cbc1e4d8eb1dec2" kindref="member">LinphoneSubscriptionPending</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionPending&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2ab42d78d54f2780123a1f81b016e8c169" kindref="member">LinphoneSubscriptionActive</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionActive&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" kindref="member">LinphoneSubscriptionTerminated</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionTerminated&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a97811c7073b37718c9b1580b2c81ce97" kindref="member">LinphoneSubscriptionError</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionError&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aa622d123717bba7b1dbec6db45ca424f" kindref="member">LinphoneSubscriptionExpiring</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphoneSubscriptionExpiring&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*linphone_publish_state_to_string(<ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref><sp/>state){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(state){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" kindref="member">LinphonePublishNone</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphonePublishNone&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4aaeda3e5c8b3d3f0342be1d2491be2764" kindref="member">LinphonePublishProgress</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphonePublishProgress&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a72b7fc821667e302e0ede8e2f2c31b9c" kindref="member">LinphonePublishOk</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphonePublishOk&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a51837d4ba711c17524d1585c5caca98c" kindref="member">LinphonePublishError</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphonePublishError&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a4c2b990cd066348e068d15cdc65a8a55" kindref="member">LinphonePublishCleared</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphonePublishCleared&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a15222226cc9695458b595d785db16bf2" kindref="member">LinphonePublishExpiring</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;LinphonePublishExpiring&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*<sp/>linphone_event_new_base(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/>dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/>SalOp<sp/>*op){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=belle_sip_object_new(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;lc=lc;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;dir=dir;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;op=op;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;name=ms_strdup(name);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_op_set_user_pointer(lev-&gt;op,lev);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*linphone_event_new(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/>dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=linphone_event_new_base(lc,<sp/>dir,<sp/>name,<sp/>sal_op_new(lc-&gt;sal));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;expires=expires;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*linphone_event_new_with_op_base(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>SalOp<sp/>*op,<sp/><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/>dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/>bool_t<sp/>is_out_of_dialog){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=linphone_event_new_base(lc,<sp/>dir,<sp/>name,<sp/>op);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;is_out_of_dialog_op=is_out_of_dialog;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*linphone_event_new_with_op(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>SalOp<sp/>*op,<sp/><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/>dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>linphone_event_new_with_op_base(lc,op,dir,name,FALSE);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*linphone_event_new_with_out_of_dialog_op(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>SalOp<sp/>*op,<sp/><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/>dir,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>linphone_event_new_with_op_base(lc,op,dir,name,TRUE);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_event_set_internal(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/>bool_t<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;internal<sp/>=<sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">bool_t<sp/>linphone_event_is_internal(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev-&gt;internal;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_event_set_state(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref><sp/>state){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state!=state){</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_message(</highlight><highlight class="stringliteral">&quot;LinphoneEvent<sp/>[%p]<sp/>moving<sp/>to<sp/>subscription<sp/>state<sp/>%s&quot;</highlight><highlight class="normal">,lev,linphone_subscription_state_to_string(state));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;subscription_state=state;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_notify_subscription_state_changed(lev-&gt;lc,lev,state);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" kindref="member">LinphoneSubscriptionTerminated</ref>){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref</ref>(lev);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_event_set_publish_state(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref><sp/>state){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;publish_state!=state){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_message(</highlight><highlight class="stringliteral">&quot;LinphoneEvent<sp/>[%p]<sp/>moving<sp/>to<sp/>publish<sp/>state<sp/>%s&quot;</highlight><highlight class="normal">,lev,linphone_publish_state_to_string(state));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;publish_state=state;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_notify_publish_state_changed(lev-&gt;lc,lev,state);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(state){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a4c2b990cd066348e068d15cdc65a8a55" kindref="member">LinphonePublishCleared</ref>:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;expires!=-1)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref</ref>(lev);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a72b7fc821667e302e0ede8e2f2c31b9c" kindref="member">LinphonePublishOk</ref>:</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a51837d4ba711c17524d1585c5caca98c" kindref="member">LinphonePublishError</ref>:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;expires==-1)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref</ref>(lev);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" kindref="member">LinphonePublishNone</ref>:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4aaeda3e5c8b3d3f0342be1d2491be2764" kindref="member">LinphonePublishProgress</ref>:</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a15222226cc9695458b595d785db16bf2" kindref="member">LinphonePublishExpiring</ref>:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*nothing<sp/>special<sp/>to<sp/>do*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><ref refid="group__event__api_1gafb440ee528090b514289e74320923ea2" kindref="member">LinphonePublishState</ref><sp/><ref refid="group__event__api_1gaf3d059c3da69dd0f12ff65f0ecdaaf9d" kindref="member">linphone_event_get_publish_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev-&gt;publish_state;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*<ref refid="group__event__api_1ga76be1dba05ea6ddce71d38f621ddcfde" kindref="member">linphone_event_get_error_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>linphone_error_info_from_sal_op(lev-&gt;op);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref><sp/><ref refid="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" kindref="member">linphone_event_get_reason</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga3297420b41659c4bd1ffb64a1e6b7d64" kindref="member">linphone_error_info_get_reason</ref>(<ref refid="group__event__api_1ga76be1dba05ea6ddce71d38f621ddcfde" kindref="member">linphone_event_get_error_info</ref>(lev));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*<ref refid="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" kindref="member">linphone_core_create_subscribe</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*resource,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*event,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires){</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=linphone_event_new(lc,<sp/><ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299ea3767788ba0d1a42fb28aa8b251b15f86" kindref="member">LinphoneSubscriptionOutgoing</ref>,<sp/>event,<sp/>expires);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_configure_op(lc,lev-&gt;op,resource,NULL,TRUE);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_op_set_manual_refresher_mode(lev-&gt;op,!<ref refid="group__misc_1ga36d08c0cbc78d88fd4f043e61e9b9637" kindref="member">lp_config_get_int</ref>(lc-&gt;config,</highlight><highlight class="stringliteral">&quot;sip&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;refresh_generic_subscribe&quot;</highlight><highlight class="normal">,1));</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*<ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*resource,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*event,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body){</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=<ref refid="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" kindref="member">linphone_core_create_subscribe</ref>(lc,resource,event,expires);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" kindref="member">linphone_event_send_subscribe</ref>(lev,body);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" kindref="member">linphone_event_send_subscribe</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body){</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SalBodyHandler<sp/>*body_handler;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;dir!=<ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299ea3767788ba0d1a42fb28aa8b251b15f86" kindref="member">LinphoneSubscriptionOutgoing</ref>){</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_send_subscribe():<sp/>cannot<sp/>send<sp/>or<sp/>update<sp/>something<sp/>that<sp/>is<sp/>not<sp/>an<sp/>outgoing<sp/>subscription.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state){</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a9da46101b075b3e234bb241110a56199" kindref="member">LinphoneSubscriptionIncomingReceived</ref>:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" kindref="member">LinphoneSubscriptionTerminated</ref>:</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>LinphoneSubscriptionOutgoingInit:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_send_subscribe():<sp/>cannot<sp/>update<sp/>subscription<sp/>while<sp/>in<sp/>state<sp/>[%s]&quot;</highlight><highlight class="normal">,<sp/>linphone_subscription_state_to_string(lev-&gt;subscription_state));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref>:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2ab42d78d54f2780123a1f81b016e8c169" kindref="member">LinphoneSubscriptionActive</ref>:</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aa622d123717bba7b1dbec6db45ca424f" kindref="member">LinphoneSubscriptionExpiring</ref>:</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a97811c7073b37718c9b1580b2c81ce97" kindref="member">LinphoneSubscriptionError</ref>:</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a49a83030925840824cbc1e4d8eb1dec2" kindref="member">LinphoneSubscriptionPending</ref>:</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*those<sp/>states<sp/>are<sp/>ok*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;send_custom_headers){</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_op_set_sent_custom_header(lev-&gt;op,lev-&gt;send_custom_headers);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;send_custom_headers=NULL;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>sal_op_set_sent_custom_header(lev-&gt;op,NULL);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>body_handler<sp/>=<sp/>sal_body_handler_from_content(body);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err=sal_subscribe(lev-&gt;op,NULL,NULL,lev-&gt;name,lev-&gt;expires,body_handler);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err==0){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state==<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref>)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_state(lev,LinphoneSubscriptionOutgoingInit);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga563888e9ea3235a61757760085d30cc0" kindref="member">linphone_event_update_subscribe</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body){</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga66f91b1b169050c7db93660816f7ce35" kindref="member">linphone_event_send_subscribe</ref>(lev,body);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga99ae54dbbb24d3405acde9e89e3d4848" kindref="member">linphone_event_refresh_subscribe</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sal_op_refresh(lev-&gt;op);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga9461aa2a060e43c46b02ba778182573e" kindref="member">linphone_event_accept_subscription</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state!=<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a9da46101b075b3e234bb241110a56199" kindref="member">LinphoneSubscriptionIncomingReceived</ref>){</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_accept_subscription():<sp/>cannot<sp/>accept<sp/>subscription<sp/>if<sp/>subscription<sp/>wasn&apos;t<sp/>just<sp/>received.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err=sal_subscribe_accept(lev-&gt;op);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err==0){</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_state(lev,<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2ab42d78d54f2780123a1f81b016e8c169" kindref="member">LinphoneSubscriptionActive</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gac1ef6d484e5ad5e8598f32d19b8ef800" kindref="member">linphone_event_deny_subscription</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/><ref refid="group__misc_1gabe82a1a1ffc3d6b4e0b51a03028513b7" kindref="member">LinphoneReason</ref><sp/>reason){</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state!=<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a9da46101b075b3e234bb241110a56199" kindref="member">LinphoneSubscriptionIncomingReceived</ref>){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_deny_subscription():<sp/>cannot<sp/>deny<sp/>subscription<sp/>if<sp/>subscription<sp/>wasn&apos;t<sp/>just<sp/>received.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err=sal_subscribe_decline(lev-&gt;op,linphone_reason_to_sal(reason));</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_state(lev,<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" kindref="member">LinphoneSubscriptionTerminated</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga8ca62fc6f89032a6079591dad1ba64b6" kindref="member">linphone_event_notify</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body){</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SalBodyHandler<sp/>*body_handler;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state!=<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2ab42d78d54f2780123a1f81b016e8c169" kindref="member">LinphoneSubscriptionActive</ref>){</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_notify():<sp/>cannot<sp/>notify<sp/>if<sp/>subscription<sp/>is<sp/>not<sp/>active.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;dir!=<ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf55a603336d43c3ea4cc3499bdb2c0c2" kindref="member">LinphoneSubscriptionIncoming</ref>){</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_notify():<sp/>cannot<sp/>notify<sp/>if<sp/>not<sp/>an<sp/>incoming<sp/>subscription.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>body_handler<sp/>=<sp/>sal_body_handler_from_content(body);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sal_notify(lev-&gt;op,<sp/>body_handler);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*<ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*resource,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*event,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires){</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=linphone_event_new(lc,<ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" kindref="member">LinphoneSubscriptionInvalidDir</ref>,<sp/>event,expires);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_configure_op(lc,lev-&gt;op,resource,NULL,<ref refid="group__misc_1ga36d08c0cbc78d88fd4f043e61e9b9637" kindref="member">lp_config_get_int</ref>(lc-&gt;config,</highlight><highlight class="stringliteral">&quot;sip&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;publish_msg_with_contact&quot;</highlight><highlight class="normal">,0));</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_op_set_manual_refresher_mode(lev-&gt;op,!<ref refid="group__misc_1ga36d08c0cbc78d88fd4f043e61e9b9637" kindref="member">lp_config_get_int</ref>(lc-&gt;config,</highlight><highlight class="stringliteral">&quot;sip&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;refresh_generic_publish&quot;</highlight><highlight class="normal">,1));</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_linphone_event_send_publish(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body,<sp/>bool_t<sp/>notify_err){</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SalBodyHandler<sp/>*body_handler;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;dir!=<ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" kindref="member">LinphoneSubscriptionInvalidDir</ref>){</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_error(</highlight><highlight class="stringliteral">&quot;linphone_event_update_publish():<sp/>this<sp/>is<sp/>not<sp/>a<sp/>PUBLISH<sp/>event.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;send_custom_headers){</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_op_set_sent_custom_header(lev-&gt;op,lev-&gt;send_custom_headers);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;send_custom_headers=NULL;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>sal_op_set_sent_custom_header(lev-&gt;op,NULL);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>body_handler<sp/>=<sp/>sal_body_handler_from_content(body);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err=sal_publish(lev-&gt;op,NULL,NULL,lev-&gt;name,lev-&gt;expires,body_handler);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err==0){</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_publish_state(lev,<ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4aaeda3e5c8b3d3f0342be1d2491be2764" kindref="member">LinphonePublishProgress</ref>);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(notify_err){</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_publish_state(lev,<ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a51837d4ba711c17524d1585c5caca98c" kindref="member">LinphonePublishError</ref>);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*<ref refid="group__event__api_1ga3d1ea36f58ec30b475e424d2bff93fb6" kindref="member">linphone_core_publish</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*resource,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*event,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body){</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev=<ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish</ref>(lc,resource,event,expires);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err=_linphone_event_send_publish(lev,body,FALSE);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(err==-1){</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref</ref>(lev);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev=NULL;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" kindref="member">linphone_event_send_publish</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref><sp/>*body){</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_linphone_event_send_publish(lev,body,TRUE);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga7a3911c6603c1a7662f1b9ad29c6fae1" kindref="member">linphone_event_update_publish</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref>*<sp/>lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContent" kindref="compound">LinphoneContent</ref>*<sp/>body<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gae0974f02a99efad932a78e7a427f66f5" kindref="member">linphone_event_send_publish</ref>(lev,body);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gaa39179c4d2627fbd9c0df723184c69c9" kindref="member">linphone_event_refresh_publish</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev)<sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sal_op_refresh(lev-&gt;op);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gaab5de6f8d2f8651d485524d41ab857cc" kindref="member">linphone_event_pause_publish</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;op)<sp/>sal_op_stop_refreshing(lev-&gt;op);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_event_unpublish(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev)<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;terminating<sp/>=<sp/>TRUE;<sp/></highlight><highlight class="comment">/*<sp/>needed<sp/>to<sp/>get<sp/>clear<sp/>event*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;op)<sp/>sal_op_unpublish(lev-&gt;op);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga9e22cf3e08ba7801189ef20e58f9afad" kindref="member">linphone_event_set_user_data</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*ev,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*up){</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ev-&gt;userdata=up;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__event__api_1gac4b132995fed3dc6ba4e13c1ade928d1" kindref="member">linphone_event_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*ev){</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ev-&gt;userdata;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga1a2b7563784e003df5a64e3355b44297" kindref="member">linphone_event_add_custom_header</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*ev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value){</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ev-&gt;send_custom_headers=sal_custom_header_append(ev-&gt;send_custom_headers,<sp/>name,<sp/>value);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="group__event__api_1ga0f8793f2c6970ec61591270204eaa079" kindref="member">linphone_event_get_custom_header</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref>*<sp/>ev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name){</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SalCustomHeader<sp/>*ch=sal_op_get_recv_custom_header(ev-&gt;op);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sal_custom_header_find(ch,name);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gaef98f2e70b0a62e46bb1e836b61a8491" kindref="member">linphone_event_terminate</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lev-&gt;terminating=TRUE;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;dir==<ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf55a603336d43c3ea4cc3499bdb2c0c2" kindref="member">LinphoneSubscriptionIncoming</ref>){</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_notify_close(lev-&gt;op);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;dir==<ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299ea3767788ba0d1a42fb28aa8b251b15f86" kindref="member">LinphoneSubscriptionOutgoing</ref>){</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_unsubscribe(lev-&gt;op);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;publish_state!=<ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" kindref="member">LinphonePublishNone</ref>){</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;publish_state==<ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a72b7fc821667e302e0ede8e2f2c31b9c" kindref="member">LinphonePublishOk</ref><sp/>&amp;&amp;<sp/>lev-&gt;expires!=-1){</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_publish(lev-&gt;op,NULL,NULL,NULL,0,NULL);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>sal_op_unpublish(lev-&gt;op);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_publish_state(lev,<ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a4c2b990cd066348e068d15cdc65a8a55" kindref="member">LinphonePublishCleared</ref>);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;subscription_state!=<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref>){</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_event_set_state(lev,<ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2a108eeeb7d2550850db7c64f6c064972a" kindref="member">LinphoneSubscriptionTerminated</ref>);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*<ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>belle_sip_object_ref(lev);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_event_destroy(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;op)</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sal_op_release(lev-&gt;op);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_free(lev-&gt;name);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>belle_sip_object_unref(lev);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><ref refid="group__event__api_1ga317c5125e3a75ae35564895024cf24f9" kindref="member">LinphoneSubscriptionDir</ref><sp/><ref refid="group__event__api_1ga51e9694c8b2121a3d71d11632c7e1155" kindref="member">linphone_event_get_subscription_dir</ref>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev-&gt;dir;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><ref refid="group__event__api_1gae08ee010813d69b0bc487c704b174933" kindref="member">LinphoneSubscriptionState</ref><sp/><ref refid="group__event__api_1gabc1e22da12a3a4ca0a76da3dbff38516" kindref="member">linphone_event_get_subscription_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev-&gt;subscription_state;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__event__api_1ga7224702b342fef301e15b12aee0aaffe" kindref="member">linphone_event_get_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev-&gt;name;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__event__api_1gae0d6c66d272f7bfe8f0b3902b6509395" kindref="member">linphone_event_get_from</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;is_out_of_dialog_op){</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*)sal_op_get_to_address(lev-&gt;op);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*)sal_op_get_from_address(lev-&gt;op);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__event__api_1gac45355bd19fd7205deb4f1fcc722410c" kindref="member">linphone_event_get_resource</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev-&gt;is_out_of_dialog_op){</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*)sal_op_get_from_address(lev-&gt;op);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*)sal_op_get_to_address(lev-&gt;op);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="396"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*<ref refid="group__event__api_1gab2bebd450e088b98b817abeb389e7621" kindref="member">linphone_event_get_core</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*lev){</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lev-&gt;lc;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>belle_sip_error_code<sp/>_linphone_event_marshall(belle_sip_object_t<sp/>*obj,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buff,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>buff_size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>*offset)<sp/>{</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref><sp/>*ev<sp/>=<sp/>(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref>*)obj;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>belle_sip_error_code<sp/>err<sp/>=<sp/>BELLE_SIP_OK;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>=<sp/>belle_sip_snprintf(buff,<sp/>buff_size,<sp/>offset,<sp/></highlight><highlight class="stringliteral">&quot;%s<sp/>of<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>ev-&gt;dir<sp/>==<sp/><ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf55a603336d43c3ea4cc3499bdb2c0c2" kindref="member">LinphoneSubscriptionIncoming</ref><sp/>?<sp/></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Incoming<sp/>Subscribe&quot;</highlight><highlight class="normal"><sp/>:<sp/>(ev-&gt;dir<sp/>==<sp/><ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299ea3767788ba0d1a42fb28aa8b251b15f86" kindref="member">LinphoneSubscriptionOutgoing</ref><sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Outgoing<sp/>subscribe&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;Publish&quot;</highlight><highlight class="normal">),<sp/>ev-&gt;name);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>err;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal">BELLE_SIP_DECLARE_NO_IMPLEMENTED_INTERFACES(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref>);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal">BELLE_SIP_INSTANCIATE_VPTR(<ref refid="struct__LinphoneEvent" kindref="compound">LinphoneEvent</ref>,<sp/>belle_sip_object_t,</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(belle_sip_object_destroy_t)<sp/>linphone_event_destroy,</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/></highlight><highlight class="comment">//<sp/>clone</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_linphone_event_marshall,</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FALSE</highlight></codeline>
+<codeline lineno="419"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/event.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structui__config" kind="struct" language="C++" prot="public">
+    <compoundname>ui_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structui__config_1ab8feb9bfea7ce4b217ef09b77df3fb28" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ui_config::is_daemon</definition>
+        <argsstring></argsstring>
+        <name>is_daemon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="825" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structui__config_1a1ea3ae0e073918227c77e942179adf0e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ui_config::is_applet</definition>
+        <argsstring></argsstring>
+        <name>is_applet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="826" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="826" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structui__config_1a555a9630a9424bd006284e05624965d3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ui_config::timer_id</definition>
+        <argsstring></argsstring>
+        <name>timer_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="827" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="827" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="824" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="823" bodyend="828"/>
+    <listofallmembers>
+      <member refid="structui__config_1a1ea3ae0e073918227c77e942179adf0e" prot="public" virt="non-virtual"><scope>ui_config</scope><name>is_applet</name></member>
+      <member refid="structui__config_1ab8feb9bfea7ce4b217ef09b77df3fb28" prot="public" virt="non-virtual"><scope>ui_config</scope><name>is_daemon</name></member>
+      <member refid="structui__config_1a555a9630a9424bd006284e05624965d3" prot="public" virt="non-virtual"><scope>ui_config</scope><name>timer_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

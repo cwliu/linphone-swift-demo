@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__xmlparsing__context" kind="struct" language="C++" prot="public">
+    <compoundname>_xmlparsing_context</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__xmlparsing__context_1a352886d833c459b6f4110a52fbf808af" prot="public" static="no" mutable="no">
+        <type>xmlDoc *</type>
+        <definition>xmlDoc* _xmlparsing_context::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1270" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xmlparsing__context_1abb545d5b627bdf05ddfab93e0ef46f09" prot="public" static="no" mutable="no">
+        <type>xmlXPathContextPtr</type>
+        <definition>xmlXPathContextPtr _xmlparsing_context::xpath_ctx</definition>
+        <argsstring></argsstring>
+        <name>xpath_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1271" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xmlparsing__context_1aa8a430c44b00bc9ec0c949b3ffdca7db" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _xmlparsing_context::errorBuffer[2048]</definition>
+        <argsstring>[2048]</argsstring>
+        <name>errorBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1272" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__xmlparsing__context_1a1fb35d16d913da967a5960f0b226f72e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _xmlparsing_context::warningBuffer[2048]</definition>
+        <argsstring>[2048]</argsstring>
+        <name>warningBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1273" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="1269" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="1269" bodyend="1274"/>
+    <listofallmembers>
+      <member refid="struct__xmlparsing__context_1a352886d833c459b6f4110a52fbf808af" prot="public" virt="non-virtual"><scope>_xmlparsing_context</scope><name>doc</name></member>
+      <member refid="struct__xmlparsing__context_1aa8a430c44b00bc9ec0c949b3ffdca7db" prot="public" virt="non-virtual"><scope>_xmlparsing_context</scope><name>errorBuffer</name></member>
+      <member refid="struct__xmlparsing__context_1a1fb35d16d913da967a5960f0b226f72e" prot="public" virt="non-virtual"><scope>_xmlparsing_context</scope><name>warningBuffer</name></member>
+      <member refid="struct__xmlparsing__context_1abb545d5b627bdf05ddfab93e0ef46f09" prot="public" virt="non-virtual"><scope>_xmlparsing_context</scope><name>xpath_ctx</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="contact__providers__priv_8h" kind="file" language="C++">
+    <compoundname>contact_providers_priv.h</compoundname>
+    <includes refid="private_8h" local="yes">private.h</includes>
+    <includes refid="linphonecore_8h" local="yes">linphonecore.h</includes>
+    <includedby refid="contactprovider_8c" local="yes">contactprovider.c</includedby>
+    <includedby refid="linphonecore_8c" local="yes">linphonecore.c</includedby>
+    <innerclass refid="struct__LinphoneContactSearch" prot="public">_LinphoneContactSearch</innerclass>
+    <innerclass refid="struct__LinphoneContactProvider" prot="public">_LinphoneContactProvider</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="contact__providers__priv_8h_1adcd2109ae85fa78582a9abf620570d98" prot="public" static="no">
+        <name>LINPHONE_CONTACT_SEARCH</name>
+        <param><defname>obj</defname></param>
+        <initializer>BELLE_SIP_CAST(obj,<ref refid="struct__LinphoneContactSearch" kindref="compound">LinphoneContactSearch</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="33" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="contact__providers__priv_8h_1a75a1c623da1354415bee9c637daf7005" prot="public" static="no">
+        <name>LINPHONE_CONTACT_PROVIDER</name>
+        <param><defname>obj</defname></param>
+        <initializer>BELLE_SIP_CAST(obj,<ref refid="struct__LinphoneContactProvider" kindref="compound">LinphoneContactProvider</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="42" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="contact__providers__priv_8h_1abf45afee92d894c09e1fde22ba069c96" prot="public" static="no">
+        <name>LINPHONE_LDAP_CONTACT_SEARCH</name>
+        <param><defname>obj</defname></param>
+        <initializer>BELLE_SIP_CAST(obj,LinphoneLDAPContactSearch)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="58" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="contact__providers__priv_8h_1af8bd5debfc67a94230ab93cf893d6d16" prot="public" static="no">
+        <name>LINPHONE_LDAP_CONTACT_PROVIDER</name>
+        <param><defname>obj</defname></param>
+        <initializer>BELLE_SIP_CAST(obj,LinphoneLDAPContactProvider)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="61" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="contact__providers__priv_8h_1a58be409baae103432df0c47f88bcbcbf" prot="public" static="no">
+        <type><ref refid="struct__LinphoneContactSearch" kindref="compound">LinphoneContactSearch</ref> *(*</type>
+        <definition>typedef LinphoneContactSearch*(* LinphoneContactProviderStartSearchMethod) (LinphoneContactProvider *thiz, const char *predicate, ContactSearchCallback cb, void *data)</definition>
+        <argsstring>)(LinphoneContactProvider *thiz, const char *predicate, ContactSearchCallback cb, void *data)</argsstring>
+        <name>LinphoneContactProviderStartSearchMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="contact__providers__priv_8h_1a51a8167bdccd49e58256726c267f4201" prot="public" static="no">
+        <type>unsigned int(*</type>
+        <definition>typedef unsigned int(* LinphoneContactProviderCancelSearchMethod) (LinphoneContactProvider *thiz, LinphoneContactSearch *request)</definition>
+        <argsstring>)(LinphoneContactProvider *thiz, LinphoneContactSearch *request)</argsstring>
+        <name>LinphoneContactProviderCancelSearchMethod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="contact__providers__priv_8h_1a8f8f80d37794cde9472343e4487ba3eb" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Name of the contact provider (LDAP, Google, ...) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="48" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="contact__providers__priv_8h_1a3e6167a985f2fd6eff31bdad66813f6b" prot="public" static="no" mutable="no">
+        <type>LinphoneContactProviderStartSearchMethod</type>
+        <definition>LinphoneContactProviderStartSearchMethod begin_search</definition>
+        <argsstring></argsstring>
+        <name>begin_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="51" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="contact__providers__priv_8h_1a66e3d1866245c4d7edaa575a9de7cc57" prot="public" static="no" mutable="no">
+        <type>LinphoneContactProviderCancelSearchMethod</type>
+        <definition>LinphoneContactProviderCancelSearchMethod cancel_search</definition>
+        <argsstring></argsstring>
+        <name>cancel_search</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" line="52" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONTACT_PROVIDERS_PRIV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONTACT_PROVIDERS_PRIV_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;private.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Base<sp/>for<sp/>contact<sp/>search<sp/>and<sp/>contact<sp/>provider<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="struct__LinphoneContactSearch" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneContactSearch" kindref="compound">_LinphoneContactSearch</ref>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>belle_sip_object_t<sp/>base;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ContactSearchID<sp/>id;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>predicate;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ContactSearchCallback<sp/>cb;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_CONTACT_SEARCH(obj)<sp/>BELLE_SIP_CAST(obj,LinphoneContactSearch)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">BELLE_SIP_DECLARE_VPTR(<ref refid="struct__LinphoneContactSearch" kindref="compound">LinphoneContactSearch</ref>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct__LinphoneContactProvider" refkind="compound"><highlight class="normal">struct<sp/><ref refid="struct__LinphoneContactProvider" kindref="compound">_LinphoneContactProvider</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>belle_sip_object_t<sp/>base;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref>*<sp/>lc;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_CONTACT_PROVIDER(obj)<sp/>BELLE_SIP_CAST(obj,LinphoneContactProvider)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneContactSearch" kindref="compound">LinphoneContactSearch</ref>*<sp/>(*LinphoneContactProviderStartSearchMethod)(<sp/><ref refid="struct__LinphoneContactProvider" kindref="compound">LinphoneContactProvider</ref>*<sp/>thiz,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>predicate,<sp/>ContactSearchCallback<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>data<sp/>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*LinphoneContactProviderCancelSearchMethod)(<sp/><ref refid="struct__LinphoneContactProvider" kindref="compound">LinphoneContactProvider</ref>*<sp/>thiz,<sp/><ref refid="struct__LinphoneContactSearch" kindref="compound">LinphoneContactSearch</ref><sp/>*request<sp/>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">BELLE_SIP_DECLARE_CUSTOM_VPTR_BEGIN(<ref refid="struct__LinphoneContactProvider" kindref="compound">LinphoneContactProvider</ref>,belle_sip_object_t)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name;<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>pure<sp/>virtual<sp/>methods:<sp/>inheriting<sp/>objects<sp/>must<sp/>implement<sp/>these<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneContactProviderStartSearchMethod<sp/><sp/>begin_search;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneContactProviderCancelSearchMethod<sp/>cancel_search;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">BELLE_SIP_DECLARE_CUSTOM_VPTR_END</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LDAP<sp/>search<sp/>and<sp/>contact<sp/>providers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_LDAP_CONTACT_SEARCH(obj)<sp/>BELLE_SIP_CAST(obj,LinphoneLDAPContactSearch)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">BELLE_SIP_DECLARE_VPTR(LinphoneLDAPContactSearch)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_LDAP_CONTACT_PROVIDER(obj)<sp/>BELLE_SIP_CAST(obj,LinphoneLDAPContactProvider)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">BELLE_SIP_DECLARE_CUSTOM_VPTR_BEGIN(LinphoneLDAPContactProvider,<ref refid="struct__LinphoneContactProvider" kindref="compound">LinphoneContactProvider</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">BELLE_SIP_DECLARE_CUSTOM_VPTR_END</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CONTACT_PROVIDERS_PRIV_H</highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/contact_providers_priv.h"/>
+  </compounddef>
+</doxygen>

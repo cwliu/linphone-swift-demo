@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_dc76f65f75789037a1714a048dc1d12b" kind="dir">
+    <compoundname>help</compoundname>
+    <innerfile refid="buddy__status_8c">buddy_status.c</innerfile>
+    <innerfile refid="chatroom_8c">chatroom.c</innerfile>
+    <innerfile refid="filetransfer_8c">filetransfer.c</innerfile>
+    <innerfile refid="helloworld_8c">helloworld.c</innerfile>
+    <innerfile refid="notify_8c">notify.c</innerfile>
+    <innerfile refid="realtimetext__receiver_8c">realtimetext_receiver.c</innerfile>
+    <innerfile refid="realtimetext__sender_8c">realtimetext_sender.c</innerfile>
+    <innerfile refid="registration_8c">registration.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/help/"/>
+  </compounddef>
+</doxygen>

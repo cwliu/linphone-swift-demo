@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__CodecConstraints" kind="struct" language="C++" prot="public">
+    <compoundname>_CodecConstraints</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__CodecConstraints_1ad98ac1f9c8061090ff4adcbd6b7ce95a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _CodecConstraints::bandwidth_limit</definition>
+        <argsstring></argsstring>
+        <name>bandwidth_limit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="394" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__CodecConstraints_1a8abca799035d204276fd7106f37772f1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _CodecConstraints::max_codecs</definition>
+        <argsstring></argsstring>
+        <name>max_codecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="395" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__CodecConstraints_1a44de00add9c09c9cda0cf3a12b03a3e3" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _CodecConstraints::previously_used</definition>
+        <argsstring></argsstring>
+        <name>previously_used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="396" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" line="393" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecall.c" bodystart="393" bodyend="397"/>
+    <listofallmembers>
+      <member refid="struct__CodecConstraints_1ad98ac1f9c8061090ff4adcbd6b7ce95a" prot="public" virt="non-virtual"><scope>_CodecConstraints</scope><name>bandwidth_limit</name></member>
+      <member refid="struct__CodecConstraints_1a8abca799035d204276fd7106f37772f1" prot="public" virt="non-virtual"><scope>_CodecConstraints</scope><name>max_codecs</name></member>
+      <member refid="struct__CodecConstraints_1a44de00add9c09c9cda0cf3a12b03a3e3" prot="public" virt="non-virtual"><scope>_CodecConstraints</scope><name>previously_used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

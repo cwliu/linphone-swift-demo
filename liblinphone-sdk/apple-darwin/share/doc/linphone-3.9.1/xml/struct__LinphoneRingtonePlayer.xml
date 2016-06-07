@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneRingtonePlayer" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneRingtonePlayer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneRingtonePlayer_1a5342a67ffc114d496aa97b16c9c1fd79" prot="public" static="no" mutable="no">
+        <type>RingStream *</type>
+        <definition>RingStream* _LinphoneRingtonePlayer::ringstream</definition>
+        <argsstring></argsstring>
+        <name>ringstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" line="63" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneRingtonePlayer_1ae86249f0c6fa082df5d911a6b5acb5bc" prot="public" static="no" mutable="no">
+        <type>LinphoneRingtonePlayerFunc</type>
+        <definition>LinphoneRingtonePlayerFunc _LinphoneRingtonePlayer::end_of_ringtone</definition>
+        <argsstring></argsstring>
+        <name>end_of_ringtone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" line="64" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneRingtonePlayer_1a3e9d53fb837afca37e3bf2f9f1444ab7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneRingtonePlayer::end_of_ringtone_ud</definition>
+        <argsstring></argsstring>
+        <name>end_of_ringtone_ud</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" line="65" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="938">
+        <label>_LinphoneRingtonePlayer</label>
+        <link refid="struct__LinphoneRingtonePlayer"/>
+        <childnode refid="938" relation="usage">
+          <edgelabel>end_of_ringtone</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" line="62" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer.c" bodystart="62" bodyend="66"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneRingtonePlayer_1ae86249f0c6fa082df5d911a6b5acb5bc" prot="public" virt="non-virtual"><scope>_LinphoneRingtonePlayer</scope><name>end_of_ringtone</name></member>
+      <member refid="struct__LinphoneRingtonePlayer_1a3e9d53fb837afca37e3bf2f9f1444ab7" prot="public" virt="non-virtual"><scope>_LinphoneRingtonePlayer</scope><name>end_of_ringtone_ud</name></member>
+      <member refid="struct__LinphoneRingtonePlayer_1a5342a67ffc114d496aa97b16c9c1fd79" prot="public" virt="non-virtual"><scope>_LinphoneRingtonePlayer</scope><name>ringstream</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

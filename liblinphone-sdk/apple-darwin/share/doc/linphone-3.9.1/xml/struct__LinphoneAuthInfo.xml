@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneAuthInfo" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneAuthInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneAuthInfo_1a1582b3757e99c1854ad122fcf1f62595" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneAuthInfo::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="629" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneAuthInfo_1ad0e1f789236b282d9d3e128b7f6262b6" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneAuthInfo::realm</definition>
+        <argsstring></argsstring>
+        <name>realm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="630" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneAuthInfo_1aea5a46b9b628b97f247f4279506f55b0" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneAuthInfo::userid</definition>
+        <argsstring></argsstring>
+        <name>userid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="631" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneAuthInfo_1aeb967f759d11e4355d6ac0ea69bd2a02" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneAuthInfo::passwd</definition>
+        <argsstring></argsstring>
+        <name>passwd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="632" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneAuthInfo_1a8ae6a4b1272736e3a1285ef467136cd4" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneAuthInfo::ha1</definition>
+        <argsstring></argsstring>
+        <name>ha1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="633" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneAuthInfo_1a75af170f9b9608c22905cb81f066673a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphoneAuthInfo::domain</definition>
+        <argsstring></argsstring>
+        <name>domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="634" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="634" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="628" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="627" bodyend="635"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneAuthInfo_1a75af170f9b9608c22905cb81f066673a" prot="public" virt="non-virtual"><scope>_LinphoneAuthInfo</scope><name>domain</name></member>
+      <member refid="struct__LinphoneAuthInfo_1a8ae6a4b1272736e3a1285ef467136cd4" prot="public" virt="non-virtual"><scope>_LinphoneAuthInfo</scope><name>ha1</name></member>
+      <member refid="struct__LinphoneAuthInfo_1aeb967f759d11e4355d6ac0ea69bd2a02" prot="public" virt="non-virtual"><scope>_LinphoneAuthInfo</scope><name>passwd</name></member>
+      <member refid="struct__LinphoneAuthInfo_1ad0e1f789236b282d9d3e128b7f6262b6" prot="public" virt="non-virtual"><scope>_LinphoneAuthInfo</scope><name>realm</name></member>
+      <member refid="struct__LinphoneAuthInfo_1aea5a46b9b628b97f247f4279506f55b0" prot="public" virt="non-virtual"><scope>_LinphoneAuthInfo</scope><name>userid</name></member>
+      <member refid="struct__LinphoneAuthInfo_1a1582b3757e99c1854ad122fcf1f62595" prot="public" virt="non-virtual"><scope>_LinphoneAuthInfo</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

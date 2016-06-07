@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="lpc2xml_8h" kind="file" language="C++">
+    <compoundname>lpc2xml.h</compoundname>
+    <includes refid="lpconfig_8h" local="yes">lpconfig.h</includes>
+    <includedby refid="lpc2xml_8c" local="yes">lpc2xml.c</includedby>
+    <includedby refid="lpconfig_8c" local="yes">lpconfig.c</includedby>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="lpc2xml_8h_1a9fe9aebd57069039c7a730745564126e" prot="public" static="no">
+        <name>_lpc2xml_log_level</name>
+        <enumvalue id="lpc2xml_8h_1a9fe9aebd57069039c7a730745564126ea63eaa9379bd375059915d9d70427744a" prot="public">
+          <name>LPC2XML_DEBUG</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lpc2xml_8h_1a9fe9aebd57069039c7a730745564126eafc8c6d21f8a0fab4eac68e0f2360a85d" prot="public">
+          <name>LPC2XML_MESSAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lpc2xml_8h_1a9fe9aebd57069039c7a730745564126eafa672a8b0cd0463caf5485b8b4c53891" prot="public">
+          <name>LPC2XML_WARNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="lpc2xml_8h_1a9fe9aebd57069039c7a730745564126ea2be2161b1781fc946f320f433b249e2c" prot="public">
+          <name>LPC2XML_ERROR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="27" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" bodystart="27" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lpc2xml_8h_1aa5fb17314f2108524a4be5dff8f67e2a" prot="public" static="no">
+        <type>struct <ref refid="struct__lpc2xml__context" kindref="compound">_lpc2xml_context</ref></type>
+        <definition>typedef struct _lpc2xml_context lpc2xml_context</definition>
+        <argsstring></argsstring>
+        <name>lpc2xml_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="198" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lpc2xml_8h_1af9673d2f4cd04d5d58a1b43f9eb43b37" prot="public" static="no">
+        <type>enum _lpc2xml_log_level</type>
+        <definition>typedef enum _lpc2xml_log_level  lpc2xml_log_level</definition>
+        <argsstring></argsstring>
+        <name>lpc2xml_log_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lpc2xml_8h_1a2d4612522acd127841274cf0214b001b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* lpc2xml_function) (void *ctx, lpc2xml_log_level level, const char *fmt, va_list list)</definition>
+        <argsstring>)(void *ctx, lpc2xml_log_level level, const char *fmt, va_list list)</argsstring>
+        <name>lpc2xml_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="34" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lpc2xml_8h_1ad5318c7c4f9e9945bbda562d544cd2f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+        <definition>lpc2xml_context* lpc2xml_context_new</definition>
+        <argsstring>(lpc2xml_function cbf, void *ctx)</argsstring>
+        <name>lpc2xml_context_new</name>
+        <param>
+          <type>lpc2xml_function</type>
+          <declname>cbf</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="36" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="lpc2xml_8h_1ad9963f169f0f393f899492cb1bfc49e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lpc2xml_context_destroy</definition>
+        <argsstring>(lpc2xml_context *)</argsstring>
+        <name>lpc2xml_context_destroy</name>
+        <param>
+          <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="37" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="83" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="lpc2xml_8h_1a07bea6005904f5cf1539f7af2f1322dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lpc2xml_set_lpc</definition>
+        <argsstring>(lpc2xml_context *context, const LpConfig *lpc)</argsstring>
+        <name>lpc2xml_set_lpc</name>
+        <param>
+          <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1ga047b6550aab7dd244268e695fab98fd6" kindref="member">LpConfig</ref> *</type>
+          <declname>lpc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="274" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="lpc2xml_8h_1a755bdf8d044aa65e227d8e3bee2aefbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lpc2xml_convert_file</definition>
+        <argsstring>(lpc2xml_context *context, const char *filename)</argsstring>
+        <name>lpc2xml_convert_file</name>
+        <param>
+          <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="279" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="lpc2xml_8h_1a8e44b975f7e0d7cbb786b828af70f8d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lpc2xml_convert_fd</definition>
+        <argsstring>(lpc2xml_context *context, int fd)</argsstring>
+        <name>lpc2xml_convert_fd</name>
+        <param>
+          <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="302" bodyend="323"/>
+      </memberdef>
+      <memberdef kind="function" id="lpc2xml_8h_1abe550b44f7fbdd9dade42d6d50ce8743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lpc2xml_convert_string</definition>
+        <argsstring>(lpc2xml_context *context, char **content)</argsstring>
+        <name>lpc2xml_convert_string</name>
+        <param>
+          <type><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="325" bodyend="355"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2012<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LPC2XML_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LPC2XML_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lpconfig.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__lpc2xml__context" kindref="compound">_lpc2xml_context</ref><sp/><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_lpc2xml_log_level<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPC2XML_DEBUG<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPC2XML_MESSAGE,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPC2XML_WARNING,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LPC2XML_ERROR</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/>lpc2xml_log_level;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*lpc2xml_function)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx,<sp/>lpc2xml_log_level<sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*fmt,<sp/>va_list<sp/>list);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>*<sp/>lpc2xml_context_new(lpc2xml_function<sp/>cbf,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ctx);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lpc2xml_context_destroy(<ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>*);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lpc2xml_set_lpc(<ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>*<sp/>context,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LpConfig" kindref="compound">LpConfig</ref><sp/>*lpc);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lpc2xml_convert_file(<ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>*<sp/>context,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lpc2xml_convert_fd(<ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>*<sp/>context,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lpc2xml_convert_string(<ref refid="struct__lpc2xml__context" kindref="compound">lpc2xml_context</ref>*<sp/>context,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**content);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//LPC2XML_H_</highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneVideoPolicy" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneVideoPolicy</compoundname>
+    <includes local="no">linphonecore.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneVideoPolicy_1af2844cb3185be244283d0dd310a0d7c9" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneVideoPolicy::automatically_initiate</definition>
+        <argsstring></argsstring>
+        <name>automatically_initiate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether video shall be automatically proposed for outgoing calls. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="484" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneVideoPolicy_1ae94ea7330374ad7aebbddde76b13f0e4" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneVideoPolicy::automatically_accept</definition>
+        <argsstring></argsstring>
+        <name>automatically_accept</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether video shall be automatically accepted for incoming calls </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="485" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneVideoPolicy_1ac7d12dd1fc0d851953e8047961155086" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneVideoPolicy::unused[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>unused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="486" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure describing policy regarding video streams establishments. </para>    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="483" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="483" bodyend="487"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneVideoPolicy_1ae94ea7330374ad7aebbddde76b13f0e4" prot="public" virt="non-virtual"><scope>_LinphoneVideoPolicy</scope><name>automatically_accept</name></member>
+      <member refid="struct__LinphoneVideoPolicy_1af2844cb3185be244283d0dd310a0d7c9" prot="public" virt="non-virtual"><scope>_LinphoneVideoPolicy</scope><name>automatically_initiate</name></member>
+      <member refid="struct__LinphoneVideoPolicy_1ac7d12dd1fc0d851953e8047961155086" prot="public" virt="non-virtual"><scope>_LinphoneVideoPolicy</scope><name>unused</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

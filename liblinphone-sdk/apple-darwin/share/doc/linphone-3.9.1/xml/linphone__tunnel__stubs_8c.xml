@@ -1,0 +1,823 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="linphone__tunnel__stubs_8c" kind="file" language="C++">
+    <compoundname>linphone_tunnel_stubs.c</compoundname>
+    <includes refid="linphone__tunnel_8h" local="yes">linphone_tunnel.h</includes>
+    <includes refid="linphonecore_8h" local="yes">linphonecore.h</includes>
+    <includes refid="private_8h" local="yes">private.h</includes>
+    <includes refid="lpconfig_8h" local="yes">lpconfig.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__tunnel_1ga672373b56a111f52d8aed78f375c11be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+        <definition>LinphoneTunnel* linphone_core_get_tunnel</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_tunnel</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>get tunnel instance if available</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>core object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneTunnel or NULL if not available </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="32" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="linphone__tunnel__stubs_8c_1ad3a2dfc4bfb25723fdfde2e58ae40322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_destroy</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_destroy</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="38" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="38" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga762cc31830da8eb5736017e690ced895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_add_server</definition>
+        <argsstring>(LinphoneTunnel *tunnel, LinphoneTunnelConfig *tunnel_config)</argsstring>
+        <name>linphone_tunnel_add_server</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type><ref refid="group__tunnel_1gac8bf0e2203614a6380c2e274d58663d7" kindref="member">LinphoneTunnelConfig</ref> *</type>
+          <declname>tunnel_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a tunnel server configuration. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tunnel_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="42" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gabf2355476ef1e2e28da5d09fb9713ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_remove_server</definition>
+        <argsstring>(LinphoneTunnel *tunnel, LinphoneTunnelConfig *tunnel_config)</argsstring>
+        <name>linphone_tunnel_remove_server</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type><ref refid="group__tunnel_1gac8bf0e2203614a6380c2e274d58663d7" kindref="member">LinphoneTunnelConfig</ref> *</type>
+          <declname>tunnel_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a tunnel server configuration. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tunnel_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="45" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gacfd7f0ebe8b2d5ca53c0ba2fc3cdd222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const MSList *</type>
+        <definition>const MSList* linphone_tunnel_get_servers</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_get_servers</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get added servers <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of <ref refid="group__tunnel_1gac8bf0e2203614a6380c2e274d58663d7" kindref="member">LinphoneTunnelConfig</ref> objects. <mslist>LinphoneTunnelConfig</mslist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="48" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga691d163b762cbf5e159883feab1e9ab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_clean_servers</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_clean_servers</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove all tunnel server addresses previously entered with <ref refid="group__tunnel_1ga762cc31830da8eb5736017e690ced895" kindref="member">linphone_tunnel_add_server()</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="52" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="52" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga2ff9779aefdb5455c3509d75cf89a88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_set_mode</definition>
+        <argsstring>(LinphoneTunnel *tunnel, LinphoneTunnelMode mode)</argsstring>
+        <name>linphone_tunnel_set_mode</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type><ref refid="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" kindref="member">LinphoneTunnelMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the tunnel mode. The tunnel mode can be &apos;enable&apos;, &apos;disable&apos; or &apos;auto&apos; If the mode is set to &apos;auto&apos;, the tunnel manager will try to established an RTP session with the tunnel server on the UdpMirrorPort. If the connection fail, the tunnel is automatically activated whereas the tunnel is automatically disabled if the connection succeed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired LinphoneTunnelMode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="55" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="55" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" kindref="member">LinphoneTunnelMode</ref></type>
+        <definition>LinphoneTunnelMode linphone_tunnel_get_mode</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_get_mode</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the tunnel mode <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current LinphoneTunnelMode </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="58" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga047ca9bc9546a6c5bffb27209b0a7706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_connected</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_connected</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether the tunnel is connected <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling if the tunnel is connected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="62" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaf5236ffc93b2a983fcb888c0f4614d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_get_activated</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_get_activated</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns whether the tunnel is activated. If mode is set to auto, this gives indication whether the automatic detection determined that tunnel was necessary or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tunnel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if tunnel is in use, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="66" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="linphone__tunnel__stubs_8c_1a91d0a355c184dbb167b4d650bb68900c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_enable_logs_with_handler</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t enabled, OrtpLogFunc logHandler)</argsstring>
+        <name>linphone_tunnel_enable_logs_with_handler</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enabled</declname>
+        </param>
+        <param>
+          <type>OrtpLogFunc</type>
+          <declname>logHandler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="70" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="70" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga3f0eb1ebe109c8c58c7e92c7d2226423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_set_http_proxy_auth_info</definition>
+        <argsstring>(LinphoneTunnel *tunnel, const char *username, const char *passwd)</argsstring>
+        <name>linphone_tunnel_set_http_proxy_auth_info</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set authentication info for the http proxy <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="73" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="73" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gae0718a3a72763c91b63a2afe67205d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_set_http_proxy</definition>
+        <argsstring>(LinphoneTunnel *tunnel, const char *host, int port, const char *username, const char *passwd)</argsstring>
+        <name>linphone_tunnel_set_http_proxy</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set an optional http proxy to go through when connecting to tunnel server. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy host </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy port </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy username if the proxy request authentication. Currently only basic authentication is supported. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy password. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="76" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="76" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gab41bfb94d11b7c31d09ab65776f7e701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_get_http_proxy</definition>
+        <argsstring>(LinphoneTunnel *tunnel, const char **host, int *port, const char **username, const char **passwd)</argsstring>
+        <name>linphone_tunnel_get_http_proxy</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve optional http proxy configuration previously set with <ref refid="group__tunnel_1gae0718a3a72763c91b63a2afe67205d8b" kindref="member">linphone_tunnel_set_http_proxy()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy host </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy port </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy username if the proxy request authentication. Currently only basic authentication is supported. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy password. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="79" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="79" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga1676eda6a96c9bd730a873124459ac9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_reconnect</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_reconnect</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force reconnection to the tunnel server. This method is useful when the device switches from wifi to Edge/3G or vice versa. In most cases the tunnel client socket won&apos;t be notified promptly that its connection is now zombie, so it is recommended to call this method that will cause the lost connection to be closed and new connection to be issued. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="82" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="82" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="linphone__tunnel__stubs_8c_1ac29406cf846fc055a3e4928be5eac921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_configure</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_configure</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="85" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gafc4e154bec332ad975c373e205f66795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_enable_sip</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t enable)</argsstring>
+        <name>linphone_tunnel_enable_sip</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set whether SIP packets must be directly sent to a UA or pass through the tunnel <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, SIP packets shall pass through the tunnel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="88" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga92b4df41ad2c71ce4e59de5acd37674b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_sip_enabled</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_sip_enabled</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether tunnel is set to transport SIP packets <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether SIP packets shall pass through the tunnel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="89" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gad9027e17c878d915946b09def710e4f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_enable</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t enabled)</argsstring>
+        <name>linphone_tunnel_enable</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets whether tunneling of SIP and RTP is required. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true enter in tunneled mode, if false exits from tunneled mode. The TunnelManager takes care of refreshing SIP registration when switching on or off the tunneled mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000019"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="group__tunnel_1ga2ff9779aefdb5455c3509d75cf89a88c" kindref="member">linphone_tunnel_set_mode()</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="92" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga035e47054f6db7f5a3f22a601dd4943c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_enabled</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_enabled</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether tunnel is enabled <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a boolean indicating whether tunneled operation is enabled. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000020"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" kindref="member">linphone_tunnel_get_mode()</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="93" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga77b08bb5b5bd7feead7e666173dfb5a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_auto_detect</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_auto_detect</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start tunnel need detection. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object In auto detect mode, the tunnel manager try to establish a real time rtp communication with the tunnel server on specified port. <linebreak/>
+In case of success, the tunnel is automatically turned off. Otherwise, if no udp communication is feasible, tunnel mode is turned on. <linebreak/>
+ Call this method each time to run the auto detection algorithm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000021"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by linphone_tunnel_set_mode(LinphoneTunnelModeAuto) </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="94" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga093de888c0f0875f957f84b3b3913bfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_auto_detect_enabled</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_auto_detect_enabled</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether tunnel auto detection is enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if auto detection is enabled, FALSE otherwise. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000022"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" kindref="member">linphone_tunnel_get_mode()</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" line="95" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c" bodystart="95" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_tunnel.cc</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Fri<sp/>Dec<sp/>9,<sp/>2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/><sp/>2011<sp/><sp/>Belledonne<sp/>Communications</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>Guillaume<sp/>Beraudo</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>Email:<sp/>guillaume<sp/>dot<sp/>beraudo<sp/>at<sp/>linphone<sp/>dot<sp/>org</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone_tunnel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;private.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lpconfig.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>*<sp/><ref refid="group__tunnel_1ga672373b56a111f52d8aed78f375c11be" kindref="member">linphone_core_get_tunnel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>lc-&gt;tunnel;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*stubs<sp/>to<sp/>avoid<sp/>to<sp/>have<sp/>#ifdef<sp/>TUNNEL_ENABLED<sp/>in<sp/>upper<sp/>layers*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_tunnel_destroy(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ga762cc31830da8eb5736017e690ced895" kindref="member">linphone_tunnel_add_server</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/><ref refid="struct__LinphoneTunnelConfig" kindref="compound">LinphoneTunnelConfig</ref><sp/>*tunnel_config){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gabf2355476ef1e2e28da5d09fb9713ae7" kindref="member">linphone_tunnel_remove_server</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/><ref refid="struct__LinphoneTunnelConfig" kindref="compound">LinphoneTunnelConfig</ref><sp/>*tunnel_config){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>MSList<sp/>*<ref refid="group__tunnel_1gacfd7f0ebe8b2d5ca53c0ba2fc3cdd222" kindref="member">linphone_tunnel_get_servers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ga691d163b762cbf5e159883feab1e9ab4" kindref="member">linphone_tunnel_clean_servers</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ga2ff9779aefdb5455c3509d75cf89a88c" kindref="member">linphone_tunnel_set_mode</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/><ref refid="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" kindref="member">LinphoneTunnelMode</ref><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" kindref="member">LinphoneTunnelMode</ref><sp/><ref refid="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" kindref="member">linphone_tunnel_get_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ggac832d7950d88dc22e3d002ffd46a2d36a52d2fc6a079979cffe8bdb3a0b1e2faa" kindref="member">LinphoneTunnelModeDisable</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">bool_t<sp/><ref refid="group__tunnel_1ga047ca9bc9546a6c5bffb27209b0a7706" kindref="member">linphone_tunnel_connected</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">bool_t<sp/><ref refid="group__tunnel_1gaf5236ffc93b2a983fcb888c0f4614d85" kindref="member">linphone_tunnel_get_activated</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_tunnel_enable_logs_with_handler(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/>bool_t<sp/>enabled,<sp/>OrtpLogFunc<sp/>logHandler){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ga3f0eb1ebe109c8c58c7e92c7d2226423" kindref="member">linphone_tunnel_set_http_proxy_auth_info</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>username,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>passwd){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gae0718a3a72763c91b63a2afe67205d8b" kindref="member">linphone_tunnel_set_http_proxy</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>*tunnel,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*host,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>username,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>passwd){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gab41bfb94d11b7c31d09ab65776f7e701" kindref="member">linphone_tunnel_get_http_proxy</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>*tunnel,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**host,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*port,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**username,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**passwd){</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ga1676eda6a96c9bd730a873124459ac9d" kindref="member">linphone_tunnel_reconnect</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_tunnel_configure(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafc4e154bec332ad975c373e205f66795" kindref="member">linphone_tunnel_enable_sip</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/>bool_t<sp/>enable)<sp/>{}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">bool_t<sp/><ref refid="group__tunnel_1ga92b4df41ad2c71ce4e59de5acd37674b" kindref="member">linphone_tunnel_sip_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;<sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Deprecated<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gad9027e17c878d915946b09def710e4f7" kindref="member">linphone_tunnel_enable</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel,<sp/>bool_t<sp/>enabled)<sp/>{}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">bool_t<sp/><ref refid="group__tunnel_1ga035e47054f6db7f5a3f22a601dd4943c" kindref="member">linphone_tunnel_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;<sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__tunnel_1ga77b08bb5b5bd7feead7e666173dfb5a6" kindref="member">linphone_tunnel_auto_detect</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel)<sp/>{}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">bool_t<sp/><ref refid="group__tunnel_1ga093de888c0f0875f957f84b3b3913bfe" kindref="member">linphone_tunnel_auto_detect_enabled</ref>(<ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref><sp/>*tunnel)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>FALSE;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphone_tunnel_stubs.c"/>
+  </compounddef>
+</doxygen>

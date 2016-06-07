@@ -1,0 +1,726 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="lime_8h" kind="file" language="C++">
+    <compoundname>lime.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">libxml/tree.h</includes>
+    <includes local="no">libxml/parser.h</includes>
+    <includes local="no">libxml/xmlwriter.h</includes>
+    <includes local="no">mediastreamer2/mscommon.h</includes>
+    <includedby refid="chat__file__transfer_8c" local="yes">chat_file_transfer.c</includedby>
+    <includedby refid="lime_8c" local="yes">lime.c</includedby>
+    <includedby refid="linphonecore_8c" local="yes">linphonecore.c</includedby>
+    <incdepgraph>
+      <node id="110">
+        <label>libxml/xmlwriter.h</label>
+      </node>
+      <node id="107">
+        <label>stdint.h</label>
+      </node>
+      <node id="106">
+        <label>lime.h</label>
+        <link refid="lime.h"/>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>libxml/parser.h</label>
+      </node>
+      <node id="108">
+        <label>libxml/tree.h</label>
+      </node>
+      <node id="111">
+        <label>mediastreamer2/mscommon.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structlimeKey__struct" prot="public">limeKey_struct</innerclass>
+    <innerclass refid="structlimeURIKeys__struct" prot="public">limeURIKeys_struct</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="lime_8h_1abacff1ae3a82f2715b08259cd5d94907" prot="public" static="no">
+        <name>LIME_INVALID_CACHE</name>
+        <initializer>0x1001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="4" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a59df1641a21870b8c5ec827e758f1bdb" prot="public" static="no">
+        <name>LIME_UNABLE_TO_DERIVE_KEY</name>
+        <initializer>0x1002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="5" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a086f9a31ff60c699a633f6cb0e1f7be4" prot="public" static="no">
+        <name>LIME_UNABLE_TO_ENCRYPT_MESSAGE</name>
+        <initializer>0x1004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="6" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a0cbfef6013eb8ec1c2beebc45ed2f3c7" prot="public" static="no">
+        <name>LIME_UNABLE_TO_DECRYPT_MESSAGE</name>
+        <initializer>0x1008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="7" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1ac0d448aa40f3c70d7ea8189671e1ee0a" prot="public" static="no">
+        <name>LIME_NO_VALID_KEY_FOUND_FOR_PEER</name>
+        <initializer>0x1010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="8" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a5a3cf34823d8a454301219fdb4539a31" prot="public" static="no">
+        <name>LIME_INVALID_ENCRYPTED_MESSAGE</name>
+        <initializer>0x1020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="9" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a00ee692f2481f97c19a1f9a669fa6934" prot="public" static="no">
+        <name>LIME_NOT_ENABLED</name>
+        <initializer>0x1100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="10" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1acdc5d7d46ff92a90dfd7cc59ca0b4107" prot="public" static="no">
+        <name>MAX_DERIVATION_NUMBER</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="13" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a22447e2b4357880bd08a7018788e15f1" prot="public" static="no">
+        <name>LIME_SENDER</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="15" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="lime_8h_1a291371c1964cc1c3930663fee213e2f7" prot="public" static="no">
+        <name>LIME_RECEIVER</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="16" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="lime_8h_1ad81f23d216c161b1ed7e7f827b4b7c31" prot="public" static="no">
+        <type>struct <ref refid="structlimeKey__struct" kindref="compound">limeKey_struct</ref></type>
+        <definition>typedef struct limeKey_struct  limeKey_t</definition>
+        <argsstring></argsstring>
+        <name>limeKey_t</name>
+        <briefdescription>
+<para>Structure holding all needed material to encrypt/decrypt Messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="lime_8h_1a09713907da59216b5502895b6d7869a7" prot="public" static="no">
+        <type>struct <ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_struct</ref></type>
+        <definition>typedef struct limeURIKeys_struct  limeURIKeys_t</definition>
+        <argsstring></argsstring>
+        <name>limeURIKeys_t</name>
+        <briefdescription>
+<para>Store the differents keys associated to a sipURI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="lime_8h_1a376bc34bd2192eb6afaf64f0a68f73c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_getCachedSndKeysByURI</definition>
+        <argsstring>(xmlDocPtr cacheBuffer, limeURIKeys_t *associatedKeys)</argsstring>
+        <name>lime_getCachedSndKeysByURI</name>
+        <param>
+          <type>xmlDocPtr</type>
+          <declname>cacheBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_t</ref> *</type>
+          <declname>associatedKeys</declname>
+        </param>
+        <briefdescription>
+<para>Get from cache all the senders keys associated to the given URI peerKeys field from associatedKeys param must be NULL when calling this function. Structure content must then be freed using lime_freeKeys function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cacheBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The xmlDoc containing current cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1abcfd3cbe32a6cf39d0f71c8403d0eb38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_getCachedRcvKeyByZid</definition>
+        <argsstring>(xmlDocPtr cacheBuffer, limeKey_t *associatedKey)</argsstring>
+        <name>lime_getCachedRcvKeyByZid</name>
+        <param>
+          <type>xmlDocPtr</type>
+          <declname>cacheBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref> *</type>
+          <declname>associatedKey</declname>
+        </param>
+        <briefdescription>
+<para>Get the receiver key associated to the ZID given in the associatedKey parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cacheBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The xmlDoc containing current cache </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1aa3976f1c4845bfe596de34e437a43fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_setCachedKey</definition>
+        <argsstring>(xmlDocPtr cacheBuffer, limeKey_t *associatedKey, uint8_t role)</argsstring>
+        <name>lime_setCachedKey</name>
+        <param>
+          <type>xmlDocPtr</type>
+          <declname>cacheBuffer</declname>
+        </param>
+        <param>
+          <type><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref> *</type>
+          <declname>associatedKey</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+<para>Set in cache the given key material, association is made by ZID contained in the associatedKey parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">cacheBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The xmlDoc containing current cache to be updated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1ad906d637f91e6277bc03ea447af2e427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lime_freeKeys</definition>
+        <argsstring>(limeURIKeys_t associatedKeys)</argsstring>
+        <name>lime_freeKeys</name>
+        <param>
+          <type><ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_t</ref></type>
+          <declname>associatedKeys</declname>
+        </param>
+        <briefdescription>
+<para>Free all allocated data in the associated keys structure Note, this will also free the peerURI string which then must have been allocated. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a239ea1d0f2d295d1ec4f73959909a332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_encryptMessage</definition>
+        <argsstring>(limeKey_t *key, uint8_t *plainMessage, uint32_t messageLength, uint8_t selfZID[12], uint8_t *encryptedMessage)</argsstring>
+        <name>lime_encryptMessage</name>
+        <param>
+          <type><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref> *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>plainMessage</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>messageLength</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>selfZID</declname>
+          <array>[12]</array>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>encryptedMessage</declname>
+        </param>
+        <briefdescription>
+<para>encrypt a message with the given key </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to use: first 192 bits are used as key, last 64 bits as init vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to be encrypted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">messageLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length in bytes of the message to be encrypted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">selfZID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The self ZID is use in authentication tag computation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">encryptedMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer to hold the output, ouput length is input&apos;s one + 16 for the authentication tag Authentication tag is set at the begining of the encrypted Message</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, error code otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a80e59c633b081afc88d5c10fcd27ad7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_encryptFile</definition>
+        <argsstring>(void **cryptoContext, unsigned char *key, size_t length, char *plain, char *cipher)</argsstring>
+        <name>lime_encryptFile</name>
+        <param>
+          <type>void **</type>
+          <declname>cryptoContext</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>plain</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>cipher</declname>
+        </param>
+        <briefdescription>
+<para>Encrypt a file before transfering it to the server, encryption is done in several call, first one will be done with cryptoContext null, last one with length = 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="115" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.c" bodystart="800" bodyend="800"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a3ee560cbc45903421b9c9af408766f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_decryptFile</definition>
+        <argsstring>(void **cryptoContext, unsigned char *key, size_t length, char *plain, char *cipher)</argsstring>
+        <name>lime_decryptFile</name>
+        <param>
+          <type>void **</type>
+          <declname>cryptoContext</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>plain</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>cipher</declname>
+        </param>
+        <briefdescription>
+<para>Decrypt a file retrieved from server, decryption is done in several call, first one will be done with cryptoContext null, last one with length = 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="129" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.c" bodystart="797" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a747adb6e1c1135621b4c365f3b5d6966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_decryptMessage</definition>
+        <argsstring>(limeKey_t *key, uint8_t *encryptedMessage, uint32_t messageLength, uint8_t selfZID[12], uint8_t *plainMessage)</argsstring>
+        <name>lime_decryptMessage</name>
+        <param>
+          <type><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref> *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>encryptedMessage</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>messageLength</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>selfZID</declname>
+          <array>[12]</array>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>plainMessage</declname>
+        </param>
+        <briefdescription>
+<para>decrypt and authentify a message with the given key </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Key to use: first 192 bits are used as key, last 64 bits as init vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to be decrypted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">messageLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length in bytes of the message to be decrypted (this include the 16 bytes tag at the begining of the message) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">selfZID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The self ZID is use in authentication tag computation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">plainMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer to hold the output, ouput length is input&apos;s one - 16 for the authentication tag + 1 for null termination char Authentication tag is retrieved at the begining of the encrypted Message</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, error code otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1abf5fa89a1d713f9bc1eddb9281948a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_createMultipartMessage</definition>
+        <argsstring>(xmlDocPtr cacheBuffer, uint8_t *message, uint8_t *peerURI, uint8_t **output)</argsstring>
+        <name>lime_createMultipartMessage</name>
+        <param>
+          <type>xmlDocPtr</type>
+          <declname>cacheBuffer</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>peerURI</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>create the encrypted multipart xml message from plain text and destination URI Retrieve in cache the needed keys which are then updated. Output buffer is allocated and must be freed by caller </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="158" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.c" bodystart="799" bodyend="799"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a6631f5025ededbed3670f3984de2e7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lime_decryptMultipartMessage</definition>
+        <argsstring>(xmlDocPtr cacheBuffer, uint8_t *message, uint8_t **output)</argsstring>
+        <name>lime_decryptMultipartMessage</name>
+        <param>
+          <type>xmlDocPtr</type>
+          <declname>cacheBuffer</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>uint8_t **</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>decrypt a multipart xml message Retrieve in cache the needed key which is then updated. Output buffer is allocated and must be freed by caller </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="171" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.c" bodystart="798" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a3b2694a303fb9add1e1f5bf8893c615c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* lime_error_code_to_string</definition>
+        <argsstring>(int errorCode)</argsstring>
+        <name>lime_error_code_to_string</name>
+        <param>
+          <type>int</type>
+          <declname>errorCode</declname>
+        </param>
+        <briefdescription>
+<para>given a readable version of error code generated by Lime functions </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">errorCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error code </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a string containing the error description </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="178" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.c" bodystart="805" bodyend="817"/>
+      </memberdef>
+      <memberdef kind="function" id="lime_8h_1a55f7b38d2bba491c548d2d19934d26dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t lime_is_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>lime_is_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if Lime was enabled at build time. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TRUE if Lime is available, FALSE if not </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="185" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.c" bodystart="796" bodyend="796"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LIME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_INVALID_CACHE<sp/><sp/><sp/><sp/><sp/><sp/>0x1001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_UNABLE_TO_DERIVE_KEY<sp/>0x1002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_UNABLE_TO_ENCRYPT_MESSAGE<sp/>0x1004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_UNABLE_TO_DECRYPT_MESSAGE<sp/>0x1008</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_NO_VALID_KEY_FOUND_FOR_PEER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_INVALID_ENCRYPTED_MESSAGE<sp/>0x1020</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_NOT_ENABLED<sp/>0x1100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>this<sp/>define<sp/>the<sp/>maximum<sp/>key<sp/>derivation<sp/>number<sp/>allowed<sp/>to<sp/>get<sp/>the<sp/>caches<sp/>back<sp/>in<sp/>sync<sp/>in<sp/>case<sp/>of<sp/>missed<sp/>messages<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_DERIVATION_NUMBER<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_SENDER<sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIME_RECEIVER<sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/tree.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/parser.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;libxml/xmlwriter.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mediastreamer2/mscommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PUBLIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PUBLIC<sp/>MS2_PUBLIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structlimeKey__struct" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlimeKey__struct" kindref="compound">limeKey_struct</ref><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structlimeKey__struct_1acf62f32659b03f1b312c74b21c9cffcc" kindref="member">key</ref>[32];<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structlimeKey__struct_1ae0cd184689140e9cb564135e7d8c0a8e" kindref="member">sessionId</ref>[32];<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structlimeKey__struct_1a68791c228c869d11f27f9993a58f66e8" kindref="member">sessionIndex</ref>;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structlimeKey__struct_1a91db2df246db1cdbd9d337d9eccdfa67" kindref="member">peerZID</ref>[12];<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structlimeURIKeys__struct" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="structlimeURIKeys__struct_1a67a3ba40c2cb1096dba1405571f2db91" kindref="member">peerKeys</ref>;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structlimeURIKeys__struct_1a53a70701a88615858ddad5d475255111" kindref="member">associatedZIDNumber</ref>;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structlimeURIKeys__struct_1ac08b0a989d0d6c7d55b727fbccef687a" kindref="member">peerURI</ref>;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_t</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_getCachedSndKeysByURI(xmlDocPtr<sp/>cacheBuffer,<sp/><ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_t</ref><sp/>*associatedKeys);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_getCachedRcvKeyByZid(xmlDocPtr<sp/>cacheBuffer,<sp/><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref><sp/>*associatedKey);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_setCachedKey(xmlDocPtr<sp/>cacheBuffer,<sp/><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref><sp/>*associatedKey,<sp/>uint8_t<sp/>role);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lime_freeKeys(<ref refid="structlimeURIKeys__struct" kindref="compound">limeURIKeys_t</ref><sp/>associatedKeys);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_encryptMessage(<ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref><sp/>*key,<sp/>uint8_t<sp/>*plainMessage,<sp/>uint32_t<sp/>messageLength,<sp/>uint8_t<sp/>selfZID[12],<sp/>uint8_t<sp/>*encryptedMessage);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_encryptFile(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**cryptoContext,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*plain,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cipher);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_decryptFile(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**cryptoContext,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*plain,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cipher);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_decryptMessage(<ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref><sp/>*key,<sp/>uint8_t<sp/>*encryptedMessage,<sp/>uint32_t<sp/>messageLength,<sp/>uint8_t<sp/>selfZID[12],<sp/>uint8_t<sp/>*plainMessage);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_createMultipartMessage(xmlDocPtr<sp/>cacheBuffer,<sp/>uint8_t<sp/>*message,<sp/>uint8_t<sp/>*peerURI,<sp/>uint8_t<sp/>**output);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lime_decryptMultipartMessage(xmlDocPtr<sp/>cacheBuffer,<sp/>uint8_t<sp/>*message,<sp/>uint8_t<sp/>**output);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lime_error_code_to_string(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>errorCode);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/>lime_is_available(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIME_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h"/>
+  </compounddef>
+</doxygen>

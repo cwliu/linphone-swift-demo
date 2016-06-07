@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="linphonecore__utils_8h" kind="file" language="C++">
+    <compoundname>linphonecore_utils.h</compoundname>
+    <includes local="yes">linphone/linphonecore.h</includes>
+    <includedby refid="private_8h" local="yes">private.h</includedby>
+    <includedby refid="lsd_8c" local="yes">lsd.c</includedby>
+    <incdepgraph>
+      <node id="168">
+        <label>linphonecore_utils.h</label>
+        <link refid="linphonecore_utils.h"/>
+        <childnode refid="169" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>linphone/linphonecore.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="linphonecore__utils_8h_1a7a8588d07ed849bdfcc46ccde9ce1ec7" prot="public" static="no">
+        <name>LinphoneEcCalibratorStatus</name>
+        <enumvalue id="linphonecore__utils_8h_1a7a8588d07ed849bdfcc46ccde9ce1ec7ace1d8c5becb53dbc9abff51614c3d787" prot="public">
+          <name>LinphoneEcCalibratorInProgress</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The echo canceller calibration process is on going. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="linphonecore__utils_8h_1a7a8588d07ed849bdfcc46ccde9ce1ec7a0fa0a45e4ca4f1df0a8d6b39ea0cbf38" prot="public">
+          <name>LinphoneEcCalibratorDone</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The echo canceller calibration has been performed and produced an echo delay measure. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="linphonecore__utils_8h_1a7a8588d07ed849bdfcc46ccde9ce1ec7abab1153ee82d63c02c0e5d644788fe8f" prot="public">
+          <name>LinphoneEcCalibratorFailed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The echo canceller calibration process has failed. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="linphonecore__utils_8h_1a7a8588d07ed849bdfcc46ccde9ce1ec7aac3514efeb8a8dbbadb29744c6f47c16" prot="public">
+          <name>LinphoneEcCalibratorDoneNoEcho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The echo canceller calibration has been performed and no echo has been detected. </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing the result of the echo canceller calibration process. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="58" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="58" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1a75560da1f11221ac06f18aaf1a1e203b" prot="public" static="no">
+        <type>struct <ref refid="struct__LsdPlayer" kindref="compound">_LsdPlayer</ref></type>
+        <definition>typedef struct _LsdPlayer LsdPlayer</definition>
+        <argsstring></argsstring>
+        <name>LsdPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="3825" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1a1a0268180b97cc6836abba90023d7a98" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneSoundDaemon" kindref="compound">_LinphoneSoundDaemon</ref></type>
+        <definition>typedef struct _LinphoneSoundDaemon LinphoneSoundDaemon</definition>
+        <argsstring></argsstring>
+        <name>LinphoneSoundDaemon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="3825" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1ae8d995348a8fbf9aa1c629431f4f159a" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LsdEndOfPlayCallback) (LsdPlayer *p)</definition>
+        <argsstring>)(LsdPlayer *p)</argsstring>
+        <name>LsdEndOfPlayCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="35" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1a7e7704e215f037db58ea3c367cc573ba" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneEcCalibrationCallback) (LinphoneCore *lc, LinphoneEcCalibratorStatus status, int delay_ms, void *data)</definition>
+        <argsstring>)(LinphoneCore *lc, LinphoneEcCalibratorStatus status, int delay_ms, void *data)</argsstring>
+        <name>LinphoneEcCalibrationCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="66" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1a27f80f5e55be308f9cbd0e7a2cf4fe92" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneEcCalibrationAudioInit) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>LinphoneEcCalibrationAudioInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="67" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1aa32a27e2339a6f902ef9a37bb3665544" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneEcCalibrationAudioUninit) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>LinphoneEcCalibrationAudioUninit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="68" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linphonecore__utils_8h_1abc756aff30c423cb7dd970aedef79082" prot="public" static="no">
+        <type>bool_t(*</type>
+        <definition>typedef bool_t(* LinphoneCoreIterateHook) (void *data)</definition>
+        <argsstring>)(void *data)</argsstring>
+        <name>LinphoneCoreIterateHook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="88" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="linphonecore__utils_8h_1a012837b84db3f74cf951cc7ddf92792d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lsd_player_set_callback</definition>
+        <argsstring>(LsdPlayer *p, LsdEndOfPlayCallback cb)</argsstring>
+        <name>lsd_player_set_callback</name>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>LsdEndOfPlayCallback</type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="37" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="147" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1acfa714494c497920d026b34ce6850987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lsd_player_set_user_pointer</definition>
+        <argsstring>(LsdPlayer *p, void *up)</argsstring>
+        <name>lsd_player_set_user_pointer</name>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="38" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ab4ab670a1aea7639f41f92d641ebc113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* lsd_player_get_user_pointer</definition>
+        <argsstring>(const LsdPlayer *p)</argsstring>
+        <name>lsd_player_get_user_pointer</name>
+        <param>
+          <type>const <ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1a3771b2f2a78f88d3136e79c36afc332d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lsd_player_play</definition>
+        <argsstring>(LsdPlayer *p, const char *filename)</argsstring>
+        <name>lsd_player_play</name>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="185" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1acf1cbe47e61508046b7bd822bbc5ae72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lsd_player_stop</definition>
+        <argsstring>(LsdPlayer *p)</argsstring>
+        <name>lsd_player_stop</name>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ae540bb38cbf53f8ac36a5a6965f16332" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lsd_player_enable_loop</definition>
+        <argsstring>(LsdPlayer *p, bool_t loopmode)</argsstring>
+        <name>lsd_player_enable_loop</name>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>loopmode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="203" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1add3207da15bbd8ff1b72fd8fc44075f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t lsd_player_loop_enabled</definition>
+        <argsstring>(const LsdPlayer *p)</argsstring>
+        <name>lsd_player_loop_enabled</name>
+        <param>
+          <type>const <ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ab3735a8dee13031d65de0f2d53d686c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lsd_player_set_gain</definition>
+        <argsstring>(LsdPlayer *p, float gain)</argsstring>
+        <name>lsd_player_set_gain</name>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>gain</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="215" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1abae523df9f4fefb0da54c3e00b47c396" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+        <definition>LinphoneSoundDaemon* lsd_player_get_daemon</definition>
+        <argsstring>(const LsdPlayer *p)</argsstring>
+        <name>lsd_player_get_daemon</name>
+        <param>
+          <type>const <ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ae2a4f3a649377b7f05319ff4bf2e2111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+        <definition>LinphoneSoundDaemon* linphone_sound_daemon_new</definition>
+        <argsstring>(MSFactory *factory, const char *cardname, int rate, int nchannels)</argsstring>
+        <name>linphone_sound_daemon_new</name>
+        <param>
+          <type>MSFactory *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cardname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nchannels</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="47" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="222" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ae33101e6d55a075eecd64b2e86a9ab07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+        <definition>LsdPlayer* linphone_sound_daemon_get_player</definition>
+        <argsstring>(LinphoneSoundDaemon *lsd)</argsstring>
+        <name>linphone_sound_daemon_get_player</name>
+        <param>
+          <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+          <declname>lsd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="48" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="83" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ad8cc83d58fe1e52383d579b6c189c7f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_sound_daemon_release_player</definition>
+        <argsstring>(LinphoneSoundDaemon *lsd, LsdPlayer *lsdplayer)</argsstring>
+        <name>linphone_sound_daemon_release_player</name>
+        <param>
+          <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+          <declname>lsd</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref> *</type>
+          <declname>lsdplayer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="49" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="100" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1a8c09e07d07d9d752640a80b97d5da796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_sound_daemon_stop_all_players</definition>
+        <argsstring>(LinphoneSoundDaemon *obj)</argsstring>
+        <name>linphone_sound_daemon_stop_all_players</name>
+        <param>
+          <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="50" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="266" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1a1765d32ec6e0e06e2f46675440cb7104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_sound_daemon_release_all_players</definition>
+        <argsstring>(LinphoneSoundDaemon *obj)</argsstring>
+        <name>linphone_sound_daemon_release_all_players</name>
+        <param>
+          <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="51" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="273" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1a54030bd88d0c1291539c1f7088db7cd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_use_sound_daemon</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneSoundDaemon *lsd)</argsstring>
+        <name>linphone_core_use_sound_daemon</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+          <declname>lsd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="52" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="300" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1a87dc32eca8b50175dc07760834008eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_sound_daemon_destroy</definition>
+        <argsstring>(LinphoneSoundDaemon *obj)</argsstring>
+        <name>linphone_sound_daemon_destroy</name>
+        <param>
+          <type><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="53" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="280" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1ad98ad12dd84d433b078275d985a60edb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_start_echo_calibration</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneEcCalibrationCallback cb, LinphoneEcCalibrationAudioInit audio_init_cb, LinphoneEcCalibrationAudioUninit audio_uninit_cb, void *cb_data)</argsstring>
+        <name>linphone_core_start_echo_calibration</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>LinphoneEcCalibrationCallback</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>LinphoneEcCalibrationAudioInit</type>
+          <declname>audio_init_cb</declname>
+        </param>
+        <param>
+          <type>LinphoneEcCalibrationAudioUninit</type>
+          <declname>audio_uninit_cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cb_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start an echo calibration of the sound devices, in order to find adequate settings for the echo canceller automatically. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="74" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ec-calibrator.c" bodystart="312" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="group__IOS_1gaef3c840b3c9f576c642b49cf306c7461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_start_dtmf_stream</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_start_dtmf_stream</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Special function to warm up dtmf feeback stream. <ref refid="group__IOS_1gad0ecef2fb7a77c3363aa94edeadaf65b" kindref="member">linphone_core_stop_dtmf_stream</ref> must() be called before entering FG mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6880" bodyend="6883"/>
+      </memberdef>
+      <memberdef kind="function" id="group__IOS_1gad0ecef2fb7a77c3363aa94edeadaf65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_stop_dtmf_stream</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_stop_dtmf_stream</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Special function to stop dtmf feed back function. Must be called before entering BG mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6910" bodyend="6914"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1a5254d4f8787f797a7fcb198482f36383" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_add_iterate_hook</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCoreIterateHook hook, void *hook_data)</argsstring>
+        <name>linphone_core_add_iterate_hook</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>LinphoneCoreIterateHook</type>
+          <declname>hook</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>hook_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="90" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6924" bodyend="6926"/>
+      </memberdef>
+      <memberdef kind="function" id="linphonecore__utils_8h_1af556aeee4ebf8d684231aefebd346f3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_remove_iterate_hook</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCoreIterateHook hook, void *hook_data)</argsstring>
+        <name>linphone_core_remove_iterate_hook</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>LinphoneCoreIterateHook</type>
+          <declname>hook</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>hook_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="92" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6932" bodyend="6935"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gadf2204eb2ab519f7b40be868387b9e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_dial_plan_lookup_ccc_from_iso</definition>
+        <argsstring>(const char *iso)</argsstring>
+        <name>linphone_dial_plan_lookup_ccc_from_iso</name>
+        <param>
+          <type>const char *</type>
+          <declname>iso</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to get call country code from ISO 3166-1 alpha-2 code, ex: FR returns 33 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>iso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>country code alpha2 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>call country code or -1 if not found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="99" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="833" bodyend="841"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga38c2e82076bbde91124ae8867320a43c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_dial_plan_lookup_ccc_from_e164</definition>
+        <argsstring>(const char *e164)</argsstring>
+        <name>linphone_dial_plan_lookup_ccc_from_e164</name>
+        <param>
+          <type>const char *</type>
+          <declname>e164</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function to get call country code from an e164 number, ex: +33952650121 will return 33 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e164</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>phone number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>call country code or -1 if not found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="106" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="807" bodyend="832"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010<sp/>Simon<sp/>MORLAT<sp/>(simon.morlat@linphone.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONECORE_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONECORE_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IN_LINPHONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LsdPlayer" kindref="compound">_LsdPlayer</ref><sp/><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneSoundDaemon" kindref="compound">_LinphoneSoundDaemon</ref><sp/><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*LsdEndOfPlayCallback)(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lsd_player_set_callback(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p,<sp/>LsdEndOfPlayCallback<sp/>cb);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lsd_player_set_user_pointer(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*up);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*lsd_player_get_user_pointer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lsd_player_play(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lsd_player_stop(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lsd_player_enable_loop(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p,<sp/>bool_t<sp/>loopmode);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">bool_t<sp/>lsd_player_loop_enabled(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lsd_player_set_gain(<ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>gain);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*lsd_player_get_daemon(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*p);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*<sp/>linphone_sound_daemon_new(MSFactory*<sp/>factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cardname,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nchannels);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*<sp/>linphone_sound_daemon_get_player(<ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*lsd);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_sound_daemon_release_player(<ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*lsd,<sp/><ref refid="struct__LsdPlayer" kindref="compound">LsdPlayer</ref><sp/>*lsdplayer);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_sound_daemon_stop_all_players(<ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_sound_daemon_release_all_players(<ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_use_sound_daemon(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*lsd);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_sound_daemon_destroy(<ref refid="struct__LinphoneSoundDaemon" kindref="compound">LinphoneSoundDaemon</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneEcCalibratorInProgress,<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneEcCalibratorDone,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneEcCalibratorFailed,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneEcCalibratorDoneNoEcho<sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}LinphoneEcCalibratorStatus;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*LinphoneEcCalibrationCallback)(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>LinphoneEcCalibratorStatus<sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>delay_ms,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*LinphoneEcCalibrationAudioInit)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*LinphoneEcCalibrationAudioUninit)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_core_start_echo_calibration(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>LinphoneEcCalibrationCallback<sp/>cb,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneEcCalibrationAudioInit<sp/>audio_init_cb,<sp/>LinphoneEcCalibrationAudioUninit<sp/>audio_uninit_cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cb_data);</highlight></codeline>
+<codeline lineno="80"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__IOS_1gaef3c840b3c9f576c642b49cf306c7461" kindref="member">linphone_core_start_dtmf_stream</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref>*<sp/>lc);</highlight></codeline>
+<codeline lineno="85"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__IOS_1gad0ecef2fb7a77c3363aa94edeadaf65b" kindref="member">linphone_core_stop_dtmf_stream</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref>*<sp/>lc);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>bool_t<sp/>(*LinphoneCoreIterateHook)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_add_iterate_hook(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>LinphoneCoreIterateHook<sp/>hook,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*hook_data);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_remove_iterate_hook(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/>LinphoneCoreIterateHook<sp/>hook,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*hook_data);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gadf2204eb2ab519f7b40be868387b9e3a" kindref="member">linphone_dial_plan_lookup_ccc_from_iso</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>iso);<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga38c2e82076bbde91124ae8867320a43c" kindref="member">linphone_dial_plan_lookup_ccc_from_e164</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>e164);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LsdPlayer" kind="struct" language="C++" prot="public">
+    <compoundname>_LsdPlayer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LsdPlayer_1a2c35ed6fd3085f32ccf19ac235e292ea" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__LinphoneSoundDaemon" kindref="compound">_LinphoneSoundDaemon</ref> *</type>
+        <definition>struct _LinphoneSoundDaemon* _LsdPlayer::lsd</definition>
+        <argsstring></argsstring>
+        <name>lsd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1a64ac317b22241e57e8eeaae26f8c5a9c" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _LsdPlayer::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1aec2fa2ac3699282ed4dea3f2b9365551" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _LsdPlayer::rateconv</definition>
+        <argsstring></argsstring>
+        <name>rateconv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1a885c356e6104ac5b83a5d997d2e9c72f" prot="public" static="no" mutable="no">
+        <type>MSFilter *</type>
+        <definition>MSFilter* _LsdPlayer::chanadapter</definition>
+        <argsstring></argsstring>
+        <name>chanadapter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1aa72358779a212b06ecfb1e569495a7b4" prot="public" static="no" mutable="no">
+        <type>LsdEndOfPlayCallback</type>
+        <definition>LsdEndOfPlayCallback _LsdPlayer::eop_cb</definition>
+        <argsstring></argsstring>
+        <name>eop_cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1aed7e0f208fe26cf7c7b83a3ccdb84831" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LsdPlayer::mixer_pin</definition>
+        <argsstring></argsstring>
+        <name>mixer_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="46" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1a8fb765e4a8bc25548699e74b321260e2" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LsdPlayer::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="47" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1a0f25ce504b0bf2ef87d3c4da64c1fa6a" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LsdPlayer::loop</definition>
+        <argsstring></argsstring>
+        <name>loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="48" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LsdPlayer_1ab43e662f873a98f3c5148db28adb8630" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LsdPlayer::pad[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>pad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="49" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1021">
+        <label>_LinphoneSoundDaemon</label>
+        <link refid="struct__LinphoneSoundDaemon"/>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>branches</edgelabel>
+        </childnode>
+      </node>
+      <node id="1020">
+        <label>_LsdPlayer</label>
+        <link refid="struct__LsdPlayer"/>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>eop_cb</edgelabel>
+        </childnode>
+        <childnode refid="1021" relation="usage">
+          <edgelabel>lsd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lsd.c" bodystart="40" bodyend="50"/>
+    <listofallmembers>
+      <member refid="struct__LsdPlayer_1a885c356e6104ac5b83a5d997d2e9c72f" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>chanadapter</name></member>
+      <member refid="struct__LsdPlayer_1aa72358779a212b06ecfb1e569495a7b4" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>eop_cb</name></member>
+      <member refid="struct__LsdPlayer_1a0f25ce504b0bf2ef87d3c4da64c1fa6a" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>loop</name></member>
+      <member refid="struct__LsdPlayer_1a2c35ed6fd3085f32ccf19ac235e292ea" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>lsd</name></member>
+      <member refid="struct__LsdPlayer_1aed7e0f208fe26cf7c7b83a3ccdb84831" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>mixer_pin</name></member>
+      <member refid="struct__LsdPlayer_1ab43e662f873a98f3c5148db28adb8630" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>pad</name></member>
+      <member refid="struct__LsdPlayer_1a64ac317b22241e57e8eeaae26f8c5a9c" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>player</name></member>
+      <member refid="struct__LsdPlayer_1aec2fa2ac3699282ed4dea3f2b9365551" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>rateconv</name></member>
+      <member refid="struct__LsdPlayer_1a8fb765e4a8bc25548699e74b321260e2" prot="public" virt="non-virtual"><scope>_LsdPlayer</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

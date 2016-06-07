@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__lpc2xml__context" kind="struct" language="C++" prot="public">
+    <compoundname>_lpc2xml_context</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__lpc2xml__context_1a6742c999466077cc610831690898fc4e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__misc_1ga047b6550aab7dd244268e695fab98fd6" kindref="member">LpConfig</ref> *</type>
+        <definition>const LpConfig* _lpc2xml_context::lpc</definition>
+        <argsstring></argsstring>
+        <name>lpc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="59" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lpc2xml__context_1affd03d26ea51d6bb4206015d5a5d2ed5" prot="public" static="no" mutable="no">
+        <type>lpc2xml_function</type>
+        <definition>lpc2xml_function _lpc2xml_context::cbf</definition>
+        <argsstring></argsstring>
+        <name>cbf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="60" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lpc2xml__context_1a3c86705cb2939fd31501380b02efe4be" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _lpc2xml_context::ctx</definition>
+        <argsstring></argsstring>
+        <name>ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="61" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lpc2xml__context_1a3aa456f29ebff5a88bf0b11d02b63222" prot="public" static="no" mutable="no">
+        <type>xmlDoc *</type>
+        <definition>xmlDoc* _lpc2xml_context::doc</definition>
+        <argsstring></argsstring>
+        <name>doc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="63" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lpc2xml__context_1a288609aa9afc0ada5c28087df55ae55e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _lpc2xml_context::errorBuffer[2048]</definition>
+        <argsstring>[2048]</argsstring>
+        <name>errorBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="64" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__lpc2xml__context_1a56ec31f0be32003e8bb098596bd6a701" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _lpc2xml_context::warningBuffer[2048]</definition>
+        <argsstring>[2048]</argsstring>
+        <name>warningBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="65" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1009">
+        <label>_lpc2xml_context</label>
+        <link refid="struct__lpc2xml__context"/>
+        <childnode refid="1010" relation="usage">
+          <edgelabel>lpc</edgelabel>
+        </childnode>
+      </node>
+      <node id="1010">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" line="58" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpc2xml.c" bodystart="58" bodyend="66"/>
+    <listofallmembers>
+      <member refid="struct__lpc2xml__context_1affd03d26ea51d6bb4206015d5a5d2ed5" prot="public" virt="non-virtual"><scope>_lpc2xml_context</scope><name>cbf</name></member>
+      <member refid="struct__lpc2xml__context_1a3c86705cb2939fd31501380b02efe4be" prot="public" virt="non-virtual"><scope>_lpc2xml_context</scope><name>ctx</name></member>
+      <member refid="struct__lpc2xml__context_1a3aa456f29ebff5a88bf0b11d02b63222" prot="public" virt="non-virtual"><scope>_lpc2xml_context</scope><name>doc</name></member>
+      <member refid="struct__lpc2xml__context_1a288609aa9afc0ada5c28087df55ae55e" prot="public" virt="non-virtual"><scope>_lpc2xml_context</scope><name>errorBuffer</name></member>
+      <member refid="struct__lpc2xml__context_1a6742c999466077cc610831690898fc4e" prot="public" virt="non-virtual"><scope>_lpc2xml_context</scope><name>lpc</name></member>
+      <member refid="struct__lpc2xml__context_1a56ec31f0be32003e8bb098596bd6a701" prot="public" virt="non-virtual"><scope>_lpc2xml_context</scope><name>warningBuffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

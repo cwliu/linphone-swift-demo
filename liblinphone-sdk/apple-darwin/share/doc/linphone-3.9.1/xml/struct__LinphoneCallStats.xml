@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneCallStats" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneCallStats</compoundname>
+    <includes local="no">linphonecore.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1af5fbd8dd6f793147e526b105c29d0ee5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneCallStats::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be either LINPHONE_CALL_STATS_AUDIO or LINPHONE_CALL_STATS_VIDEO </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="573" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a8a8b954105336bfda51e6a1eed7008fb" prot="public" static="no" mutable="no">
+        <type>jitter_stats_t</type>
+        <definition>jitter_stats_t _LinphoneCallStats::jitter_stats</definition>
+        <argsstring></argsstring>
+        <name>jitter_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>jitter buffer statistics, see oRTP documentation for details </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="574" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1ae348f8e725ff57e8b43e1e48a7b9ad15" prot="public" static="no" mutable="no">
+        <type>mblk_t *</type>
+        <definition>mblk_t* _LinphoneCallStats::received_rtcp</definition>
+        <argsstring></argsstring>
+        <name>received_rtcp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last RTCP packet received, as a mblk_t structure. See oRTP documentation for details how to extract information from it </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="575" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="575" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a6c4670ac143ef768db848ea7828b0f59" prot="public" static="no" mutable="no">
+        <type>mblk_t *</type>
+        <definition>mblk_t* _LinphoneCallStats::sent_rtcp</definition>
+        <argsstring></argsstring>
+        <name>sent_rtcp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Last RTCP packet sent, as a mblk_t structure. See oRTP documentation for details how to extract information from it </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="576" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1ae902e24f2fb3ae64a54f3ea25bb12910" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::round_trip_delay</definition>
+        <argsstring></argsstring>
+        <name>round_trip_delay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Round trip propagation time in seconds if known, -1 if unknown. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="577" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a9986d647f13d56c2d752ae5f78f28428" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaf4faffc512588eda7db03fab8b03adfb" kindref="member">LinphoneIceState</ref></type>
+        <definition>LinphoneIceState _LinphoneCallStats::ice_state</definition>
+        <argsstring></argsstring>
+        <name>ice_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of ICE processing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="578" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a6f78c4d4bb974ecd0a12acab3891fcec" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState _LinphoneCallStats::upnp_state</definition>
+        <argsstring></argsstring>
+        <name>upnp_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>State of uPnP processing. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="579" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a374fba6a87240c558dfbd73a9172ed66" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::download_bandwidth</definition>
+        <argsstring></argsstring>
+        <name>download_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Download bandwidth measurement of received stream, expressed in kbit/s, including IP/UDP/RTP headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="580" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a76758bb52b889691f2ea8b25fcbc545c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::upload_bandwidth</definition>
+        <argsstring></argsstring>
+        <name>upload_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Download bandwidth measurement of sent stream, expressed in kbit/s, including IP/UDP/RTP headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="581" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a806b9ddc325b0a07895a366f6a470aaf" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::local_late_rate</definition>
+        <argsstring></argsstring>
+        <name>local_late_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>percentage of packet received too late over last second </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="582" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1ac5805dd8961d7c7d053f1fcdc14bbc67" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::local_loss_rate</definition>
+        <argsstring></argsstring>
+        <name>local_loss_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>percentage of lost packet over last second </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="583" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a8c4a17c47da3942990a657a72855acfd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneCallStats::updated</definition>
+        <argsstring></argsstring>
+        <name>updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell which RTCP packet has been updated (received_rtcp or sent_rtcp). Can be either LINPHONE_CALL_STATS_RECEIVED_RTCP_UPDATE or LINPHONE_CALL_STATS_SENT_RTCP_UPDATE </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="584" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1ae6e793441871d1095926bc9baf5e8584" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::rtcp_download_bandwidth</definition>
+        <argsstring></argsstring>
+        <name>rtcp_download_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTCP download bandwidth measurement of received stream, expressed in kbit/s, including IP/UDP/RTP headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="585" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a46e0823cb69c675d068232ad77dfd781" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _LinphoneCallStats::rtcp_upload_bandwidth</definition>
+        <argsstring></argsstring>
+        <name>rtcp_upload_bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTCP download bandwidth measurement of sent stream, expressed in kbit/s, including IP/UDP/RTP headers </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="586" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1ae0bd33c7e9fc456003ab08880403c060" prot="public" static="no" mutable="no">
+        <type>rtp_stats_t</type>
+        <definition>rtp_stats_t _LinphoneCallStats::rtp_stats</definition>
+        <argsstring></argsstring>
+        <name>rtp_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>RTP stats </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="587" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCallStats_1a69ac0a62406d2b43bde9c2db07b3d093" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneCallStats::rtcp_received_via_mux</definition>
+        <argsstring></argsstring>
+        <name>rtcp_received_via_mux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="588" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The LinphoneCallStats objects carries various statistic informations regarding quality of audio or video streams.</para><para>To receive these informations periodically and as soon as they are computed, the application is invited to place a <ref refid="group__initializing_1gabc5c7eae4bcacd77589056d71dd8e5f3" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref> callback in the LinphoneCoreVTable structure it passes for instantiating the LinphoneCore object (see <ref refid="group__initializing_1gac93ed982ae84a5a282a703c8433ca42f" kindref="member">linphone_core_new()</ref> ).</para><para>At any time, the application can access last computed statistics using <ref refid="group__call__misc_1gaa1203b7ecb6b85a05af700152c1fdf14" kindref="member">linphone_call_get_audio_stats()</ref> or <ref refid="group__call__misc_1gae4f745821a59615910c73cf47300c234" kindref="member">linphone_call_get_video_stats()</ref>. </para>    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="572" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" bodystart="572" bodyend="589"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneCallStats_1a374fba6a87240c558dfbd73a9172ed66" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>download_bandwidth</name></member>
+      <member refid="struct__LinphoneCallStats_1a9986d647f13d56c2d752ae5f78f28428" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>ice_state</name></member>
+      <member refid="struct__LinphoneCallStats_1a8a8b954105336bfda51e6a1eed7008fb" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>jitter_stats</name></member>
+      <member refid="struct__LinphoneCallStats_1a806b9ddc325b0a07895a366f6a470aaf" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>local_late_rate</name></member>
+      <member refid="struct__LinphoneCallStats_1ac5805dd8961d7c7d053f1fcdc14bbc67" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>local_loss_rate</name></member>
+      <member refid="struct__LinphoneCallStats_1ae348f8e725ff57e8b43e1e48a7b9ad15" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>received_rtcp</name></member>
+      <member refid="struct__LinphoneCallStats_1ae902e24f2fb3ae64a54f3ea25bb12910" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>round_trip_delay</name></member>
+      <member refid="struct__LinphoneCallStats_1ae6e793441871d1095926bc9baf5e8584" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>rtcp_download_bandwidth</name></member>
+      <member refid="struct__LinphoneCallStats_1a69ac0a62406d2b43bde9c2db07b3d093" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>rtcp_received_via_mux</name></member>
+      <member refid="struct__LinphoneCallStats_1a46e0823cb69c675d068232ad77dfd781" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>rtcp_upload_bandwidth</name></member>
+      <member refid="struct__LinphoneCallStats_1ae0bd33c7e9fc456003ab08880403c060" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>rtp_stats</name></member>
+      <member refid="struct__LinphoneCallStats_1a6c4670ac143ef768db848ea7828b0f59" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>sent_rtcp</name></member>
+      <member refid="struct__LinphoneCallStats_1af5fbd8dd6f793147e526b105c29d0ee5" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>type</name></member>
+      <member refid="struct__LinphoneCallStats_1a8c4a17c47da3942990a657a72855acfd" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>updated</name></member>
+      <member refid="struct__LinphoneCallStats_1a76758bb52b889691f2ea8b25fcbc545c" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>upload_bandwidth</name></member>
+      <member refid="struct__LinphoneCallStats_1a6f78c4d4bb974ecd0a12acab3891fcec" prot="public" virt="non-virtual"><scope>_LinphoneCallStats</scope><name>upnp_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

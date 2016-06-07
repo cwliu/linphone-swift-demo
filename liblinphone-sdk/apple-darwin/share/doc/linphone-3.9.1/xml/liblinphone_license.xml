@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="liblinphone_license" kind="page">
+    <compoundname>liblinphone_license</compoundname>
+    <title>COPYING</title>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>GENERAL<sp/>PUBLIC<sp/>LICENSE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Version<sp/>2,<sp/>June<sp/>1991</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Copyright<sp/>(C)<sp/>1989,<sp/>1991<sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>59<sp/>Temple<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline><highlight class="normal"><sp/>Everyone<sp/>is<sp/>permitted<sp/>to<sp/>copy<sp/>and<sp/>distribute<sp/>verbatim<sp/>copies</highlight></codeline>
+<codeline><highlight class="normal"><sp/>of<sp/>this<sp/>license<sp/>document,<sp/>but<sp/>changing<sp/>it<sp/>is<sp/>not<sp/>allowed.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Preamble</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>The<sp/>licenses<sp/>for<sp/>most<sp/>software<sp/>are<sp/>designed<sp/>to<sp/>take<sp/>away<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">freedom<sp/>to<sp/>share<sp/>and<sp/>change<sp/>it.<sp/><sp/>By<sp/>contrast,<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline><highlight class="normal">License<sp/>is<sp/>intended<sp/>to<sp/>guarantee<sp/>your<sp/>freedom<sp/>to<sp/>share<sp/>and<sp/>change<sp/>free</highlight></codeline>
+<codeline><highlight class="normal">software--to<sp/>make<sp/>sure<sp/>the<sp/>software<sp/>is<sp/>free<sp/>for<sp/>all<sp/>its<sp/>users.<sp/><sp/>This</highlight></codeline>
+<codeline><highlight class="normal">General<sp/>Public<sp/>License<sp/>applies<sp/>to<sp/>most<sp/>of<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline><highlight class="normal">Foundation&apos;s<sp/>software<sp/>and<sp/>to<sp/>any<sp/>other<sp/>program<sp/>whose<sp/>authors<sp/>commit<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">using<sp/>it.<sp/><sp/>(Some<sp/>other<sp/>Free<sp/>Software<sp/>Foundation<sp/>software<sp/>is<sp/>covered<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>instead.)<sp/><sp/>You<sp/>can<sp/>apply<sp/>it<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>programs,<sp/>too.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>When<sp/>we<sp/>speak<sp/>of<sp/>free<sp/>software,<sp/>we<sp/>are<sp/>referring<sp/>to<sp/>freedom,<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">price.<sp/><sp/>Our<sp/>General<sp/>Public<sp/>Licenses<sp/>are<sp/>designed<sp/>to<sp/>make<sp/>sure<sp/>that<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">have<sp/>the<sp/>freedom<sp/>to<sp/>distribute<sp/>copies<sp/>of<sp/>free<sp/>software<sp/>(and<sp/>charge<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>service<sp/>if<sp/>you<sp/>wish),<sp/>that<sp/>you<sp/>receive<sp/>source<sp/>code<sp/>or<sp/>can<sp/>get<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>you<sp/>want<sp/>it,<sp/>that<sp/>you<sp/>can<sp/>change<sp/>the<sp/>software<sp/>or<sp/>use<sp/>pieces<sp/>of<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>new<sp/>free<sp/>programs;<sp/>and<sp/>that<sp/>you<sp/>know<sp/>you<sp/>can<sp/>do<sp/>these<sp/>things.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>To<sp/>protect<sp/>your<sp/>rights,<sp/>we<sp/>need<sp/>to<sp/>make<sp/>restrictions<sp/>that<sp/>forbid</highlight></codeline>
+<codeline><highlight class="normal">anyone<sp/>to<sp/>deny<sp/>you<sp/>these<sp/>rights<sp/>or<sp/>to<sp/>ask<sp/>you<sp/>to<sp/>surrender<sp/>the<sp/>rights.</highlight></codeline>
+<codeline><highlight class="normal">These<sp/>restrictions<sp/>translate<sp/>to<sp/>certain<sp/>responsibilities<sp/>for<sp/>you<sp/>if<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">distribute<sp/>copies<sp/>of<sp/>the<sp/>software,<sp/>or<sp/>if<sp/>you<sp/>modify<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>For<sp/>example,<sp/>if<sp/>you<sp/>distribute<sp/>copies<sp/>of<sp/>such<sp/>a<sp/>program,<sp/>whether</highlight></codeline>
+<codeline><highlight class="normal">gratis<sp/>or<sp/>for<sp/>a<sp/>fee,<sp/>you<sp/>must<sp/>give<sp/>the<sp/>recipients<sp/>all<sp/>the<sp/>rights<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>have.<sp/><sp/>You<sp/>must<sp/>make<sp/>sure<sp/>that<sp/>they,<sp/>too,<sp/>receive<sp/>or<sp/>can<sp/>get<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">source<sp/>code.<sp/><sp/>And<sp/>you<sp/>must<sp/>show<sp/>them<sp/>these<sp/>terms<sp/>so<sp/>they<sp/>know<sp/>their</highlight></codeline>
+<codeline><highlight class="normal">rights.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>We<sp/>protect<sp/>your<sp/>rights<sp/>with<sp/>two<sp/>steps:<sp/>(1)<sp/>copyright<sp/>the<sp/>software,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">(2)<sp/>offer<sp/>you<sp/>this<sp/>license<sp/>which<sp/>gives<sp/>you<sp/>legal<sp/>permission<sp/>to<sp/>copy,</highlight></codeline>
+<codeline><highlight class="normal">distribute<sp/>and/or<sp/>modify<sp/>the<sp/>software.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Also,<sp/>for<sp/>each<sp/>author&apos;s<sp/>protection<sp/>and<sp/>ours,<sp/>we<sp/>want<sp/>to<sp/>make<sp/>certain</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>everyone<sp/>understands<sp/>that<sp/>there<sp/>is<sp/>no<sp/>warranty<sp/>for<sp/>this<sp/>free</highlight></codeline>
+<codeline><highlight class="normal">software.<sp/><sp/>If<sp/>the<sp/>software<sp/>is<sp/>modified<sp/>by<sp/>someone<sp/>else<sp/>and<sp/>passed<sp/>on,<sp/>we</highlight></codeline>
+<codeline><highlight class="normal">want<sp/>its<sp/>recipients<sp/>to<sp/>know<sp/>that<sp/>what<sp/>they<sp/>have<sp/>is<sp/>not<sp/>the<sp/>original,<sp/>so</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>any<sp/>problems<sp/>introduced<sp/>by<sp/>others<sp/>will<sp/>not<sp/>reflect<sp/>on<sp/>the<sp/>original</highlight></codeline>
+<codeline><highlight class="normal">authors&apos;<sp/>reputations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Finally,<sp/>any<sp/>free<sp/>program<sp/>is<sp/>threatened<sp/>constantly<sp/>by<sp/>software</highlight></codeline>
+<codeline><highlight class="normal">patents.<sp/><sp/>We<sp/>wish<sp/>to<sp/>avoid<sp/>the<sp/>danger<sp/>that<sp/>redistributors<sp/>of<sp/>a<sp/>free</highlight></codeline>
+<codeline><highlight class="normal">program<sp/>will<sp/>individually<sp/>obtain<sp/>patent<sp/>licenses,<sp/>in<sp/>effect<sp/>making<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">program<sp/>proprietary.<sp/><sp/>To<sp/>prevent<sp/>this,<sp/>we<sp/>have<sp/>made<sp/>it<sp/>clear<sp/>that<sp/>any</highlight></codeline>
+<codeline><highlight class="normal">patent<sp/>must<sp/>be<sp/>licensed<sp/>for<sp/>everyone&apos;s<sp/>free<sp/>use<sp/>or<sp/>not<sp/>licensed<sp/>at<sp/>all.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>The<sp/>precise<sp/>terms<sp/>and<sp/>conditions<sp/>for<sp/>copying,<sp/>distribution<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">modification<sp/>follow.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GNU<sp/>GENERAL<sp/>PUBLIC<sp/>LICENSE</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>TERMS<sp/>AND<sp/>CONDITIONS<sp/>FOR<sp/>COPYING,<sp/>DISTRIBUTION<sp/>AND<sp/>MODIFICATION</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>0.<sp/>This<sp/>License<sp/>applies<sp/>to<sp/>any<sp/>program<sp/>or<sp/>other<sp/>work<sp/>which<sp/>contains</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>notice<sp/>placed<sp/>by<sp/>the<sp/>copyright<sp/>holder<sp/>saying<sp/>it<sp/>may<sp/>be<sp/>distributed</highlight></codeline>
+<codeline><highlight class="normal">under<sp/>the<sp/>terms<sp/>of<sp/>this<sp/>General<sp/>Public<sp/>License.<sp/><sp/>The<sp/>&quot;Program&quot;,<sp/>below,</highlight></codeline>
+<codeline><highlight class="normal">refers<sp/>to<sp/>any<sp/>such<sp/>program<sp/>or<sp/>work,<sp/>and<sp/>a<sp/>&quot;work<sp/>based<sp/>on<sp/>the<sp/>Program&quot;</highlight></codeline>
+<codeline><highlight class="normal">means<sp/>either<sp/>the<sp/>Program<sp/>or<sp/>any<sp/>derivative<sp/>work<sp/>under<sp/>copyright<sp/>law:</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>is<sp/>to<sp/>say,<sp/>a<sp/>work<sp/>containing<sp/>the<sp/>Program<sp/>or<sp/>a<sp/>portion<sp/>of<sp/>it,</highlight></codeline>
+<codeline><highlight class="normal">either<sp/>verbatim<sp/>or<sp/>with<sp/>modifications<sp/>and/or<sp/>translated<sp/>into<sp/>another</highlight></codeline>
+<codeline><highlight class="normal">language.<sp/><sp/>(Hereinafter,<sp/>translation<sp/>is<sp/>included<sp/>without<sp/>limitation<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>term<sp/>&quot;modification&quot;.)<sp/><sp/>Each<sp/>licensee<sp/>is<sp/>addressed<sp/>as<sp/>&quot;you&quot;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Activities<sp/>other<sp/>than<sp/>copying,<sp/>distribution<sp/>and<sp/>modification<sp/>are<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">covered<sp/>by<sp/>this<sp/>License;<sp/>they<sp/>are<sp/>outside<sp/>its<sp/>scope.<sp/><sp/>The<sp/>act<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">running<sp/>the<sp/>Program<sp/>is<sp/>not<sp/>restricted,<sp/>and<sp/>the<sp/>output<sp/>from<sp/>the<sp/>Program</highlight></codeline>
+<codeline><highlight class="normal">is<sp/>covered<sp/>only<sp/>if<sp/>its<sp/>contents<sp/>constitute<sp/>a<sp/>work<sp/>based<sp/>on<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">Program<sp/>(independent<sp/>of<sp/>having<sp/>been<sp/>made<sp/>by<sp/>running<sp/>the<sp/>Program).</highlight></codeline>
+<codeline><highlight class="normal">Whether<sp/>that<sp/>is<sp/>true<sp/>depends<sp/>on<sp/>what<sp/>the<sp/>Program<sp/>does.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>You<sp/>may<sp/>copy<sp/>and<sp/>distribute<sp/>verbatim<sp/>copies<sp/>of<sp/>the<sp/>Program&apos;s</highlight></codeline>
+<codeline><highlight class="normal">source<sp/>code<sp/>as<sp/>you<sp/>receive<sp/>it,<sp/>in<sp/>any<sp/>medium,<sp/>provided<sp/>that<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">conspicuously<sp/>and<sp/>appropriately<sp/>publish<sp/>on<sp/>each<sp/>copy<sp/>an<sp/>appropriate</highlight></codeline>
+<codeline><highlight class="normal">copyright<sp/>notice<sp/>and<sp/>disclaimer<sp/>of<sp/>warranty;<sp/>keep<sp/>intact<sp/>all<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">notices<sp/>that<sp/>refer<sp/>to<sp/>this<sp/>License<sp/>and<sp/>to<sp/>the<sp/>absence<sp/>of<sp/>any<sp/>warranty;</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>give<sp/>any<sp/>other<sp/>recipients<sp/>of<sp/>the<sp/>Program<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>License</highlight></codeline>
+<codeline><highlight class="normal">along<sp/>with<sp/>the<sp/>Program.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>may<sp/>charge<sp/>a<sp/>fee<sp/>for<sp/>the<sp/>physical<sp/>act<sp/>of<sp/>transferring<sp/>a<sp/>copy,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">you<sp/>may<sp/>at<sp/>your<sp/>option<sp/>offer<sp/>warranty<sp/>protection<sp/>in<sp/>exchange<sp/>for<sp/>a<sp/>fee.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>2.<sp/>You<sp/>may<sp/>modify<sp/>your<sp/>copy<sp/>or<sp/>copies<sp/>of<sp/>the<sp/>Program<sp/>or<sp/>any<sp/>portion</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>it,<sp/>thus<sp/>forming<sp/>a<sp/>work<sp/>based<sp/>on<sp/>the<sp/>Program,<sp/>and<sp/>copy<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">distribute<sp/>such<sp/>modifications<sp/>or<sp/>work<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>Section<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">above,<sp/>provided<sp/>that<sp/>you<sp/>also<sp/>meet<sp/>all<sp/>of<sp/>these<sp/>conditions:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>a)<sp/>You<sp/>must<sp/>cause<sp/>the<sp/>modified<sp/>files<sp/>to<sp/>carry<sp/>prominent<sp/>notices</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>stating<sp/>that<sp/>you<sp/>changed<sp/>the<sp/>files<sp/>and<sp/>the<sp/>date<sp/>of<sp/>any<sp/>change.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>b)<sp/>You<sp/>must<sp/>cause<sp/>any<sp/>work<sp/>that<sp/>you<sp/>distribute<sp/>or<sp/>publish,<sp/>that<sp/>in</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>whole<sp/>or<sp/>in<sp/>part<sp/>contains<sp/>or<sp/>is<sp/>derived<sp/>from<sp/>the<sp/>Program<sp/>or<sp/>any</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>part<sp/>thereof,<sp/>to<sp/>be<sp/>licensed<sp/>as<sp/>a<sp/>whole<sp/>at<sp/>no<sp/>charge<sp/>to<sp/>all<sp/>third</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>parties<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>this<sp/>License.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>c)<sp/>If<sp/>the<sp/>modified<sp/>program<sp/>normally<sp/>reads<sp/>commands<sp/>interactively</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>when<sp/>run,<sp/>you<sp/>must<sp/>cause<sp/>it,<sp/>when<sp/>started<sp/>running<sp/>for<sp/>such</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>interactive<sp/>use<sp/>in<sp/>the<sp/>most<sp/>ordinary<sp/>way,<sp/>to<sp/>print<sp/>or<sp/>display<sp/>an</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>announcement<sp/>including<sp/>an<sp/>appropriate<sp/>copyright<sp/>notice<sp/>and<sp/>a</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>notice<sp/>that<sp/>there<sp/>is<sp/>no<sp/>warranty<sp/>(or<sp/>else,<sp/>saying<sp/>that<sp/>you<sp/>provide</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>a<sp/>warranty)<sp/>and<sp/>that<sp/>users<sp/>may<sp/>redistribute<sp/>the<sp/>program<sp/>under</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>these<sp/>conditions,<sp/>and<sp/>telling<sp/>the<sp/>user<sp/>how<sp/>to<sp/>view<sp/>a<sp/>copy<sp/>of<sp/>this</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>License.<sp/><sp/>(Exception:<sp/>if<sp/>the<sp/>Program<sp/>itself<sp/>is<sp/>interactive<sp/>but</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>does<sp/>not<sp/>normally<sp/>print<sp/>such<sp/>an<sp/>announcement,<sp/>your<sp/>work<sp/>based<sp/>on</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>the<sp/>Program<sp/>is<sp/>not<sp/>required<sp/>to<sp/>print<sp/>an<sp/>announcement.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>requirements<sp/>apply<sp/>to<sp/>the<sp/>modified<sp/>work<sp/>as<sp/>a<sp/>whole.<sp/><sp/>If</highlight></codeline>
+<codeline><highlight class="normal">identifiable<sp/>sections<sp/>of<sp/>that<sp/>work<sp/>are<sp/>not<sp/>derived<sp/>from<sp/>the<sp/>Program,</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>can<sp/>be<sp/>reasonably<sp/>considered<sp/>independent<sp/>and<sp/>separate<sp/>works<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">themselves,<sp/>then<sp/>this<sp/>License,<sp/>and<sp/>its<sp/>terms,<sp/>do<sp/>not<sp/>apply<sp/>to<sp/>those</highlight></codeline>
+<codeline><highlight class="normal">sections<sp/>when<sp/>you<sp/>distribute<sp/>them<sp/>as<sp/>separate<sp/>works.<sp/><sp/>But<sp/>when<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">distribute<sp/>the<sp/>same<sp/>sections<sp/>as<sp/>part<sp/>of<sp/>a<sp/>whole<sp/>which<sp/>is<sp/>a<sp/>work<sp/>based</highlight></codeline>
+<codeline><highlight class="normal">on<sp/>the<sp/>Program,<sp/>the<sp/>distribution<sp/>of<sp/>the<sp/>whole<sp/>must<sp/>be<sp/>on<sp/>the<sp/>terms<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>License,<sp/>whose<sp/>permissions<sp/>for<sp/>other<sp/>licensees<sp/>extend<sp/>to<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">entire<sp/>whole,<sp/>and<sp/>thus<sp/>to<sp/>each<sp/>and<sp/>every<sp/>part<sp/>regardless<sp/>of<sp/>who<sp/>wrote<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Thus,<sp/>it<sp/>is<sp/>not<sp/>the<sp/>intent<sp/>of<sp/>this<sp/>section<sp/>to<sp/>claim<sp/>rights<sp/>or<sp/>contest</highlight></codeline>
+<codeline><highlight class="normal">your<sp/>rights<sp/>to<sp/>work<sp/>written<sp/>entirely<sp/>by<sp/>you;<sp/>rather,<sp/>the<sp/>intent<sp/>is<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">exercise<sp/>the<sp/>right<sp/>to<sp/>control<sp/>the<sp/>distribution<sp/>of<sp/>derivative<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">collective<sp/>works<sp/>based<sp/>on<sp/>the<sp/>Program.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>mere<sp/>aggregation<sp/>of<sp/>another<sp/>work<sp/>not<sp/>based<sp/>on<sp/>the<sp/>Program</highlight></codeline>
+<codeline><highlight class="normal">with<sp/>the<sp/>Program<sp/>(or<sp/>with<sp/>a<sp/>work<sp/>based<sp/>on<sp/>the<sp/>Program)<sp/>on<sp/>a<sp/>volume<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">a<sp/>storage<sp/>or<sp/>distribution<sp/>medium<sp/>does<sp/>not<sp/>bring<sp/>the<sp/>other<sp/>work<sp/>under</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>scope<sp/>of<sp/>this<sp/>License.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>3.<sp/>You<sp/>may<sp/>copy<sp/>and<sp/>distribute<sp/>the<sp/>Program<sp/>(or<sp/>a<sp/>work<sp/>based<sp/>on<sp/>it,</highlight></codeline>
+<codeline><highlight class="normal">under<sp/>Section<sp/>2)<sp/>in<sp/>object<sp/>code<sp/>or<sp/>executable<sp/>form<sp/>under<sp/>the<sp/>terms<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">Sections<sp/>1<sp/>and<sp/>2<sp/>above<sp/>provided<sp/>that<sp/>you<sp/>also<sp/>do<sp/>one<sp/>of<sp/>the<sp/>following:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>a)<sp/>Accompany<sp/>it<sp/>with<sp/>the<sp/>complete<sp/>corresponding<sp/>machine-readable</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>source<sp/>code,<sp/>which<sp/>must<sp/>be<sp/>distributed<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>Sections</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>1<sp/>and<sp/>2<sp/>above<sp/>on<sp/>a<sp/>medium<sp/>customarily<sp/>used<sp/>for<sp/>software<sp/>interchange;<sp/>or,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>b)<sp/>Accompany<sp/>it<sp/>with<sp/>a<sp/>written<sp/>offer,<sp/>valid<sp/>for<sp/>at<sp/>least<sp/>three</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>years,<sp/>to<sp/>give<sp/>any<sp/>third<sp/>party,<sp/>for<sp/>a<sp/>charge<sp/>no<sp/>more<sp/>than<sp/>your</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cost<sp/>of<sp/>physically<sp/>performing<sp/>source<sp/>distribution,<sp/>a<sp/>complete</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>machine-readable<sp/>copy<sp/>of<sp/>the<sp/>corresponding<sp/>source<sp/>code,<sp/>to<sp/>be</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>distributed<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>Sections<sp/>1<sp/>and<sp/>2<sp/>above<sp/>on<sp/>a<sp/>medium</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>customarily<sp/>used<sp/>for<sp/>software<sp/>interchange;<sp/>or,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>c)<sp/>Accompany<sp/>it<sp/>with<sp/>the<sp/>information<sp/>you<sp/>received<sp/>as<sp/>to<sp/>the<sp/>offer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>to<sp/>distribute<sp/>corresponding<sp/>source<sp/>code.<sp/><sp/>(This<sp/>alternative<sp/>is</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>allowed<sp/>only<sp/>for<sp/>noncommercial<sp/>distribution<sp/>and<sp/>only<sp/>if<sp/>you</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>received<sp/>the<sp/>program<sp/>in<sp/>object<sp/>code<sp/>or<sp/>executable<sp/>form<sp/>with<sp/>such</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>an<sp/>offer,<sp/>in<sp/>accord<sp/>with<sp/>Subsection<sp/>b<sp/>above.)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>source<sp/>code<sp/>for<sp/>a<sp/>work<sp/>means<sp/>the<sp/>preferred<sp/>form<sp/>of<sp/>the<sp/>work<sp/>for</highlight></codeline>
+<codeline><highlight class="normal">making<sp/>modifications<sp/>to<sp/>it.<sp/><sp/>For<sp/>an<sp/>executable<sp/>work,<sp/>complete<sp/>source</highlight></codeline>
+<codeline><highlight class="normal">code<sp/>means<sp/>all<sp/>the<sp/>source<sp/>code<sp/>for<sp/>all<sp/>modules<sp/>it<sp/>contains,<sp/>plus<sp/>any</highlight></codeline>
+<codeline><highlight class="normal">associated<sp/>interface<sp/>definition<sp/>files,<sp/>plus<sp/>the<sp/>scripts<sp/>used<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">control<sp/>compilation<sp/>and<sp/>installation<sp/>of<sp/>the<sp/>executable.<sp/><sp/>However,<sp/>as<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">special<sp/>exception,<sp/>the<sp/>source<sp/>code<sp/>distributed<sp/>need<sp/>not<sp/>include</highlight></codeline>
+<codeline><highlight class="normal">anything<sp/>that<sp/>is<sp/>normally<sp/>distributed<sp/>(in<sp/>either<sp/>source<sp/>or<sp/>binary</highlight></codeline>
+<codeline><highlight class="normal">form)<sp/>with<sp/>the<sp/>major<sp/>components<sp/>(compiler,<sp/>kernel,<sp/>and<sp/>so<sp/>on)<sp/>of<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">operating<sp/>system<sp/>on<sp/>which<sp/>the<sp/>executable<sp/>runs,<sp/>unless<sp/>that<sp/>component</highlight></codeline>
+<codeline><highlight class="normal">itself<sp/>accompanies<sp/>the<sp/>executable.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>distribution<sp/>of<sp/>executable<sp/>or<sp/>object<sp/>code<sp/>is<sp/>made<sp/>by<sp/>offering</highlight></codeline>
+<codeline><highlight class="normal">access<sp/>to<sp/>copy<sp/>from<sp/>a<sp/>designated<sp/>place,<sp/>then<sp/>offering<sp/>equivalent</highlight></codeline>
+<codeline><highlight class="normal">access<sp/>to<sp/>copy<sp/>the<sp/>source<sp/>code<sp/>from<sp/>the<sp/>same<sp/>place<sp/>counts<sp/>as</highlight></codeline>
+<codeline><highlight class="normal">distribution<sp/>of<sp/>the<sp/>source<sp/>code,<sp/>even<sp/>though<sp/>third<sp/>parties<sp/>are<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">compelled<sp/>to<sp/>copy<sp/>the<sp/>source<sp/>along<sp/>with<sp/>the<sp/>object<sp/>code.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>4.<sp/>You<sp/>may<sp/>not<sp/>copy,<sp/>modify,<sp/>sublicense,<sp/>or<sp/>distribute<sp/>the<sp/>Program</highlight></codeline>
+<codeline><highlight class="normal">except<sp/>as<sp/>expressly<sp/>provided<sp/>under<sp/>this<sp/>License.<sp/><sp/>Any<sp/>attempt</highlight></codeline>
+<codeline><highlight class="normal">otherwise<sp/>to<sp/>copy,<sp/>modify,<sp/>sublicense<sp/>or<sp/>distribute<sp/>the<sp/>Program<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">void,<sp/>and<sp/>will<sp/>automatically<sp/>terminate<sp/>your<sp/>rights<sp/>under<sp/>this<sp/>License.</highlight></codeline>
+<codeline><highlight class="normal">However,<sp/>parties<sp/>who<sp/>have<sp/>received<sp/>copies,<sp/>or<sp/>rights,<sp/>from<sp/>you<sp/>under</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>License<sp/>will<sp/>not<sp/>have<sp/>their<sp/>licenses<sp/>terminated<sp/>so<sp/>long<sp/>as<sp/>such</highlight></codeline>
+<codeline><highlight class="normal">parties<sp/>remain<sp/>in<sp/>full<sp/>compliance.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>5.<sp/>You<sp/>are<sp/>not<sp/>required<sp/>to<sp/>accept<sp/>this<sp/>License,<sp/>since<sp/>you<sp/>have<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">signed<sp/>it.<sp/><sp/>However,<sp/>nothing<sp/>else<sp/>grants<sp/>you<sp/>permission<sp/>to<sp/>modify<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">distribute<sp/>the<sp/>Program<sp/>or<sp/>its<sp/>derivative<sp/>works.<sp/><sp/>These<sp/>actions<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">prohibited<sp/>by<sp/>law<sp/>if<sp/>you<sp/>do<sp/>not<sp/>accept<sp/>this<sp/>License.<sp/><sp/>Therefore,<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">modifying<sp/>or<sp/>distributing<sp/>the<sp/>Program<sp/>(or<sp/>any<sp/>work<sp/>based<sp/>on<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">Program),<sp/>you<sp/>indicate<sp/>your<sp/>acceptance<sp/>of<sp/>this<sp/>License<sp/>to<sp/>do<sp/>so,<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">all<sp/>its<sp/>terms<sp/>and<sp/>conditions<sp/>for<sp/>copying,<sp/>distributing<sp/>or<sp/>modifying</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>Program<sp/>or<sp/>works<sp/>based<sp/>on<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>6.<sp/>Each<sp/>time<sp/>you<sp/>redistribute<sp/>the<sp/>Program<sp/>(or<sp/>any<sp/>work<sp/>based<sp/>on<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">Program),<sp/>the<sp/>recipient<sp/>automatically<sp/>receives<sp/>a<sp/>license<sp/>from<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">original<sp/>licensor<sp/>to<sp/>copy,<sp/>distribute<sp/>or<sp/>modify<sp/>the<sp/>Program<sp/>subject<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">these<sp/>terms<sp/>and<sp/>conditions.<sp/><sp/>You<sp/>may<sp/>not<sp/>impose<sp/>any<sp/>further</highlight></codeline>
+<codeline><highlight class="normal">restrictions<sp/>on<sp/>the<sp/>recipients&apos;<sp/>exercise<sp/>of<sp/>the<sp/>rights<sp/>granted<sp/>herein.</highlight></codeline>
+<codeline><highlight class="normal">You<sp/>are<sp/>not<sp/>responsible<sp/>for<sp/>enforcing<sp/>compliance<sp/>by<sp/>third<sp/>parties<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>License.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>7.<sp/>If,<sp/>as<sp/>a<sp/>consequence<sp/>of<sp/>a<sp/>court<sp/>judgment<sp/>or<sp/>allegation<sp/>of<sp/>patent</highlight></codeline>
+<codeline><highlight class="normal">infringement<sp/>or<sp/>for<sp/>any<sp/>other<sp/>reason<sp/>(not<sp/>limited<sp/>to<sp/>patent<sp/>issues),</highlight></codeline>
+<codeline><highlight class="normal">conditions<sp/>are<sp/>imposed<sp/>on<sp/>you<sp/>(whether<sp/>by<sp/>court<sp/>order,<sp/>agreement<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">otherwise)<sp/>that<sp/>contradict<sp/>the<sp/>conditions<sp/>of<sp/>this<sp/>License,<sp/>they<sp/>do<sp/>not</highlight></codeline>
+<codeline><highlight class="normal">excuse<sp/>you<sp/>from<sp/>the<sp/>conditions<sp/>of<sp/>this<sp/>License.<sp/><sp/>If<sp/>you<sp/>cannot</highlight></codeline>
+<codeline><highlight class="normal">distribute<sp/>so<sp/>as<sp/>to<sp/>satisfy<sp/>simultaneously<sp/>your<sp/>obligations<sp/>under<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">License<sp/>and<sp/>any<sp/>other<sp/>pertinent<sp/>obligations,<sp/>then<sp/>as<sp/>a<sp/>consequence<sp/>you</highlight></codeline>
+<codeline><highlight class="normal">may<sp/>not<sp/>distribute<sp/>the<sp/>Program<sp/>at<sp/>all.<sp/><sp/>For<sp/>example,<sp/>if<sp/>a<sp/>patent</highlight></codeline>
+<codeline><highlight class="normal">license<sp/>would<sp/>not<sp/>permit<sp/>royalty-free<sp/>redistribution<sp/>of<sp/>the<sp/>Program<sp/>by</highlight></codeline>
+<codeline><highlight class="normal">all<sp/>those<sp/>who<sp/>receive<sp/>copies<sp/>directly<sp/>or<sp/>indirectly<sp/>through<sp/>you,<sp/>then</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>only<sp/>way<sp/>you<sp/>could<sp/>satisfy<sp/>both<sp/>it<sp/>and<sp/>this<sp/>License<sp/>would<sp/>be<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">refrain<sp/>entirely<sp/>from<sp/>distribution<sp/>of<sp/>the<sp/>Program.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>any<sp/>portion<sp/>of<sp/>this<sp/>section<sp/>is<sp/>held<sp/>invalid<sp/>or<sp/>unenforceable<sp/>under</highlight></codeline>
+<codeline><highlight class="normal">any<sp/>particular<sp/>circumstance,<sp/>the<sp/>balance<sp/>of<sp/>the<sp/>section<sp/>is<sp/>intended<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">apply<sp/>and<sp/>the<sp/>section<sp/>as<sp/>a<sp/>whole<sp/>is<sp/>intended<sp/>to<sp/>apply<sp/>in<sp/>other</highlight></codeline>
+<codeline><highlight class="normal">circumstances.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>is<sp/>not<sp/>the<sp/>purpose<sp/>of<sp/>this<sp/>section<sp/>to<sp/>induce<sp/>you<sp/>to<sp/>infringe<sp/>any</highlight></codeline>
+<codeline><highlight class="normal">patents<sp/>or<sp/>other<sp/>property<sp/>right<sp/>claims<sp/>or<sp/>to<sp/>contest<sp/>validity<sp/>of<sp/>any</highlight></codeline>
+<codeline><highlight class="normal">such<sp/>claims;<sp/>this<sp/>section<sp/>has<sp/>the<sp/>sole<sp/>purpose<sp/>of<sp/>protecting<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">integrity<sp/>of<sp/>the<sp/>free<sp/>software<sp/>distribution<sp/>system,<sp/>which<sp/>is</highlight></codeline>
+<codeline><highlight class="normal">implemented<sp/>by<sp/>public<sp/>license<sp/>practices.<sp/><sp/>Many<sp/>people<sp/>have<sp/>made</highlight></codeline>
+<codeline><highlight class="normal">generous<sp/>contributions<sp/>to<sp/>the<sp/>wide<sp/>range<sp/>of<sp/>software<sp/>distributed</highlight></codeline>
+<codeline><highlight class="normal">through<sp/>that<sp/>system<sp/>in<sp/>reliance<sp/>on<sp/>consistent<sp/>application<sp/>of<sp/>that</highlight></codeline>
+<codeline><highlight class="normal">system;<sp/>it<sp/>is<sp/>up<sp/>to<sp/>the<sp/>author/donor<sp/>to<sp/>decide<sp/>if<sp/>he<sp/>or<sp/>she<sp/>is<sp/>willing</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>distribute<sp/>software<sp/>through<sp/>any<sp/>other<sp/>system<sp/>and<sp/>a<sp/>licensee<sp/>cannot</highlight></codeline>
+<codeline><highlight class="normal">impose<sp/>that<sp/>choice.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>section<sp/>is<sp/>intended<sp/>to<sp/>make<sp/>thoroughly<sp/>clear<sp/>what<sp/>is<sp/>believed<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">be<sp/>a<sp/>consequence<sp/>of<sp/>the<sp/>rest<sp/>of<sp/>this<sp/>License.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>8.<sp/>If<sp/>the<sp/>distribution<sp/>and/or<sp/>use<sp/>of<sp/>the<sp/>Program<sp/>is<sp/>restricted<sp/>in</highlight></codeline>
+<codeline><highlight class="normal">certain<sp/>countries<sp/>either<sp/>by<sp/>patents<sp/>or<sp/>by<sp/>copyrighted<sp/>interfaces,<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">original<sp/>copyright<sp/>holder<sp/>who<sp/>places<sp/>the<sp/>Program<sp/>under<sp/>this<sp/>License</highlight></codeline>
+<codeline><highlight class="normal">may<sp/>add<sp/>an<sp/>explicit<sp/>geographical<sp/>distribution<sp/>limitation<sp/>excluding</highlight></codeline>
+<codeline><highlight class="normal">those<sp/>countries,<sp/>so<sp/>that<sp/>distribution<sp/>is<sp/>permitted<sp/>only<sp/>in<sp/>or<sp/>among</highlight></codeline>
+<codeline><highlight class="normal">countries<sp/>not<sp/>thus<sp/>excluded.<sp/><sp/>In<sp/>such<sp/>case,<sp/>this<sp/>License<sp/>incorporates</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>limitation<sp/>as<sp/>if<sp/>written<sp/>in<sp/>the<sp/>body<sp/>of<sp/>this<sp/>License.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>9.<sp/>The<sp/>Free<sp/>Software<sp/>Foundation<sp/>may<sp/>publish<sp/>revised<sp/>and/or<sp/>new<sp/>versions</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>the<sp/>General<sp/>Public<sp/>License<sp/>from<sp/>time<sp/>to<sp/>time.<sp/><sp/>Such<sp/>new<sp/>versions<sp/>will</highlight></codeline>
+<codeline><highlight class="normal">be<sp/>similar<sp/>in<sp/>spirit<sp/>to<sp/>the<sp/>present<sp/>version,<sp/>but<sp/>may<sp/>differ<sp/>in<sp/>detail<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">address<sp/>new<sp/>problems<sp/>or<sp/>concerns.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Each<sp/>version<sp/>is<sp/>given<sp/>a<sp/>distinguishing<sp/>version<sp/>number.<sp/><sp/>If<sp/>the<sp/>Program</highlight></codeline>
+<codeline><highlight class="normal">specifies<sp/>a<sp/>version<sp/>number<sp/>of<sp/>this<sp/>License<sp/>which<sp/>applies<sp/>to<sp/>it<sp/>and<sp/>&quot;any</highlight></codeline>
+<codeline><highlight class="normal">later<sp/>version&quot;,<sp/>you<sp/>have<sp/>the<sp/>option<sp/>of<sp/>following<sp/>the<sp/>terms<sp/>and<sp/>conditions</highlight></codeline>
+<codeline><highlight class="normal">either<sp/>of<sp/>that<sp/>version<sp/>or<sp/>of<sp/>any<sp/>later<sp/>version<sp/>published<sp/>by<sp/>the<sp/>Free</highlight></codeline>
+<codeline><highlight class="normal">Software<sp/>Foundation.<sp/><sp/>If<sp/>the<sp/>Program<sp/>does<sp/>not<sp/>specify<sp/>a<sp/>version<sp/>number<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>License,<sp/>you<sp/>may<sp/>choose<sp/>any<sp/>version<sp/>ever<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline><highlight class="normal">Foundation.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>10.<sp/>If<sp/>you<sp/>wish<sp/>to<sp/>incorporate<sp/>parts<sp/>of<sp/>the<sp/>Program<sp/>into<sp/>other<sp/>free</highlight></codeline>
+<codeline><highlight class="normal">programs<sp/>whose<sp/>distribution<sp/>conditions<sp/>are<sp/>different,<sp/>write<sp/>to<sp/>the<sp/>author</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>ask<sp/>for<sp/>permission.<sp/><sp/>For<sp/>software<sp/>which<sp/>is<sp/>copyrighted<sp/>by<sp/>the<sp/>Free</highlight></codeline>
+<codeline><highlight class="normal">Software<sp/>Foundation,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>we<sp/>sometimes</highlight></codeline>
+<codeline><highlight class="normal">make<sp/>exceptions<sp/>for<sp/>this.<sp/><sp/>Our<sp/>decision<sp/>will<sp/>be<sp/>guided<sp/>by<sp/>the<sp/>two<sp/>goals</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>preserving<sp/>the<sp/>free<sp/>status<sp/>of<sp/>all<sp/>derivatives<sp/>of<sp/>our<sp/>free<sp/>software<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>promoting<sp/>the<sp/>sharing<sp/>and<sp/>reuse<sp/>of<sp/>software<sp/>generally.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NO<sp/>WARRANTY</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>11.<sp/>BECAUSE<sp/>THE<sp/>PROGRAM<sp/>IS<sp/>LICENSED<sp/>FREE<sp/>OF<sp/>CHARGE,<sp/>THERE<sp/>IS<sp/>NO<sp/>WARRANTY</highlight></codeline>
+<codeline><highlight class="normal">FOR<sp/>THE<sp/>PROGRAM,<sp/>TO<sp/>THE<sp/>EXTENT<sp/>PERMITTED<sp/>BY<sp/>APPLICABLE<sp/>LAW.<sp/><sp/>EXCEPT<sp/>WHEN</highlight></codeline>
+<codeline><highlight class="normal">OTHERWISE<sp/>STATED<sp/>IN<sp/>WRITING<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND/OR<sp/>OTHER<sp/>PARTIES</highlight></codeline>
+<codeline><highlight class="normal">PROVIDE<sp/>THE<sp/>PROGRAM<sp/>&quot;AS<sp/>IS&quot;<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EITHER<sp/>EXPRESSED</highlight></codeline>
+<codeline><highlight class="normal">OR<sp/>IMPLIED,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE<sp/>IMPLIED<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline><highlight class="normal">MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>THE<sp/>ENTIRE<sp/>RISK<sp/>AS</highlight></codeline>
+<codeline><highlight class="normal">TO<sp/>THE<sp/>QUALITY<sp/>AND<sp/>PERFORMANCE<sp/>OF<sp/>THE<sp/>PROGRAM<sp/>IS<sp/>WITH<sp/>YOU.<sp/><sp/>SHOULD<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">PROGRAM<sp/>PROVE<sp/>DEFECTIVE,<sp/>YOU<sp/>ASSUME<sp/>THE<sp/>COST<sp/>OF<sp/>ALL<sp/>NECESSARY<sp/>SERVICING,</highlight></codeline>
+<codeline><highlight class="normal">REPAIR<sp/>OR<sp/>CORRECTION.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>12.<sp/>IN<sp/>NO<sp/>EVENT<sp/>UNLESS<sp/>REQUIRED<sp/>BY<sp/>APPLICABLE<sp/>LAW<sp/>OR<sp/>AGREED<sp/>TO<sp/>IN<sp/>WRITING</highlight></codeline>
+<codeline><highlight class="normal">WILL<sp/>ANY<sp/>COPYRIGHT<sp/>HOLDER,<sp/>OR<sp/>ANY<sp/>OTHER<sp/>PARTY<sp/>WHO<sp/>MAY<sp/>MODIFY<sp/>AND/OR</highlight></codeline>
+<codeline><highlight class="normal">REDISTRIBUTE<sp/>THE<sp/>PROGRAM<sp/>AS<sp/>PERMITTED<sp/>ABOVE,<sp/>BE<sp/>LIABLE<sp/>TO<sp/>YOU<sp/>FOR<sp/>DAMAGES,</highlight></codeline>
+<codeline><highlight class="normal">INCLUDING<sp/>ANY<sp/>GENERAL,<sp/>SPECIAL,<sp/>INCIDENTAL<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>ARISING</highlight></codeline>
+<codeline><highlight class="normal">OUT<sp/>OF<sp/>THE<sp/>USE<sp/>OR<sp/>INABILITY<sp/>TO<sp/>USE<sp/>THE<sp/>PROGRAM<sp/>(INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED</highlight></codeline>
+<codeline><highlight class="normal">TO<sp/>LOSS<sp/>OF<sp/>DATA<sp/>OR<sp/>DATA<sp/>BEING<sp/>RENDERED<sp/>INACCURATE<sp/>OR<sp/>LOSSES<sp/>SUSTAINED<sp/>BY</highlight></codeline>
+<codeline><highlight class="normal">YOU<sp/>OR<sp/>THIRD<sp/>PARTIES<sp/>OR<sp/>A<sp/>FAILURE<sp/>OF<sp/>THE<sp/>PROGRAM<sp/>TO<sp/>OPERATE<sp/>WITH<sp/>ANY<sp/>OTHER</highlight></codeline>
+<codeline><highlight class="normal">PROGRAMS),<sp/>EVEN<sp/>IF<sp/>SUCH<sp/>HOLDER<sp/>OR<sp/>OTHER<sp/>PARTY<sp/>HAS<sp/>BEEN<sp/>ADVISED<sp/>OF<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGES.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>END<sp/>OF<sp/>TERMS<sp/>AND<sp/>CONDITIONS</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>How<sp/>to<sp/>Apply<sp/>These<sp/>Terms<sp/>to<sp/>Your<sp/>New<sp/>Programs</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>If<sp/>you<sp/>develop<sp/>a<sp/>new<sp/>program,<sp/>and<sp/>you<sp/>want<sp/>it<sp/>to<sp/>be<sp/>of<sp/>the<sp/>greatest</highlight></codeline>
+<codeline><highlight class="normal">possible<sp/>use<sp/>to<sp/>the<sp/>public,<sp/>the<sp/>best<sp/>way<sp/>to<sp/>achieve<sp/>this<sp/>is<sp/>to<sp/>make<sp/>it</highlight></codeline>
+<codeline><highlight class="normal">free<sp/>software<sp/>which<sp/>everyone<sp/>can<sp/>redistribute<sp/>and<sp/>change<sp/>under<sp/>these<sp/>terms.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>To<sp/>do<sp/>so,<sp/>attach<sp/>the<sp/>following<sp/>notices<sp/>to<sp/>the<sp/>program.<sp/><sp/>It<sp/>is<sp/>safest</highlight></codeline>
+<codeline><highlight class="normal">to<sp/>attach<sp/>them<sp/>to<sp/>the<sp/>start<sp/>of<sp/>each<sp/>source<sp/>file<sp/>to<sp/>most<sp/>effectively</highlight></codeline>
+<codeline><highlight class="normal">convey<sp/>the<sp/>exclusion<sp/>of<sp/>warranty;<sp/>and<sp/>each<sp/>file<sp/>should<sp/>have<sp/>at<sp/>least</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>&quot;copyright&quot;<sp/>line<sp/>and<sp/>a<sp/>pointer<sp/>to<sp/>where<sp/>the<sp/>full<sp/>notice<sp/>is<sp/>found.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;one<sp/>line<sp/>to<sp/>give<sp/>the<sp/>program&apos;s<sp/>name<sp/>and<sp/>a<sp/>brief<sp/>idea<sp/>of<sp/>what<sp/>it<sp/>does.&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Copyright<sp/>(C)<sp/>&lt;year&gt;<sp/><sp/>&lt;name<sp/>of<sp/>author&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place,<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307<sp/><sp/>USA</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Also<sp/>add<sp/>information<sp/>on<sp/>how<sp/>to<sp/>contact<sp/>you<sp/>by<sp/>electronic<sp/>and<sp/>paper<sp/>mail.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>the<sp/>program<sp/>is<sp/>interactive,<sp/>make<sp/>it<sp/>output<sp/>a<sp/>short<sp/>notice<sp/>like<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">when<sp/>it<sp/>starts<sp/>in<sp/>an<sp/>interactive<sp/>mode:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Gnomovision<sp/>version<sp/>69,<sp/>Copyright<sp/>(C)<sp/>year<sp/><sp/>name<sp/>of<sp/>author</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Gnomovision<sp/>comes<sp/>with<sp/>ABSOLUTELY<sp/>NO<sp/>WARRANTY;<sp/>for<sp/>details<sp/>type<sp/>`show<sp/>w&apos;.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>This<sp/>is<sp/>free<sp/>software,<sp/>and<sp/>you<sp/>are<sp/>welcome<sp/>to<sp/>redistribute<sp/>it</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>under<sp/>certain<sp/>conditions;<sp/>type<sp/>`show<sp/>c&apos;<sp/>for<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>hypothetical<sp/>commands<sp/>`show<sp/>w&apos;<sp/>and<sp/>`show<sp/>c&apos;<sp/>should<sp/>show<sp/>the<sp/>appropriate</highlight></codeline>
+<codeline><highlight class="normal">parts<sp/>of<sp/>the<sp/>General<sp/>Public<sp/>License.<sp/><sp/>Of<sp/>course,<sp/>the<sp/>commands<sp/>you<sp/>use<sp/>may</highlight></codeline>
+<codeline><highlight class="normal">be<sp/>called<sp/>something<sp/>other<sp/>than<sp/>`show<sp/>w&apos;<sp/>and<sp/>`show<sp/>c&apos;;<sp/>they<sp/>could<sp/>even<sp/>be</highlight></codeline>
+<codeline><highlight class="normal">mouse-clicks<sp/>or<sp/>menu<sp/>items--whatever<sp/>suits<sp/>your<sp/>program.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>should<sp/>also<sp/>get<sp/>your<sp/>employer<sp/>(if<sp/>you<sp/>work<sp/>as<sp/>a<sp/>programmer)<sp/>or<sp/>your</highlight></codeline>
+<codeline><highlight class="normal">school,<sp/>if<sp/>any,<sp/>to<sp/>sign<sp/>a<sp/>&quot;copyright<sp/>disclaimer&quot;<sp/>for<sp/>the<sp/>program,<sp/>if</highlight></codeline>
+<codeline><highlight class="normal">necessary.<sp/><sp/>Here<sp/>is<sp/>a<sp/>sample;<sp/>alter<sp/>the<sp/>names:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Yoyodyne,<sp/>Inc.,<sp/>hereby<sp/>disclaims<sp/>all<sp/>copyright<sp/>interest<sp/>in<sp/>the<sp/>program</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`Gnomovision&apos;<sp/>(which<sp/>makes<sp/>passes<sp/>at<sp/>compilers)<sp/>written<sp/>by<sp/>James<sp/>Hacker.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&lt;signature<sp/>of<sp/>Ty<sp/>Coon&gt;,<sp/>1<sp/>April<sp/>1989</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Ty<sp/>Coon,<sp/>President<sp/>of<sp/>Vice</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>General<sp/>Public<sp/>License<sp/>does<sp/>not<sp/>permit<sp/>incorporating<sp/>your<sp/>program<sp/>into</highlight></codeline>
+<codeline><highlight class="normal">proprietary<sp/>programs.<sp/><sp/>If<sp/>your<sp/>program<sp/>is<sp/>a<sp/>subroutine<sp/>library,<sp/>you<sp/>may</highlight></codeline>
+<codeline><highlight class="normal">consider<sp/>it<sp/>more<sp/>useful<sp/>to<sp/>permit<sp/>linking<sp/>proprietary<sp/>applications<sp/>with<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">library.<sp/><sp/>If<sp/>this<sp/>is<sp/>what<sp/>you<sp/>want<sp/>to<sp/>do,<sp/>use<sp/>the<sp/>GNU<sp/>Library<sp/>General</highlight></codeline>
+<codeline><highlight class="normal">Public<sp/>License<sp/>instead<sp/>of<sp/>this<sp/>License.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------------------------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">About<sp/>The<sp/>Cisco-Provided<sp/>Binary<sp/>of<sp/>OpenH264<sp/>Video<sp/>Codec</highlight></codeline>
+<codeline><highlight class="normal">-------------------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Cisco<sp/>provides<sp/>this<sp/>program<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>BSD<sp/>license.<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Additionally,<sp/>this<sp/>binary<sp/>is<sp/>licensed<sp/>under<sp/>Cisco’s<sp/>AVC/H.264<sp/>Patent<sp/>Portfolio</highlight></codeline>
+<codeline><highlight class="normal">License<sp/>from<sp/>MPEG<sp/>LA,<sp/>at<sp/>no<sp/>cost<sp/>to<sp/>you,<sp/>provided<sp/>that<sp/>the<sp/>requirements<sp/>and<sp/></highlight></codeline>
+<codeline><highlight class="normal">conditions<sp/>shown<sp/>below<sp/>in<sp/>the<sp/>AVC/H.264<sp/>Patent<sp/>Portfolio<sp/>sections<sp/>are<sp/>met.<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">As<sp/>with<sp/>all<sp/>AVC/H.264<sp/>codecs,<sp/>you<sp/>may<sp/>also<sp/>obtain<sp/>your<sp/>own<sp/>patent<sp/>license<sp/>from</highlight></codeline>
+<codeline><highlight class="normal">MPEG<sp/>LA<sp/>or<sp/>from<sp/>the<sp/>individual<sp/>patent<sp/>owners,<sp/>or<sp/>proceed<sp/>at<sp/>your<sp/>own<sp/>risk.</highlight></codeline>
+<codeline><highlight class="normal">Your<sp/>rights<sp/>from<sp/>Cisco<sp/>under<sp/>the<sp/>BSD<sp/>license<sp/>are<sp/>not<sp/>affected<sp/>by<sp/>this<sp/>choice.<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">For<sp/>more<sp/>information<sp/>on<sp/>the<sp/>OpenH264<sp/>binary<sp/>licensing,<sp/>please<sp/>see<sp/>the<sp/>OpenH264</highlight></codeline>
+<codeline><highlight class="normal">FAQ<sp/>found<sp/>at<sp/>http://www.openh264.org/faq.html#binary<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>corresponding<sp/>source<sp/>code<sp/>to<sp/>this<sp/>binary<sp/>program<sp/>is<sp/>available<sp/>under<sp/>the<sp/>same</highlight></codeline>
+<codeline><highlight class="normal">BSD<sp/>terms,<sp/>which<sp/>can<sp/>be<sp/>found<sp/>at<sp/>http://www.openh264.org</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-----------</highlight></codeline>
+<codeline><highlight class="normal">BSD<sp/>License</highlight></codeline>
+<codeline><highlight class="normal">-----------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Copyright<sp/>©<sp/>2014<sp/>Cisco<sp/>Systems,<sp/>Inc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Redistribution<sp/>and<sp/>use<sp/>in<sp/>source<sp/>and<sp/>binary<sp/>forms,<sp/>with<sp/>or<sp/>without</highlight></codeline>
+<codeline><highlight class="normal">modification,<sp/>are<sp/>permitted<sp/>provided<sp/>that<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Redistributions<sp/>of<sp/>source<sp/>code<sp/>must<sp/>retain<sp/>the<sp/>above<sp/>copyright<sp/>notice,<sp/>this</highlight></codeline>
+<codeline><highlight class="normal">list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>Redistributions<sp/>in<sp/>binary<sp/>form<sp/>must<sp/>reproduce<sp/>the<sp/>above<sp/>copyright<sp/>notice,</highlight></codeline>
+<codeline><highlight class="normal">this<sp/>list<sp/>of<sp/>conditions<sp/>and<sp/>the<sp/>following<sp/>disclaimer<sp/>in<sp/>the<sp/>documentation</highlight></codeline>
+<codeline><highlight class="normal">and/or<sp/>other<sp/>materials<sp/>provided<sp/>with<sp/>the<sp/>distribution.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">THIS<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>BY<sp/>THE<sp/>COPYRIGHT<sp/>HOLDERS<sp/>AND<sp/>CONTRIBUTORS<sp/>“AS<sp/>IS”</highlight></codeline>
+<codeline><highlight class="normal">AND<sp/>ANY<sp/>EXPRESS<sp/>OR<sp/>IMPLIED<sp/>WARRANTIES,<sp/>INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">IMPLIED<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY<sp/>AND<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>ARE</highlight></codeline>
+<codeline><highlight class="normal">DISCLAIMED.<sp/><sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>COPYRIGHT<sp/>HOLDER<sp/>OR<sp/>CONTRIBUTORS<sp/>BE<sp/>LIABLE</highlight></codeline>
+<codeline><highlight class="normal">FOR<sp/>ANY<sp/>DIRECT,<sp/>INDIRECT,<sp/>INCIDENTAL,<sp/>SPECIAL,<sp/>EXEMPLARY,<sp/>OR<sp/>CONSEQUENTIAL</highlight></codeline>
+<codeline><highlight class="normal">DAMAGES<sp/>(INCLUDING,<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO,<sp/>PROCUREMENT<sp/>OF<sp/>SUBSTITUTE<sp/>GOODS<sp/>OR</highlight></codeline>
+<codeline><highlight class="normal">SERVICES;<sp/>LOSS<sp/>OF<sp/>USE,<sp/>DATA,<sp/>OR<sp/>PROFITS;<sp/>OR<sp/>BUSINESS<sp/>INTERRUPTION)<sp/>HOWEVER</highlight></codeline>
+<codeline><highlight class="normal">CAUSED<sp/>AND<sp/>ON<sp/>ANY<sp/>THEORY<sp/>OF<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>CONTRACT,<sp/>STRICT<sp/>LIABILITY,</highlight></codeline>
+<codeline><highlight class="normal">OR<sp/>TORT<sp/>(INCLUDING<sp/>NEGLIGENCE<sp/>OR<sp/>OTHERWISE)<sp/>ARISING<sp/>IN<sp/>ANY<sp/>WAY<sp/>OUT<sp/>OF<sp/>THE<sp/>USE</highlight></codeline>
+<codeline><highlight class="normal">OF<sp/>THIS<sp/>SOFTWARE,<sp/>EVEN<sp/>IF<sp/>ADVISED<sp/>OF<sp/>THE<sp/>POSSIBILITY<sp/>OF<sp/>SUCH<sp/>DAMAGE.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-----------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">AVC/H.264<sp/>Patent<sp/>Portfolio<sp/>License<sp/>Notice</highlight></codeline>
+<codeline><highlight class="normal">-----------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>binary<sp/>form<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>distributed<sp/>by<sp/>Cisco<sp/>under<sp/>the<sp/>AVC/H.264</highlight></codeline>
+<codeline><highlight class="normal">Patent<sp/>Portfolio<sp/>License<sp/>from<sp/>MPEG<sp/>LA,<sp/>and<sp/>is<sp/>subject<sp/>to<sp/>the<sp/>following</highlight></codeline>
+<codeline><highlight class="normal">requirements,<sp/>which<sp/>may<sp/>or<sp/>may<sp/>not<sp/>be<sp/>applicable<sp/>to<sp/>your<sp/>use<sp/>of<sp/>this<sp/>software:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">THIS<sp/>PRODUCT<sp/>IS<sp/>LICENSED<sp/>UNDER<sp/>THE<sp/>AVC<sp/>PATENT<sp/>PORTFOLIO<sp/>LICENSE<sp/>FOR<sp/>THE</highlight></codeline>
+<codeline><highlight class="normal">PERSONAL<sp/>USE<sp/>OF<sp/>A<sp/>CONSUMER<sp/>OR<sp/>OTHER<sp/>USES<sp/>IN<sp/>WHICH<sp/>IT<sp/>DOES<sp/>NOT<sp/>RECEIVE</highlight></codeline>
+<codeline><highlight class="normal">REMUNERATION<sp/>TO<sp/>(i)<sp/>ENCODE<sp/>VIDEO<sp/>IN<sp/>COMPLIANCE<sp/>WITH<sp/>THE<sp/>AVC<sp/>STANDARD</highlight></codeline>
+<codeline><highlight class="normal">(“AVC<sp/>VIDEO”)<sp/>AND/OR<sp/>(ii)<sp/>DECODE<sp/>AVC<sp/>VIDEO<sp/>THAT<sp/>WAS<sp/>ENCODED<sp/>BY<sp/>A<sp/>CONSUMER</highlight></codeline>
+<codeline><highlight class="normal">ENGAGED<sp/>IN<sp/>A<sp/>PERSONAL<sp/>ACTIVITY<sp/>AND/OR<sp/>WAS<sp/>OBTAINED<sp/>FROM<sp/>A<sp/>VIDEO<sp/>PROVIDER</highlight></codeline>
+<codeline><highlight class="normal">LICENSED<sp/>TO<sp/>PROVIDE<sp/>AVC<sp/>VIDEO.<sp/><sp/>NO<sp/>LICENSE<sp/>IS<sp/>GRANTED<sp/>OR<sp/>SHALL<sp/>BE<sp/>IMPLIED<sp/>FOR</highlight></codeline>
+<codeline><highlight class="normal">ANY<sp/>OTHER<sp/>USE.<sp/><sp/>ADDITIONAL<sp/>INFORMATION<sp/>MAY<sp/>BE<sp/>OBTAINED<sp/>FROM<sp/>MPEG<sp/>LA,<sp/>L.L.C.<sp/>SEE</highlight></codeline>
+<codeline><highlight class="normal">HTTP://WWW.MPEGLA.COM</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Accordingly,<sp/>please<sp/>be<sp/>advised<sp/>that<sp/>content<sp/>providers<sp/>and<sp/>broadcasters<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">AVC/H.264<sp/>in<sp/>their<sp/>service<sp/>may<sp/>be<sp/>required<sp/>to<sp/>obtain<sp/>a<sp/>separate<sp/>use<sp/>license</highlight></codeline>
+<codeline><highlight class="normal">from<sp/>MPEG<sp/>LA,<sp/>referred<sp/>to<sp/>as<sp/>&quot;(b)<sp/>sublicenses&quot;<sp/>in<sp/>the<sp/>SUMMARY<sp/>OF<sp/>AVC/H.264</highlight></codeline>
+<codeline><highlight class="normal">LICENSE<sp/>TERMS<sp/>from<sp/>MPEG<sp/>LA<sp/>found<sp/>at<sp/>http://www.openh264.org/mpegla</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">AVC/H.264<sp/>Patent<sp/>Portfolio<sp/>License<sp/>Conditions</highlight></codeline>
+<codeline><highlight class="normal">---------------------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">In<sp/>addition,<sp/>the<sp/>Cisco-provided<sp/>binary<sp/>of<sp/>this<sp/>Software<sp/>is<sp/>licensed<sp/>under</highlight></codeline>
+<codeline><highlight class="normal">Cisco&apos;s<sp/>license<sp/>from<sp/>MPEG<sp/>LA<sp/>only<sp/>if<sp/>the<sp/>following<sp/>conditions<sp/>are<sp/>met:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>The<sp/>Cisco-provided<sp/>binary<sp/>is<sp/>separately<sp/>downloaded<sp/>to<sp/>an<sp/>end<sp/>user’s<sp/>device,</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>not<sp/>integrated<sp/>into<sp/>or<sp/>combined<sp/>with<sp/>third<sp/>party<sp/>software<sp/>prior<sp/>to<sp/>being</highlight></codeline>
+<codeline><highlight class="normal">downloaded<sp/>to<sp/>the<sp/>end<sp/>user’s<sp/>device;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>The<sp/>end<sp/>user<sp/>must<sp/>have<sp/>the<sp/>ability<sp/>to<sp/>control<sp/>(e.g.,<sp/>to<sp/>enable,<sp/>disable,<sp/>or</highlight></codeline>
+<codeline><highlight class="normal">re-enable)<sp/>the<sp/>use<sp/>of<sp/>the<sp/>Cisco-provided<sp/>binary;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">3.<sp/>Third<sp/>party<sp/>software,<sp/>in<sp/>the<sp/>location<sp/>where<sp/>end<sp/>users<sp/>can<sp/>control<sp/>the<sp/>use<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>Cisco-provided<sp/>binary,<sp/>must<sp/>display<sp/>the<sp/>following<sp/>text:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;OpenH264<sp/>Video<sp/>Codec<sp/>provided<sp/>by<sp/>Cisco<sp/>Systems,<sp/>Inc.&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">4.<sp/><sp/>Any<sp/>third-party<sp/>software<sp/>that<sp/>makes<sp/>use<sp/>of<sp/>the<sp/>Cisco-provided<sp/>binary<sp/>must</highlight></codeline>
+<codeline><highlight class="normal">reproduce<sp/>all<sp/>of<sp/>the<sp/>above<sp/>text,<sp/>as<sp/>well<sp/>as<sp/>this<sp/>last<sp/>condition,<sp/>in<sp/>the<sp/>EULA</highlight></codeline>
+<codeline><highlight class="normal">and/or<sp/>in<sp/>another<sp/>location<sp/>where<sp/>licensing<sp/>information<sp/>is<sp/>to<sp/>be<sp/>presented<sp/>to</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>end<sp/>user.<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1.0</highlight></codeline>
+<codeline></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

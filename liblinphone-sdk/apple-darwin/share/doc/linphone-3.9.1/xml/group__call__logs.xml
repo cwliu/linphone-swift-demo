@@ -1,0 +1,966 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__call__logs" kind="group">
+    <compoundname>call_logs</compoundname>
+    <title>Managing call logs</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__call__logs_1gaa3077de7d4214529094998ce441f61e1" prot="public" static="no">
+        <name>_LinphoneCallDir</name>
+        <enumvalue id="group__call__logs_1ggaa3077de7d4214529094998ce441f61e1a4856091c25d200b11669efdbc6abb4ed" prot="public">
+          <name>LinphoneCallOutgoing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>outgoing calls </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__call__logs_1ggaa3077de7d4214529094998ce441f61e1aa4030176bbddea10e361ce320946e202" prot="public">
+          <name>LinphoneCallIncoming</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>incoming calls </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum representing the direction of a call. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="37" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__call__logs_1ga0896daf3cb167a43e357c3955ab33f3f" prot="public" static="no">
+        <name>_LinphoneCallStatus</name>
+        <enumvalue id="group__call__logs_1gga0896daf3cb167a43e357c3955ab33f3fa998fe35d090ed76fb89b23b3a8dfb0ff" prot="public">
+          <name>LinphoneCallSuccess</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The call was sucessful </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__call__logs_1gga0896daf3cb167a43e357c3955ab33f3faeff436dddb49d4bf17d2e05a94b5bd59" prot="public">
+          <name>LinphoneCallAborted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The call was aborted </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__call__logs_1gga0896daf3cb167a43e357c3955ab33f3fad26e9035dad755590a5a724c7ba69656" prot="public">
+          <name>LinphoneCallMissed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The call was missed (unanswered) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__call__logs_1gga0896daf3cb167a43e357c3955ab33f3fad6711031d964a7d56f10c07ac239a102" prot="public">
+          <name>LinphoneCallDeclined</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The call was declined, either locally or by remote end </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum representing the status of a call </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="50" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__call__logs_1ga779ac636d8b652c5130da18827c13e5a" prot="public" static="no">
+        <type>enum <ref refid="group__call__logs_1gaa3077de7d4214529094998ce441f61e1" kindref="member">_LinphoneCallDir</ref></type>
+        <definition>typedef enum _LinphoneCallDir LinphoneCallDir</definition>
+        <argsstring></argsstring>
+        <name>LinphoneCallDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Typedef for enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="718" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__call__logs_1gafd125fb704d3254856f4a826a6e60a11" prot="public" static="no">
+        <type>enum <ref refid="group__call__logs_1ga0896daf3cb167a43e357c3955ab33f3f" kindref="member">_LinphoneCallStatus</ref></type>
+        <definition>typedef enum _LinphoneCallStatus  LinphoneCallStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneCallStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum representing the status of a call </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__call__logs_1gab700f6646681d1f4614a049892bc764a" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneCallLog" kindref="compound">_LinphoneCallLog</ref></type>
+        <definition>typedef struct _LinphoneCallLog LinphoneCallLog</definition>
+        <argsstring></argsstring>
+        <name>LinphoneCallLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Structure representing a call log. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="718" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__call__logs_1gae2a190bb030970e723f0c8d8505b83a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_call_log_get_call_id</definition>
+        <argsstring>(const LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_call_id</name>
+        <param>
+          <type>const <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the call ID used by the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The call ID used by the call as a string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="72" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga847aa4ed07183ce7fdd69814683de953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__logs_1ga779ac636d8b652c5130da18827c13e5a" kindref="member">LinphoneCallDir</ref></type>
+        <definition>LinphoneCallDir linphone_call_log_get_dir</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_dir</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the direction of the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The direction of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="79" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gad44b7d604092e48ab3b329d651176a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_call_log_get_duration</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_duration</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the duration of the call since connected. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The duration of the call in seconds. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="86" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gaaafe867bd6bc91436b0064be70813151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_call_log_get_from_address</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_from_address</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the origin address (ie from) of the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The origin address (ie from) of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="93" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gafc32d586c890fb39c5486586366376e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const rtp_stats_t *</type>
+        <definition>const rtp_stats_t* linphone_call_log_get_local_stats</definition>
+        <argsstring>(const LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_local_stats</name>
+        <param>
+          <type>const <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the RTP statistics computed locally regarding the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The RTP statistics that have been computed locally for the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="100" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga9ddfd1fbcf4d04ec845ea60fd3bec40c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_log_get_quality</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_quality</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the overall quality indication of the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The overall quality indication of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="107" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga5f7543296ee65b188d1fbf8b534ebff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_call_log_get_ref_key</definition>
+        <argsstring>(const LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_ref_key</name>
+        <param>
+          <type>const <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the persistent reference key associated to the call log.</para><para>The reference key can be for example an id to an external database. It is stored in the config file, thus can survive to process exits/restarts.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reference key string that has been associated to the call log, or NULL if none has been associated. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="118" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga6c4eaeeb10d59d7a63fcc6e6be42a5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_call_log_get_remote_address</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_remote_address</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the remote address (that is from or to depending on call direction). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The remote address of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="125" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="188" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gaebb6a63bab5d3271107227acae94d531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const rtp_stats_t *</type>
+        <definition>const rtp_stats_t* linphone_call_log_get_remote_stats</definition>
+        <argsstring>(const LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_remote_stats</name>
+        <param>
+          <type>const <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the RTP statistics computed by the remote end and sent back via RTCP. <simplesect kind="note"><para>Not implemented yet. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The RTP statistics that have been computed by the remote end for the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="133" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gadc9c4a4551352805dcf2b187541db22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>time_t</type>
+        <definition>time_t linphone_call_log_get_start_date</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_start_date</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the start date of the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The date of the beginning of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="140" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga09169074d242befc7b1739c6a975aad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__logs_1gafd125fb704d3254856f4a826a6e60a11" kindref="member">LinphoneCallStatus</ref></type>
+        <definition>LinphoneCallStatus linphone_call_log_get_status</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_status</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the status of the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="147" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga0105f29d6ade6835acd1cf6ae570ca91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_call_log_get_to_address</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_to_address</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the destination address (ie to) of the call. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The destination address (ie to) of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="154" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="204" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gac12aee1a611bcb6a899582a8d4705be1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_log_set_ref_key</definition>
+        <argsstring>(LinphoneCallLog *cl, const char *refkey)</argsstring>
+        <name>linphone_call_log_set_ref_key</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>refkey</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Associate a persistent reference key to the call log.</para><para>The reference key can be for example an id to an external database. It is stored in the config file, thus can survive to process exits/restarts.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">refkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference key string to associate to the call log. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="165" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="208" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga5787f07ce7705433f11f571809ba8066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_call_log_video_enabled</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_video_enabled</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tell whether video was enabled at the end of the call or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether video was enabled at the end of the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="172" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="247" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga0710ace4194a6a8923014922c5f93b3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* linphone_call_log_to_str</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_to_str</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get a human readable string describing the call. <simplesect kind="note"><para>: the returned string must be freed by the application (use ms_free()). </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A human readable string describing the call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="180" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="216" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gae5d1980d1e48b5f3e8fc156424fb2dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_call_log_was_conference</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_was_conference</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tells whether that call was a call to a conference server <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if the call was a call to a conference server </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="187" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="251" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga7739aef07704316d9d92d50262ddd767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_call_log_get_user_data</definition>
+        <argsstring>(const LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the user data associated with the call log. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user data associated with the call log. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="199" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="260" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gadb77bcb2b2beb031bcbf6f0bcc62652a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_log_set_user_data</definition>
+        <argsstring>(LinphoneCallLog *cl, void *ud)</argsstring>
+        <name>linphone_call_log_set_user_data</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a user data to the call log. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user data to associate with the call log. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="206" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga2f3af8bb19866a4bbeebefa17bf2b806" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+        <definition>LinphoneCallLog* linphone_call_log_ref</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_ref</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to the call log. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneCallLog object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="213" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga802bbd28cc29824d80a70ad33e5b8ea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_log_unref</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_unref</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release a reference to the call log. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="219" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="273" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga786a33811a183f5891e997495914fb3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_log_destroy</definition>
+        <argsstring>(LinphoneCallLog *cl)</argsstring>
+        <name>linphone_call_log_destroy</name>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>cl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy a LinphoneCallLog. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cl</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallLog object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000007"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__call__logs_1ga802bbd28cc29824d80a70ad33e5b8ea6" kindref="member">linphone_call_log_unref()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="243" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="310" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gac40929365adb3c774c4f00b7ba449af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const MSList *</type>
+        <definition>const MSList* linphone_core_get_call_logs</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_call_logs</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list of call logs (past calls). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> objects. <mslist>LinphoneCallLog</mslist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3324" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5144" bodyend="5151"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gac9f96ef8721da7b73157d29d34712f1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MSList *</type>
+        <definition>MSList* linphone_core_get_call_history_for_address</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneAddress *addr)</argsstring>
+        <name>linphone_core_get_call_history_for_address</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the list of call logs (past calls) that matches the given <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>. At the contrary of linphone_core_get_call_logs, it is your responsability to unref the logs and free this list once you are done using it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of <ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> objects. <mslist>LinphoneCallLog</mslist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3332" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="710" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga60dfe039e374675b32f78859909d0a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+        <definition>LinphoneCallLog* linphone_core_get_last_outgoing_call_log</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_last_outgoing_call_log</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the latest outgoing call log. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>{LinphoneCallLog} </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3339" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="714" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga3ca6061857fa87f606e26d9b4f57c81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+        <definition>LinphoneCallLog* linphone_core_find_call_log_from_call_id</definition>
+        <argsstring>(LinphoneCore *lc, const char *call_id)</argsstring>
+        <name>linphone_core_find_call_log_from_call_id</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>call_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the call log matching the call id, or NULL if can&apos;t be found. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">call_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Call id of the call log to find </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>{LinphoneCallLog} </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3347" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.c" bodystart="718" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga76fb517665122b63136ccc673d431b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_clear_call_logs</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_clear_call_logs</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Erase the call log. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3353" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5153" bodyend="5167"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gae0b13195a295a5d3e0a53fe11cfec644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_get_missed_calls_count</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_missed_calls_count</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the number of missed calls. Once checked, this counter can be reset with <ref refid="group__call__logs_1ga8b01457c0ba5b24ae92bd167a79313fd" kindref="member">linphone_core_reset_missed_calls_count()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of missed calls. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3361" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5169" bodyend="5171"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1ga8b01457c0ba5b24ae92bd167a79313fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_reset_missed_calls_count</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_reset_missed_calls_count</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reset the counter of missed calls. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3367" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5173" bodyend="5175"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__logs_1gadce35b7ded361556ea4e9831f594680a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_remove_call_log</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCallLog *call_log)</argsstring>
+        <name>linphone_core_remove_call_log</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> *</type>
+          <declname>call_log</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a specific call log from call history list. This function destroys the call log object. It must not be accessed anymore by the application after calling this function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">call_log</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__call__logs_1gab700f6646681d1f4614a049892bc764a" kindref="member">LinphoneCallLog</ref> object to remove. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.h" line="3375" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="5177" bodyend="5190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__call__logs_1gab84bce839e6c7301d2af4350d32ec976" prot="public" static="no">
+        <name>linphone_call_log_get_from</name>
+        <param><defname>cl</defname></param>
+        <initializer><ref refid="group__call__logs_1gaaafe867bd6bc91436b0064be70813151" kindref="member">linphone_call_log_get_from_address</ref>(cl)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000003"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__call__logs_1gaaafe867bd6bc91436b0064be70813151" kindref="member">linphone_call_log_get_from_address()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="227" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__logs_1gae26bf43ec4e4961f3a3be5e55cb80086" prot="public" static="no">
+        <name>linphone_call_log_get_to</name>
+        <param><defname>cl</defname></param>
+        <initializer><ref refid="group__call__logs_1ga0105f29d6ade6835acd1cf6ae570ca91" kindref="member">linphone_call_log_get_to_address</ref>(cl)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__call__logs_1ga0105f29d6ade6835acd1cf6ae570ca91" kindref="member">linphone_call_log_get_to_address()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="230" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__logs_1ga8d3b12ad3b8f4d4783e40a78c23dd9a0" prot="public" static="no">
+        <name>linphone_call_log_set_user_pointer</name>
+        <param><defname>cl</defname></param>
+        <param><defname>ud</defname></param>
+        <initializer><ref refid="group__call__logs_1gadb77bcb2b2beb031bcbf6f0bcc62652a" kindref="member">linphone_call_log_set_user_data</ref>(cl, ud)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__call__logs_1gadb77bcb2b2beb031bcbf6f0bcc62652a" kindref="member">linphone_call_log_set_user_data()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="233" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__logs_1ga5a92ec7e1a015fb0d6f80abf736b5c4e" prot="public" static="no">
+        <name>linphone_call_log_get_user_pointer</name>
+        <param><defname>cl</defname></param>
+        <initializer><ref refid="group__call__logs_1ga7739aef07704316d9d92d50262ddd767" kindref="member">linphone_call_log_get_user_data</ref>(cl)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__call__logs_1ga7739aef07704316d9d92d50262ddd767" kindref="member">linphone_call_log_get_user_data()</ref> instead. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" line="236" column="9" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/call_log.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

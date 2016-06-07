@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LpConfig" kind="struct" language="C++" prot="public">
+    <compoundname>_LpConfig</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LpConfig_1a852004e258bb3eb9982becfee1e3f950" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LpConfig::refcnt</definition>
+        <argsstring></argsstring>
+        <name>refcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="81" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpConfig_1adc285722a73c2ce39f95d86193224e6e" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* _LpConfig::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="82" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpConfig_1a24fcf946eedc4bcf70f38935dab0f2b1" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LpConfig::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="83" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpConfig_1a455a317798283f72d2f79e5cfdc3a746" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LpConfig::tmpfilename</definition>
+        <argsstring></argsstring>
+        <name>tmpfilename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="84" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpConfig_1a8bf278895fd5a6dbec2edf1c586d500a" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _LpConfig::sections</definition>
+        <argsstring></argsstring>
+        <name>sections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpConfig_1a6692fcc3a455848930c6280bcbc9c72f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LpConfig::modified</definition>
+        <argsstring></argsstring>
+        <name>modified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="86" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LpConfig_1a16de8ed6cca55a148700342c5ad4f9b7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LpConfig::readonly</definition>
+        <argsstring></argsstring>
+        <name>readonly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="87" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lpconfig.c" bodystart="80" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct__LpConfig_1adc285722a73c2ce39f95d86193224e6e" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>file</name></member>
+      <member refid="struct__LpConfig_1a24fcf946eedc4bcf70f38935dab0f2b1" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>filename</name></member>
+      <member refid="struct__LpConfig_1a6692fcc3a455848930c6280bcbc9c72f" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>modified</name></member>
+      <member refid="struct__LpConfig_1a16de8ed6cca55a148700342c5ad4f9b7" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>readonly</name></member>
+      <member refid="struct__LpConfig_1a852004e258bb3eb9982becfee1e3f950" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>refcnt</name></member>
+      <member refid="struct__LpConfig_1a8bf278895fd5a6dbec2edf1c586d500a" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>sections</name></member>
+      <member refid="struct__LpConfig_1a455a317798283f72d2f79e5cfdc3a746" prot="public" virt="non-virtual"><scope>_LpConfig</scope><name>tmpfilename</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

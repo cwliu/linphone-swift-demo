@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structlinphone__upnp__config__list__port__bindings__struct" kind="struct" language="C++" prot="public">
+    <compoundname>linphone_upnp_config_list_port_bindings_struct</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlinphone__upnp__config__list__port__bindings__struct_1a0a8ae62bc13b1e077187dfd62f103957" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__LpConfig" kindref="compound">_LpConfig</ref> *</type>
+        <definition>struct _LpConfig* linphone_upnp_config_list_port_bindings_struct::lpc</definition>
+        <argsstring></argsstring>
+        <name>lpc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="1295" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlinphone__upnp__config__list__port__bindings__struct_1a54fa5b75dfe51c61dd5224d20534e8e5" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* linphone_upnp_config_list_port_bindings_struct::retList</definition>
+        <argsstring></argsstring>
+        <name>retList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="1296" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlinphone__upnp__config__list__port__bindings__struct_1afc65ddc226f12cdf852fdebb6d457810" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* linphone_upnp_config_list_port_bindings_struct::device_id</definition>
+        <argsstring></argsstring>
+        <name>device_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="1297" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1255">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+      <node id="1254">
+        <label>linphone_upnp_config_list_port_bindings_struct</label>
+        <link refid="structlinphone__upnp__config__list__port__bindings__struct"/>
+        <childnode refid="1255" relation="usage">
+          <edgelabel>lpc</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" line="1294" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1294" bodyend="1298"/>
+    <listofallmembers>
+      <member refid="structlinphone__upnp__config__list__port__bindings__struct_1afc65ddc226f12cdf852fdebb6d457810" prot="public" virt="non-virtual"><scope>linphone_upnp_config_list_port_bindings_struct</scope><name>device_id</name></member>
+      <member refid="structlinphone__upnp__config__list__port__bindings__struct_1a0a8ae62bc13b1e077187dfd62f103957" prot="public" virt="non-virtual"><scope>linphone_upnp_config_list_port_bindings_struct</scope><name>lpc</name></member>
+      <member refid="structlinphone__upnp__config__list__port__bindings__struct_1a54fa5b75dfe51c61dd5224d20534e8e5" prot="public" virt="non-virtual"><scope>linphone_upnp_config_list_port_bindings_struct</scope><name>retList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

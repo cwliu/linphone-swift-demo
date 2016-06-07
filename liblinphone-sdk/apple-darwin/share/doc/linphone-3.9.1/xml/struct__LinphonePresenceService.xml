@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphonePresenceService" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphonePresenceService</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1aadc18f4b2f79ab05158b1c84879513ac" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphonePresenceService::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1a9e2465d97e5642180934b2c54121c59e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphonePresenceService::refcnt</definition>
+        <argsstring></argsstring>
+        <name>refcnt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1a961381005739ce912939734bd158ba7b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphonePresenceService::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1aed793c3b09b56c5fc95520e3e75728ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group__buddy__list_1ga1bce4ac7547b3459c2815a5a38fab833" kindref="member">LinphonePresenceBasicStatus</ref></type>
+        <definition>LinphonePresenceBasicStatus _LinphonePresenceService::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1a25c62cabdecbd6c014bb351691ed636f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _LinphonePresenceService::contact</definition>
+        <argsstring></argsstring>
+        <name>contact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1a680b614c3410edac8c46b2933c80caab" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _LinphonePresenceService::notes</definition>
+        <argsstring></argsstring>
+        <name>notes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A list of <ref refid="struct__LinphonePresenceNote" kindref="compound">_LinphonePresenceNote</ref> structures. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphonePresenceService_1ac00bbee7de84a7f93f79cce8b5fc416e" prot="public" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t _LinphonePresenceService::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" line="38" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/presence.c" bodystart="38" bodyend="46"/>
+    <listofallmembers>
+      <member refid="struct__LinphonePresenceService_1a25c62cabdecbd6c014bb351691ed636f" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>contact</name></member>
+      <member refid="struct__LinphonePresenceService_1a961381005739ce912939734bd158ba7b" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>id</name></member>
+      <member refid="struct__LinphonePresenceService_1a680b614c3410edac8c46b2933c80caab" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>notes</name></member>
+      <member refid="struct__LinphonePresenceService_1a9e2465d97e5642180934b2c54121c59e" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>refcnt</name></member>
+      <member refid="struct__LinphonePresenceService_1aed793c3b09b56c5fc95520e3e75728ad" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>status</name></member>
+      <member refid="struct__LinphonePresenceService_1ac00bbee7de84a7f93f79cce8b5fc416e" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>timestamp</name></member>
+      <member refid="struct__LinphonePresenceService_1aadc18f4b2f79ab05158b1c84879513ac" prot="public" virt="non-virtual"><scope>_LinphonePresenceService</scope><name>user_data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

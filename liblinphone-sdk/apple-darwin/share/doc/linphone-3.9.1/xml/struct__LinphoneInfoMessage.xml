@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneInfoMessage" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneInfoMessage</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneInfoMessage_1a2cbaf026ddce0668b752b68992098cbf" prot="public" static="no" mutable="no">
+        <type><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+        <definition>LinphoneContent* _LinphoneInfoMessage::content</definition>
+        <argsstring></argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/info.c" line="32" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/info.c" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneInfoMessage_1a765c948a5a9ecd9dc4ea473586e988eb" prot="public" static="no" mutable="no">
+        <type>SalCustomHeader *</type>
+        <definition>SalCustomHeader* _LinphoneInfoMessage::headers</definition>
+        <argsstring></argsstring>
+        <name>headers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/info.c" line="33" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/info.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="831">
+        <label>_LinphoneInfoMessage</label>
+        <link refid="struct__LinphoneInfoMessage"/>
+        <childnode refid="832" relation="usage">
+          <edgelabel>content</edgelabel>
+        </childnode>
+      </node>
+      <node id="832">
+        <label>_LinphoneContent</label>
+        <link refid="struct__LinphoneContent"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/info.c" line="31" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/info.c" bodystart="31" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneInfoMessage_1a2cbaf026ddce0668b752b68992098cbf" prot="public" virt="non-virtual"><scope>_LinphoneInfoMessage</scope><name>content</name></member>
+      <member refid="struct__LinphoneInfoMessage_1a765c948a5a9ecd9dc4ea473586e988eb" prot="public" virt="non-virtual"><scope>_LinphoneInfoMessage</scope><name>headers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

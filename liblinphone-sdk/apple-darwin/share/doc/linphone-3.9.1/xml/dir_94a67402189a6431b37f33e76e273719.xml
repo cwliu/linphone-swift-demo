@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="dir_94a67402189a6431b37f33e76e273719" kind="dir">
+    <compoundname>coreapi</compoundname>
+    <innerdir refid="dir_dc76f65f75789037a1714a048dc1d12b">help</innerdir>
+    <innerfile refid="account__creator_8c">account_creator.c</innerfile>
+    <innerfile refid="account__creator_8h">account_creator.h</innerfile>
+    <innerfile refid="address_8c">address.c</innerfile>
+    <innerfile refid="authentication_8c">authentication.c</innerfile>
+    <innerfile refid="buffer_8c">buffer.c</innerfile>
+    <innerfile refid="buffer_8h">buffer.h</innerfile>
+    <innerfile refid="call__log_8c">call_log.c</innerfile>
+    <innerfile refid="call__log_8h">call_log.h</innerfile>
+    <innerfile refid="call__params_8c">call_params.c</innerfile>
+    <innerfile refid="call__params_8h">call_params.h</innerfile>
+    <innerfile refid="callbacks_8c">callbacks.c</innerfile>
+    <innerfile refid="chat_8c">chat.c</innerfile>
+    <innerfile refid="chat__file__transfer_8c">chat_file_transfer.c</innerfile>
+    <innerfile refid="conference_8h">conference.h</innerfile>
+    <innerfile refid="conference__private_8h">conference_private.h</innerfile>
+    <innerfile refid="contact__providers__priv_8h">contact_providers_priv.h</innerfile>
+    <innerfile refid="contactprovider_8c">contactprovider.c</innerfile>
+    <innerfile refid="contactprovider_8h">contactprovider.h</innerfile>
+    <innerfile refid="content_8c">content.c</innerfile>
+    <innerfile refid="content_8h">content.h</innerfile>
+    <innerfile refid="dict_8c">dict.c</innerfile>
+    <innerfile refid="ec-calibrator_8c">ec-calibrator.c</innerfile>
+    <innerfile refid="enum_8c">enum.c</innerfile>
+    <innerfile refid="enum_8h">enum.h</innerfile>
+    <innerfile refid="event_8c">event.c</innerfile>
+    <innerfile refid="event_8h">event.h</innerfile>
+    <innerfile refid="fonis_8c">fonis.c</innerfile>
+    <innerfile refid="friend_8c">friend.c</innerfile>
+    <innerfile refid="friendlist_8c">friendlist.c</innerfile>
+    <innerfile refid="friendlist_8h">friendlist.h</innerfile>
+    <innerfile refid="info_8c">info.c</innerfile>
+    <innerfile refid="lime_8c">lime.c</innerfile>
+    <innerfile refid="lime_8h">lime.h</innerfile>
+    <innerfile refid="linphone__proxy__config_8h">linphone_proxy_config.h</innerfile>
+    <innerfile refid="linphone__tunnel_8h">linphone_tunnel.h</innerfile>
+    <innerfile refid="linphone__tunnel__config_8c">linphone_tunnel_config.c</innerfile>
+    <innerfile refid="linphone__tunnel__stubs_8c">linphone_tunnel_stubs.c</innerfile>
+    <innerfile refid="linphonecall_8c">linphonecall.c</innerfile>
+    <innerfile refid="linphonecore_8c">linphonecore.c</innerfile>
+    <innerfile refid="linphonecore_8h">linphonecore.h</innerfile>
+    <innerfile refid="linphonecore__utils_8h">linphonecore_utils.h</innerfile>
+    <innerfile refid="linphonefriend_8h">linphonefriend.h</innerfile>
+    <innerfile refid="linphonepresence_8h">linphonepresence.h</innerfile>
+    <innerfile refid="localplayer_8c">localplayer.c</innerfile>
+    <innerfile refid="lpc2xml_8c">lpc2xml.c</innerfile>
+    <innerfile refid="lpc2xml_8h">lpc2xml.h</innerfile>
+    <innerfile refid="lpconfig_8c">lpconfig.c</innerfile>
+    <innerfile refid="lpconfig_8h">lpconfig.h</innerfile>
+    <innerfile refid="lsd_8c">lsd.c</innerfile>
+    <innerfile refid="message__storage_8c">message_storage.c</innerfile>
+    <innerfile refid="misc_8c">misc.c</innerfile>
+    <innerfile refid="offeranswer_8c">offeranswer.c</innerfile>
+    <innerfile refid="offeranswer_8h">offeranswer.h</innerfile>
+    <innerfile refid="player_8c">player.c</innerfile>
+    <innerfile refid="presence_8c">presence.c</innerfile>
+    <innerfile refid="private_8h">private.h</innerfile>
+    <innerfile refid="proxy_8c">proxy.c</innerfile>
+    <innerfile refid="quality__reporting_8c">quality_reporting.c</innerfile>
+    <innerfile refid="quality__reporting_8h">quality_reporting.h</innerfile>
+    <innerfile refid="remote__provisioning_8c">remote_provisioning.c</innerfile>
+    <innerfile refid="ringtoneplayer_8c">ringtoneplayer.c</innerfile>
+    <innerfile refid="ringtoneplayer_8h">ringtoneplayer.h</innerfile>
+    <innerfile refid="ringtoneplayer__ios_8h">ringtoneplayer_ios.h</innerfile>
+    <innerfile refid="sal_8c">sal.c</innerfile>
+    <innerfile refid="siplogin_8c">siplogin.c</innerfile>
+    <innerfile refid="sipsetup_8c">sipsetup.c</innerfile>
+    <innerfile refid="sipsetup_8h">sipsetup.h</innerfile>
+    <innerfile refid="upnp_8c">upnp.c</innerfile>
+    <innerfile refid="upnp_8h">upnp.h</innerfile>
+    <innerfile refid="vtables_8c">vtables.c</innerfile>
+    <innerfile refid="xml_8c">xml.c</innerfile>
+    <innerfile refid="xml2lpc_8c">xml2lpc.c</innerfile>
+    <innerfile refid="xml2lpc_8h">xml2lpc.h</innerfile>
+    <innerfile refid="xmlrpc_8c">xmlrpc.c</innerfile>
+    <innerfile refid="xmlrpc_8h">xmlrpc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/"/>
+  </compounddef>
+</doxygen>

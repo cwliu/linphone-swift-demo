@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__LinphoneChatMessageCharacter" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneChatMessageCharacter</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneChatMessageCharacter_1ac6d1e0f9f4289efc13c01c328fd54307" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _LinphoneChatMessageCharacter::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="662" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneChatMessageCharacter_1a50833bfc076167dcae321d9e4f17550a" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneChatMessageCharacter::has_been_read</definition>
+        <argsstring></argsstring>
+        <name>has_been_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="663" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="661" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="661" bodyend="664"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneChatMessageCharacter_1a50833bfc076167dcae321d9e4f17550a" prot="public" virt="non-virtual"><scope>_LinphoneChatMessageCharacter</scope><name>has_been_read</name></member>
+      <member refid="struct__LinphoneChatMessageCharacter_1ac6d1e0f9f4289efc13c01c328fd54307" prot="public" virt="non-virtual"><scope>_LinphoneChatMessageCharacter</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

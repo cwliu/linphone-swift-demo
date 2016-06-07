@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__BuddyLookupRequest" kind="struct" language="C++" prot="public">
+    <compoundname>_BuddyLookupRequest</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__BuddyLookupRequest_1a4c0d2480d96824224a694b293a36ca08" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _BuddyLookupRequest::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="84" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyLookupRequest_1aa60fe714a0f2ac8e4e4009cbd34c94fa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _BuddyLookupRequest::max_results</definition>
+        <argsstring></argsstring>
+        <name>max_results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyLookupRequest_1a48f38a208869f4a8bcd4d3d369ba0918" prot="public" static="no" mutable="no">
+        <type>BuddyLookupStatus</type>
+        <definition>BuddyLookupStatus _BuddyLookupRequest::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="86" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyLookupRequest_1a623b37222a76db0073f5059abdd0ca8a" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* _BuddyLookupRequest::results</definition>
+        <argsstring></argsstring>
+        <name>results</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="87" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="83" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="83" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct__BuddyLookupRequest_1a4c0d2480d96824224a694b293a36ca08" prot="public" virt="non-virtual"><scope>_BuddyLookupRequest</scope><name>key</name></member>
+      <member refid="struct__BuddyLookupRequest_1aa60fe714a0f2ac8e4e4009cbd34c94fa" prot="public" virt="non-virtual"><scope>_BuddyLookupRequest</scope><name>max_results</name></member>
+      <member refid="struct__BuddyLookupRequest_1a623b37222a76db0073f5059abdd0ca8a" prot="public" virt="non-virtual"><scope>_BuddyLookupRequest</scope><name>results</name></member>
+      <member refid="struct__BuddyLookupRequest_1a48f38a208869f4a8bcd4d3d369ba0918" prot="public" virt="non-virtual"><scope>_BuddyLookupRequest</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

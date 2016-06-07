@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structlp__config__to__dict" kind="struct" language="C++" prot="public">
+    <compoundname>lp_config_to_dict</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlp__config__to__dict_1aca13f7ac3bbc96fe6f2e471f50b40cd4" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* lp_config_to_dict::section</definition>
+        <argsstring></argsstring>
+        <name>section</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="110" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlp__config__to__dict_1a5dc166c5cd53869ae24e69333c8c5e7e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__misc_1ga047b6550aab7dd244268e695fab98fd6" kindref="member">LpConfig</ref> *</type>
+        <definition>const LpConfig* lp_config_to_dict::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="111" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlp__config__to__dict_1a7eabf7dc3b4a972bbdd0f269b901d846" prot="public" static="no" mutable="no">
+        <type>LinphoneDictionary *</type>
+        <definition>LinphoneDictionary* lp_config_to_dict::dict</definition>
+        <argsstring></argsstring>
+        <name>dict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="112" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1260">
+        <label>lp_config_to_dict</label>
+        <link refid="structlp__config__to__dict"/>
+        <childnode refid="1261" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+      </node>
+      <node id="1261">
+        <label>_LpConfig</label>
+        <link refid="struct__LpConfig"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" line="109" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/dict.c" bodystart="109" bodyend="113"/>
+    <listofallmembers>
+      <member refid="structlp__config__to__dict_1a5dc166c5cd53869ae24e69333c8c5e7e" prot="public" virt="non-virtual"><scope>lp_config_to_dict</scope><name>config</name></member>
+      <member refid="structlp__config__to__dict_1a7eabf7dc3b4a972bbdd0f269b901d846" prot="public" virt="non-virtual"><scope>lp_config_to_dict</scope><name>dict</name></member>
+      <member refid="structlp__config__to__dict_1aca13f7ac3bbc96fe6f2e471f50b40cd4" prot="public" virt="non-virtual"><scope>lp_config_to_dict</scope><name>section</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

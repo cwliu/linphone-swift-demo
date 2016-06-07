@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structlimeKey__struct" kind="struct" language="C++" prot="public">
+    <compoundname>limeKey_struct</compoundname>
+    <includes local="no">lime.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlimeKey__struct_1acf62f32659b03f1b312c74b21c9cffcc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t limeKey_struct::key[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a 256 bit key used to encrypt/decrypt message </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="31" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlimeKey__struct_1ae0cd184689140e9cb564135e7d8c0a8e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t limeKey_struct::sessionId[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>sessionId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>a session id used to derive key </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="32" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlimeKey__struct_1a68791c228c869d11f27f9993a58f66e8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t limeKey_struct::sessionIndex</definition>
+        <argsstring></argsstring>
+        <name>sessionIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an index to count number of derivation </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="33" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlimeKey__struct_1a91db2df246db1cdbd9d337d9eccdfa67" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t limeKey_struct::peerZID[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>peerZID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the ZID associated to this key </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="34" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure holding all needed material to encrypt/decrypt Messages. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="30" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="30" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structlimeKey__struct_1acf62f32659b03f1b312c74b21c9cffcc" prot="public" virt="non-virtual"><scope>limeKey_struct</scope><name>key</name></member>
+      <member refid="structlimeKey__struct_1a91db2df246db1cdbd9d337d9eccdfa67" prot="public" virt="non-virtual"><scope>limeKey_struct</scope><name>peerZID</name></member>
+      <member refid="structlimeKey__struct_1ae0cd184689140e9cb564135e7d8c0a8e" prot="public" virt="non-virtual"><scope>limeKey_struct</scope><name>sessionId</name></member>
+      <member refid="structlimeKey__struct_1a68791c228c869d11f27f9993a58f66e8" prot="public" virt="non-virtual"><scope>limeKey_struct</scope><name>sessionIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

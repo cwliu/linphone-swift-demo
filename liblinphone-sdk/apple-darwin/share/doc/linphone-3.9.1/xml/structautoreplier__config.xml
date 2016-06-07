@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structautoreplier__config" kind="struct" language="C++" prot="public">
+    <compoundname>autoreplier_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structautoreplier__config_1afec3267452a1748645dabcfe00f97599" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int autoreplier_config::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="834" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structautoreplier__config_1ad36434db77ec81b5905eaf849b92b117" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int autoreplier_config::after_seconds</definition>
+        <argsstring></argsstring>
+        <name>after_seconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="835" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structautoreplier__config_1a5b17e07af46c8d681073d80973ab4516" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int autoreplier_config::max_users</definition>
+        <argsstring></argsstring>
+        <name>max_users</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="836" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structautoreplier__config_1a5897b80a6a173fe9b7f0032d2a3a12ef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int autoreplier_config::max_rec_time</definition>
+        <argsstring></argsstring>
+        <name>max_rec_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="837" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structautoreplier__config_1ab933b56458e96a7be8ae3573083d6115" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int autoreplier_config::max_rec_msg</definition>
+        <argsstring></argsstring>
+        <name>max_rec_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="838" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structautoreplier__config_1aa3ed80a682d830552060f36066df164a" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* autoreplier_config::message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="839" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="839" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="833" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="832" bodyend="840"/>
+    <listofallmembers>
+      <member refid="structautoreplier__config_1ad36434db77ec81b5905eaf849b92b117" prot="public" virt="non-virtual"><scope>autoreplier_config</scope><name>after_seconds</name></member>
+      <member refid="structautoreplier__config_1afec3267452a1748645dabcfe00f97599" prot="public" virt="non-virtual"><scope>autoreplier_config</scope><name>enabled</name></member>
+      <member refid="structautoreplier__config_1ab933b56458e96a7be8ae3573083d6115" prot="public" virt="non-virtual"><scope>autoreplier_config</scope><name>max_rec_msg</name></member>
+      <member refid="structautoreplier__config_1a5897b80a6a173fe9b7f0032d2a3a12ef" prot="public" virt="non-virtual"><scope>autoreplier_config</scope><name>max_rec_time</name></member>
+      <member refid="structautoreplier__config_1a5b17e07af46c8d681073d80973ab4516" prot="public" virt="non-virtual"><scope>autoreplier_config</scope><name>max_users</name></member>
+      <member refid="structautoreplier__config_1aa3ed80a682d830552060f36066df164a" prot="public" virt="non-virtual"><scope>autoreplier_config</scope><name>message</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structvbr__codec__bitrate" kind="struct" language="C++" prot="public">
+    <compoundname>vbr_codec_bitrate</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvbr__codec__bitrate_1a5fb71db1e9df97db26b1c38ac651eb9f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vbr_codec_bitrate::max_avail_bitrate</definition>
+        <argsstring></argsstring>
+        <name>max_avail_bitrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="148" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvbr__codec__bitrate_1a7b17a8d28db1041c327576d13b4c6a9b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vbr_codec_bitrate::min_rate</definition>
+        <argsstring></argsstring>
+        <name>min_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="149" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvbr__codec__bitrate_1a7923208ef84af44781d98be18b7ad681" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vbr_codec_bitrate::recomended_bitrate</definition>
+        <argsstring></argsstring>
+        <name>recomended_bitrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="150" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="147" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="147" bodyend="151"/>
+    <listofallmembers>
+      <member refid="structvbr__codec__bitrate_1a5fb71db1e9df97db26b1c38ac651eb9f" prot="public" virt="non-virtual"><scope>vbr_codec_bitrate</scope><name>max_avail_bitrate</name></member>
+      <member refid="structvbr__codec__bitrate_1a7b17a8d28db1041c327576d13b4c6a9b" prot="public" virt="non-virtual"><scope>vbr_codec_bitrate</scope><name>min_rate</name></member>
+      <member refid="structvbr__codec__bitrate_1a7923208ef84af44781d98be18b7ad681" prot="public" virt="non-virtual"><scope>vbr_codec_bitrate</scope><name>recomended_bitrate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

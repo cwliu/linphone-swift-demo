@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="friendlist_8h" kind="file" language="C++">
+    <compoundname>friendlist.h</compoundname>
+    <includes local="yes">linphone/linphonefriend.h</includes>
+    <includes local="yes">linphone/linphonepresence.h</includes>
+    <includedby refid="private_8h" local="yes">private.h</includedby>
+    <incdepgraph>
+      <node id="96">
+        <label>linphone/linphonepresence.h</label>
+      </node>
+      <node id="95">
+        <label>linphone/linphonefriend.h</label>
+      </node>
+      <node id="94">
+        <label>friendlist.h</label>
+        <link refid="friendlist.h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__buddy__list_1ga3a32748681d291730c955fd0406899a5" prot="public" static="no">
+        <name>_LinphoneFriendListStatus</name>
+        <enumvalue id="group__buddy__list_1gga3a32748681d291730c955fd0406899a5ada113952e4f5aefafbb0870b7ff127ab" prot="public">
+          <name>LinphoneFriendListOK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__buddy__list_1gga3a32748681d291730c955fd0406899a5a16f4e2fcb44da81670e30dce3e236d7a" prot="public">
+          <name>LinphoneFriendListNonExistentFriend</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__buddy__list_1gga3a32748681d291730c955fd0406899a5a850be884a0deb579dbeb28afc1d1bf4a" prot="public">
+          <name>LinphoneFriendListInvalidFriend</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing the status of a LinphoneFriendList operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="46" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__buddy__list_1ga2b02b15c3540fdebda447a8769dcb026" prot="public" static="no">
+        <type>enum <ref refid="group__buddy__list_1ga3a32748681d291730c955fd0406899a5" kindref="member">_LinphoneFriendListStatus</ref></type>
+        <definition>typedef enum _LinphoneFriendListStatus  LinphoneFriendListStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneFriendListStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enum describing the status of a LinphoneFriendList operation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" prot="public" static="no">
+        <type>struct <ref refid="struct__LinphoneFriendList" kindref="compound">_LinphoneFriendList</ref></type>
+        <definition>typedef struct _LinphoneFriendList LinphoneFriendList</definition>
+        <argsstring></argsstring>
+        <name>LinphoneFriendList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneFriendList object representing a list of friends. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="482" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__buddy__list_1gaadc9247ef5949c05939733fd944d54b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+        <definition>LinphoneFriendList* linphone_core_create_friend_list</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_create_friend_list</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new empty LinphoneFriendList object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneFriendList object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="62" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="244" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gab9f68553859d9e72560db637f8e92c31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_set_friend_list</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneFriendList *list)</argsstring>
+        <name>linphone_core_set_friend_list</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCore object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="69" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="1945" bodyend="1959"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga661032b6be77981d36f617e01d83258b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+        <definition>LinphoneFriendList* linphone_friend_list_ref</definition>
+        <argsstring>(LinphoneFriendList *list)</argsstring>
+        <name>linphone_friend_list_ref</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Acquire a reference to the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneFriendList object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="76" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gad831da3454d9809047084aae863a0f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_unref</definition>
+        <argsstring>(LinphoneFriendList *list)</argsstring>
+        <name>linphone_friend_list_unref</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Release reference to the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="82" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="266" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga03da5d9d24c8f15d93458eedd99a9558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_friend_list_get_user_data</definition>
+        <argsstring>(const LinphoneFriendList *list)</argsstring>
+        <name>linphone_friend_list_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Retrieve the user pointer associated with the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the friend list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="89" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="270" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga9515ed14f9e132e63fb9e8075fcb2c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_set_user_data</definition>
+        <argsstring>(LinphoneFriendList *list, void *ud)</argsstring>
+        <name>linphone_friend_list_set_user_data</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assign a user pointer to the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the friend list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="96" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="274" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gaa5d4ee9b28a6c45992dea639a7ace7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_friend_list_get_display_name</definition>
+        <argsstring>(const LinphoneFriendList *list)</argsstring>
+        <name>linphone_friend_list_get_display_name</name>
+        <param>
+          <type>const <ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the display name of the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The display name of the friend list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="103" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga7b2c38a9bda4c97bbe717d0dd6b139a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_set_display_name</definition>
+        <argsstring>(LinphoneFriendList *list, const char *display_name)</argsstring>
+        <name>linphone_friend_list_set_display_name</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>display_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the display name of the friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">display_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new display name of the friend list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="110" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="282" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga7774b62b0815c8b5c89637e08c3cd996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_friend_list_get_rls_uri</definition>
+        <argsstring>(const LinphoneFriendList *list)</argsstring>
+        <name>linphone_friend_list_get_rls_uri</name>
+        <param>
+          <type>const <ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the RLS (Resource List Server) URI associated with the friend list to subscribe to these friends presence. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The RLS URI associated with the friend list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="117" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="292" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga05f1b449f9dfd72b522bd2aaf69e45a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_set_rls_uri</definition>
+        <argsstring>(LinphoneFriendList *list, const char *rls_uri)</argsstring>
+        <name>linphone_friend_list_set_rls_uri</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rls_uri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the RLS (Resource List Server) URI associated with the friend list to subscribe to these friends presence. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">rls_uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The RLS URI to associate with the friend list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="124" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="296" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gaf73c4eceac2283f6c1ad4873657bfa8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga2b02b15c3540fdebda447a8769dcb026" kindref="member">LinphoneFriendListStatus</ref></type>
+        <definition>LinphoneFriendListStatus linphone_friend_list_add_friend</definition>
+        <argsstring>(LinphoneFriendList *list, LinphoneFriend *afriend)</argsstring>
+        <name>linphone_friend_list_add_friend</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+          <declname>afriend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a friend to a friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">friend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriend object to add to the friend list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneFriendListOK if successfully added, LinphoneFriendListInvalidFriend if the friend is not valid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="132" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="306" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga8cd9c896b6066421c48577dd9cb11e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga2b02b15c3540fdebda447a8769dcb026" kindref="member">LinphoneFriendListStatus</ref></type>
+        <definition>LinphoneFriendListStatus linphone_friend_list_remove_friend</definition>
+        <argsstring>(LinphoneFriendList *list, LinphoneFriend *afriend)</argsstring>
+        <name>linphone_friend_list_remove_friend</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+          <declname>afriend</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a friend from a friend list. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">friend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriend object to remove from the friend list. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneFriendListOK if removed successfully, LinphoneFriendListNonExistentFriend if the friend is not in the list. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="140" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="328" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gaa08364d47f08ddd89ebe6f7f31037387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+        <definition>LinphoneFriend* linphone_friend_list_find_friend_by_address</definition>
+        <argsstring>(const LinphoneFriendList *list, const LinphoneAddress *address)</argsstring>
+        <name>linphone_friend_list_find_friend_by_address</name>
+        <param>
+          <type>const <ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a friend in the friend list using a LinphoneAddress. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAddress object of the friend we want to search for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphoneFriend if found, NULL otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="148" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="337" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga0ab5ff1f5f76f3ec062389e692b2540e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+        <definition>LinphoneFriend* linphone_friend_list_find_friend_by_uri</definition>
+        <argsstring>(const LinphoneFriendList *list, const char *uri)</argsstring>
+        <name>linphone_friend_list_find_friend_by_uri</name>
+        <param>
+          <type>const <ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a friend in the friend list using an URI string. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string containing the URI of the friend we want to search for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphoneFriend if found, NULL otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="156" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="348" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gac09e6b568af892a82bf236a73ffd1b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__buddy__list_1ga2f0508bab6d8ded431ce8b1a679a1522" kindref="member">LinphoneFriend</ref> *</type>
+        <definition>LinphoneFriend* linphone_friend_list_find_friend_by_ref_key</definition>
+        <argsstring>(const LinphoneFriendList *list, const char *ref_key)</argsstring>
+        <name>linphone_friend_list_find_friend_by_ref_key</name>
+        <param>
+          <type>const <ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ref_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Find a frient in the friend list using a ref key. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ref_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ref key string of the friend we want to search for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphoneFriend if found, NULL otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="164" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="355" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga7c9f6019a6351d232240cb101e2df1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_close_subscriptions</definition>
+        <argsstring>(LinphoneFriendList *list)</argsstring>
+        <name>linphone_friend_list_close_subscriptions</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="166" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="383" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1gaaab5472918662efa0865374b77b2dbe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_update_subscriptions</definition>
+        <argsstring>(LinphoneFriendList *list, LinphoneProxyConfig *cfg, bool_t only_when_registered)</argsstring>
+        <name>linphone_friend_list_update_subscriptions</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>only_when_registered</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="168" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="389" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="group__buddy__list_1ga46b175d03d82b3bdd420b03fd4e4e2c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_friend_list_notify_presence</definition>
+        <argsstring>(LinphoneFriendList *list, LinphonePresenceModel *presence)</argsstring>
+        <name>linphone_friend_list_notify_presence</name>
+        <param>
+          <type><ref refid="group__buddy__list_1ga9094b6db3d193430d8a5f9a899758a21" kindref="member">LinphoneFriendList</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type><ref refid="group__buddy__list_1gad98268f00fb29b50b22b3c3da566e366" kindref="member">LinphonePresenceModel</ref> *</type>
+          <declname>presence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notify our presence to all the friends in the friend list that have subscribed to our presence directly (not using a RLS). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFriendList object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">presence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePresenceModel object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h" line="175" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.c" bodystart="445" bodyend="451"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">friendlist.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2015<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_FRIENDLIST_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_FRIENDLIST_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>IN_LINPHONE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonefriend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonepresence.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/linphonefriend.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/linphonepresence.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1ga3a32748681d291730c955fd0406899a5" kindref="member">_LinphoneFriendListStatus</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneFriendListOK,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneFriendListNonExistentFriend,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LinphoneFriendListInvalidFriend</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/><ref refid="group__buddy__list_1ga2b02b15c3540fdebda447a8769dcb026" kindref="member">LinphoneFriendListStatus</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__LinphoneFriendList" kindref="compound">_LinphoneFriendList</ref><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*<sp/><ref refid="group__buddy__list_1gaadc9247ef5949c05939733fd944d54b1" kindref="member">linphone_core_create_friend_list</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1gab9f68553859d9e72560db637f8e92c31" kindref="member">linphone_core_set_friend_list</ref>(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*<sp/><ref refid="group__buddy__list_1ga661032b6be77981d36f617e01d83258b" kindref="member">linphone_friend_list_ref</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1gad831da3454d9809047084aae863a0f08" kindref="member">linphone_friend_list_unref</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__buddy__list_1ga03da5d9d24c8f15d93458eedd99a9558" kindref="member">linphone_friend_list_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1ga9515ed14f9e132e63fb9e8075fcb2c79" kindref="member">linphone_friend_list_set_user_data</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__buddy__list_1gaa5d4ee9b28a6c45992dea639a7ace7d3" kindref="member">linphone_friend_list_get_display_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1ga7b2c38a9bda4c97bbe717d0dd6b139a2" kindref="member">linphone_friend_list_set_display_name</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*display_name);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__buddy__list_1ga7774b62b0815c8b5c89637e08c3cd996" kindref="member">linphone_friend_list_get_rls_uri</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1ga05f1b449f9dfd72b522bd2aaf69e45a4" kindref="member">linphone_friend_list_set_rls_uri</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*rls_uri);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__buddy__list_1ga2b02b15c3540fdebda447a8769dcb026" kindref="member">LinphoneFriendListStatus</ref><sp/><ref refid="group__buddy__list_1gaf73c4eceac2283f6c1ad4873657bfa8b" kindref="member">linphone_friend_list_add_friend</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*afriend);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__buddy__list_1ga2b02b15c3540fdebda447a8769dcb026" kindref="member">LinphoneFriendListStatus</ref><sp/><ref refid="group__buddy__list_1ga8cd9c896b6066421c48577dd9cb11e95" kindref="member">linphone_friend_list_remove_friend</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*afriend);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*<sp/><ref refid="group__buddy__list_1gaa08364d47f08ddd89ebe6f7f31037387" kindref="member">linphone_friend_list_find_friend_by_address</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*address);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*<sp/><ref refid="group__buddy__list_1ga0ab5ff1f5f76f3ec062389e692b2540e" kindref="member">linphone_friend_list_find_friend_by_uri</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*uri);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__LinphoneFriend" kindref="compound">LinphoneFriend</ref><sp/>*<sp/><ref refid="group__buddy__list_1gac09e6b568af892a82bf236a73ffd1b79" kindref="member">linphone_friend_list_find_friend_by_ref_key</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ref_key);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_friend_list_close_subscriptions(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_friend_list_update_subscriptions(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/><ref refid="struct__LinphoneProxyConfig" kindref="compound">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>bool_t<sp/>only_when_registered);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__buddy__list_1ga46b175d03d82b3bdd420b03fd4e4e2c9" kindref="member">linphone_friend_list_notify_presence</ref>(<ref refid="struct__LinphoneFriendList" kindref="compound">LinphoneFriendList</ref><sp/>*list,<sp/><ref refid="struct__LinphonePresenceModel" kindref="compound">LinphonePresenceModel</ref><sp/>*presence);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_FRIENDLIST_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/friendlist.h"/>
+  </compounddef>
+</doxygen>

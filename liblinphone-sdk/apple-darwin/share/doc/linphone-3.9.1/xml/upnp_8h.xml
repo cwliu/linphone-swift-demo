@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="upnp_8h" kind="file" language="C++">
+    <compoundname>upnp.h</compoundname>
+    <includes local="yes">mediastreamer2/upnp_igd.h</includes>
+    <includes refid="linphonecore_8h" local="yes">linphonecore.h</includes>
+    <includes local="yes">sal/sal.h</includes>
+    <includedby refid="upnp_8c" local="yes">upnp.c</includedby>
+    <incdepgraph>
+      <node id="301">
+        <label>mediastreamer2/upnp_igd.h</label>
+      </node>
+      <node id="300">
+        <label>upnp.h</label>
+        <link refid="upnp.h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>sal/sal.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="upnp_8h_1a33581db4f68b3f22c5923a3a9591131d" prot="public" static="no">
+        <type>struct <ref refid="struct__UpnpSession" kindref="compound">_UpnpSession</ref></type>
+        <definition>typedef struct _UpnpSession UpnpSession</definition>
+        <argsstring></argsstring>
+        <name>UpnpSession</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="1297" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="upnp_8h_1af311a7828744b576eb8feec7dcb0a0a4" prot="public" static="no">
+        <type>struct <ref refid="struct__UpnpContext" kindref="compound">_UpnpContext</ref></type>
+        <definition>typedef struct _UpnpContext UpnpContext</definition>
+        <argsstring></argsstring>
+        <name>UpnpContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="1297" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="upnp_8h_1a238db35cb0c8ab95b1d4928ce6a27a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_update_local_media_description_from_upnp</definition>
+        <argsstring>(SalMediaDescription *desc, UpnpSession *session)</argsstring>
+        <name>linphone_core_update_local_media_description_from_upnp</name>
+        <param>
+          <type>SalMediaDescription *</type>
+          <declname>desc</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="30" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1059" bodyend="1085"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1ae989f6193daccb069b89f5ac4c96ed7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_update_upnp_from_remote_media_description</definition>
+        <argsstring>(LinphoneCall *call, const SalMediaDescription *md)</argsstring>
+        <name>linphone_core_update_upnp_from_remote_media_description</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>const SalMediaDescription *</type>
+          <declname>md</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="31" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="728" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a94bafdc4b6e151e4c7dcabd22d493d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_core_update_upnp</definition>
+        <argsstring>(LinphoneCore *lc, LinphoneCall *call)</argsstring>
+        <name>linphone_core_update_upnp</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="32" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="747" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a53b0f500410e3102f576531ff919c6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_upnp_call_process</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_upnp_call_process</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="34" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="773" bodyend="854"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a9cadb4599049e4bc4fa61debbad49f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref> *</type>
+        <definition>UpnpSession* linphone_upnp_session_new</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_upnp_session_new</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="35" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1249" bodyend="1256"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1af119f6bee72dafc9e26222475c4b4998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_upnp_session_destroy</definition>
+        <argsstring>(UpnpSession *session)</argsstring>
+        <name>linphone_upnp_session_destroy</name>
+        <param>
+          <type><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="36" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1258" bodyend="1283"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a72b33c9b65332da02c36dacfd9133d37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_upnp_session_get_state</definition>
+        <argsstring>(UpnpSession *session)</argsstring>
+        <name>linphone_upnp_session_get_state</name>
+        <param>
+          <type><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="37" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="1285" bodyend="1287"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1aaece42073ad64a00102e7d05433bc329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+        <definition>UpnpContext* linphone_upnp_context_new</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_upnp_context_new</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uPnP Context </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="323" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1ac61db9ec422ba6e67cc00f8ad7026ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_upnp_context_destroy</definition>
+        <argsstring>(UpnpContext *ctx)</argsstring>
+        <name>linphone_upnp_context_destroy</name>
+        <param>
+          <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="365" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a8afc31b37057b870cf6374311a8ab320" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_upnp_refresh</definition>
+        <argsstring>(UpnpContext *ctx)</argsstring>
+        <name>linphone_upnp_refresh</name>
+        <param>
+          <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="548" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a197d089e5ea3ed5b9aaaac4d700f62fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_upnp_context_get_state</definition>
+        <argsstring>(UpnpContext *ctx)</argsstring>
+        <name>linphone_upnp_context_get_state</name>
+        <param>
+          <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="430" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1aeda1b5003e1d86032765930ba5f303c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_upnp_context_get_external_ipaddress</definition>
+        <argsstring>(UpnpContext *ctx)</argsstring>
+        <name>linphone_upnp_context_get_external_ipaddress</name>
+        <param>
+          <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="43" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="552" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1aae51517cfa380626f43eab640e799a32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_upnp_context_get_external_port</definition>
+        <argsstring>(UpnpContext *ctx)</argsstring>
+        <name>linphone_upnp_context_get_external_port</name>
+        <param>
+          <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="44" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="485" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1a5301679fd379dcf5b7a7a2d77cc897b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_upnp_context_is_ready_for_register</definition>
+        <argsstring>(UpnpContext *ctx)</argsstring>
+        <name>linphone_upnp_context_is_ready_for_register</name>
+        <param>
+          <type><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="45" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="475" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="upnp_8h_1aeece42651afe6f8a1c6b697a5b94fc86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_update_upnp_state_in_call_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_core_update_upnp_state_in_call_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h" line="46" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.c" bodystart="751" bodyend="754"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2012<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_UPNP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_UPNP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mediastreamer2/upnp_igd.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sal/sal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__UpnpSession" kindref="compound">_UpnpSession</ref><sp/><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__UpnpContext" kindref="compound">_UpnpContext</ref><sp/><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_core_update_local_media_description_from_upnp(SalMediaDescription<sp/>*desc,<sp/><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref><sp/>*session);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_core_update_upnp_from_remote_media_description(<ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SalMediaDescription<sp/>*md);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_core_update_upnp(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc,<sp/><ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_upnp_call_process(<ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref>*<sp/>linphone_upnp_session_new(<ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_upnp_session_destroy(<ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref>*<sp/>session);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref><sp/>linphone_upnp_session_get_state(<ref refid="struct__UpnpSession" kindref="compound">UpnpSession</ref><sp/>*session);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*linphone_upnp_context_new(<ref refid="struct__LinphoneCore" kindref="compound">LinphoneCore</ref><sp/>*lc);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_upnp_context_destroy(<ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_upnp_refresh(<ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="group__initializing_1ga2c19554a0988f7600aec5c3a7588d61a" kindref="member">LinphoneUpnpState</ref><sp/>linphone_upnp_context_get_state(<ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*linphone_upnp_context_get_external_ipaddress(<ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_upnp_context_get_external_port(<ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">bool_t<sp/>linphone_upnp_context_is_ready_for_register(<ref refid="struct__UpnpContext" kindref="compound">UpnpContext</ref><sp/>*ctx);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_core_update_upnp_state_in_call_stats(<ref refid="struct__LinphoneCall" kindref="compound">LinphoneCall</ref><sp/>*call);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//LINPHONE_UPNP_H</highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/upnp.h"/>
+  </compounddef>
+</doxygen>

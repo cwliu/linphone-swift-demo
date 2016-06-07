@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structsip__config" kind="struct" language="C++" prot="public">
+    <compoundname>sip_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsip__config_1aea602a1df379c45ca19ff34d2c84c9d8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sip_config::contact</definition>
+        <argsstring></argsstring>
+        <name>contact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="709" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="709" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a15272229f05a66aa47524a8b01229a4d" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* sip_config::guessed_contact</definition>
+        <argsstring></argsstring>
+        <name>guessed_contact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="710" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a6e35a9c5c05faff24894796f9f48afad" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* sip_config::proxies</definition>
+        <argsstring></argsstring>
+        <name>proxies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="711" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1aa2b359cbd7ef16b39a10ca314d3c7745" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* sip_config::deleted_proxies</definition>
+        <argsstring></argsstring>
+        <name>deleted_proxies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="712" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a7f10377e98d395cfacbc1035721fa353" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sip_config::inc_timeout</definition>
+        <argsstring></argsstring>
+        <name>inc_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="713" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="713" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a7d326648226df6a35abc7ca99cdbcc21" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sip_config::in_call_timeout</definition>
+        <argsstring></argsstring>
+        <name>in_call_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="714" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1ac00caefa132823dcf0a6ada98852c894" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sip_config::delayed_timeout</definition>
+        <argsstring></argsstring>
+        <name>delayed_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="715" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="715" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a40837481bb6da60aa136b792ef00c92e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int sip_config::keepalive_period</definition>
+        <argsstring></argsstring>
+        <name>keepalive_period</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="716" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="716" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1aa68698eb77cfb6d7c04094ad479ee27b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae3417c9be557f9263ffe4f03eec21df0" kindref="member">LCSipTransports</ref></type>
+        <definition>LCSipTransports sip_config::transports</definition>
+        <argsstring></argsstring>
+        <name>transports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="717" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="717" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1acbf2d4759e4bbe86fde5500c1c9c36ca" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::guess_hostname</definition>
+        <argsstring></argsstring>
+        <name>guess_hostname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="718" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a681e97f36498ca94f374c78d40e46eee" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::loopback_only</definition>
+        <argsstring></argsstring>
+        <name>loopback_only</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="719" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="719" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1ae6df13e2c7a39d18bc293e0d4b5de273" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::ipv6_enabled</definition>
+        <argsstring></argsstring>
+        <name>ipv6_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="720" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="720" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1ae9b83ff76dd100bb4842c84bb3b181e5" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::sdp_200_ack</definition>
+        <argsstring></argsstring>
+        <name>sdp_200_ack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="721" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="721" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1aaf5ea328a82b234e44eae02ee7e1eb4f" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::register_only_when_network_is_up</definition>
+        <argsstring></argsstring>
+        <name>register_only_when_network_is_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="722" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1aac15e6af0b74e087e98c30865e5a9ef7" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::register_only_when_upnp_is_ok</definition>
+        <argsstring></argsstring>
+        <name>register_only_when_upnp_is_ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="723" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a401fc7cf95d3b17f8635071d9316daff" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::ping_with_options</definition>
+        <argsstring></argsstring>
+        <name>ping_with_options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="724" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a47392b129a1af6b50d6d45c802cc3d04" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::auto_net_state_mon</definition>
+        <argsstring></argsstring>
+        <name>auto_net_state_mon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="725" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a2a15298db9f27c44780ac4cb1cb820ea" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::tcp_tls_keepalive</definition>
+        <argsstring></argsstring>
+        <name>tcp_tls_keepalive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="726" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1a1f4652ab515198fb844939903e7b0303" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::vfu_with_info</definition>
+        <argsstring></argsstring>
+        <name>vfu_with_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="727" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsip__config_1aeaadde675ffcac0c079fa4069fd97fe1" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t sip_config::save_auth_info</definition>
+        <argsstring></argsstring>
+        <name>save_auth_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="728" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1367">
+        <label>_LCSipTransports</label>
+        <link refid="struct__LCSipTransports"/>
+      </node>
+      <node id="1366">
+        <label>sip_config</label>
+        <link refid="structsip__config"/>
+        <childnode refid="1367" relation="usage">
+          <edgelabel>transports</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="708" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="707" bodyend="729"/>
+    <listofallmembers>
+      <member refid="structsip__config_1a47392b129a1af6b50d6d45c802cc3d04" prot="public" virt="non-virtual"><scope>sip_config</scope><name>auto_net_state_mon</name></member>
+      <member refid="structsip__config_1aea602a1df379c45ca19ff34d2c84c9d8" prot="public" virt="non-virtual"><scope>sip_config</scope><name>contact</name></member>
+      <member refid="structsip__config_1ac00caefa132823dcf0a6ada98852c894" prot="public" virt="non-virtual"><scope>sip_config</scope><name>delayed_timeout</name></member>
+      <member refid="structsip__config_1aa2b359cbd7ef16b39a10ca314d3c7745" prot="public" virt="non-virtual"><scope>sip_config</scope><name>deleted_proxies</name></member>
+      <member refid="structsip__config_1acbf2d4759e4bbe86fde5500c1c9c36ca" prot="public" virt="non-virtual"><scope>sip_config</scope><name>guess_hostname</name></member>
+      <member refid="structsip__config_1a15272229f05a66aa47524a8b01229a4d" prot="public" virt="non-virtual"><scope>sip_config</scope><name>guessed_contact</name></member>
+      <member refid="structsip__config_1a7d326648226df6a35abc7ca99cdbcc21" prot="public" virt="non-virtual"><scope>sip_config</scope><name>in_call_timeout</name></member>
+      <member refid="structsip__config_1a7f10377e98d395cfacbc1035721fa353" prot="public" virt="non-virtual"><scope>sip_config</scope><name>inc_timeout</name></member>
+      <member refid="structsip__config_1ae6df13e2c7a39d18bc293e0d4b5de273" prot="public" virt="non-virtual"><scope>sip_config</scope><name>ipv6_enabled</name></member>
+      <member refid="structsip__config_1a40837481bb6da60aa136b792ef00c92e" prot="public" virt="non-virtual"><scope>sip_config</scope><name>keepalive_period</name></member>
+      <member refid="structsip__config_1a681e97f36498ca94f374c78d40e46eee" prot="public" virt="non-virtual"><scope>sip_config</scope><name>loopback_only</name></member>
+      <member refid="structsip__config_1a401fc7cf95d3b17f8635071d9316daff" prot="public" virt="non-virtual"><scope>sip_config</scope><name>ping_with_options</name></member>
+      <member refid="structsip__config_1a6e35a9c5c05faff24894796f9f48afad" prot="public" virt="non-virtual"><scope>sip_config</scope><name>proxies</name></member>
+      <member refid="structsip__config_1aaf5ea328a82b234e44eae02ee7e1eb4f" prot="public" virt="non-virtual"><scope>sip_config</scope><name>register_only_when_network_is_up</name></member>
+      <member refid="structsip__config_1aac15e6af0b74e087e98c30865e5a9ef7" prot="public" virt="non-virtual"><scope>sip_config</scope><name>register_only_when_upnp_is_ok</name></member>
+      <member refid="structsip__config_1aeaadde675ffcac0c079fa4069fd97fe1" prot="public" virt="non-virtual"><scope>sip_config</scope><name>save_auth_info</name></member>
+      <member refid="structsip__config_1ae9b83ff76dd100bb4842c84bb3b181e5" prot="public" virt="non-virtual"><scope>sip_config</scope><name>sdp_200_ack</name></member>
+      <member refid="structsip__config_1a2a15298db9f27c44780ac4cb1cb820ea" prot="public" virt="non-virtual"><scope>sip_config</scope><name>tcp_tls_keepalive</name></member>
+      <member refid="structsip__config_1aa68698eb77cfb6d7c04094ad479ee27b" prot="public" virt="non-virtual"><scope>sip_config</scope><name>transports</name></member>
+      <member refid="structsip__config_1a1f4652ab515198fb844939903e7b0303" prot="public" virt="non-virtual"><scope>sip_config</scope><name>vfu_with_info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

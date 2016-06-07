@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Liblinphone</title>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ulink url="http://www.linphone.org">http://www.linphone.org</ulink></para></simplesect>
+</para><sect1 id="index_1what_is_it">
+<title>What is liblinphone</title>
+<para>Liblinphone is a high level library for bringing SIP video call functionnality into an application. It aims at making easy the integration of the SIP video calls into any applications. All variants of linphone are directly based on it:<itemizedlist>
+<listitem><para>linphone (gtk interface)</para></listitem><listitem><para>linphonec (console interface)</para></listitem><listitem><para>linphone for iOS</para></listitem><listitem><para>linphone for Android</para></listitem></itemizedlist>
+</para><para>Liblinphone is GPL (see COPYING file). Please understand the licencing details before using it!</para><para>For any use of this library beyond the rights granted to you by the GPL license, please contact Belledonne Communications (<ulink url="mailto:contact@belledonne-communications.com">contact@belledonne-communications.com</ulink>) </para></sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

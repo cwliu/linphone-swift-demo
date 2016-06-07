@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structdial__plan" kind="struct" language="C++" prot="public">
+    <compoundname>dial_plan</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdial__plan_1a5f78dcc1225e3343105229a304d1b924" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* dial_plan::country</definition>
+        <argsstring></argsstring>
+        <name>country</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" line="568" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdial__plan_1a23d16b075b19542f61b13d088376feca" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* dial_plan::iso_country_code</definition>
+        <argsstring></argsstring>
+        <name>iso_country_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" line="569" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="569" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdial__plan_1aae35bd07b797cc091b9f2568105ef6bd" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char dial_plan::ccc[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ccc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" line="570" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdial__plan_1ab7cc3570eaf904a67ecf8a2c4cf0ff35" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int dial_plan::nnl</definition>
+        <argsstring></argsstring>
+        <name>nnl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" line="571" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="571" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdial__plan_1a9b2b8a9011a9d9f53a2d3364c1571251" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* dial_plan::icp</definition>
+        <argsstring></argsstring>
+        <name>icp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" line="572" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" line="567" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/proxy.c" bodystart="567" bodyend="574"/>
+    <listofallmembers>
+      <member refid="structdial__plan_1aae35bd07b797cc091b9f2568105ef6bd" prot="public" virt="non-virtual"><scope>dial_plan</scope><name>ccc</name></member>
+      <member refid="structdial__plan_1a5f78dcc1225e3343105229a304d1b924" prot="public" virt="non-virtual"><scope>dial_plan</scope><name>country</name></member>
+      <member refid="structdial__plan_1a9b2b8a9011a9d9f53a2d3364c1571251" prot="public" virt="non-virtual"><scope>dial_plan</scope><name>icp</name></member>
+      <member refid="structdial__plan_1a23d16b075b19542f61b13d088376feca" prot="public" virt="non-virtual"><scope>dial_plan</scope><name>iso_country_code</name></member>
+      <member refid="structdial__plan_1ab7cc3570eaf904a67ecf8a2c4cf0ff35" prot="public" virt="non-virtual"><scope>dial_plan</scope><name>nnl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

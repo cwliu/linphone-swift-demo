@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structcodecs__config" kind="struct" language="C++" prot="public">
+    <compoundname>codecs_config</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcodecs__config_1a39d11969b178b93dca4d137427cc1247" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* codecs_config::audio_codecs</definition>
+        <argsstring></argsstring>
+        <name>audio_codecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="799" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcodecs__config_1a1088ab7cfcd3be80f26b68db74abe832" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* codecs_config::video_codecs</definition>
+        <argsstring></argsstring>
+        <name>video_codecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="800" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="800" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcodecs__config_1acef522034947963afb2020897d29ebfe" prot="public" static="no" mutable="no">
+        <type>MSList *</type>
+        <definition>MSList* codecs_config::text_codecs</definition>
+        <argsstring></argsstring>
+        <name>text_codecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="801" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcodecs__config_1a540a8b064c9718ba830587513687389f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int codecs_config::dyn_pt</definition>
+        <argsstring></argsstring>
+        <name>dyn_pt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="802" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcodecs__config_1aef945996441a9e0a5e3a5ef08fabba4b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int codecs_config::telephone_event_pt</definition>
+        <argsstring></argsstring>
+        <name>telephone_event_pt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="803" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="803" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" line="798" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/private.h" bodystart="797" bodyend="804"/>
+    <listofallmembers>
+      <member refid="structcodecs__config_1a39d11969b178b93dca4d137427cc1247" prot="public" virt="non-virtual"><scope>codecs_config</scope><name>audio_codecs</name></member>
+      <member refid="structcodecs__config_1a540a8b064c9718ba830587513687389f" prot="public" virt="non-virtual"><scope>codecs_config</scope><name>dyn_pt</name></member>
+      <member refid="structcodecs__config_1aef945996441a9e0a5e3a5ef08fabba4b" prot="public" virt="non-virtual"><scope>codecs_config</scope><name>telephone_event_pt</name></member>
+      <member refid="structcodecs__config_1acef522034947963afb2020897d29ebfe" prot="public" virt="non-virtual"><scope>codecs_config</scope><name>text_codecs</name></member>
+      <member refid="structcodecs__config_1a1088ab7cfcd3be80f26b68db74abe832" prot="public" virt="non-virtual"><scope>codecs_config</scope><name>video_codecs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

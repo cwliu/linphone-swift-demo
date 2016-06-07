@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="struct__BuddyInfo" kind="struct" language="C++" prot="public">
+    <compoundname>_BuddyInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__BuddyInfo_1ac7d738f6dffe084a51cb8e3883849d51" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyInfo::firstname[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>firstname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="72" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1a0d46ff9ca54908f72cdc1aacc1d4603f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyInfo::lastname[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>lastname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="73" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1a909e6102619adc7517d89151903c2ee9" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyInfo::displayname[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>displayname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="74" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1ac37dbfafd4ab50656811bf07c4b94a57" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyInfo::sip_uri[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>sip_uri</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="75" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1a130388c3311e28dd9154174fc3eb9b3f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyInfo::email[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="76" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1ad7b79efd48b3ff35b29ea6719708f0b0" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__BuddyAddress" kindref="compound">BuddyAddress</ref></type>
+        <definition>BuddyAddress _BuddyInfo::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="77" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1a3d78f1ef08e70b94dc2bd7686ef8cf98" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _BuddyInfo::image_type[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>image_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="78" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1ac6735871124a1f4ac55dda57c6d1f5da" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* _BuddyInfo::image_data</definition>
+        <argsstring></argsstring>
+        <name>image_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="79" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__BuddyInfo_1a4512637bea02c7615ea26ba470c6054a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _BuddyInfo::image_length</definition>
+        <argsstring></argsstring>
+        <name>image_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="11">
+        <label>_BuddyInfo</label>
+        <link refid="struct__BuddyInfo"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>address</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>_BuddyAddress</label>
+        <link refid="struct__BuddyAddress"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" line="71" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/sipsetup.h" bodystart="71" bodyend="81"/>
+    <listofallmembers>
+      <member refid="struct__BuddyInfo_1ad7b79efd48b3ff35b29ea6719708f0b0" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>address</name></member>
+      <member refid="struct__BuddyInfo_1a909e6102619adc7517d89151903c2ee9" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>displayname</name></member>
+      <member refid="struct__BuddyInfo_1a130388c3311e28dd9154174fc3eb9b3f" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>email</name></member>
+      <member refid="struct__BuddyInfo_1ac7d738f6dffe084a51cb8e3883849d51" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>firstname</name></member>
+      <member refid="struct__BuddyInfo_1ac6735871124a1f4ac55dda57c6d1f5da" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>image_data</name></member>
+      <member refid="struct__BuddyInfo_1a4512637bea02c7615ea26ba470c6054a" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>image_length</name></member>
+      <member refid="struct__BuddyInfo_1a3d78f1ef08e70b94dc2bd7686ef8cf98" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>image_type</name></member>
+      <member refid="struct__BuddyInfo_1a0d46ff9ca54908f72cdc1aacc1d4603f" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>lastname</name></member>
+      <member refid="struct__BuddyInfo_1ac37dbfafd4ab50656811bf07c4b94a57" prot="public" virt="non-virtual"><scope>_BuddyInfo</scope><name>sip_uri</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

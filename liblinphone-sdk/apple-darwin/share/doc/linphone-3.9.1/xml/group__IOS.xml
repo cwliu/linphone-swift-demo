@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__IOS" kind="group">
+    <compoundname>IOS</compoundname>
+    <title>IOS</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__IOS_1gaef3c840b3c9f576c642b49cf306c7461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_start_dtmf_stream</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_start_dtmf_stream</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Special function to warm up dtmf feeback stream. <ref refid="group__IOS_1gad0ecef2fb7a77c3363aa94edeadaf65b" kindref="member">linphone_core_stop_dtmf_stream</ref> must() be called before entering FG mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="80" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6880" bodyend="6883"/>
+      </memberdef>
+      <memberdef kind="function" id="group__IOS_1gad0ecef2fb7a77c3363aa94edeadaf65b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_core_stop_dtmf_stream</definition>
+        <argsstring>(LinphoneCore *lc)</argsstring>
+        <name>linphone_core_stop_dtmf_stream</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Special function to stop dtmf feed back function. Must be called before entering BG mode </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore_utils.h" line="85" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/linphonecore.c" bodystart="6910" bodyend="6914"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><linebreak/>
+ <bold>Multitasking</bold> <linebreak/>
+ Liblinphone for IOS natively supports multitasking assuming application follows multitasking guides provided by Apple. First step is to declare application as multitasked. It means adding background mode for both audio and voip to Info.plist file. <linebreak/>
+ <programlisting><codeline><highlight class="normal">&lt;key&gt;UIBackgroundModes&lt;/key&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;array&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;string&gt;voip&lt;/string&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;string&gt;audio&lt;/string&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/array&gt;</highlight></codeline>
+</programlisting> <linebreak/>
+ <itemizedlist>
+<listitem>
+<para><bold>SIP socket </bold><linebreak/>
+Recommended mode is SIP over TCP, because UDP usually requires frequent keep alives for maintaining NAT association at the IP router level. This can be as frequent as one UDP packet every 15 seconds to maintain the NAT association accross NAT routers. Doing such drains the battery very fast, and furthermore the iOS keep-alive designed by Apple to handle this task can only be called with a minimum of 10 minutes interval.<linebreak/>
+ For TCP, liblinphone automatically configures SIP socket for voip (I.E kCFStreamNetworkServiceType set to kCFStreamNetworkServiceTypeVoIP). <linebreak/>
+<bold>Since IOS &gt; 4.1 Apple disabled voip mode for UDP sockets </bold> </para></listitem>
+<listitem>
+<para><bold>Entering background mode</bold> <linebreak/>
+ Before entering in background mode (through<programlisting><codeline><highlight class="normal">-<sp/>(void)applicationDidEnterBackground:(UIApplication<sp/>*)application<sp/></highlight></codeline>
+</programlisting> ), the application must first refresh sip registration using function <ref refid="group__proxies_1ga130795ea67730f7b01f7b51fe6bdb44f" kindref="member">linphone_core_refresh_registers()</ref>; and register a keep-alive handler for periodically refreshing the registration. The speudo code below shows how to register a keep alive handler: <programlisting><codeline><highlight class="normal">//First<sp/>refresh<sp/>registration</highlight></codeline>
+<codeline><highlight class="normal">linphone_core_refresh_registers(theLinphoneCore);</highlight></codeline>
+<codeline><highlight class="normal">//wait<sp/>for<sp/>registration<sp/>answer</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>i=0;</highlight></codeline>
+<codeline><highlight class="normal">while<sp/>(!linphone_proxy_config_is_registered(proxyCfg)<sp/>&amp;&amp;<sp/>i++&lt;40<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_iterate(theLinphoneCore);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usleep(100000);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">//register<sp/>keepalive<sp/>handler</highlight></codeline>
+<codeline><highlight class="normal">[[UIApplication<sp/>sharedApplication]<sp/>setKeepAliveTimeout:600/*minimal<sp/>interval<sp/>is<sp/>600<sp/>s*/<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handler:^{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//refresh<sp/>sip<sp/>registration</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_refresh_registers(theLinphoneCore);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//make<sp/>sure<sp/>sip<sp/>REGISTER<sp/>is<sp/>sent</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_iterate(theLinphoneCore);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}];</highlight></codeline>
+</programlisting> </para></listitem>
+<listitem>
+<para><bold>Incoming call notification while in background mode</bold> <linebreak/>
+Assuming application using liblinphone is well configured for multitasking, incoming calls arriving while liblinphone is in background mode will simply wakeup liblinphone thread but not resume GUI. To wakeup GUI, it is recommended to send a Local Notification to the user from the <ref refid="group__initializing_1ga98e23d0310eef95f7f97ce4a43634836" kindref="member">LinphoneCoreCallStateChangedCb</ref>. Here under a speudo code for this operation: <programlisting><codeline><highlight class="normal">if<sp/>([UIApplication<sp/>sharedApplication].applicationState<sp/>!=<sp/><sp/>UIApplicationStateActive)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Create<sp/>a<sp/>new<sp/>notification</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UILocalNotification*<sp/>notif<sp/>=<sp/>[[[UILocalNotification<sp/>alloc]<sp/>init]<sp/>autorelease];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(notif)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notif.repeatInterval<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notif.alertBody<sp/>=@&quot;New<sp/>incoming<sp/>call&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notif.alertAction<sp/>=<sp/>@&quot;Answer&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>notif.soundName<sp/>=<sp/>@&quot;oldphone-mono-30s.caf&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[UIApplication<sp/>sharedApplication]<sp/><sp/>presentLocalNotificationNow:notif];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+</programlisting> </para></listitem>
+</itemizedlist>
+<bold>Networking</bold> <linebreak/>
+ <itemizedlist>
+<listitem>
+<para><bold>WWAN connection</bold> <linebreak/>
+Liblinphone relies on iOS&apos;s standard BSD socket layer for sip/rtp networking. On IOS, WWAN connection is supposed to automatically bring up on any networking resquest issued by an application. At least on iPhone OS 3.x, BSD sockets do not implement this behavior. So it is recomended to add a special code to make sure the WWAN connection is properly setup. Pseudo code below describes a way to force WWAN connection by setting up a dummy TCP connection. <programlisting><codeline><highlight class="normal">/*start<sp/>a<sp/>new<sp/>thread<sp/>to<sp/>avoid<sp/>blocking<sp/>the<sp/>main<sp/>ui<sp/>in<sp/>case<sp/>of<sp/>peer<sp/>host<sp/>failure*/</highlight></codeline>
+<codeline><highlight class="normal">[NSThread<sp/>detachNewThreadSelector:@selector(runNetworkConnection)<sp/>toTarget:self<sp/>withObject:nil];</highlight></codeline>
+<codeline><highlight class="normal">-(void)<sp/>runNetworkConnection<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFWriteStreamRef<sp/>writeStream;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//create<sp/>a<sp/>dummy<sp/>socket</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFStreamCreatePairWithSocketToHost(NULL,<sp/>(CFStringRef)@&quot;192.168.0.200&quot;,<sp/>15000,<sp/>nil,<sp/>&amp;writeStream);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFWriteStreamOpen<sp/>(writeStream);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>char*<sp/>buff=&quot;hello&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//try<sp/>to<sp/>write<sp/>on<sp/>this<sp/>socket</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFWriteStreamWrite<sp/>(writeStream,(const<sp/>UInt8*)buff,strlen(buff));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CFWriteStreamClose<sp/>(writeStream);</highlight></codeline>
+<codeline><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+</programlisting> It is recommanded to perform this task each time the application is woken up, including keep alive handler. </para></listitem>
+<listitem>
+<para><bold>Managing IP connection state</bold> <linebreak/>
+Liblinphone for IOS relies on the application to be informed of network connectivity changes. Network state changes when the IP connection moves from DOWN to UP, or from WIFI to WWAN. Applications using liblinphone must inform libliblinphone of this changes using function <ref refid="group__network__parameters_1ga50986600d8f528e083a2c8e6269734e3" kindref="member">linphone_core_set_network_reachable()</ref>. Usually this method is called from the IOS NetworkReachability callback. Here under a sample code: <programlisting><codeline><highlight class="normal">//typical<sp/>reachability<sp/>callback</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>networkReachabilityCallBack(SCNetworkReachabilityRef<sp/>target,<sp/>SCNetworkReachabilityFlags<sp/>flags,<sp/>void<sp/>*<sp/>info)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((flags<sp/>==<sp/>0)<sp/>|<sp/>(flags<sp/>&amp;<sp/>(kSCNetworkReachabilityFlagsConnectionRequired<sp/>|kSCNetworkReachabilityFlagsConnectionOnTraffic)))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//network<sp/>state<sp/>is<sp/>off</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_network_reachable(lc,false);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((LinphoneManager*)info).connectivity<sp/>=<sp/>none;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Connectivity<sp/><sp/>newConnectivity<sp/>=<sp/>flags<sp/>&amp;<sp/>kSCNetworkReachabilityFlagsIsWWAN<sp/>?<sp/>wwan:wifi;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(lLinphoneMgr.connectivity<sp/>==<sp/>none)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//notify<sp/>new<sp/>network<sp/>state</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_network_reachable(lc,true);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(lLinphoneMgr.connectivity<sp/>!=<sp/>newConnectivity)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>connectivity<sp/>has<sp/>changed</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_network_reachable(lc,false);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_network_reachable(lc,true);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//store<sp/>new<sp/>connectivity<sp/>status</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lLinphoneMgr.connectivity=newConnectivity;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></listitem>
+</itemizedlist>
+<bold> Sound cards </bold> <linebreak/>
+ Since IOS 5.0, liblinphone supports 2 sound cards. <emphasis>AU: Audio Unit Receiver</emphasis> based on IO units for voice calls plus <emphasis>AQ: Audio Queue Device</emphasis> dedicated to rings. Here under the recommended settings (I.E default one) <programlisting><codeline><highlight class="normal">linphone_core_set_playback_device(lc,<sp/>&quot;AU:<sp/>Audio<sp/>Unit<sp/>Receiver&quot;);</highlight></codeline>
+<codeline><highlight class="normal">linphone_core_set_ringer_device(lc,<sp/>&quot;AQ:<sp/>Audio<sp/>Queue<sp/>Device&quot;);</highlight></codeline>
+<codeline><highlight class="normal">linphone_core_set_capture_device(lc,<sp/>&quot;AU:<sp/>Audio<sp/>Unit<sp/>Receiver&quot;);</highlight></codeline>
+</programlisting> <bold> GSM call interaction </bold> <linebreak/>
+ To ensure gentle interaction with GSM calls, it is recommended to register an AudioSession delegate. This allows the application to be notified when its audio session is interrupted/resumed (presumably by a GSM call). <programlisting><codeline><highlight class="normal">//<sp/>declare<sp/>a<sp/>class<sp/>handling<sp/>the<sp/>AVAudioSessionDelegate<sp/>protocol</highlight></codeline>
+<codeline><highlight class="normal">@interface<sp/>MyClass<sp/>:<sp/>NSObject<sp/>&lt;AVAudioSessionDelegate&gt;<sp/>{<sp/>[...]<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>implement<sp/>2<sp/>methods<sp/>:<sp/>here&apos;s<sp/>an<sp/>example<sp/>implementation</highlight></codeline>
+<codeline><highlight class="normal">-(void)<sp/>beginInterruption<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>LinphoneCall*<sp/>c<sp/>=<sp/>linphone_core_get_current_call(theLinphoneCore);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ms_message(&quot;Sound<sp/>interruption<sp/>detected!&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(c)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_pause_call(theLinphoneCore,<sp/>c);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-(void)<sp/>endInterruption<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ms_message(&quot;Sound<sp/>interruption<sp/>ended!&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>const<sp/>MSList*<sp/>c<sp/>=<sp/>linphone_core_get_calls(theLinphoneCore);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(c)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms_message(&quot;Auto<sp/>resuming<sp/>call&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_resume_call(theLinphoneCore,<sp/>(LinphoneCall*)<sp/>c-&gt;data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ulink url="http://developer.apple.com/library/ios/#documentation/AVFoundation/Reference/AVAudioSessionDelegate_ProtocolReference/Reference/Reference.html">http://developer.apple.com/library/ios/#documentation/AVFoundation/Reference/AVAudioSessionDelegate_ProtocolReference/Reference/Reference.html</ulink></para></simplesect>
+<linebreak/>
+ Declare an instance of your class as AudioSession&apos;s delegate : <programlisting><codeline><highlight class="normal">[audioSession<sp/>setDelegate:myClassInstance];</highlight></codeline>
+</programlisting> <simplesect kind="see"><para><ulink url="http://developer.apple.com/library/ios/#documentation/AVFoundation/Reference/AVAudioSession_ClassReference/Reference/Reference.html">http://developer.apple.com/library/ios/#documentation/AVFoundation/Reference/AVAudioSession_ClassReference/Reference/Reference.html</ulink></para></simplesect>
+<bold> Video </bold> <linebreak/>
+Since 3.5 video support has been added to liblinphone for IOS. It requires the application to provide liblinphone with pointers to IOS&apos;s views hosting video display and video previous. <linebreak/>
+ These 2 UIView objects must be passed to the core using functions <ref refid="group__media__parameters_1gac1b2e1f9a81085dd1244df9e69c686d5" kindref="member">linphone_core_set_native_video_window_id()</ref> and <ref refid="group__media__parameters_1gac242c2eac39863f2b9757502beb91000" kindref="member">linphone_core_set_native_preview_window_id()</ref>. here under speudo code: <programlisting><codeline><highlight class="normal">UIView*<sp/>display<sp/>=<sp/>[[UIView<sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline><highlight class="normal">UIView*<sp/>preview<sp/>=<sp/>[[UIView<sp/>alloc]<sp/>init];</highlight></codeline>
+<codeline><highlight class="normal">linphone_core_set_native_video_window_id(lc,(unsigned<sp/>long)display);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">linphone_core_set_native_preview_window_id(lc,(unsigned<sp/>long)preview);</highlight></codeline>
+</programlisting> <linebreak/>
+ Screen rotations are also handled by liblinphone. 2 positions are currently supported, namely <emphasis>UIInterfaceOrientationPortrait</emphasis> and <emphasis>UIInterfaceOrientationLandscapeRight</emphasis>. Applications may invoke <ref refid="group__media__parameters_1ga309fdb0f39432b125ff1f36347cea362" kindref="member">linphone_core_set_device_rotation()</ref> followed by <ref refid="group__call__control_1ga1a7819d96573bb8dbcbf2a128145457e" kindref="member">linphone_core_update_call()</ref> to notify liblinphone of an orientation change. Here under a speudo code to handle orientation changes <programlisting><codeline><highlight class="normal">-(void)<sp/>configureOrientation:(UIInterfaceOrientation)<sp/>oritentation<sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>oldLinphoneOrientation<sp/>=<sp/>linphone_core_get_device_rotation(lc);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(oritentation<sp/>==<sp/>UIInterfaceOrientationPortrait<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_native_video_window_id(lc,(unsigned<sp/>long)display-portrait);<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_native_preview_window_id(lc,(unsigned<sp/>long)preview-portrait);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_device_rotation(lc,<sp/>0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(oritentation<sp/>==<sp/>UIInterfaceOrientationLandscapeRight<sp/>)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_native_video_window_id(lc,(unsigned<sp/>long)display-landscape);<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_native_preview_window_id(lc,(unsigned<sp/>long)preview-landscape);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_set_device_rotation(lc,<sp/>270);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((oldLinphoneOrientation<sp/>!=<sp/>linphone_core_get_device_rotation(lc))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>linphone_core_get_current_call(lc))<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//Orientation<sp/>has<sp/>changed,<sp/>must<sp/>call<sp/>update<sp/>call</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linphone_core_update_call(lc,<sp/>linphone_core_get_current_call(lc),<sp/>NULL);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><bold>DTMF feebacks</bold> <linebreak/>
+Liblinphone provides functions <ref refid="group__media__parameters_1ga11b05c55741a236cb8d07b8a197ebcca" kindref="member">to play dtmf </ref> to the local user. Usually this is used to play a sound when the user presses a digit, inside or outside of any call. On IOS, libLinphone relies on AudioUnits for interfacing with the audio system. Unfortunately the Audio Unit initialization is a quite long operation that may trigger a bad user experience if performed each time a DTMF is played, the sound being delayed half a second after the press. To solve this issue and thus insure real-time precision, liblinphone introduces 2 functions for <ref refid="group__IOS_1gaef3c840b3c9f576c642b49cf306c7461" kindref="member">preloading </ref> and <ref refid="group__IOS_1gaef3c840b3c9f576c642b49cf306c7461" kindref="member">unloading </ref> the underlying audio graph responsible for playing DTMFs. <linebreak/>
+ For an application using function <ref refid="group__media__parameters_1ga11b05c55741a236cb8d07b8a197ebcca" kindref="member">linphone_core_play_dtmf()</ref>, it is recommanded to call <ref refid="group__IOS_1gaef3c840b3c9f576c642b49cf306c7461" kindref="member">linphone_core_start_dtmf_stream()</ref> when entering in foreground and <ref refid="group__IOS_1gad0ecef2fb7a77c3363aa94edeadaf65b" kindref="member">linphone_core_stop_dtmf_stream()</ref> upon entering background mode. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

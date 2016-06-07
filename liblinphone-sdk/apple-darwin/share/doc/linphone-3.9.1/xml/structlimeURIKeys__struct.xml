@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structlimeURIKeys__struct" kind="struct" language="C++" prot="public">
+    <compoundname>limeURIKeys_struct</compoundname>
+    <includes local="no">lime.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlimeURIKeys__struct_1a67a3ba40c2cb1096dba1405571f2db91" prot="public" static="no" mutable="no">
+        <type><ref refid="structlimeKey__struct" kindref="compound">limeKey_t</ref> **</type>
+        <definition>limeKey_t** limeURIKeys_struct::peerKeys</definition>
+        <argsstring></argsstring>
+        <name>peerKeys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>an array of all the key material associated to each ZID matching the specified URI </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="40" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlimeURIKeys__struct_1a53a70701a88615858ddad5d475255111" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t limeURIKeys_struct::associatedZIDNumber</definition>
+        <argsstring></argsstring>
+        <name>associatedZIDNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>previous array length </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="41" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlimeURIKeys__struct_1ac08b0a989d0d6c7d55b727fbccef687a" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* limeURIKeys_struct::peerURI</definition>
+        <argsstring></argsstring>
+        <name>peerURI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the sip URI associated to all the keys, must be a null terminated string </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="42" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Store the differents keys associated to a sipURI. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1251">
+        <label>limeURIKeys_struct</label>
+        <link refid="structlimeURIKeys__struct"/>
+        <childnode refid="1252" relation="usage">
+          <edgelabel>peerKeys</edgelabel>
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>limeKey_struct</label>
+        <link refid="structlimeKey__struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" line="39" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/lime.h" bodystart="39" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structlimeURIKeys__struct_1a53a70701a88615858ddad5d475255111" prot="public" virt="non-virtual"><scope>limeURIKeys_struct</scope><name>associatedZIDNumber</name></member>
+      <member refid="structlimeURIKeys__struct_1a67a3ba40c2cb1096dba1405571f2db91" prot="public" virt="non-virtual"><scope>limeURIKeys_struct</scope><name>peerKeys</name></member>
+      <member refid="structlimeURIKeys__struct_1ac08b0a989d0d6c7d55b727fbccef687a" prot="public" virt="non-virtual"><scope>limeURIKeys_struct</scope><name>peerURI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

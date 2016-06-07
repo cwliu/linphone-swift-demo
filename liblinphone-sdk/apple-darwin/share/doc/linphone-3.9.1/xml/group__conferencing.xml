@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="group__conferencing" kind="group">
+    <compoundname>conferencing</compoundname>
+    <title>Making an audio conference.</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This API allows to create a conference entirely managed by the client. No server capabilities are required. The way such conference is created is by doing the following:<linebreak/>
+ The application shall makes &quot;normal&quot; calls to several destinations (using <ref refid="group__call__control_1gaaea662739cc3825eaa80d8ac264a883c" kindref="member">linphone_core_invite()</ref> ), one after another. While initiating the second call, the first one is automatically paused. Then, once the second call is established, the application has the possibility to merge the two calls to form a conference where each participant (the local participant, the remote destination of the first call, the remote destination of the second call) can talk together. This must be done by adding the two calls to the conference using <ref refid="group__call__control_1gaf171b220c5eb9a636bd67ca265051d84" kindref="member">linphone_core_add_to_conference()</ref></para><para>Once merged into a conference the LinphoneCall objects representing the calls that were established remain unchanged, except that they are tagged as part of the conference (see <ref refid="group__call__control_1gae2b51ebde1d5ee6948e9a3f45f0761c6" kindref="member">linphone_call_is_in_conference()</ref> ). The calls in a conference are in the LinphoneCallStreamsRunning state.</para><para>Only a single conference can be created: the purpose of this feature is to allow the local user to create, take part and manage the conference. This API is not designed to create a conference server application.</para><para>Up to 10 calls can be merged into the conference, however depending on the CPU usage required for doing the encoding/decoding of the streams of each participants, the effective limit can be lower. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="ringtoneplayer__ios_8h" kind="file" language="C++">
+    <compoundname>ringtoneplayer_ios.h</compoundname>
+    <includes refid="linphonecore_8h" local="yes">linphonecore.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ringtoneplayer__ios_8h_1ab46eff84164a6c4745280067a6d962b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref> *</type>
+        <definition>LinphoneRingtonePlayer* linphone_ringtoneplayer_ios_new</definition>
+        <argsstring>()</argsstring>
+        <name>linphone_ringtoneplayer_ios_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer_ios.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ringtoneplayer__ios_8h_1aa6a10e721cbe1b783c3a6f7ff99d272c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_ringtoneplayer_ios_destroy</definition>
+        <argsstring>(LinphoneRingtonePlayer *rp)</argsstring>
+        <name>linphone_ringtoneplayer_ios_destroy</name>
+        <param>
+          <type><ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref> *</type>
+          <declname>rp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer_ios.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ringtoneplayer__ios_8h_1a84dff1a5c959f2f54c84eddd83a2de12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_ringtoneplayer_ios_start_with_cb</definition>
+        <argsstring>(LinphoneRingtonePlayer *rp, const char *ringtone, int loop_pause_ms, LinphoneRingtonePlayerFunc end_of_ringtone, void *user_data)</argsstring>
+        <name>linphone_ringtoneplayer_ios_start_with_cb</name>
+        <param>
+          <type><ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref> *</type>
+          <declname>rp</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ringtone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>loop_pause_ms</declname>
+        </param>
+        <param>
+          <type>LinphoneRingtonePlayerFunc</type>
+          <declname>end_of_ringtone</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>user_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer_ios.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ringtoneplayer__ios_8h_1a14f2fb4d122383fa15b2781ef0bdd7b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_ringtoneplayer_ios_is_started</definition>
+        <argsstring>(LinphoneRingtonePlayer *rp)</argsstring>
+        <name>linphone_ringtoneplayer_ios_is_started</name>
+        <param>
+          <type><ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref> *</type>
+          <declname>rp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer_ios.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ringtoneplayer__ios_8h_1aa8b04f2b644e8fd94fafe7f28e9dec18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_ringtoneplayer_ios_stop</definition>
+        <argsstring>(LinphoneRingtonePlayer *rp)</argsstring>
+        <name>linphone_ringtoneplayer_ios_stop</name>
+        <param>
+          <type><ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref> *</type>
+          <declname>rp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer_ios.h" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2000<sp/><sp/>Simon<sp/>MORLAT<sp/>(simon.morlat@linphone.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Copyright<sp/>(C)<sp/>2010<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphonecore.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref>*<sp/>linphone_ringtoneplayer_ios_new();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_ringtoneplayer_ios_destroy(<ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref>*<sp/>rp);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_ringtoneplayer_ios_start_with_cb(<ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref>*<sp/>rp,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ringtone,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loop_pause_ms,<sp/>LinphoneRingtonePlayerFunc<sp/>end_of_ringtone,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>user_data);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">bool_t<sp/>linphone_ringtoneplayer_ios_is_started(<ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref>*<sp/>rp);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_ringtoneplayer_ios_stop(<ref refid="struct__LinphoneRingtonePlayer" kindref="compound">LinphoneRingtonePlayer</ref>*<sp/>rp);</highlight></codeline>
+    </programlisting>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/ringtoneplayer_ios.h"/>
+  </compounddef>
+</doxygen>

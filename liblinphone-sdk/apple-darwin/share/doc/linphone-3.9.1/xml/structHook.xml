@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="structHook" kind="struct" language="C++" prot="public">
+    <compoundname>Hook</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structHook_1aecbe308cec32c027e57d5afb01765fb5" prot="public" static="no" mutable="no">
+        <type>LinphoneCoreIterateHook</type>
+        <definition>LinphoneCoreIterateHook Hook::fun</definition>
+        <argsstring></argsstring>
+        <name>fun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="1902" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="1902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structHook_1ad44febcdf70ebcfab271b9c6ba6b7abf" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* Hook::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="1903" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="1903" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" line="1901" column="1" bodyfile="/Volumes/SSD/workspace_mac/linphone-ios/submodules/linphone/coreapi/misc.c" bodystart="1901" bodyend="1904"/>
+    <listofallmembers>
+      <member refid="structHook_1ad44febcdf70ebcfab271b9c6ba6b7abf" prot="public" virt="non-virtual"><scope>Hook</scope><name>data</name></member>
+      <member refid="structHook_1aecbe308cec32c027e57d5afb01765fb5" prot="public" virt="non-virtual"><scope>Hook</scope><name>fun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
