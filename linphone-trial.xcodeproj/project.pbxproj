@@ -12,6 +12,7 @@
 		A924DEC91D07AC620030A438 /* linphonerc-factory in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC51D07AC620030A438 /* linphonerc-factory */; };
 		A924DECA1D07AC620030A438 /* linphonerc-factory~ipad in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC61D07AC620030A438 /* linphonerc-factory~ipad */; };
 		A924DECB1D07AC620030A438 /* linphonerc~ipad in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC71D07AC620030A438 /* linphonerc~ipad */; };
+		A924DECD1D07D2620030A438 /* Secret.plist in Resources */ = {isa = PBXBuildFile; fileRef = A924DECC1D07D2620030A438 /* Secret.plist */; };
 		A99663651D06F877003B5EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99663641D06F877003B5EEE /* AppDelegate.swift */; };
 		A99663671D06F877003B5EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99663661D06F877003B5EEE /* ViewController.swift */; };
 		A996636A1D06F877003B5EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99663681D06F877003B5EEE /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		A924DEC51D07AC620030A438 /* linphonerc-factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory"; sourceTree = "<group>"; };
 		A924DEC61D07AC620030A438 /* linphonerc-factory~ipad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory~ipad"; sourceTree = "<group>"; };
 		A924DEC71D07AC620030A438 /* linphonerc~ipad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc~ipad"; sourceTree = "<group>"; };
+		A924DECC1D07D2620030A438 /* Secret.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secret.plist; sourceTree = "<group>"; };
 		A99663611D06F877003B5EEE /* linphone-trial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "linphone-trial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99663641D06F877003B5EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99663661D06F877003B5EEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		A99663581D06F877003B5EEE = {
 			isa = PBXGroup;
 			children = (
+				A924DECC1D07D2620030A438 /* Secret.plist */,
 				A924DEC31D07AC520030A438 /* Resources */,
 				A99663EB1D07054E003B5EEE /* lib */,
 				A99663631D06F877003B5EEE /* linphone-trial */,
@@ -376,6 +379,7 @@
 				A924DEC81D07AC620030A438 /* linphonerc in Resources */,
 				A924DECB1D07AC620030A438 /* linphonerc~ipad in Resources */,
 				A996636F1D06F877003B5EEE /* LaunchScreen.storyboard in Resources */,
+				A924DECD1D07D2620030A438 /* Secret.plist in Resources */,
 				A996636C1D06F877003B5EEE /* Assets.xcassets in Resources */,
 				A924DEC91D07AC620030A438 /* linphonerc-factory in Resources */,
 				A996636A1D06F877003B5EEE /* Main.storyboard in Resources */,
