@@ -110,4 +110,6 @@ class LinphoneManager {
         NSLog("Shutdown..")
         linphone_core_destroy(lc);
     }
+    
+    
 }
