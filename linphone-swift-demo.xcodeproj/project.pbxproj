@@ -137,6 +137,28 @@
 		A99663E51D0704F8003B5EEE /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		A99663E71D070500003B5EEE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		A99663E91D070507003B5EEE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A9FAC46B1D087E9E00E3C8A5 /* account_creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = account_creator.h; path = "liblinphone-sdk/apple-darwin/include/linphone/account_creator.h"; sourceTree = "<group>"; };
+		A9FAC46C1D087E9E00E3C8A5 /* bc_tester_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bc_tester_utils.h; path = "liblinphone-sdk/apple-darwin/include/linphone/bc_tester_utils.h"; sourceTree = "<group>"; };
+		A9FAC46D1D087E9E00E3C8A5 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "liblinphone-sdk/apple-darwin/include/linphone/buffer.h"; sourceTree = "<group>"; };
+		A9FAC46E1D087E9E00E3C8A5 /* call_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = call_log.h; path = "liblinphone-sdk/apple-darwin/include/linphone/call_log.h"; sourceTree = "<group>"; };
+		A9FAC46F1D087E9E00E3C8A5 /* call_params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = call_params.h; path = "liblinphone-sdk/apple-darwin/include/linphone/call_params.h"; sourceTree = "<group>"; };
+		A9FAC4701D087E9E00E3C8A5 /* conference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conference.h; path = "liblinphone-sdk/apple-darwin/include/linphone/conference.h"; sourceTree = "<group>"; };
+		A9FAC4711D087E9E00E3C8A5 /* content.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = content.h; path = "liblinphone-sdk/apple-darwin/include/linphone/content.h"; sourceTree = "<group>"; };
+		A9FAC4721D087E9E00E3C8A5 /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = event.h; path = "liblinphone-sdk/apple-darwin/include/linphone/event.h"; sourceTree = "<group>"; };
+		A9FAC4731D087E9E00E3C8A5 /* friendlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = friendlist.h; path = "liblinphone-sdk/apple-darwin/include/linphone/friendlist.h"; sourceTree = "<group>"; };
+		A9FAC4741D087E9E00E3C8A5 /* liblinphone_tester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = liblinphone_tester.h; path = "liblinphone-sdk/apple-darwin/include/linphone/liblinphone_tester.h"; sourceTree = "<group>"; };
+		A9FAC4751D087E9E00E3C8A5 /* linphone_proxy_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linphone_proxy_config.h; path = "liblinphone-sdk/apple-darwin/include/linphone/linphone_proxy_config.h"; sourceTree = "<group>"; };
+		A9FAC4761D087E9E00E3C8A5 /* linphone_tunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linphone_tunnel.h; path = "liblinphone-sdk/apple-darwin/include/linphone/linphone_tunnel.h"; sourceTree = "<group>"; };
+		A9FAC4771D087E9E00E3C8A5 /* linphonecore_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linphonecore_utils.h; path = "liblinphone-sdk/apple-darwin/include/linphone/linphonecore_utils.h"; sourceTree = "<group>"; };
+		A9FAC4781D087E9E00E3C8A5 /* linphonecore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linphonecore.h; path = "liblinphone-sdk/apple-darwin/include/linphone/linphonecore.h"; sourceTree = "<group>"; };
+		A9FAC4791D087E9E00E3C8A5 /* linphonefriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linphonefriend.h; path = "liblinphone-sdk/apple-darwin/include/linphone/linphonefriend.h"; sourceTree = "<group>"; };
+		A9FAC47A1D087E9E00E3C8A5 /* linphonepresence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linphonepresence.h; path = "liblinphone-sdk/apple-darwin/include/linphone/linphonepresence.h"; sourceTree = "<group>"; };
+		A9FAC47B1D087E9E00E3C8A5 /* lpc2xml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpc2xml.h; path = "liblinphone-sdk/apple-darwin/include/linphone/lpc2xml.h"; sourceTree = "<group>"; };
+		A9FAC47C1D087E9E00E3C8A5 /* lpconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lpconfig.h; path = "liblinphone-sdk/apple-darwin/include/linphone/lpconfig.h"; sourceTree = "<group>"; };
+		A9FAC47D1D087E9E00E3C8A5 /* ringtoneplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ringtoneplayer.h; path = "liblinphone-sdk/apple-darwin/include/linphone/ringtoneplayer.h"; sourceTree = "<group>"; };
+		A9FAC47E1D087E9E00E3C8A5 /* sipsetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sipsetup.h; path = "liblinphone-sdk/apple-darwin/include/linphone/sipsetup.h"; sourceTree = "<group>"; };
+		A9FAC47F1D087E9E00E3C8A5 /* xml2lpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xml2lpc.h; path = "liblinphone-sdk/apple-darwin/include/linphone/xml2lpc.h"; sourceTree = "<group>"; };
+		A9FAC4801D087E9E00E3C8A5 /* xmlrpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlrpc.h; path = "liblinphone-sdk/apple-darwin/include/linphone/xmlrpc.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +360,7 @@
 		A9FAC4681D07D6FF00E3C8A5 /* Linphone */ = {
 			isa = PBXGroup;
 			children = (
+				A9FAC46A1D087E6C00E3C8A5 /* Header */,
 				A99663791D06FE65003B5EEE /* LinphoneManager.swift */,
 				A924DEC31D07AC520030A438 /* Resources */,
 				A924DECC1D07D2620030A438 /* Secret.plist */,
@@ -352,6 +375,35 @@
 				A99663701D06F877003B5EEE /* Info.plist */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		A9FAC46A1D087E6C00E3C8A5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				A9FAC46B1D087E9E00E3C8A5 /* account_creator.h */,
+				A9FAC46C1D087E9E00E3C8A5 /* bc_tester_utils.h */,
+				A9FAC46D1D087E9E00E3C8A5 /* buffer.h */,
+				A9FAC46E1D087E9E00E3C8A5 /* call_log.h */,
+				A9FAC46F1D087E9E00E3C8A5 /* call_params.h */,
+				A9FAC4701D087E9E00E3C8A5 /* conference.h */,
+				A9FAC4711D087E9E00E3C8A5 /* content.h */,
+				A9FAC4721D087E9E00E3C8A5 /* event.h */,
+				A9FAC4731D087E9E00E3C8A5 /* friendlist.h */,
+				A9FAC4741D087E9E00E3C8A5 /* liblinphone_tester.h */,
+				A9FAC4751D087E9E00E3C8A5 /* linphone_proxy_config.h */,
+				A9FAC4761D087E9E00E3C8A5 /* linphone_tunnel.h */,
+				A9FAC4771D087E9E00E3C8A5 /* linphonecore_utils.h */,
+				A9FAC4781D087E9E00E3C8A5 /* linphonecore.h */,
+				A9FAC4791D087E9E00E3C8A5 /* linphonefriend.h */,
+				A9FAC47A1D087E9E00E3C8A5 /* linphonepresence.h */,
+				A9FAC47B1D087E9E00E3C8A5 /* lpc2xml.h */,
+				A9FAC47C1D087E9E00E3C8A5 /* lpconfig.h */,
+				A9FAC47D1D087E9E00E3C8A5 /* ringtoneplayer.h */,
+				A9FAC47E1D087E9E00E3C8A5 /* sipsetup.h */,
+				A9FAC47F1D087E9E00E3C8A5 /* xml2lpc.h */,
+				A9FAC4801D087E9E00E3C8A5 /* xmlrpc.h */,
+			);
+			name = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

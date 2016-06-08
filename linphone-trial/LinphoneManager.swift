@@ -1,5 +1,81 @@
 import Foundation
 
+enum RegistrationState{
+    case LinphoneRegistrationNone       // Initial state for registration
+    case LinphoneRegistrationProgress   // Registration is in progress
+    case LinphoneRegistrationOk         //Registration is successful
+    case LinphoneRegistrationCleared    //Unregistration succeeded
+    case LinphoneRegistrationFailed     // Registration failed
+    
+}
+
+var registrationStateChanged: LinphoneCoreRegistrationStateChangedCb = {
+    (p1: COpaquePointer, p2: COpaquePointer, state: LinphoneRegistrationState, message: UnsafePointer<Int8>) in
+    
+    switch state{
+    case LinphoneRegistrationNone: /**<Initial state for registrations */
+        NSLog("LinphoneRegistrationNone")
+        
+    case LinphoneRegistrationProgress:
+        NSLog("LinphoneRegistrationProgress")
+        
+    case LinphoneRegistrationOk:
+        NSLog("LinphoneRegistrationOk")
+        
+    case LinphoneRegistrationCleared:
+        NSLog("LinphoneRegistrationCleared")
+        
+    case LinphoneRegistrationFailed:
+        NSLog("LinphoneRegistrationFailed")
+        
+    default:
+        NSLog("Unkown registration state")
+    }
+}
+
+//LinphoneCoreCallStateChangedCb call_state_changed;
+var callStateChanged: LinphoneCoreCallStateChangedCb = {
+    (lc: COpaquePointer, call: COpaquePointer, callSate: LinphoneCallState,  message) in
+    
+
+    switch callSate{
+//    case LinphoneCallIdle:					/**<Initial call state */
+    case LinphoneCallIncomingReceived: /**<This is a new incoming call */
+        NSLog("callStateChanged: LinphoneCallIncomingReceived")
+        linphone_core_accept_call(lc, call)
+        
+//    case LinphoneCallOutgoingInit: /**<An outgoing call is started */
+//    case LinphoneCallOutgoingProgress: /**<An outgoing call is in progress */
+//    case LinphoneCallOutgoingRinging: /**<An outgoing call is ringing at remote end */
+//    case LinphoneCallOutgoingEarlyMedia: /**<An outgoing call is proposed early media */
+//    case LinphoneCallConnected: /**<Connected, the call is answered */
+    case LinphoneCallStreamsRunning: /**<The media streams are established and running*/
+        NSLog("callStateChanged: LinphoneCallStreamsRunning")
+//    case LinphoneCallPausing: /**<The call is pausing at the initiative of local end */
+//    case LinphoneCallPaused: /**< The call is paused, remote end has accepted the pause */
+//    case LinphoneCallResuming: /**<The call is being resumed by local end*/
+//    case LinphoneCallRefered: /**<The call is being transfered to another party, resulting in a new outgoing call to follow immediately*/
+//    case LinphoneCallError: /**<The call encountered an error*/
+//    case LinphoneCallEnd: /**<The call ended normally*/
+//    case LinphoneCallPausedByRemote: /**<The call is paused by remote end*/
+//    case LinphoneCallUpdatedByRemote: /**<The call's parameters change is requested by remote end, used for example when video is added by remote */
+//    case LinphoneCallIncomingEarlyMedia: /**<We are proposing early media to an incoming call */
+//    case LinphoneCallUpdating: /**<A call update has been initiated by us */
+//    case LinphoneCallReleased: /**< The call object is no more retained by the core */
+//    case LinphoneCallEarlyUpdatedByRemote: /*<The call is updated by remote while not yet answered (early dialog SIP UPDATE received).*/
+//    case LinphoneCallEarlyUpdating: /*<We are updating the call while not yet answered (early dialog SIP UPDATE sent)*/
+        
+        
+    default:
+        NSLog("Default call state")
+    }}
+
+
+// LINPHONE_PUBLIC	LinphoneCall * linphone_core_invite_address_with_params(LinphoneCore *lc, const LinphoneAddress *addr, const LinphoneCallParams *params);
+
+
+//typedef void (*LinphoneCoreRegistrationStateChangedCb)(LinphoneCore *lc, LinphoneProxyConfig *cfg, LinphoneRegistrationState cstate, const char *message) ;
+
 class LinphoneManager {
     
     var lc: COpaquePointer!
@@ -18,11 +94,15 @@ class LinphoneManager {
         
         linphone_core_enable_logs(nil)
         
+        lct.registration_state_changed = registrationStateChanged
+        lct.call_state_changed = callStateChanged
+        
         /*
          Instanciate a LinphoneCore object given the LinphoneCoreVTable
          */
         lc = linphone_core_new(&lct, nil, nil, nil);
-
+        
+        
     }
     
     func bundleFile(file: NSString) -> NSString{
@@ -36,7 +116,7 @@ class LinphoneManager {
         return documentsPath.stringByAppendingPathComponent(file as String)
     }
     
-    func startLibLinphone() {
+    func demo() {
         register()
         receiveCall()
         shutdown()

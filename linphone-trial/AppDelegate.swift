@@ -19,8 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         self.linphoneManager = LinphoneManager()
-        
-        linphoneManager?.startLibLinphone()
+        linphoneManager?.demo()
 
         return true
     }
