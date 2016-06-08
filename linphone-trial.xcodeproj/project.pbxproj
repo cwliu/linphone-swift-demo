@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A924DEC21D07A5F80030A438 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E91D070507003B5EEE /* libz.tbd */; };
+		A924DEC81D07AC620030A438 /* linphonerc in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC41D07AC620030A438 /* linphonerc */; };
+		A924DEC91D07AC620030A438 /* linphonerc-factory in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC51D07AC620030A438 /* linphonerc-factory */; };
+		A924DECA1D07AC620030A438 /* linphonerc-factory~ipad in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC61D07AC620030A438 /* linphonerc-factory~ipad */; };
+		A924DECB1D07AC620030A438 /* linphonerc~ipad in Resources */ = {isa = PBXBuildFile; fileRef = A924DEC71D07AC620030A438 /* linphonerc~ipad */; };
 		A99663651D06F877003B5EEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99663641D06F877003B5EEE /* AppDelegate.swift */; };
 		A99663671D06F877003B5EEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99663661D06F877003B5EEE /* ViewController.swift */; };
 		A996636A1D06F877003B5EEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99663681D06F877003B5EEE /* Main.storyboard */; };
@@ -62,10 +67,13 @@
 		A99663E41D0704E2003B5EEE /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E31D0704E2003B5EEE /* libxml2.tbd */; };
 		A99663E61D0704F8003B5EEE /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E51D0704F8003B5EEE /* libresolv.tbd */; };
 		A99663E81D070500003B5EEE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E71D070500003B5EEE /* libsqlite3.tbd */; };
-		A99663EA1D070507003B5EEE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A99663E91D070507003B5EEE /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A924DEC41D07AC620030A438 /* linphonerc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linphonerc; sourceTree = "<group>"; };
+		A924DEC51D07AC620030A438 /* linphonerc-factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory"; sourceTree = "<group>"; };
+		A924DEC61D07AC620030A438 /* linphonerc-factory~ipad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc-factory~ipad"; sourceTree = "<group>"; };
+		A924DEC71D07AC620030A438 /* linphonerc~ipad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linphonerc~ipad"; sourceTree = "<group>"; };
 		A99663611D06F877003B5EEE /* linphone-trial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "linphone-trial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99663641D06F877003B5EEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99663661D06F877003B5EEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,15 +140,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99663EA1D070507003B5EEE /* libz.tbd in Frameworks */,
+				A924DEC21D07A5F80030A438 /* libz.tbd in Frameworks */,
 				A99663E81D070500003B5EEE /* libsqlite3.tbd in Frameworks */,
 				A99663E61D0704F8003B5EEE /* libresolv.tbd in Frameworks */,
 				A99663E41D0704E2003B5EEE /* libxml2.tbd in Frameworks */,
 				A99663E11D0704C7003B5EEE /* libstdc++.6.0.9.tbd in Frameworks */,
 				A99663E21D0704C7003B5EEE /* libstdc++.6.tbd in Frameworks */,
 				A99663DE1D0704BC003B5EEE /* libstdc++.tbd in Frameworks */,
-				A99663DC1D07048C003B5EEE /* AVFoundation.framework in Frameworks */,
 				A99663DA1D07045D003B5EEE /* libc++abi.tbd in Frameworks */,
+				A99663DC1D07048C003B5EEE /* AVFoundation.framework in Frameworks */,
 				A99663CE1D070140003B5EEE /* AudioToolbox.framework in Frameworks */,
 				A99663CC1D070132003B5EEE /* CoreFoundation.framework in Frameworks */,
 				A99663CA1D070126003B5EEE /* CoreData.framework in Frameworks */,
@@ -188,9 +196,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A924DEC31D07AC520030A438 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A924DEC41D07AC620030A438 /* linphonerc */,
+				A924DEC51D07AC620030A438 /* linphonerc-factory */,
+				A924DEC61D07AC620030A438 /* linphonerc-factory~ipad */,
+				A924DEC71D07AC620030A438 /* linphonerc~ipad */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		A99663581D06F877003B5EEE = {
 			isa = PBXGroup;
 			children = (
+				A924DEC31D07AC520030A438 /* Resources */,
 				A99663EB1D07054E003B5EEE /* lib */,
 				A99663631D06F877003B5EEE /* linphone-trial */,
 				A99663621D06F877003B5EEE /* Products */,
@@ -352,8 +372,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A924DECA1D07AC620030A438 /* linphonerc-factory~ipad in Resources */,
+				A924DEC81D07AC620030A438 /* linphonerc in Resources */,
+				A924DECB1D07AC620030A438 /* linphonerc~ipad in Resources */,
 				A996636F1D06F877003B5EEE /* LaunchScreen.storyboard in Resources */,
 				A996636C1D06F877003B5EEE /* Assets.xcassets in Resources */,
+				A924DEC91D07AC620030A438 /* linphonerc-factory in Resources */,
 				A996636A1D06F877003B5EEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,7 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "linphone-trial-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include $(SRCROOT)/liblinphone-sdk/apple-darwin/include/**";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /xApplications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include $(SRCROOT)/liblinphone-sdk/apple-darwin/include/**";
 			};
 			name = Debug;
 		};
@@ -515,7 +539,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wiadvance.linphone-trial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "linphone-trial-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include $(SRCROOT)/liblinphone-sdk/apple-darwin/include/**";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) /xApplications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include $(SRCROOT)/liblinphone-sdk/apple-darwin/include/**";
 			};
 			name = Release;
 		};
@@ -538,6 +562,7 @@
 				A99663751D06F877003B5EEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

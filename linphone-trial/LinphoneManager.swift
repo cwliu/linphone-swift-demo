@@ -1,24 +1,4 @@
-//
-//  LinphoneManager.swift
-//  linphone-trial
-//
-//  Created by Cody Liu on 6/7/16.
-//  Copyright © 2016 WiAdvance. All rights reserved.
-//
-
 import Foundation
-
-//
-//  LinphoneManager.swift
-//  TestLinphone
-//
-//  Created by Yevgen on 4/14/15.
-//  Copyright (c) 2015 Yevgen Dovgopolyy. All rights reserved.
-//
-
-import Foundation
-
-
 
 
 class LinphoneManager {
@@ -31,6 +11,7 @@ class LinphoneManager {
     var configDb: COpaquePointer?
     
     init() {
+        print("Linphone Init")
         let configFilename = documentFile(".linphonerc")
         let factoryConfigFilename = bundleFile("linphonerc-factory")
         
@@ -39,7 +20,6 @@ class LinphoneManager {
         
         self.configDb = lp_config_new_with_factory(factoryConfigFilenamePtr, configFilenamePtr)
         
-        print(self.configDb)
         
     }
     
@@ -56,7 +36,6 @@ class LinphoneManager {
     
     func startLibLinphone() {
         
-        
         var v: LinphoneManager = self
         
         let _ : COpaquePointer = withUnsafePointers(&lct, &v, { (ptr: UnsafePointer<LinphoneCoreVTable>, selfPtr: UnsafePointer<LinphoneManager>) -> COpaquePointer in
@@ -67,5 +46,3 @@ class LinphoneManager {
         
     }
 }
-
-
