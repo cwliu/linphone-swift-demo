@@ -1,5 +1,7 @@
 import Foundation
 
+var answerCall: Bool = false
+
 var registrationStateChanged: LinphoneCoreRegistrationStateChangedCb = {
     (lc: COpaquePointer, proxyConfig: COpaquePointer, state: LinphoneRegistrationState, message: UnsafePointer<Int8>) in
     
@@ -27,20 +29,20 @@ var registrationStateChanged: LinphoneCoreRegistrationStateChangedCb = {
 var callStateChanged: LinphoneCoreCallStateChangedCb = {
     (lc: COpaquePointer, call: COpaquePointer, callSate: LinphoneCallState,  message) in
     
-    
     switch callSate{
     case LinphoneCallIncomingReceived: /**<This is a new incoming call */
         NSLog("callStateChanged: LinphoneCallIncomingReceived")
         
-        ms_usleep(3 * 1000 * 1000); // Wait 3 seconds to pickup
-        linphone_core_accept_call(lc, call)
+        if answerCall{
+            ms_usleep(3 * 1000 * 1000); // Wait 3 seconds to pickup
+            linphone_core_accept_call(lc, call)
+        }
         
     case LinphoneCallStreamsRunning: /**<The media streams are established and running*/
         NSLog("callStateChanged: LinphoneCallStreamsRunning")
         
     case LinphoneCallError: /**<The call encountered an error*/
         NSLog("callStateChanged: LinphoneCallError")
-        
         
     default:
         NSLog("Default call state")
@@ -50,27 +52,34 @@ var callStateChanged: LinphoneCoreCallStateChangedCb = {
 class LinphoneManager {
     
     var lc: COpaquePointer!
-    
     var lct: LinphoneCoreVTable = LinphoneCoreVTable()
-    var linphonec_vtable: UnsafePointer<LinphoneCoreVTable>?
     
     init() {
-        let configFilename = documentFile(".linphonerc")
+        
+        // Enable debug log to stdout
+        linphone_core_set_log_file(nil)
+        linphone_core_set_log_level(ORTP_DEBUG)
+        
+        // Load config
+        let configFilename = documentFile("linphonerc222")
         let factoryConfigFilename = bundleFile("linphonerc-factory")
         
         let configFilenamePtr: UnsafePointer<Int8> = configFilename.cStringUsingEncoding(NSUTF8StringEncoding)
         let factoryConfigFilenamePtr: UnsafePointer<Int8> = factoryConfigFilename.cStringUsingEncoding(NSUTF8StringEncoding)
+        let lpConfig = lp_config_new_with_factory(configFilenamePtr, factoryConfigFilenamePtr)
         
-        lp_config_new_with_factory(configFilenamePtr, factoryConfigFilenamePtr)
-        
+        // Set Callback
         lct.registration_state_changed = registrationStateChanged
         lct.call_state_changed = callStateChanged
         
-        /*
-         Instanciate a LinphoneCore object given the LinphoneCoreVTable
-         */
-        lc = linphone_core_new(&lct, nil, nil, nil);
+        lc = linphone_core_new_with_config(&lct, lpConfig, nil)
         
+        // Set ring asset
+        let ringbackPath = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath).URLByAppendingPathComponent("/ringback.wav").absoluteString
+        linphone_core_set_ringback(lc, ringbackPath)
+
+        let localRing = NSURL(fileURLWithPath: NSBundle.mainBundle().bundlePath).URLByAppendingPathComponent("/toy-mono.wav").absoluteString
+        linphone_core_set_ring(lc, localRing)
     }
     
     private func bundleFile(file: NSString) -> NSString{
@@ -85,13 +94,13 @@ class LinphoneManager {
     }
     
     func demo() {
-        copyFile()
-        makeCall()
-        //receiveCall()
+//        makeCall()
+//        autoPickImcomingCall()
+        idle()
     }
     
     func makeCall(){
-        let calleeAccount = "0702552518"
+        let calleeAccount = "0702552520"
         
         setIdentify()
         linphone_core_invite(lc, calleeAccount)
@@ -103,6 +112,13 @@ class LinphoneManager {
         let proxyConfig = setIdentify()
         register(proxyConfig)
         mainLoop(60)
+        shutdown()
+    }
+    
+    func idle(){
+        let proxyConfig = setIdentify()
+        register(proxyConfig)
+        mainLoop(100)
         shutdown()
     }
     
@@ -118,15 +134,7 @@ class LinphoneManager {
         
         let identity = "sip:" + account + "@" + domain;
         
-        
-        /*
-         Fill the LinphoneCoreVTable with application callbacks.
-         All are optional. Here we only use the registration_state_changed callbacks
-         in order to get notifications about the progress of the registration.
-         */
-        // lct.registration_state_changed = registration_state_changed;
-        
-        
+
         /*create proxy config*/
         let proxy_cfg = linphone_proxy_config_new();
         
@@ -181,36 +189,5 @@ class LinphoneManager {
         }
         
         linphone_core_destroy(lc);
-    }
-    
-    func copyFile()
-    {
-        let dirPaths =  NSSearchPathForDirectoriesInDomains(.DocumentDirectory,.UserDomainMask, true)
-        let docsDir = dirPaths[0]
-        let destPath = (docsDir as NSString).stringByAppendingPathComponent("/share/sounds/linphone/ringback.wav")
-        
-        var fileMgr = NSFileManager.defaultManager()
-        
-        if let path = NSBundle.mainBundle().pathForResource("ringback", ofType:"wav") {
-            NSLog(path)
-            do{
-                try fileMgr.copyItemAtPath(path, toPath: destPath)
-                NSLog("success")
-            } catch {
-                NSLog("1 failed, it's already there")
-            }
-            
-        }
-
-        do {
-            if let files: [String] = try fileMgr.contentsOfDirectoryAtPath(docsDir)
-            {
-                for filename in files{
-                    NSLog(filename)
-                }
-            }
-        } catch {
-            NSLog("2 failed, it's already there")
-        }
     }
 }
