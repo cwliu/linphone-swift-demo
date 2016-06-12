@@ -1,8 +1,6 @@
 # linphone-swift-demo
 
-## Installation
-
-TODO: Describe the installation process
+This is a sample to demonstrate how to integrate [liblinphone](http://www.linphone.org/technical-corner/liblinphone/overview) into a swift proejct 
 
 ## Usage
 
