@@ -495,6 +495,7 @@
 				TargetAttributes = {
 					A99663601D06F877003B5EEE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -682,6 +683,7 @@
 				PRODUCT_NAME = "linphone-swift-demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "linphone-swift-demo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/liblinphone-sdk/apple-darwin/include/**";
 			};
 			name = Debug;
@@ -702,6 +704,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wiadvance.linphone-swift-demo";
 				PRODUCT_NAME = "linphone-swift-demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "linphone-swift-demo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/liblinphone-sdk/apple-darwin/include/**";
 			};
 			name = Release;
