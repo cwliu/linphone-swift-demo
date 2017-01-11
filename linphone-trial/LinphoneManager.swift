@@ -2,8 +2,9 @@ import Foundation
 
 var answerCall: Bool = false
 
-var registrationStateChanged: LinphoneCoreRegistrationStateChangedCb = {
-    (lc: OpaquePointer, proxyConfig: OpaquePointer, state: LinphoneRegistrationState, message: UnsafePointer<Int8>) in
+
+let registrationStateChanged: LinphoneCoreRegistrationStateChangedCb  = {
+    (lc: Optional<OpaquePointer>, proxyConfig: Optional<OpaquePointer>, state: _LinphoneRegistrationState, message: Optional<UnsafePointer<Int8>>) in
     
     switch state{
     case LinphoneRegistrationNone: /**<Initial state for registrations */
@@ -26,8 +27,8 @@ var registrationStateChanged: LinphoneCoreRegistrationStateChangedCb = {
     }
 } as! LinphoneCoreRegistrationStateChangedCb
 
-var callStateChanged: LinphoneCoreCallStateChangedCb = {
-    (lc: OpaquePointer, call: OpaquePointer, callSate: LinphoneCallState,  message) in
+let callStateChanged: LinphoneCoreCallStateChangedCb = {
+    (lc: Optional<OpaquePointer>, call: Optional<OpaquePointer>, callSate: LinphoneCallState,  message: Optional<UnsafePointer<Int8>>) in
     
     switch callSate{
     case LinphoneCallIncomingReceived: /**<This is a new incoming call */
@@ -46,7 +47,8 @@ var callStateChanged: LinphoneCoreCallStateChangedCb = {
         
     default:
         NSLog("Default call state")
-    }}
+    }
+}
 
 
 class LinphoneManager {
@@ -93,6 +95,10 @@ class LinphoneManager {
         return documentsPath.appendingPathComponent(file as String) as NSString
     }
     
+    
+    //
+    // This is the start point to know how linphone library works.
+    //
     func demo() {
 //        makeCall()
 //        autoPickImcomingCall()
@@ -102,27 +108,36 @@ class LinphoneManager {
     func makeCall(){
         let calleeAccount = "0702552520"
         
-        setIdentify()
+        guard let _ = setIdentify() else {
+            print("no identity")
+            return;
+        }
         linphone_core_invite(lc, calleeAccount)
         mainLoop(10)
         shutdown()
     }
     
     func receiveCall(){
-        let proxyConfig = setIdentify()
+        guard let proxyConfig = setIdentify() else {
+            print("no identity")
+            return;
+        }
         register(proxyConfig)
         mainLoop(60)
         shutdown()
     }
     
     func idle(){
-        let proxyConfig = setIdentify()
+        guard let proxyConfig = setIdentify() else {
+            print("no identity")
+            return;
+        }
         register(proxyConfig)
         mainLoop(100)
         shutdown()
     }
     
-    func setIdentify() -> OpaquePointer {
+    func setIdentify() -> OpaquePointer? {
         
         // Reference: http://www.linphone.org/docs/liblinphone/group__registration__tutorials.html
         
