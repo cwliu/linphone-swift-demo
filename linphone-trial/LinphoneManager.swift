@@ -2,6 +2,11 @@ import Foundation
 
 var answerCall: Bool = false
 
+struct theLinphone {
+    static var lc: OpaquePointer?
+    static var lct: LinphoneCoreVTable?
+    static var manager: LinphoneManager?
+}
 
 let registrationStateChanged: LinphoneCoreRegistrationStateChangedCb  = {
     (lc: Optional<OpaquePointer>, proxyConfig: Optional<OpaquePointer>, state: _LinphoneRegistrationState, message: Optional<UnsafePointer<Int8>>) in
@@ -25,7 +30,7 @@ let registrationStateChanged: LinphoneCoreRegistrationStateChangedCb  = {
     default:
         NSLog("Unkown registration state")
     }
-} as! LinphoneCoreRegistrationStateChangedCb
+} as LinphoneCoreRegistrationStateChangedCb
 
 let callStateChanged: LinphoneCoreCallStateChangedCb = {
     (lc: Optional<OpaquePointer>, call: Optional<OpaquePointer>, callSate: LinphoneCallState,  message: Optional<UnsafePointer<Int8>>) in
@@ -53,10 +58,12 @@ let callStateChanged: LinphoneCoreCallStateChangedCb = {
 
 class LinphoneManager {
     
-    var lc: OpaquePointer!
-    var lct: LinphoneCoreVTable = LinphoneCoreVTable()
+    static var iterateTimer: Timer?
     
     init() {
+        
+        theLinphone.lct = LinphoneCoreVTable()
+
         
         // Enable debug log to stdout
         linphone_core_set_log_file(nil)
@@ -71,17 +78,17 @@ class LinphoneManager {
         let lpConfig = lp_config_new_with_factory(configFilenamePtr, factoryConfigFilenamePtr)
         
         // Set Callback
-        lct.registration_state_changed = registrationStateChanged
-        lct.call_state_changed = callStateChanged
+        theLinphone.lct?.registration_state_changed = registrationStateChanged
+        theLinphone.lct?.call_state_changed = callStateChanged
         
-        lc = linphone_core_new_with_config(&lct, lpConfig, nil)
+        theLinphone.lc = linphone_core_new_with_config(&theLinphone.lct!, lpConfig, nil)
         
         // Set ring asset
         let ringbackPath = URL(fileURLWithPath: Bundle.main.bundlePath).appendingPathComponent("/ringback.wav").absoluteString
-        linphone_core_set_ringback(lc, ringbackPath)
+        linphone_core_set_ringback(theLinphone.lc, ringbackPath)
 
         let localRing = URL(fileURLWithPath: Bundle.main.bundlePath).appendingPathComponent("/toy-mono.wav").absoluteString
-        linphone_core_set_ring(lc, localRing)
+        linphone_core_set_ring(theLinphone.lc, localRing)
     }
     
     fileprivate func bundleFile(_ file: NSString) -> NSString{
@@ -112,9 +119,9 @@ class LinphoneManager {
             print("no identity")
             return;
         }
-        linphone_core_invite(lc, calleeAccount)
-        mainLoop(10)
-        shutdown()
+        linphone_core_invite(theLinphone.lc, calleeAccount)
+        setTimer()
+//        shutdown()
     }
     
     func receiveCall(){
@@ -123,8 +130,8 @@ class LinphoneManager {
             return;
         }
         register(proxyConfig)
-        mainLoop(60)
-        shutdown()
+        setTimer()
+//        shutdown()
     }
     
     func idle(){
@@ -133,8 +140,8 @@ class LinphoneManager {
             return;
         }
         register(proxyConfig)
-        mainLoop(100)
-        shutdown()
+        setTimer()
+//        shutdown()
     }
     
     func setIdentify() -> OpaquePointer? {
@@ -162,7 +169,7 @@ class LinphoneManager {
         }
         
         let info=linphone_auth_info_new(linphone_address_get_username(from), nil, password, nil, nil, nil); /*create authentication structure from identity*/
-        linphone_core_add_auth_info(lc, info); /*add authentication info to LinphoneCore*/
+        linphone_core_add_auth_info(theLinphone.lc, info); /*add authentication info to LinphoneCore*/
         
         // configure proxy entries
         linphone_proxy_config_set_identity(proxy_cfg, identity); /*set identity with user name and domain*/
@@ -172,8 +179,8 @@ class LinphoneManager {
         
         linphone_proxy_config_set_server_addr(proxy_cfg, server_addr); /* we assume domain = proxy server address*/
         linphone_proxy_config_enable_register(proxy_cfg, 0); /* activate registration for this proxy config*/
-        linphone_core_add_proxy_config(lc, proxy_cfg); /*add proxy config to linphone core*/
-        linphone_core_set_default_proxy_config(lc, proxy_cfg); /*set to default proxy*/
+        linphone_core_add_proxy_config(theLinphone.lc, proxy_cfg); /*add proxy config to linphone core*/
+        linphone_core_set_default_proxy_config(theLinphone.lc, proxy_cfg); /*set to default proxy*/
         
         return proxy_cfg!
     }
@@ -182,27 +189,29 @@ class LinphoneManager {
         linphone_proxy_config_enable_register(proxy_cfg, 1); /* activate registration for this proxy config*/
     }
     
-    func mainLoop(_ sec: Int){
-        let time = sec * 100
-        /* main loop for receiving notifications and doing background linphonecore work: */
-        for _ in 1...time{
-            linphone_core_iterate(lc); /* first iterate initiates registration */
-            ms_usleep(10000);
-        }
-    }
-    
     func shutdown(){
         NSLog("Shutdown..")
         
-        let proxy_cfg = linphone_core_get_default_proxy_config(lc); /* get default proxy config*/
+        let proxy_cfg = linphone_core_get_default_proxy_config(theLinphone.lc); /* get default proxy config*/
         linphone_proxy_config_edit(proxy_cfg); /*start editing proxy configuration*/
         linphone_proxy_config_enable_register(proxy_cfg, 0); /*de-activate registration for this proxy config*/
         linphone_proxy_config_done(proxy_cfg); /*initiate REGISTER with expire = 0*/
         while(linphone_proxy_config_get_state(proxy_cfg) !=  LinphoneRegistrationCleared){
-            linphone_core_iterate(lc); /*to make sure we receive call backs before shutting down*/
+            linphone_core_iterate(theLinphone.lc); /*to make sure we receive call backs before shutting down*/
             ms_usleep(50000);
         }
         
-        linphone_core_destroy(lc);
+        linphone_core_destroy(theLinphone.lc);
+    }
+    
+    @objc func iterate(){
+        if let lc = theLinphone.lc{
+            linphone_core_iterate(lc); /* first iterate initiates registration */
+        }
+    }
+    
+    fileprivate func setTimer(){
+        LinphoneManager.iterateTimer = Timer.scheduledTimer(
+            timeInterval: 0.02, target: self, selector: #selector(iterate), userInfo: nil, repeats: true)
     }
 }
