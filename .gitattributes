@@ -1,1 +1,2 @@
 *.rb linguist-language=Swift
+liblinphone-sdk/* inguist-vendored
