@@ -1,6 +1,6 @@
 # linphone-swift-demo
 
-[linephone](https://www.linphone.org/) is a open source VOIP project.In this repository, we demonstrate how to integrate [liblinphone](http://www.linphone.org/technical-corner/liblinphone/overview) into a swift project. We include 3 common scenarios: 
+[linphone](https://www.linphone.org/) is a open source VOIP project.In this repository, we demonstrate how to integrate [liblinphone](http://www.linphone.org/technical-corner/liblinphone/overview) library into a swift project. We include 3 common scenarios:
 
 - make a phone call
 - auto pick an incoming phone call
